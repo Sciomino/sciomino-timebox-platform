@@ -1,0 +1,1 @@
+<img src="<?php echo $XCOW_B['url'] ?><?php echo $session['response']['param']['photo'] ?>" width="<?php echo $session['response']['param']['width'] ?>" height="<?php echo $session['response']['param']['height'] ?>" style="padding:5px;max-width:800px;max-height:600px;">

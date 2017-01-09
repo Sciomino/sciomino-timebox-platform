@@ -1,0 +1,46 @@
+/* 
+   a device:
+   - width, mostly < 700
+   - portrait
+   - 160 dpi
+   - targets a mobile phone
+   - layout is one small column
+   
+   No layout options for another device, fix to portrait mode!
+   
+   prepare for high resolution screens:
+   - width does not matter
+   - orientation does not matter
+   - > 240 dpi
+   - targets a high resolution screen, new smartphones
+/*
+
+
+/* 1. high resolution devices
+ * what are high resolution devices? > 240 dpi
+ * 240 dpi = 2.5 x 96 dpi, so ratio is 2.5 */
+@media screen and (-webkit-min-device-pixel-ratio: 2.5),
+       screen and (min-resolution: 240dpi) {
+  /* most important, use double sized images an scale backround * 0.5 */
+}
+
+
+/* 2. fixed width layout */
+
+/* 2a. standard width */
+@media screen and (max-width: 700px) {
+}
+
+/* 2b. for layout with greater widths */
+@media screen and (min-width: 701px) {
+}
+
+/* 3. portrait or landscape layout */
+
+/* 3a. portrait */
+@media screen and (orientation: portrait) {
+}
+
+/* 3b. landscape */
+@media screen and (orientation: landscape) {
+}

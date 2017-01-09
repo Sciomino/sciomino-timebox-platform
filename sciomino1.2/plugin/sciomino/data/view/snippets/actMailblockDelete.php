@@ -1,0 +1,1 @@
+<a class="puu-mailblocked" href="<?php echo $XCOW_B['url'] ?>/snippet/actMailblock-new?act=<?php echo $session['response']['param']['act']?>"><?php echo language('sciomio_text_act_mailblock_block') ?></a>

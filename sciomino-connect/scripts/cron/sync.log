@@ -1,0 +1,11 @@
+--18:53:01--  http://xcow-base/PA/assignmentSync
+           => `/var/www-virtual/xcow-base/scripts/cron/sync.html'
+Resolving xcow-base... 127.0.0.1
+Connecting to xcow-base|127.0.0.1|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+
+    0K                                                          15.16 MB/s
+
+18:53:01 (15.16 MB/s) - `/var/www-virtual/xcow-base/scripts/cron/sync.html' saved [111]
+

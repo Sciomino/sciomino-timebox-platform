@@ -1,0 +1,89 @@
+<?php
+
+global $XCOW_B;
+
+$lang = array();
+
+###########
+# ENGLISH
+###########
+
+# 1. page title
+
+# 2. page header
+$lang['session_header_activate'] = "Activate";
+$lang['session_header_anonymous'] = "Anonymous session started";
+$lang['session_header_login'] = "Login";
+$lang['session_header_logout'] = "Logout";
+$lang['session_header_register'] = "Register";
+$lang['session_header_passnew'] = "Forgot Password";
+$lang['session_header_passupdate'] = "Change Password";
+
+# 3. page text
+$lang['session_text_username'] = "Email";
+$lang['session_text_userdescription'] = "(Do not use spaces in your username.)";
+$lang['session_text_userpass'] = "Password";
+$lang['session_text_usermail'] = "Email";
+$lang['session_text_welcome'] = "Welcome ";
+$lang['session_text_newuser'] = "New user? ";
+$lang['session_text_oldpass'] = "Old password:";
+$lang['session_text_newpass'] = "New password:";
+$lang['session_text_verifypass'] = "Verify password:";
+$lang['session_text_register_terms'] = "By clicking 'Register', you agree to our <a href='http://business.sciomino.com/terms-of-use-nl' target='_blank'>terms of use</a> and <a href='http://business.sciomino.com/privacy-nl' target='_blank'>privacy statement</a> and confirm that you have read them.";
+$lang['session_text_register_alternative'] = "(or <a href='javascript:Session.Login.load();'>sign in</a>)";
+$lang['session_text_login_alternative'] = "(new? <a href='javascript:Session.Register.load();'>register</a>)";
+
+# 4. page link / word
+$lang['session_word_forgetpass'] = "Forgot password?";
+$lang['session_word_login'] = "Login";
+$lang['session_word_logout'] = "Logout";
+$lang['session_word_register'] = "Register";
+$lang['session_word_pass'] = "Mail new password";
+$lang['session_word_passupdate'] = "Change password";
+$lang['session_word_cancel'] = "Cancel";
+
+# 5. page status
+$lang['session_status_activate_ok'] = "Your registration is confirmed.<!--activateCheck-->";
+$lang['session_status_activate_wrongkey'] = "Your key is not valid for your registration.";
+$lang['session_status_activate_nokey'] = "You need a key to confirm your registration.";
+$lang['session_status_login_ok'] = "You are in.";
+$lang['session_status_login_wrong'] = "Your login combination is not correct.";
+$lang['session_status_login_firsttime'] = "You need to login for this action.";
+$lang['session_status_logout_ok'] = "You are out.";
+$lang['session_status_logout_wrong'] = "You need to be logged in to logout.";
+$lang['session_status_register_requiredfield'] = "Please fill out all required fields.";
+$lang['session_status_register_nameexists'] = "The email address exists.";
+$lang['session_status_register_namewrong'] = "The email address is not valid.";
+$lang['session_status_register_passwrong'] = "The password is not correct, you have to use 2 characters minimum.";
+$lang['session_status_register_emailexists'] = "The email address exists, try again.";
+$lang['session_status_register_emailwrong'] = "The email address is not valid.";
+$lang['session_status_register_emailnotallowed'] = "The email address is not valid.";
+$lang['session_status_register_notshown'] = "Je kunt je registreren via je werkgever. Met je emailadres en wachtwoord kun je dan hierboven inloggen.";
+$lang['session_status_register_toomany'] = "Het maximum aantal geregistreerde personen is bereikt. Neem contact op met je werkgever.";
+$lang['session_status_passnew_emailwrong'] = "The email address is not valid.";
+$lang['session_status_passupdate_ok'] = "Your password is changed";
+$lang['session_status_passupdate_oldwrong'] = "Your old password is not correct.";
+$lang['session_status_passupdate_newwrong'] = "The new password is not correct, you have to use 2 characters minimum.";
+$lang['session_status_passupdate_nomatch'] = "The new passwords do not match.";
+$lang['session_status_mobile_register_appnotallowed'] = "The app is not allowed.";
+$lang['session_status_mobile_register_emailwrong'] = "The email address is not valid.";
+$lang['session_status_mobile_register_emailnotallowed'] = "The email address is not allowed.";
+$lang['session_status_mobile_register_notactivated'] = "Access is not allowed";
+
+# 6. mail
+$lang['session_mail_register_subject'] = "Activate your account";
+$lang['session_mail_register_body'] = "Dear \$user\$,\n\nWelkoce to \$name\$. A registration was made using this emailaddress. You can activatie the registration with the following url: \$url\$.\n\nAfter activation you can use all services of \$name\$ on \$host\$.\n\nWith kind regards,\nThe \$name\$ team.";
+$lang['session_mail_register_status'] = "You are registered. <br/><br/>We have sent an email to the address you provided. In the email you are asked to confirm the registration. After confirmation you can you use your username and password to login and use all functionality.";
+$lang['session_mail_register2_subject'] = "You are registered";
+$lang['session_mail_register2_body'] = "Dear \$user\$,\n\nWelkoce to \$name\$. A registration was made using this emailaddress.\n\nYou can now use all services of \$name\$ on \$host\$.\n\nWith kind regards,\nThe \$name\$ team.";
+$lang['session_mail_register2_status'] = "You are registered. <br/><br/>You can you use your username and password to login and use all functionality.";
+$lang['session_mail_passnew_subject'] = "Your new password";
+$lang['session_mail_passnew_body'] = "Dear \$user\$,\n\nOn this email address a new password was requested for \$name\$. The password is changed to: \$pass\$. With this password you can login to \$host\$, for security you better change your password yourself again.\n\nWith kind regards,\nThe \$name\$ team.";
+$lang['session_mail_passnew_status'] = "Your password is changed. <br/><br/>An email is send to the address you specified. Your new password is in this email.";
+$lang['session_mail_mobile_subject'] = "Your \$name\$ PIN code is \$secret\$";
+$lang['session_mail_mobile_body'] = "Your \$name\$ PIN code is \$secret\$ but you can simply tap on this link to verify your email address:\n\ntimebox://pin?code=\$secret\$";
+###########
+
+$XCOW_B['language'] = $XCOW_B['language'] + $lang;
+
+?>

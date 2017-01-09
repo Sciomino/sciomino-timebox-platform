@@ -1,0 +1,39 @@
+
+                     <!-- BEGIN BODY // -->
+                        <tr>
+                           <td align="center" valign="top" style="-webkit-text-size-adjust: none !important; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                              <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody" style="-webkit-text-size-adjust: none !important; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; border-top-width: 1px; border-top-color: #FFFFFF; border-top-style: solid; border-bottom-width: 1px; border-bottom-color: #CCCCCC; border-bottom-style: solid; background-color: #FFFFFF;" bgcolor="#FFFFFF">
+                                 <tr>
+                                    <td valign="top" class="bodyContent" style="-webkit-text-size-adjust: none !important; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; font-family: Helvetica; font-size: 16px !important; line-height: 125%; text-align: left; padding: 10px 20px 0;" align="left">
+                                       <h1 style="color: #999999 !important; display: block; font-family: 'Helvetica Neue',Helvetica,Arial; font-size: 16px !important; font-style: normal; font-weight: bold; line-height: 100%; letter-spacing: normal; text-align: left; margin: 0; padding: 0;" align="left">
+                                          Activate your $name$ account
+                                       </h1><br /><br />
+                                       <h2 style="color: #404040 !important; display: block; font-family: 'Helvetica Neue',Helvetica,Arial; font-size: 16px !important; font-style: normal; font-weight: bold; line-height: 125%; letter-spacing: normal; text-align: left; margin: 0; padding: 0;" align="left">
+                                          Hi,
+                                       </h2>
+                                       This is a reminder for your $name$ registration. Before you'll be able to find and share knowledge, please activate your account:<br /><br />
+                                    </td>
+                                 </tr>
+                                 <!-- BEGIN BUTTON ROW // -->
+                                 <tr>
+                                    <td align="center">
+                                       <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate !important; border-radius: 3px 3px 3px 3px; color: #2A2828; font-family: 'Helvetica Neue',Helvetica,Arial; font-size: 16px !important; font-style: normal; font-weight: normal; line-height: 100%; text-align: center; text-decoration: none; background-color: #256EAA; border: 1px solid #23659D; background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #287BBC), color-stop(1, #23659D)); background-image: linear-gradient(to bottom, #287BBC 0%, #23659D 100%); padding: 10px 10px 14px;" bgcolor="#256EAA">
+                                          <td valign="center">
+                                             <a href="$url$" target="_blank" style="-webkit-text-size-adjust: none !important; -ms-text-size-adjust: 100%; color: #FEFEFE; font-family: 'Helvetica Neue',Helvetica,Arial; font-size: 16px !important; font-weight: normal; text-decoration: none; padding: 10px 10px 14px;">Activate my account</a>
+                                          </td>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <!-- // END BUTTON ROW -->
+                                 <tr>
+                                    <td valign="top" class="bodyContent" style="-webkit-text-size-adjust: none !important; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; font-family: Helvetica; font-size: 16px !important; line-height: 125%; text-align: left; padding: 10px 20px 0;" align="left">
+										If you do not activate your account within the next 7 days we will automatically remove your registration.
+                                       <br />
+                                       Enjoy,<br />
+                                       Het $name$ team<br /><br />
+                                    </td>
+                                 </tr>
+                              </table>
+                           </td>
+                        </tr>
+                     <!-- // END BODY -->

@@ -1,0 +1,31 @@
+* {
+	color: #fffb00 !important;
+	background-color: #001e9c !important;
+	background-image: none !important;
+	border-color: #fffb00 !important;
+}
+
+.puu-nav .puu-login a,
+.puu-tes,
+.puu-plans .puu-sep,
+.puu-cnt.puu-home .puu-pitch .puu-contact a.puu-btn,
+.puu-plans thead td,
+.puu-plans thead td.puu-st,
+.X {
+	background-image: none !important;
+}
+
+.puu-nav li em,
+.puu-snav em,
+.X {
+	background-color: transparent !important;
+	background-image: url("/ui/skin/sciomino/gfx/login/bg_dot_yellow.png") !important;
+}
+
+.puu-ftr {
+	border-bottom: 1px solid #fffb00;
+}
+
+a:link {
+	text-decoration: underline;
+}

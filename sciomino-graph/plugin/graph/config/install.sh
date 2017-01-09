@@ -1,0 +1,23 @@
+# copy config files
+#cp base.ini ../../../data/control/base.ini
+cp base.js.en ../../../htdocs/js/language/en/base.js
+cp base.js.nl ../../../htdocs/js/language/nl/base.js 
+cp control.php ../../../htdocs/control.php 
+cp xcow_base.ini ../../../data/etc/xcow_base.ini 
+#copy session files
+#cp session.css ../../../htdocs/css/session.css 
+cp session.js ../../../htdocs/js/session.js 
+#cp session.en ../../../data/language/en/session
+#cp session.nl ../../../data/language/nl/session
+cp session_model/view.php ../../../data/model/base/session/view.php 
+cp session_model/new.php ../../../data/model/base/session/new.php 
+cp session_model/passNew.php ../../../data/model/base/session/passNew.php 
+cp session_model/activate.php ../../../data/model/base/session/activate.php 
+cp session_view/view.php ../../../data/view/base/session/view.php 
+cp session_view/login.php ../../../data/view/base/session/login.php
+cp session_view/new.php ../../../data/view/base/session/new.php
+cp session_view/new2.php ../../../data/view/base/session/new2.php
+cp session_view/passNew.php ../../../data/view/base/session/passNew.php
+cp session_view/passNew2.php ../../../data/view/base/session/passNew2.php
+cp session_view/passUpdate.php ../../../data/view/base/session/passUpdate.php
+cp session_view/passUpdate2.php ../../../data/view/base/session/passUpdate2.php

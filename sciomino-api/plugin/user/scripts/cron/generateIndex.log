@@ -1,0 +1,12 @@
+--2017-01-08 00:36:46--  http://sciomino-api/index/generate?action=queue&user_api_id=sciomino20&user_api_nonce=08858edacc031ae190ece501e4efe487&user_api_key=3d3d92a92e85edb7dd334c39c7d7d0d39f635f69
+Resolving sciomino-api (sciomino-api)... 127.0.0.1
+Connecting to sciomino-api (sciomino-api)|127.0.0.1|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Syntax error in Set-Cookie: =nl; expires=Sun, 07-Jan-2018 23:36:46 GMT; Max-Age=31536000; path=/ at position 0.
+Length: 264 [text/xml]
+Saving to: ‘/var/www-virtual/sciomino/sciomino-api/plugin/user/scripts/cron/generateIndex.html’
+
+     0K                                                       100% 92,9M=0s
+
+2017-01-08 00:36:46 (92,9 MB/s) - ‘/var/www-virtual/sciomino/sciomino-api/plugin/user/scripts/cron/generateIndex.html’ saved [264/264]
+

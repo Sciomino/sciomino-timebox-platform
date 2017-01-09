@@ -1,0 +1,1 @@
+<a class="puu-reviewed" href="<?php echo $XCOW_B['url'] ?>/snippet/actReview-delete?act=<?php echo $session['response']['param']['act']?>"><?php echo language('sciomio_text_act_review_dislike') ?></a>

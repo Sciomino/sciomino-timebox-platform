@@ -1,0 +1,312 @@
+<?php
+
+#
+# the global XCOW_B variable
+#
+$XCOW_B                         = array();
+$GLOBALS['XCOW_B']              = $XCOW_B;
+
+$XCOW_B['control']		= array();
+$XCOW_B['rewrite']		= array();
+$XCOW_B['language']		= array();
+
+###########################################################
+# edit host, api, database, session and language settings #
+###########################################################
+
+#
+# HOST
+#
+$XCOW_B['this_name']		= "<!--SC_DISPLAY_NAME-->";
+$XCOW_B['this_mail']		= "<!--SC_EMAIL-->";
+$XCOW_B['this_host'] 		= "http://<!--SC_URL-->/";
+$XCOW_B['url']              	= "<!--SC_URL_PATH-->";
+
+#
+# API
+#
+$XCOW_B['user_api']['host'] 	= "http://<!--SC_API_URL-->/";
+$XCOW_B['shop_api']['host'] 	= "http://xcow-api-shop/";
+$XCOW_B['connect_api']['host'] 	= "http://<!--SC_CONNECT_API_URL-->/";
+$XCOW_B['blog_api']['host'] 	= "http://xcow-api-blog/";
+$XCOW_B['answers_api']['host'] 	= "http://<!--SC_ANSWERS_API_URL-->/";
+
+# API Client - shop example
+$XCOW_B['user_api']['auth']	= 1;
+$XCOW_B['user_api']['secret']  	= "<!--SC_SECRET-->";
+$XCOW_B['user_api']['id']    	= "<!--SC_NAME-->";
+$XCOW_B['user_api']['nonce']	= md5(microtime().date("r").mt_rand(11111, 99999));
+$XCOW_B['user_api']['key']	= sha1($XCOW_B['user_api']['nonce'].$XCOW_B['user_api']['id'].$XCOW_B['user_api']['secret']);
+
+$XCOW_B['answers_api']['auth']	= 1;
+$XCOW_B['answers_api']['secret']  	= "<!--SC_SECRET-->";
+$XCOW_B['answers_api']['id']    	= "<!--SC_NAME-->";
+$XCOW_B['answers_api']['nonce']	= md5(microtime().date("r").mt_rand(11111, 99999));
+$XCOW_B['answers_api']['key']	= sha1($XCOW_B['answers_api']['nonce'].$XCOW_B['answers_api']['id'].$XCOW_B['answers_api']['secret']);
+
+# API Server - shop example
+$XCOW_B['auth']['on']		= 0;
+$XCOW_B['auth']['db']		= "masterDB";
+$XCOW_B['auth']['id']		= "user_api_id";
+$XCOW_B['auth']['nonce']	= "user_api_nonce";
+$XCOW_B['auth']['key']		= "user_api_key";
+$XCOW_B['auth']['same_clients'] = array();
+
+#
+# DATABASE
+#
+# - none: geen database
+# - sessionDB: sessie database
+# - masterDB: master database voor schrijven
+# - slaveDB: slave database voor lezen
+# - searchDB: search database for optimal performance
+#
+$XCOW_B['sessionDB']['mysql_host'] = "<!--SC_MYSQL_HOST-->";
+$XCOW_B['sessionDB']['mysql_user'] = "<!--SC_MYSQL_USER-->";
+$XCOW_B['sessionDB']['mysql_pass'] = "<!--SC_MYSQL_PASS-->";
+$XCOW_B['sessionDB']['mysql_db']   = "<!--SC_MYSQL_DB-->";
+$XCOW_B['sessionDB']['mysql_link'] = "";
+
+$XCOW_B['masterDB']['mysql_host']  = "<!--SC_MYSQL_HOST-->";
+$XCOW_B['masterDB']['mysql_user']  = "<!--SC_MYSQL_USER-->";
+$XCOW_B['masterDB']['mysql_pass']  = "<!--SC_MYSQL_PASS-->";
+$XCOW_B['masterDB']['mysql_db']    = "<!--SC_MYSQL_DB-->";
+$XCOW_B['slaveDB']['mysql_host']   = "<!--SC_MYSQL_HOST-->";
+$XCOW_B['slaveDB']['mysql_user']   = "<!--SC_MYSQL_USER-->";
+$XCOW_B['slaveDB']['mysql_pass']   = "<!--SC_MYSQL_PASS-->";
+$XCOW_B['slaveDB']['mysql_db']     = "<!--SC_MYSQL_DB-->";
+$XCOW_B['searchDB']['mysql_host']  = "<!--SC_MYSQL_HOST-->";
+$XCOW_B['searchDB']['mysql_user']  = "<!--SC_MYSQL_USER-->";
+$XCOW_B['searchDB']['mysql_pass']  = "<!--SC_MYSQL_PASS-->";
+$XCOW_B['searchDB']['mysql_db']    = "<!--SC_MYSQL_DB-->";
+
+$XCOW_B['mysql_link']              = "";
+
+#
+# Session
+#
+$XCOW_B['session_name'] 		= "<!--SC_SESSION_NAME-->";
+$XCOW_B['session_activate_mail'] 	= 1;
+$XCOW_B['session_remote_authentication'] = <!--SC_REMOTE_AUTH-->;
+$XCOW_B['session_remote_auth_int_trim'] = 0;
+$XCOW_B['session_remote_auth_use_header'] = <!--SC_REMOTE_AUTH_HEADER-->;
+$XCOW_B['session_remote_auth_header'] = "<!--SC_REMOTE_AUTH_HEADER_NAME-->";
+$XCOW_B['session_user_is_mail'] 	= 1;
+$XCOW_B['session_activate_domains'] = <!--SC_DOMAIN_ACTIVE-->;
+$XCOW_B['session_valid_domains'] 	= array(<!--SC_DOMAIN_LIST-->);
+$XCOW_B['session_user_max'] 		= <!--SC_USER_MAX-->; # 0 is unlimited
+$XCOW_B['session_keep']				= 0; #session is valid for 30 days
+$XCOW_B['session_cookie_domain']	= "";
+
+#
+# LANGUAGES
+#
+$XCOW_B['default_language']    = "<!--SC_LANGUAGE-->";
+$XCOW_B['valid_languages']     = array(<!--SC_LANGUAGE_LIST-->);
+
+#####################################
+# connections with external systems #
+#####################################
+
+#
+# APC
+#
+$XCOW_B['use_apc']            = 1;
+$XCOW_B['apc_prefix']         = "<!--SC_NAME-->_";
+$XCOW_B['apc_ttl']            = 900;
+$XCOW_B['apc_ttl_short']      = 180;
+$XCOW_B['apc_ttl_long']       = 1800;
+
+#
+# PROXY
+#
+$XCOW_B['use_flush']            = 0;
+$XCOW_B['use_proxy']    	= 0;
+$XCOW_B['proxy']     		= "tcp://wppwhs02.rdc.local:8080";
+
+#
+# Oauth Client
+#
+$XCOW_B['oauth_client_list'] = array("linkedin", "twitter");
+
+$XCOW_B['oauth_client']['test']['appKey'] = 'key';
+$XCOW_B['oauth_client']['test']['appSecret'] = 'secret';
+$XCOW_B['oauth_client']['test']['appUrl'] = 'http://term.ie/oauth/example';
+$XCOW_B['oauth_client']['test']['appMethod'] = 'GET';
+$XCOW_B['oauth_client']['test']['requestPath'] = '/request_token.php';
+$XCOW_B['oauth_client']['test']['accessPath'] = '/access_token.php';
+$XCOW_B['oauth_client']['test']['signatureMethod'] = 'HMAC';
+$XCOW_B['oauth_client']['test']['authorizationUrl'] = '';
+$XCOW_B['oauth_client']['test']['callbackUrl'] = 'http://sciomino-www-1.2/oauth/connect?app=test&action=access';
+
+$XCOW_B['oauth_client']['linkedin']['appKey'] = 'TqUrzEC18GbPEsimFk9qXwSWKrSnm-pPyaThKzkzdYIm0TCdFeIZmYwDUJjzOQdk';
+$XCOW_B['oauth_client']['linkedin']['appSecret'] = '6O7fVVJrdMrmvr41wPt8lE1IrbcGQQdFkVr3LG5UpxSkNyIiVgenJ5MD8AOS74l6';
+$XCOW_B['oauth_client']['linkedin']['appUrl'] = 'https://api.linkedin.com';
+$XCOW_B['oauth_client']['linkedin']['appMethod'] = 'POST';
+$XCOW_B['oauth_client']['linkedin']['requestPath'] = '/uas/oauth/requestToken';
+$XCOW_B['oauth_client']['linkedin']['accessPath'] = '/uas/oauth/accessToken';
+$XCOW_B['oauth_client']['linkedin']['signatureMethod'] = 'HMAC';
+$XCOW_B['oauth_client']['linkedin']['authorizationUrl'] = 'https://www.linkedin.com/uas/oauth/authorize';
+$XCOW_B['oauth_client']['linkedin']['callbackUrl'] = $XCOW_B['this_host'].$XCOW_B['url'].'/oauth/connect?app=linkedin&action=access';
+
+$XCOW_B['oauth_client']['twitter']['appKey'] = 'cbQ1GfS2McQQxlmNsAovZg';
+$XCOW_B['oauth_client']['twitter']['appSecret'] = 'S9DK8cGsuWmk15YJIuJsqqDpuKoLiMVPgmIcDTiPRvc';
+$XCOW_B['oauth_client']['twitter']['appUrl'] = 'https://api.twitter.com';
+$XCOW_B['oauth_client']['twitter']['appMethod'] = 'POST';
+$XCOW_B['oauth_client']['twitter']['requestPath'] = '/oauth/request_token';
+$XCOW_B['oauth_client']['twitter']['accessPath'] = '/oauth/access_token';
+$XCOW_B['oauth_client']['twitter']['signatureMethod'] = 'HMAC';
+$XCOW_B['oauth_client']['twitter']['authorizationUrl'] = 'https://api.twitter.com/oauth/authorize';
+$XCOW_B['oauth_client']['twitter']['callbackUrl'] = $XCOW_B['this_host'].$XCOW_B['url'].'/oauth/connect?app=twitter&action=access';
+
+#
+# RSS reader
+#
+$XCOW_B['rss_reader_list'] = array("blog", "blogger", "wordpress", "tumblr", "posterous", "slideshare");
+
+$XCOW_B['rss_reader']['blog']['prefix'] = "";
+$XCOW_B['rss_reader']['blog']['suffix'] = "";
+$XCOW_B['rss_reader']['blogger']['prefix'] = "";
+$XCOW_B['rss_reader']['blogger']['suffix'] = "/feeds/posts/default?alt=rss";
+$XCOW_B['rss_reader']['wordpress']['prefix'] = "";
+$XCOW_B['rss_reader']['wordpress']['suffix'] = "/feed";
+$XCOW_B['rss_reader']['tumblr']['prefix'] = "";
+$XCOW_B['rss_reader']['tumblr']['suffix'] = "/rss";
+$XCOW_B['rss_reader']['posterous']['prefix'] = "";
+$XCOW_B['rss_reader']['posterous']['suffix'] = "/rss.xml";
+$XCOW_B['rss_reader']['slideshare']['prefix'] = "http://www.slideshare.net/rss/user/";
+$XCOW_B['rss_reader']['slideshare']['suffix'] = "";
+
+#######################################################
+# edit below this line if you know what you are doing #
+#######################################################
+
+#
+# DEBUG
+#
+# DEBUG = 0, no log
+# DEBUG = 1, log to file
+# DEBUG = 2, log to file + screen
+$XCOW_B['DEBUG']               = 0;
+
+#
+# HTTP request Mode
+#
+$XCOW_B['XMLmode']             = 0;
+$XCOW_B['RESTmode']            = 1;
+
+#
+# Strip input
+#
+$XCOW_B['stripslashes']        = 1;
+$XCOW_B['striptags']           = 1;
+
+#
+# Misc
+#
+$XCOW_B['anonymous']           = 1;
+$XCOW_B['rewrite_only']        = 0;
+$XCOW_B['editor_access_level'] = 3;
+
+############################################################
+# if you really, really know, you may edit below this line #
+###########################################################
+
+#
+# base directories
+#
+$XCOW_B['base']                 = $_SERVER['DOCUMENT_ROOT']."/..";
+
+$XCOW_B['model_base']           = $XCOW_B['base']."/data/model";
+$XCOW_B['view_base']            = $XCOW_B['base']."/data/view";
+$XCOW_B['extension_base']       = $XCOW_B['base']."/data/extension";
+
+#
+# base urls
+#
+$XCOW_B['graphics']             = $XCOW_B['url']."/gfx";
+$XCOW_B['javascript']           = $XCOW_B['url']."/js";
+$XCOW_B['style']                = $XCOW_B['url']."/css";
+
+#
+# Logging
+#
+#$XCOW_B['log_file']            = "/tmp/xcow_base.log";
+$XCOW_B['log_file']            	= $XCOW_B['base']."/save/logs/xcow_base.log";
+$XCOW_B['log_dir']				= $XCOW_B['base']."/save/logs/log";
+$XCOW_B['log_handler']         	= "";
+
+#
+# the session
+#
+#$XCOW_B['session_save_path']   = "/tmp";
+$XCOW_B['session_save_path']    = $XCOW_B['base']."/save/sessions";
+
+#
+# Queue
+#
+$XCOW_B['queue']               = $XCOW_B['base']."/save/queue";
+$XCOW_B['max_queue_processes'] = 10;
+
+#
+# Upload
+#
+$XCOW_B['upload_base']            = $XCOW_B['base']."/save/upload";
+$XCOW_B['upload_destination_dir'] = $XCOW_B['base']."/htdocs/upload";
+$XCOW_B['upload_destination_url'] = "/upload";
+$XCOW_B['valid_extensions']       = array("jpg","png","gif","jpeg","xml");
+$XCOW_B['max_upload']             = 200000000;
+
+$XCOW_B['quota_default']       = 1;
+$XCOW_B['stream_base']         = "/data/www/streams/test";
+$XCOW_B['ticket_base']         = "/data/www/fles-test/htdocs/tickets";
+$XCOW_B['ticket_expiration']   = 7200;
+
+#
+# Streaming video
+#
+# file types
+# - 1: flash
+# - 2: wmv
+# - 3: mp4
+# - 4: download
+#
+# valid extension are input formats, flv and jpg are preview formats, generated from input
+#
+#$XCOW_B['valid_extensions']    = array("avi","mov","mpg","mp4","m4v","m4a","wmv","wav","mp3","aac","wma","flv");
+#$XCOW_B['upload_type']['avi']  = 4;
+#$XCOW_B['upload_type']['mov']  = 4;
+#$XCOW_B['upload_type']['mpg']  = 4;
+#$XCOW_B['upload_type']['mp4']  = 3;
+#$XCOW_B['upload_type']['m4v']  = 3;
+#$XCOW_B['upload_type']['m4a']  = 3;
+#$XCOW_B['upload_type']['wmv']  = 2;
+#$XCOW_B['upload_type']['wav']  = 4;
+#$XCOW_B['upload_type']['mp3']  = 4;
+#$XCOW_B['upload_type']['aac']  = 3;
+#$XCOW_B['upload_type']['wma']  = 2;
+#$XCOW_B['upload_type']['flv']  = 1;
+#$XCOW_B['upload_type']['jpg']  = 4;
+#$XCOW_B['upload_destination_dir']['1']  = $XCOW_B['stream_base']."/flv";
+#$XCOW_B['upload_destination_dir']['2']  = $XCOW_B['stream_base']."/wmv";
+#$XCOW_B['upload_destination_dir']['3']  = $XCOW_B['stream_base']."/mp4";
+#$XCOW_B['upload_destination_dir']['4']  = $XCOW_B['stream_base']."/download";
+#$XCOW_B['upload_ticket_dir']['1']  = $XCOW_B['ticket_base']."/flv";
+#$XCOW_B['upload_ticket_dir']['2']  = $XCOW_B['ticket_base']."/wmv";
+#$XCOW_B['upload_ticket_dir']['3']  = $XCOW_B['ticket_base']."/mp4";
+#$XCOW_B['upload_ticket_dir']['4']  = $XCOW_B['ticket_base']."/download";
+#$XCOW_B['upload_destination_url']['1']  = "tickets/flv";
+#$XCOW_B['upload_destination_url']['2']  = "tickets/wmv";
+#$XCOW_B['upload_destination_url']['3']  = "tickets/mp4";
+#$XCOW_B['upload_destination_url']['4']  = "tickets/download";
+#$XCOW_B['upload_destination_link']['1'] = "/data/www/streams/test/flv";
+#$XCOW_B['upload_destination_link']['2'] = "/data/www/streams/test/wmv";
+#$XCOW_B['upload_destination_link']['3'] = "/data/www/streams/test/mp4";
+#$XCOW_B['upload_destination_link']['4'] = "/data/www/streams/test/download";
+#
+# flash streaming
+#$XCOW_B['flash_url_script']     = "vip/StroboScope.php?file";
+#$XCOW_B['flash_object_script']  = "vip/StroboScopeLoader.php?movieName";
+#
+
+?>

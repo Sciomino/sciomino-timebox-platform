@@ -1,0 +1,109 @@
+/* a page for a game, 1 pane
+ * - content
+ */
+html {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#splash {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+/* the page is the body */
+#page {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+/* these are loading containers that transform into a page */
+#transition, #store {
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	border: solid 1px grey;
+}
+
+/* the header is not visible */
+#header {
+	visibility: hidden;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 0%;
+}
+
+/* the content is in the center */
+#content {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+/* the footer is at the bottom*/
+#footer {
+	visibility: hidden;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 0%;
+	clear: both;
+}
+
+/* sections need some space */
+section {
+	padding: 5px;
+}
+	
+/* logo */
+#logo {
+}
+
+/* no navigation on each page */
+#main-nav-top {
+	visibility: hidden;
+	height: 0;
+}
+
+#main-nav-bottom {
+	visibility: hidden;
+	height: 0;
+}
+
+/* no sidebar on the right*/
+#sidebar {
+	visibility: hidden;
+	height: 0;
+}
+
+/* other defaults */
+h1, h2, h3, h4 {
+	margin: 0px;
+	padding: 0px;
+}
+	
+p {
+	margin: 0px;
+	padding: 0px;
+}

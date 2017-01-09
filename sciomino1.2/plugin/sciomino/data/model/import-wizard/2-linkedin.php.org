@@ -1,0 +1,212 @@
+<?
+
+class wizardLinkedin extends control {
+
+    function Run() {
+
+        global $XCOW_B;
+        
+		//
+		// who?
+		// NOTE: MAKE SURE THE USER IS CREATED IN THE PREVIOUS STEP!
+		//
+		$this->id = $this->ses['id'];
+		$this->userId = UserApiGetUserFromReference($this->id, "SC_UserApiGetUserFromReference_".$this->id);
+
+		// GO !?
+        $status = NULL;
+		$this->go = $this->ses['request']['param']['go'];
+
+		// local additions
+		$this->annotation = array();
+		$this->organization = array();
+		$this->organization['Current'] = array();
+		$this->knowledge = array();
+		$this->company = array();
+
+		$this->annotation['description'] = $this->ses['request']['param']['description'];
+		$this->organization['Current']['company'] = $this->ses['request']['param']['curCompany'];
+		$this->organization['Current']['role'] = $this->ses['request']['param']['role'];
+
+		$this->knowledge = $this->ses['request']['param']['skill'];
+		$this->company = $this->ses['request']['param']['company'];
+		print_r($this->company);
+		//
+		// check fields?
+		//
+		$input = array();
+		if (! noEmptyInput($input) ) {
+			$status = language("session_status_register_requiredfield");
+		}
+
+        //
+        // if the fields are checked, update the user info
+        // otherwise proceed to the view and show a form where new info can be entered
+        //
+        if ( ($this->go == 1) && (! isset($status))) {
+
+		    /*
+		    // PERSONALIA
+			$this->annotationId = UserApiUpdateUserAnnotationListByUser($this->annotation, $this->userId);
+			$this->organizationId = ScioMinoApiUpdateOrganization($this->organization, $this->userId);
+
+			// KNOWLEDGE
+			// should check for duplicates?
+			foreach ($this->knowledge as $k) {
+				$knowledge = array();
+				$knowledge['field'] = ucfirst(strtolower($k));
+				$knowledge['level'] = 1;
+				$knowledgeId = ScioMinoApiSaveKnowledge($knowledge, $this->userId, '1');
+			}
+			
+			// EXPERIENCE
+						
+			// PUBLICATION 
+			 			
+			*/
+			foreach ($data_record->{$map['company']} as $e) {
+				$experience = array();
+				$experience['subject'] = (string) $e->{$map['companySubject']};
+				$experience['title'] = (string) $e->{$map['companyTitle']};
+				$experience['like'] = 2;
+				if (trim((string) $e->{$map['companyLike']}) != '') {
+					$experience['like'] = (string) $e->{$map['companyLike']};
+				}
+				if ($this->mode == "onlyDisplay") {
+					print_r($experience);
+				}
+				else {
+					$experienceId = ScioMinoApiSaveCompany($experience, $this->userId, '1');
+				}
+			}
+
+		    // $this->ses['response']['param']['status'] = $status;
+	    	$this->ses['response']['view'] = $XCOW_B['view_base'].'/web/sciomino/import-wizard/next.php';
+	    	// $this->ses['response']['redirect'] = $XCOW_B['url']."/wizard/step3";
+
+        }
+	    // registration attempt failed, try again
+	    else {
+
+			// - connections
+			$myConnectionList = OauthClientGetConnections($this->id);
+			$myLinkedinRef = '';
+			$myLinkedinId = '';
+			$myLinkedinUrl = '';
+			$myLinkedinRef = $myConnectionList[get_id_from_multi_array($myConnectionList, 'app', 'linkedin')]['reference'];
+			list($myLinkedinId, $myLinkedinUrl) = explode('||', $myLinkedinRef);
+
+			// - linkedin Info
+			$myLinkedinInfo = array();
+			$myLinkedinInfo['account'] = $myLinkedinId;
+			$myLinkedinInfo['url'] = $myLinkedinUrl;
+			$myLinkedinInfo['mode'] = "public";
+
+			if ($myLinkedinRef != '') {
+				$headers= array();
+				$params = array();
+				$response = OauthClientGetResponse($this->id, "linkedin", "http://api.linkedin.com/v1/people/id=".$myLinkedinId.":(first-name,last-name,location,summary,skills,three-current-positions,three-past-positions,educations,courses,publications,member-url-resources)", "GET", $headers, $params);
+
+				# intentionally :-), no xml from remote api, too bad... but we continu, we are on our own now...
+				try { $xml = new SimpleXMLElement($response); } 
+				catch (Exception $ignored) { } 
+
+				if (isset($xml)) {
+					# if error, reconnect linkedin profile on a 401, because 60 days are probably over
+					if ($xml->getName() == "error") {
+						if ((string) $xml->{'status'} == "401") {
+							
+							$myLinkedinInfo['url'] = $XCOW_B['url']."/oauth/connect?app=linkedin&action=request";
+							$myLinkedinInfo['mode'] = "expired";
+							
+						}
+					}
+					else {
+					
+						# respect people's choice to have private linkedin accounts
+						if ((string) $xml->{'last-name'} != "private") {
+							// personalia
+							$myLinkedinInfo['mode'] = "private";
+							$myLinkedinInfo['name'] = (string) $xml->{'first-name'}." ".(string) $xml->{'last-name'};
+							$myLinkedinInfo['summary'] = (string) $xml->summary;
+
+							// kennisvelden
+							if (isset($xml->skills)) {
+								$myLinkedinInfo['skills'] = array();
+								foreach ($xml->skills->skill as $skill) {
+									$myLinkedinInfo['skills'][] = (string) $skill->skill->name;
+								}
+							}
+
+							// ervaringen met bedrijven
+							if (isset($xml->{'three-current-positions'})) {
+								$myLinkedinInfo['current'] = array();
+								$count=1;
+								foreach ($xml->{'three-current-positions'}->position as $position) {
+									// personalia extra
+									if ($count==1) {
+										$myLinkedinInfo['role'] = (string) $position->title;
+										$myLinkedinInfo['company'] = (string) $position->company->name;
+									}
+									$myLinkedinInfo['current'][$count]['title'] = (string) $position->title;
+									$myLinkedinInfo['current'][$count]['company'] = (string) $position->company->name;
+									$myLinkedinInfo['current'][$count]['industry'] = (string) $position->company->industry;
+									$myLinkedinInfo['current'][$count]['date'] = (string) $position->{'start-date'}->year;
+									$count++;
+								}
+							}
+							if (isset($xml->{'three-past-positions'})) {
+								$myLinkedinInfo['past'] = array();
+								$count=1;
+								foreach ($xml->{'three-past-positions'}->position as $position) {
+									$myLinkedinInfo['past'][$count]['title'] = (string) $position->title;
+									$myLinkedinInfo['past'][$count]['company'] = (string) $position->company->name;
+									$myLinkedinInfo['past'][$count]['industry'] = (string) $position->company->industry;
+									$myLinkedinInfo['past'][$count]['date'] = (string) $position->{'start-date'}->year;
+									$count++;
+								}
+							}
+							
+							// publicaties: websites en overig
+							if (isset($xml->{'member-url-resources'})) {
+								$myLinkedinInfo['website'] = array();
+								foreach ($xml->{'member-url-resources'}->{'member-url'} as $url) {
+									$myLinkedinInfo['website'][] .= (string) $url->url;
+								}
+							}
+							if (isset($xml->{'publications'})) {
+								$myLinkedinInfo['publication'] = array();
+								$count=1;
+								foreach ($xml->{'publications'}->publication as $publication) {
+									$myLinkedinInfo['publication'][$count]['title'] = (string) $publication->title;
+									$myLinkedinInfo['publication'][$count]['url'] = (string) $publication->url;
+									$count++;
+								}
+							}
+						}
+						
+					}
+				}
+				else {
+					$myLinkedinInfo['url'] = $XCOW_B['url']."/oauth/connect?app=linkedin&action=request";
+					$myLinkedinInfo['mode'] = "expired";
+				}
+			}
+
+			// content
+			$this->ses['response']['param']['LInfo'] = $myLinkedinInfo;
+			
+			if ($this->go == 1 ) {
+				$this->ses['response']['param']['status'] = $status;
+			}
+			else {
+				$this->ses['response']['param']['status'] = "";
+			}
+
+		}
+		
+    }
+
+}
+
+?>

@@ -1,0 +1,85 @@
+xcow_b is installed in a few steps, the mainly involve configuring apache, php and mysql.
+
+1. unpack the source
+2. set permissions
+3. setup apache
+4. setup php.ini
+5. setup mysql
+6. configure xcow_b
+7. initialize the database
+
+
+1. unpack the source
+====================
+
+Unpack the distribution for example in directory /data/www/xcow_b
+The following files will be available
+- INSTALL.txt, this file
+- README.txt, the file you already read ;-)
+- cgi-bin, the script directory for apache
+- data, the data directory, with all important stuff
+- export, the directory where new builds endup
+- htdocs, the document root directory for apache, where it can read
+- license, the license
+- save, a directory where apache can write stuff
+- scripts, a directory with not web related stuff like: db, cron, deployment and unittest.
+- version, the current version of the software
+
+2. set permissions
+==================
+
+- make sure the subdirectories in directory 'save' are readable and writeable for apache. Do something like:
+  - cd scripts/deployment
+  - run: setPermissions.sh
+
+
+3. setup apache
+===============
+
+make a new virtual host on apache and point the document root to the htdocs directory.
+
+Make sure the following directove is set:
+- AcceptPathInfo On
+
+??? Timeout limit!!! default is 300 seconds
+
+4. setup php.ini
+================
+
+there is a filesize limit for uploads in the xcow_b config.
+make sure the config in the php.ini does allow this size.
+
+; Maximum allowed size for uploaded files.
+upload_max_filesize = 200M
+post_max_size = 200M
+
+??? this is not necessary yet!!! maybe this is not script execution time, but execution time by the system.
+make sure there is enough time to process this amount of data:
+max_execution_time = 300 (in php.ini)
+OR set_time_limit(300) (in script) 
+
+300 is same value as apache timeout!
+
+5. setup mysql
+==============
+
+create a new database and make it accesible for user DB_USER with password DB_PASS.
+
+mysql> create database DB_NAME
+mysql> grant all on DB_NAME.* to 'DB_USER'@'localhost' identified by 'DB_PASS';
+mysql> flush privileges;
+
+6. configure xcow_b
+===================
+
+Goto the directory 'data/etc' and edit the xcow_b.ini file. probably the only section that needs to be editted is 'the database' section. Please, suplly the information you used to setup the mysql database.
+
+7. initialize the database
+==========================
+
+Goto the directory 'scripts/db'
+
+run> mysql -u DB_USER -p DB_NAME < create.sql
+
+
+Off We Go!

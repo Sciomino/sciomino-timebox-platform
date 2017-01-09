@@ -1,0 +1,75 @@
+<?
+
+class listNew extends control {
+
+    function Run() {
+
+        global $XCOW_B;
+
+	$listId = 0;
+	$this->list = array();
+
+	// who?
+        $this->id = $this->ses['id'];
+	$this->userId = UserApiGetUserFromReference($this->id);
+
+	// params
+	# $this->userId = $this->ses['request']['param']['userId'];
+
+	$this->list['name'] = $this->ses['request']['param']['com_name'];
+	$this->list['type'] = "private";
+	$this->user = makeIntString($this->ses['request']['param']['user']);
+	$this->mode = $this->ses['request']['param']['mode'];
+
+	//
+	// check fields?
+	//
+	$input = array($this->list['name']);
+	if (! noEmptyInput($input) ) {
+		$this->status = "Input Error";
+	}
+
+        //
+        // if the fields are checked, go for it
+        // otherwise proceed to the view and show a form where a new product can be entered
+        //
+        if (! $this->status) {
+
+		// save
+		$listId = UserApiGroupSave($this->list, $this->userId, '1');
+		if ($listId != 0) {
+			$this->status = "De lijst is toegevoegd.";
+		}
+		else{
+			$this->status = "De lijst kon niet toegevoegd worden.";
+		}
+
+		$this->ses['response']['param']['listId'] = $listId;
+		$this->ses['response']['param']['listName'] = $this->list['name'];
+
+      	    	$this->ses['response']['view'] = $XCOW_B['view_base'].'/web/sciomino/forms/listNewForm2.php';
+
+		if ($this->mode == "view") {
+	      	    	$this->ses['response']['view'] = $XCOW_B['view_base'].'/web/sciomino/forms/listNewFormView2.php';
+		}
+
+        }
+        
+	// show the form
+        else {
+		#$this->ses['response']['param']['productId'] = $this->productId;
+
+		if ($this->mode == "view") {
+	      	    	$this->ses['response']['view'] = $XCOW_B['view_base'].'/web/sciomino/forms/listNewFormView.php';
+		}
+
+        }
+
+	$this->ses['response']['param']['user'] = $this->user;
+        $this->ses['response']['param']['status'] = $this->status;
+
+    }
+
+}
+
+?>

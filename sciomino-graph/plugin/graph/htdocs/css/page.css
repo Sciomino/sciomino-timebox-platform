@@ -1,0 +1,59 @@
+#page {
+	border: solid 1px #031b0d;
+	width: 1001px;
+	margin: 0 auto;
+	margin-top: 75px;
+}
+
+#header {
+	margin: 10px;
+	width: 240px;
+	float: left;
+	text-align: right;
+}
+
+#logo {
+}
+
+#main-nav-top {
+	visibility: visible;
+	height: auto;
+}
+
+#main-nav-bottom {
+	visibility: hidden;
+	height: 0;
+}
+
+#content {
+	margin: 10px;
+	margin-top: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-left: solid 1px #031b0d;
+	width: 480px;
+	float: left;
+}
+
+#illustration {
+	float: right;
+	padding: 5px;
+}
+
+#sidebar {
+	margin: 10px;
+	margin-top: 40px;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 170px;
+	/*min-width: 150px;
+	max-width: 200px;*/
+	float: left;
+	text-align: left;
+}
+
+#footer {
+	margin: 10px;
+	clear: both;
+	width: auto;
+}

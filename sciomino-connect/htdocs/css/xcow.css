@@ -1,0 +1,385 @@
+/* positioning 
+
+- a BOX is centered on a PAGE
+- the BOX preferred size is 800x600
+- the BOX has three parts
+- 1. the HEADER
+- 2. the CONTENT
+- 3. the FOOTER
+- the HEADER has a LOGO top/left and the USER login top/right
+- the CONTENT is split in one or two columns: C_LEFTx and C_RIGHTx OR C_TOPx and C_BOTTOMx
+- *. widths and heights are 1/3 vs 2/3, 1/2 vs 1/2 or 2/3 vs 1/3
+- the FOOTER has an ABOUT line bottom/left and an ABOUT line bottom/right
+
+It's nice to play with backgrounds and borders, try to:
+- put a background in the CONTENT
+- put a background in the HEADER or FOOTER
+- put a border around the BOX (default: on)
+
+- put a background in the BODY (default on: see styling below)
+
+*/
+
+.page {
+	margin: 0px;
+	padding: 0px;
+
+	width: 100%;
+	height: 100%;
+
+	/* IE workaround for centering the page */
+	text-align: center;
+}
+
+.box {
+        margin:auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	position:relative;
+	width: 780px;
+	min-height: 580px;
+
+	background-color: white;
+	border: 1px solid #363636;
+
+	/* IE workaround for centering the page */
+	text-align: left;
+}
+
+.box-trans {
+        margin:auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	position:relative;
+	width: 780px;
+	min-height: 580px;
+
+	/* IE workaround for centering the page */
+	text-align: left;
+}
+
+.header {
+	width:780px;
+	height:100px;
+
+	/* background-color: white; */
+}
+
+.content {
+	width:780px;
+	min-height:450px;
+
+	overflow:auto;
+	/* background-image:url('/gfx/bg.jpg'); */
+	/* background-repeat:no-repeat; */
+}
+
+.footer {
+	width:780px;
+	height:30px;
+
+	/* background-color: white; */
+}
+
+/* header */
+
+#logo {
+	border: 0px;
+}
+
+.logo {
+	float: left;
+	padding: 0px;
+	margin: 0px;
+}
+
+.user {
+	float: right;
+}
+
+.rightheader {
+	float: right;
+}
+
+.leftheader {
+	float: left;
+}
+
+/* content */
+
+.c_top1 {
+	width:100%;
+	min-height:160px;
+}
+
+.c_bottom1 {
+	width:100%;
+	min-height:320px;
+}
+
+.c_top2 {
+	width:100%;
+	min-height:240px;
+}
+
+.c_bottom2 {
+	width:100%;
+	min-height:240px;
+}
+
+.c_top3 {
+	width:100%;
+	min-height:320px;
+}
+
+.c_bottom3 {
+	width:100%;
+	min-height:160px;
+}
+
+.c_left1 {
+	float:left;
+	width:260px;
+}
+
+.c_right1 {
+	float: left;
+	margin-left:10px;
+	width:510px;
+}
+
+.c_left2 {
+	float:left;
+	width:390px;
+}
+
+.c_right2 {
+	float: left;
+	margin-left:10px;
+	width:380px;
+}
+
+.c_left3 {
+	float:left;
+	width:520px;
+}
+
+.c_right3 {
+	float: left;
+	margin-left:10px;
+	width:250px;
+}
+
+/* footer */
+
+.about-center {
+	padding-top: 5px;
+	text-align: center;
+	font-size: 0.8em;
+}
+
+.about-left {
+	float: left;
+	padding-top: 10px;
+	padding-left: 10px;
+	text-align: left;
+	font-size: 0.8em;
+}
+
+.about-right {
+	float:right;
+	padding-top: 10px;
+	padding-right: 10px;
+	text-align: right;
+	font-size: 0.8em;
+}
+
+/* styling 
+
+A few styling issues are addressed for:
+
+- BODY
+  1. the font is default: TREBUCHET 
+  2. the color of the text is default: #363636
+- A
+  1. links are default blue and NOT underlined
+  2. liks underline when you mouse over them.
+- B
+  1. there are B classes HUGE, BIG, NORMAL and SMALL for emphasizing with size and color (grey)
+- H
+  1. heading 1
+  2. heading 2
+*/
+
+body {
+
+    margin: 0px;
+    padding: 0px;
+
+    font-family: "Trebuchet MS", Verdana, sans-serif, Arial, Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+
+    background-image:url('/gfx/xcow_bg.gif');
+    background-repeat:repeat;
+    /*background-position:center top;*/
+
+    color: #363636;
+
+}
+
+a {
+    color: blue;
+    text-decoration:none;
+}
+a:link {
+}
+a:visited {
+}
+a:hover {
+    text-decoration:underline;
+}
+a:active {
+    text-decoration:underline;
+}
+
+b.huge {
+	font-size: 1.6em;
+	font-weight: bold;
+	color: grey;
+}
+
+b.big {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: grey;
+}
+
+b.normal {
+	font-weight: bold;
+	color: grey;
+}
+
+b.small {
+	font-size: 0.8em;
+	font-weight: bold;
+	color: grey;
+}
+
+h1 {
+	font-size: 1.4em;
+	color: grey;
+}
+
+h2 {
+	font-size: 1.2em;
+	color: lightgrey;
+}
+
+/* paragraphs
+
+Different classes are defined to make nice paragraphs of the divs
+- paragraph: default paragraph
+- paragraph_center: default paragraph, text centered
+- paragraph_right: default paragrpah, text right
+
+- paragraph_tiny: default paragraph, tiny margins
+- paragraph_tiny_center: default paragraph, text centered, tiny margins
+- paragraph_tiny_right: default paragrpah, text right, tiny margins
+
+- paragraph_small: small fonts, tiny margins
+- paragraph_big: big fonts
+- paragraph_big_cursive: centered, cursive, big fonts (for quotes)
+
+- paragraph_line: bordered with background, used in combination with paragraph_shadow
+- paragraph_line: small fonts, tiny margins, bordered with background, used in combination with paragraph_shadow
+- paragraph_shadow: shadow below lined div: paragraph_line
+
+*/
+
+.paragraph {
+	text-align: left;
+	padding: 10px;
+}
+
+.paragraph_center {
+	text-align: center;
+	padding: 10px;
+}
+
+.paragraph_right {
+	text-align: right;
+	padding: 10px;
+}
+
+.paragraph_tiny {
+	text-align: left;
+	padding: 5px;
+}
+
+.paragraph_tiny_center {
+	text-align: center;
+	padding: 5px;
+}
+
+.paragraph_tiny_right {
+	text-align: right;
+	padding: 5px;
+}
+
+.paragraph_small {
+	text-align: left;
+	padding: 5px;
+	font-size: 0.8em;
+}
+
+.paragraph_big {
+	text-align: left;
+	padding: 10px;
+	font-size: 1.2em;
+	/* font-weight: bold; */
+	/* text-shadow: rgb(200,200,200) 2px 2px 1px; */
+}
+
+.paragraph_big_cursive {
+	font-family: Florence, cursive;
+	font-style: italic;
+	text-align: center;
+	padding: 10px;
+	font-size: 1.2em;
+}
+
+.paragraph_line {
+	/* IE workaround for negative margins */
+	position: relative;
+
+	text-align: left;
+	margin-left: -5px;
+	margin-top: -5px;
+	padding: 5px;
+	border: 1px solid #363636;
+	background-color: white;
+}
+
+.paragraph_line_small {
+	/* IE workaround for negative margins */
+	position: relative;
+
+	text-align: left;
+	margin-left: -5px;
+	margin-top: -5px;
+	padding: 5px;
+	border: 1px solid #363636;
+	background-color: white;
+	font-size: 0.8em;
+}
+
+.paragraph_shadow {
+	background-color: rgb(150,150,150);
+	margin: 10px;
+	padding: 3px;
+}
+

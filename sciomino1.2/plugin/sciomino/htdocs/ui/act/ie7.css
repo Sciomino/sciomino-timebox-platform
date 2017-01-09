@@ -1,0 +1,86 @@
+.puu-connect .puu-acts .puu-clr {
+	height: 15px;
+}
+
+.puu-connect .puu-details .puu-result {
+	margin-left: -57px;
+}
+
+.puu-connect .puu-details .puu-result .puu-content {
+	margin-left: 0;
+}
+
+.puu-connect .puu-details .puu-result + .puu-content {
+	float: none;
+}
+
+.puu-connect .puu-find legend,
+.puu-connect .puu-result legend,
+.X {
+	width: 930px;
+}
+
+.puu-connect .puu-content .header .puu-mug {
+	padding-bottom: 4px;
+}
+
+.puu-connect .puu-details .puu-content {
+	margin-right: 200px;
+}
+
+.puu-connect .puu-content .footer {
+	height: 22px;
+}
+
+.puu-connect .puu-content .puu-likes {
+	margin-left: 0;
+}
+
+.puu-connect .puu-details .puu-comments .puu-narrative {
+	width: 485px;
+	padding-left: 50px;
+	margin-top: -30px;
+	margin-left: 0;
+}
+
+.puu-connect .puu-details .puu-narrative,
+.puu-connect .puu-details .puu-comments,
+.X {
+	margin-left: -58px;
+}
+
+.puu-connect .puu-details .puu-write {
+	position: relative;
+	left: -60px;
+}
+
+.puu-connect.puu-widget li {
+	clear: both;
+}
+
+.puu-connect.puu-widget .puu-blurb {
+	float: left;
+}
+
+.puu-connect.puu-widget ul {
+	margin-bottom: 24px;
+}
+
+.puu-connect.puu-widget .puu-blurb > div {
+	font-size: 12px;
+}
+
+.puu-connect .puu-details .puu-comments .puu-narrative {
+	padding-top: 18px;
+}
+.puu-connect .chzn-container {
+	z-index: 1;
+}
+
+.puu-connect .puu-detail .section .puu-content .footer {
+	padding-top: 10px;
+}
+
+.puu-connect .puu-result + .puu-content {
+	border-top: 360px solid transparent;
+}

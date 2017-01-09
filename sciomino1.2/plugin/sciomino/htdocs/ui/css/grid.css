@@ -1,0 +1,83 @@
+/**
+ grid for sciomino
+ 
+ building blocks for creating screen layout
+ 
+ */
+.group {
+	width: 100%;
+	display: inline-block;
+	margin: 15px 0;
+}
+
+.page {
+	width: 990px;
+	margin: 0 auto;
+	clear: both;
+}
+
+.unit {
+	float: left;
+}
+
+
+
+/*extends .unit */
+.unit1-3 {
+	width: 390px ;
+}
+
+.unit1-3alt {
+	width: 300px;
+}
+
+.unit2-3 {
+	width: 600px;
+}
+
+.unit2-3alt {
+	width: 690px;
+}
+
+.unit1-2 {
+	width: 50%;
+}
+
+.last {
+	float: none;
+	overflow: auto;
+	width: auto;
+}
+
+/*extends .unit*/
+.user-info .unit {
+	margin-bottom: 15px;
+}
+
+/* extends .group, creates vertical divider */
+.divide {
+	background: url(../gfx/bg/bg_divider-units.gif) repeat-y;
+}
+
+.div3-2 {
+	background-position: 599px 0;
+}
+
+.div1-2 {
+	background-position: 50% 0;
+}
+
+/*extends .page*/
+#Footer .page {
+	padding: 15px 0;
+}
+
+/*clearfix*/
+.expertise li:after,
+.page:after {
+	content: '.';
+	visibility: hidden;
+	height: 0;
+	display: block;
+	clear: both;
+}

@@ -1,0 +1,193 @@
+<?php
+
+global $XCOW_B;
+
+$lang = array();
+
+###########
+# NEDERLANDS
+###########
+
+$lang['sciomio_header_footer'] = "Powered by ";
+$lang['sciomio_header_footer_support'] = "Need help?";
+$lang['sciomio_text_footer'] = "";
+$lang['sciomio_text_footer_support'] = "Remain calm, and visit our ";
+$lang['sciomio_text_footer_support_url'] = "Zen centre";
+
+# 1. page title
+$lang['graph_title_login'] = "Sciomino Graph";
+$lang['graph_title_main'] = "Sciomino Graph";
+$lang['graph_stats_title_status'] = "Sciomino Graph - statistics status";
+$lang['graph_stats_title_trend'] = "Sciomino Graph - statistics trend";
+
+# 2. page header
+$lang['graph_header_login'] = "Meld je aan & bekijk je netwerk";
+$lang['graph_header_main'] = "Sciomino Graph";
+$lang['graph_header_main_view'] = "unieke overzichten van je netwerk";
+$lang['graph_stats_header_status'] = "Overview";
+$lang['graph_stats_header_status_people'] = "The people";
+$lang['graph_stats_header_status_knowledge'] = "Their knowledge";
+$lang['graph_stats_header_status_experience'] = "Their experiences";
+$lang['graph_stats_header_status_publication'] = "Their publications";
+$lang['graph_stats_header_trend'] = "Trends";
+$lang['graph_availability_header_status'] = "Toon beschikbaarheid vanaf: ";
+$lang['graph_text_main_back'] = "&lt; jouw overzichten";
+
+# 3. page text
+$lang['graph_text_main_subtitle'] = "graph";
+$lang['graph_text_main_view_stats'] = "Statistics for \$name\$";
+$lang['graph_text_main_view_availability'] = "Availability for \$name\$";
+
+$lang['graph_stats_text_status'] = "Click any row to show trends";
+$lang['graph_stats_text_users'] = "Personen";
+$lang['graph_stats_text_users_small'] = "personen";
+$lang['graph_stats_text_status_userCount'] = "users";
+$lang['graph_stats_text_status_userKnowledgeCount'] = "users with knowledge";
+$lang['graph_stats_text_status_knowledgeCount'] = "knowledge fields";
+$lang['graph_stats_text_status_userHobbyCount'] = "users with hobbies";
+$lang['graph_stats_text_status_hobbyCount'] = "hobbies";
+$lang['graph_stats_text_status_userTagCount'] = "users with tags";
+$lang['graph_stats_text_status_tagCount'] = "tags";
+$lang['graph_stats_text_status_userExperienceCount'] = "users with experiences";
+$lang['graph_stats_text_status_productCount'] = "product experiences";
+$lang['graph_stats_text_status_companyCount'] = "company experiences";
+$lang['graph_stats_text_status_educationCount'] = "education experiences";
+$lang['graph_stats_text_status_eventCount'] = "event experiences";
+$lang['graph_stats_text_status_userPublicationCount'] = "users with publications";
+$lang['graph_stats_text_status_userTwitterCount'] = "twitter";
+$lang['graph_stats_text_status_userLinkedinCount'] = "linkedin";
+$lang['graph_stats_text_status_blogCount'] = "blogs";
+$lang['graph_stats_text_status_presentationCount'] = "presentaties";
+$lang['graph_stats_text_status_websiteCount'] = "websites";
+$lang['graph_stats_text_status_otherPubCount'] = "overige";
+
+$lang['graph_stats_text_trend_userCount'] = "users";
+$lang['graph_stats_text_trend_userKnowledgeCount'] = "users with knowledge";
+$lang['graph_stats_text_trend_knowledgeCount'] = "knowledge fields";
+$lang['graph_stats_text_trend_userHobbyCount'] = "users with hobbies";
+$lang['graph_stats_text_trend_hobbyCount'] = "hobbies";
+$lang['graph_stats_text_trend_userTagCount'] = "users with tags";
+$lang['graph_stats_text_trend_tagCount'] = "tags";
+$lang['graph_stats_text_trend_userExperienceCount'] = "users with experiences";
+$lang['graph_stats_text_trend_productCount'] = "product experiences";
+$lang['graph_stats_text_trend_companyCount'] = "company experiences";
+$lang['graph_stats_text_trend_educationCount'] = "education experiences";
+$lang['graph_stats_text_trend_eventCount'] = "event experiences";
+$lang['graph_stats_text_trend_userPublicationCount'] = "users with publications";
+$lang['graph_stats_text_trend_userTwitterCount'] = "twitter";
+$lang['graph_stats_text_trend_userLinkedinCount'] = "linkedin";
+$lang['graph_stats_text_trend_blogCount'] = "blogs";
+$lang['graph_stats_text_trend_presentationCount'] = "presentaties";
+$lang['graph_stats_text_trend_websiteCount'] = "websites";
+$lang['graph_stats_text_trend_otherPubCount'] = "overige";
+
+$lang['graph_stats_text_trend_legend_userCount'] = "users";
+$lang['graph_stats_text_trend_legend_userKnowledgeCount'] = "users";
+$lang['graph_stats_text_trend_legend_knowledgeCount'] = "knowledge";
+$lang['graph_stats_text_trend_legend_userHobbyCount'] = "users";
+$lang['graph_stats_text_trend_legend_hobbyCount'] = "hobbies";
+$lang['graph_stats_text_trend_legend_userTagCount'] = "users";
+$lang['graph_stats_text_trend_legend_tagCount'] = "tags";
+$lang['graph_stats_text_trend_legend_userExperienceCount'] = "users";
+$lang['graph_stats_text_trend_legend_productCount'] = "products";
+$lang['graph_stats_text_trend_legend_companyCount'] = "companies";
+$lang['graph_stats_text_trend_legend_educationCount'] = "educations";
+$lang['graph_stats_text_trend_legend_eventCount'] = "events";
+$lang['graph_stats_text_trend_legend_userPublicationCount'] = "users";
+$lang['graph_stats_text_trend_legend_userTwitterCount'] = "twitter";
+$lang['graph_stats_text_trend_legend_userLinkedinCount'] = "linkedin";
+$lang['graph_stats_text_trend_legend_blogCount'] = "blogs";
+$lang['graph_stats_text_trend_legend_presentationCount'] = "presentaties";
+$lang['graph_stats_text_trend_legend_websiteCount'] = "websites";
+$lang['graph_stats_text_trend_legend_otherPubCount'] = "overige";
+
+$lang['graph_availability_text_status'] = "Laatste update: ";
+$lang['graph_availability_text_tab1'] = "Weekoverzicht";
+$lang['graph_availability_text_tab2'] = "Lijstweergave";
+$lang['graph_availability_text_search_name'] = "Zoek op naam";
+$lang['graph_availability_text_search_week'] = "Toon beschikbaarheid van";
+$lang['graph_availability_text_show_week'] = "vanaf maandag";
+$lang['graph_availability_text_table_export'] = "Exporteer zichtbare rijen naar CSV";
+
+# 4. page link / word
+$lang['graph_word_search'] = "Search";
+$lang['graph_word_browse'] = "Browse";
+$lang['graph_word_edit'] = "Edit";
+$lang['graph_word_delete'] = "Delete";
+$lang['graph_word_close'] = "Close";
+$lang['graph_word_message'] = "Send message to";
+$lang['graph_word_more'] = "More &raquo;";
+$lang['graph_word_moreResults'] = "More results";
+$lang['graph_word_moreActs'] = "More messages";
+$lang['graph_word_morePosts'] = "More posts &raquo;";
+$lang['graph_word_moreTweets'] = "More tweets &raquo;";
+$lang['graph_word_home'] = "More results";
+$lang['graph_word_showAll'] = "(show all)";
+$lang['graph_word_metoo'] = "me too";
+$lang['graph_word_youtoo'] = "you too";
+$lang['graph_word_you'] = "you";
+$lang['graph_word_icanhelp'] = "I can help";
+$lang['graph_word_ihave'] = "I have";
+$lang['graph_word_or'] = "or";
+$lang['graph_word_resetAll'] = "Cancel all";
+$lang['graph_word_reset'] = "Cancel";
+$lang['graph_word_ok'] = "OK";
+$lang['graph_word_disconnect'] = "(Disconnect)";
+$lang['graph_word_connect'] = "Connect now!";
+$lang['graph_word_share'] = "Share";
+$lang['graph_word_forward'] = "Forward";
+$lang['graph_word_valid'] = "valid";
+$lang['graph_word_today'] = "Vandaag";
+$lang['graph_word_tomorrow'] = "Tomorrow";
+$lang['graph_word_all'] = "All";
+$lang['graph_word_select'] = "Select...";
+$lang['graph_word_on'] = "on";
+$lang['graph_word_not'] = "niet";
+$lang['graph_word_hours'] = "uur";
+$lang['graph_word_unknown'] = "onbekend";
+
+# nav
+$lang['graph_word_nav_search'] = "Home";
+$lang['graph_word_nav_browse'] = "Browse";
+$lang['graph_word_nav_insights'] = "Insights";
+
+# months
+$lang['graph_word_month_1'] = "Januari";
+$lang['graph_word_month_2'] = "Februari";
+$lang['graph_word_month_3'] = "Maart";
+$lang['graph_word_month_4'] = "April";
+$lang['graph_word_month_5'] = "Mei";
+$lang['graph_word_month_6'] = "Juni";
+$lang['graph_word_month_7'] = "Juli";
+$lang['graph_word_month_8'] = "Augustus";
+$lang['graph_word_month_9'] = "September";
+$lang['graph_word_month_10'] = "Oktober";
+$lang['graph_word_month_11'] = "November";
+$lang['graph_word_month_12'] = "December";
+$lang['graph_word_month_short_1'] = "Jan.";
+$lang['graph_word_month_short_2'] = "Feb.";
+$lang['graph_word_month_short_3'] = "Maa.";
+$lang['graph_word_month_short_4'] = "Apr.";
+$lang['graph_word_month_short_5'] = "Mei";
+$lang['graph_word_month_short_6'] = "Jun.";
+$lang['graph_word_month_short_7'] = "Jul.";
+$lang['graph_word_month_short_8'] = "Aug.";
+$lang['graph_word_month_short_9'] = "Sep.";
+$lang['graph_word_month_short_10'] = "Okt.";
+$lang['graph_word_month_short_11'] = "Nov.";
+$lang['graph_word_month_short_12'] = "Dec.";
+
+# 5. page status
+$lang['graph_status_error400'] = "400 Bad Request";
+
+# 6. mail
+$lang['graph_mail_bericht_subject'] = "\$user\$ sends you a message from \$name\$";
+$lang['graph_mail_bericht_body'] = "\$user\$ schrijft:\n\n\"\$message\$\"\n\n--\n";
+$lang['graph_mail_bericht_status_ok'] = "Your message has been sent.";
+$lang['graph_mail_bericht_status_wrong'] = "Your message has not been sent.";
+
+###########
+
+$XCOW_B['language'] = $XCOW_B['language'] + $lang;
+
+?>

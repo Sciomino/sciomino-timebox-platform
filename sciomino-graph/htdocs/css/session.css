@@ -1,0 +1,90 @@
+
+/* session display */
+
+#showRegisterInView {
+	display: none;
+}
+
+/* session popup style */
+
+#sessionPopup {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top:-150px;
+	margin-left:-225px;
+	width: 450px;
+	height: 300px;
+	
+	padding: 10px;
+	border: 2px solid black;
+        background-color: white;
+        overflow: auto;
+        z-index:20;
+}
+
+#sessionPopupMenu {
+        background-color: lightgrey;
+	text-align: right;
+}
+
+#sessionPopupData {
+        background-color: white;
+	text-align: right;
+
+}
+
+/* tables for markup of form ? */
+
+.table_form_text {
+	vertical-align:top;
+	font-size: 0.9em;
+}
+
+.table_form_field {
+	vertical-align:top;
+	font-size: 0.9em;
+}
+
+.table_form_button {
+	font-size: 0.9em;
+}
+
+input.form_input {
+	vertical-align:top;
+	background-color: white;
+	font-size: 0.9em;
+	width: 250px;
+}
+
+input.form_input_small {
+	vertical-align:top;
+	background-color: white;
+	font-size: 0.9em;
+	width: 100px;
+}
+
+input.form_box {
+}
+
+/* xcow general */
+
+.xcow_header {
+	text-align: left;
+	display: none;
+}
+
+.xcow_emphasis {
+	text-align: left;
+	color: red;
+}
+
+.xcow_paragraph {
+	text-align: left;
+	font-size: 0.8em;
+}
+
+.xcow_link {
+	color: red;
+}
+

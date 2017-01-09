@@ -1,0 +1,163 @@
+
+/* session display */
+
+#showRegisterInView {
+	display: none;
+}
+
+/* session popup style */
+
+#sessionPopup {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top:-150px;
+	margin-left:-225px;
+	width: 450px;
+	height: 300px;
+	
+	padding: 10px;
+	border: 2px solid black;
+        background-color: white;
+        overflow: auto;
+        z-index:20;
+}
+
+#sessionPopupMenu {
+        background-color: lightgrey;
+	text-align: right;
+}
+
+#sessionPopupData {
+        background-color: white;
+	text-align: right;
+
+}
+
+/* tables for markup of form ? */
+
+.table_form_text {
+	vertical-align:top;
+	text-align: right;
+	font-size: 1.0em;
+}
+
+.table_form_field {
+	vertical-align:top;
+	font-size: 1.0em;
+}
+
+.table_form_button {
+	font-size: 1.0em;
+}
+
+input.form_input {
+	vertical-align:top;
+	background-color: white;
+	font-size: 1.0em;
+	width: 260px;
+
+	border: 1px solid #B9B9B9;
+	padding: 4px 5px;
+}
+
+input.form_input_small {
+	vertical-align:top;
+	background-color: white;
+	font-size: 1.0em;
+	width: 160px;
+
+	border: 1px solid #B9B9B9;
+	padding: 4px 5px;
+}
+
+input.form_input:focus, input.form_input_small:focus {
+	border-color: #4987c8;
+}
+
+input.form_button {
+	vertical-align:top;
+}
+
+input.form_box {
+}
+
+.form_text_small {
+	font-size: 0.9em;
+	width: 272px;
+	/*margin-left: 20px;*/
+	line-height: 1.1em;
+}
+
+/* xcow general */
+
+.xcow_header {
+	text-align: left;
+}
+
+.xcow_emphasis {
+	text-align: left;
+	color: red;
+}
+
+.xcow_paragraph {
+	text-align: left;
+	font-size: 1.0em;
+}
+
+.xcow_paragraph_reverse {
+	color: white;
+	text-align: left;
+	font-size: 1.0em;
+}
+
+.xcow_link {
+	color: red;
+}
+
+/* form sizes */
+
+.xcow_login {
+	float:right;
+	text-align: left;
+	min-width: 400px;
+	color: #FFFFFF;
+}
+
+.xcow_pass {
+	float:right;
+	text-align: left;
+	min-width: 300px;
+	color: #FFFFFF;
+}
+
+.xcow_extra_space {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.text_space {
+	padding-right: 20px;
+}
+
+.input_space {
+	margin-top:0px;
+	margin-bottom:10px;
+}
+
+.input_button {
+	width: 272px;
+	height: 30px;
+	color: white;
+	background-color: #fdc02a;
+	text-align: center;
+	font-weight: bold;
+	border:0px;
+	font-size: 1.0em;
+	cursor:pointer;
+}
+
+.input_button_inverse {
+	background-color: #1388bf;
+}
+

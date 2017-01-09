@@ -1,0 +1,92 @@
+                     <!-- BEGIN BODY // -->
+                        <tr>
+                           <td align="center" valign="top" style="-webkit-text-size-adjust: none !important; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                              <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody" style="-webkit-text-size-adjust: none !important; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; border-top-width: 1px; border-top-color: #FFFFFF; border-top-style: solid; background-color: #FFFFFF;" bgcolor="#FFFFFF">
+                                 <tr>
+                                    <td valign="top" class="bodyContent" style="-webkit-text-size-adjust: none !important; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; font-family: Helvetica; font-size: 16px !important; line-height: 125%; text-align: left; padding: 10px 20px 0;" align="left">
+                                       <h1 style="color: #999999 !important; display: block; font-family: 'Helvetica Neue',Helvetica,Arial; font-size: 16px !important; font-style: normal; font-weight: bold; line-height: 100%; letter-spacing: normal; text-align: left; margin: 0; padding: 0;" align="left">
+                                          Your weekly insights
+                                       </h1>
+                                       
+									 <p>$intro$</p>
+
+									 <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeading" style="-webkit-text-size-adjust: none !important; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; background-color: #FFFFFF;" bgcolor="#FFFFFF">
+										 <tr>
+											<td valign="top" class="avatar" width="96" style="-webkit-text-size-adjust: none !important; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #FDC02A; font-family: 'Helvetica Neue',Helvetica,Arial; font-size: 20px; font-weight: normal; line-height: 100%; text-align: left; vertical-align: top; background-color: #FFFFFF; padding: 15px 20px 10px;" align="left" bgcolor="#FFFFFF">
+											   <a href="$avatar_url$" target="_blank" style="-webkit-text-size-adjust: none !important; -ms-text-size-adjust: 100%; color: #1388BF; font-weight: normal; text-decoration: underline;">
+												  <img alt="" src="$avatar$" style="max-width: 96px; width: 96px; height: 96px; -ms-interpolation-mode: bicubic; line-height: 100%; outline: none; text-decoration: none; border: 0;" id="avatarImage" />
+											   </a>
+											</td>
+											<td valign="top" class="bodyHeading" style="-webkit-text-size-adjust: none !important; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; font-family: Helvetica; font-size: 16px; line-height: 125%; text-align: left; padding: 15px 20px 0 0;" align="left">
+											   $inzichten$
+											</td>
+										 </tr>
+									  </table>
+                                      
+                                       <br/><br/><h2 style="background: #eeeeee; color: #404040 !important; display: block; font-family: 'Helvetica Neue',Helvetica,Arial; font-size: 16px !important; font-style: normal; font-weight: bold; line-height: 125%; letter-spacing: normal; text-align: left; margin: 0; padding: 10px;" align="left">
+                                          1. Share your knowledge
+                                       </h2>
+                                       <p>$deeljekennis$</p>
+                                     </td>
+                                 </tr>
+                              </table>
+                              <!-- BEGIN LIST OF ACTS // -->
+                              $deeljekennis-list$
+                              <!-- END LIST OF ACTS // -->
+                              <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody" style="-webkit-text-size-adjust: none !important; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; border-top-width: 1px; border-top-color: #FFFFFF; border-top-style: solid; background-color: #FFFFFF;" bgcolor="#FFFFFF">
+                                 <tr>
+                                    <td valign="top" class="bodyContent" style="-webkit-text-size-adjust: none !important; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; font-family: Helvetica; font-size: 16px !important; line-height: 125%; text-align: left; padding: 10px 20px 0;" align="left">
+                                  
+                                       <p>$deeljekennis2$</p>
+                                       
+                                       <br/><h2 style="background: #eeeeee; color: #404040 !important; display: block; font-family: 'Helvetica Neue',Helvetica,Arial; font-size: 16px !important; font-style: normal; font-weight: bold; line-height: 125%; letter-spacing: normal; text-align: left; margin: 0; padding: 10px;" align="left">
+                                          2. Learn more
+                                       </h2>
+                                       <p>$ontwikkeljezelf$</p>
+                                       <p>$ontwikkeljezelf2$</p>
+                                    </td>
+                                 </tr>
+                              </table>
+                              <!-- BEGIN LIST OF PEOPLE WITH EXPERT \$KNOWLEDGE\$ // -->
+                              $ontwikkeljezelf2-list$
+                              <!-- // END LIST OF PEOPLE WITH EXPERT \$KNOWLEDGE\$ -->
+
+                              <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody" style="-webkit-text-size-adjust: none !important; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; background-color: #FFFFFF;" bgcolor="#FFFFFF">
+                                 <tr>
+                                    <td valign="top" class="bodyContent" style="-webkit-text-size-adjust: none !important; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; font-family: Helvetica; font-size: 16px !important; line-height: 125%; text-align: left; padding: 10px 20px 0;" align="left">
+                                       <br/><h2 style="background: #eeeeee; color: #404040 !important; display: block; font-family: 'Helvetica Neue',Helvetica,Arial; font-size: 16px !important; font-style: normal; font-weight: bold; line-height: 125%; letter-spacing: normal; text-align: left; margin: 0; padding: 10px;" align="left">
+                                          3. Exchange experiences
+                                       </h2>
+                                       <p>$wisselervaringenuit$</p>
+                                       <p>$wisselervaringenuit2$</p>
+                                    </td>
+                                 </tr>
+                              </table>
+                              <!-- BEGIN LIST OF PEOPLE WITH SAME \$KNOWLEDGE\$ // -->
+                              $wisselervaringenuit2-list$
+                              <!-- // END LIST OF PEOPLE WITH SAME \$KNOWLEDGE\$ -->
+
+                              <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody" style="-webkit-text-size-adjust: none !important; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; background-color: #FFFFFF;" bgcolor="#FFFFFF">
+                                 <tr>
+                                    <td valign="top" class="bodyContent" style="-webkit-text-size-adjust: none !important; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; font-family: Helvetica; font-size: 16px !important; line-height: 125%; text-align: left; padding: 10px 20px 0;" align="left">
+                                        <p>$wisselervaringenuit3$</p>
+                                    </td>
+                                 </tr>
+                              </table>
+                              <!-- BEGIN LIST OF PEOPLE WITH SAME \$HOBBY\$ // -->
+                              $wisselervaringenuit3-list$
+                              <!-- // END LIST OF PEOPLE WITH SAME \$HOBBY\$ -->
+
+                              <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody" style="-webkit-text-size-adjust: none !important; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; border-bottom-width: 1px; border-bottom-color: #CCCCCC; border-bottom-style: solid; background-color: #FFFFFF;" bgcolor="#FFFFFF">
+                                 <tr>
+                                    <td valign="top" class="bodyContent" style="-webkit-text-size-adjust: none !important; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; font-family: Helvetica; font-size: 12px !important; line-height: 125%; text-align: left; padding: 10px 20px 0;" align="left">
+									   <br/><hr/>
+                                       <i>
+                                       <p>Sciomino brings knowledge together. <a href="$url$" target="_blank">Keep digging!</a><br/> Unsubscribe from this email by changing your <a href="$url$/setting/notification" target="_blank">notification settings</a>.</p>
+                                       </i>
+                                     </td>
+                                 </tr>
+                              </table>
+                           </td>
+                        </tr>
+                     <!-- // END BODY -->

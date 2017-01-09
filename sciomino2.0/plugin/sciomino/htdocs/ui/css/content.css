@@ -1,0 +1,483 @@
+/**
+ semanticly meaningfull html elements (h1, p, strong, table, li etc.)
+ */
+html {
+	background: #dadada; /* same as footer */
+}
+body {
+	color: #333;
+	background: #fff;
+}
+
+a {
+	text-decoration: none;
+}
+a:hover,
+a:focus {
+	text-decoration: underline;
+}
+
+a span {
+    cursor: pointer;
+}
+
+/*extends a*/
+.name {
+	color: #3c3c3c;
+	font-weight: bold;
+}
+
+.more {
+	display: block;
+}
+
+strong {
+	font-weight: bold;
+}
+
+h1,
+h2.joinh1 {
+	font-size: 2em; /* 24px */
+	font-weight: bold;
+	line-height: 1.3333em; /* 32px*/
+	margin: 15px 15px 0.5em 15px; /* margin-bottom: 12px, totale hoogte 48px*/
+}
+
+/*extends h1*/
+.header h1 {
+	margin-bottom: 0;
+}
+
+/*extends h1 */
+.section .img-item h1 {
+	margin-bottom: 0;
+}
+
+h1 .sub {
+    font-size: 0.6667em;
+}
+
+h2.joinh1 {
+    margin-bottom: -15px;
+    color: #333;
+}
+
+.section h1 {
+	margin: 0 0 0.5em 0; /* margin-bottom: 12px, totale hoogte 48px*/
+}
+
+h2 {
+	margin: 0; /* margin-bottom: 12px, totale hoogte 32px*/
+	font-weight: bold;
+	line-height: 1.6em; /* 32px */
+	font-size: 1.6667em; /* 20px*/
+}
+
+h3 {
+	font-weight: bold;
+	font-size : 1.333em; /*16px*/
+}
+
+h5 {
+	font-weight: bold;
+}
+
+/* extends h2*/
+.focusheader h2 {
+	font-size: 1em;
+	line-height: inherit;
+	margin: 0;
+}
+
+/*extends h3*/
+.hgroup h3 {
+	font-weight: normal;
+}
+
+.form .section h3 {
+	padding-left: 15px;
+}
+
+
+p {
+
+}
+
+/* tables*/
+table {
+	width: 100%;
+}
+
+td, th {
+	padding: 5px;
+	vertical-align: top;
+}
+
+thead th {
+	text-align: left;
+}
+/* helper classes*/
+.hidden {
+	display: none;
+}
+
+/*extends p*/
+.img-item p {
+	padding: 0;
+}
+
+em.user {
+	font-weight: bold;
+}
+
+.rate {
+	float: right;
+	font-size: 0.91667em;
+	color: #888;
+}
+
+.index .rate {
+	padding-right: 6%;
+}
+
+/*extends h2 a*/
+h2 .count {
+	font-size: 0.65em;
+}
+
+.time {
+	color: #8e8b81;
+	font-size: .9166em;
+	line-height: 1.4545;
+}
+
+
+/* extends a*/
+.linkbutton {
+	clear: both;
+	line-height: 1.8333;
+	color: #5c5c5c;
+	padding: 5px 15px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius:4px;
+	background-color: #fff;
+}
+
+.linkbutton:hover,
+.linkbutton:focus {
+	text-decoration: none;
+}
+
+.tinybuttons {
+    float: right;
+}
+
+/* extends a*/
+.you-label,
+.tinybutton {
+	padding: 0 5px;
+	color: #5c5c5c;
+/*	font-size: 0.846em;/*11px*/
+	line-height: 1.455em; /*16px*/
+	background: #f4f4f4; /* skin */
+	border: 1px solid #efefef;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius:3px;
+	float: left;
+	clear: both;
+}
+
+.you-label,
+.tinybuttons .tinybutton {
+	float: right;
+	clear: none;
+}
+
+/*extends tinybutton*/
+h3 .you-label {
+    font-size: 0.8em;
+    line-height: inherit;
+    float:none;
+    margin-left: 5px;
+    font-weight: normal;
+}
+
+.interactive-set .item .fill,
+.interactive-set .item .save {
+    padding: 0 5px;
+    text-indent: 0;
+    font-weight: normal;
+    color: #5c5c5c;
+    width: auto;
+}
+
+.tinybutton:hover,
+.tinybutton:focus {
+	text-decoration: none;
+}
+
+/*extends .tinybutton*/
+.metoo {
+	float: right;
+	padding-right: 15px;
+	margin-left: 10px;
+}
+
+/*extends .metoo*/
+.metoo-active {
+	margin-right: -20px;
+	padding-right: 33px;
+	position: relative;
+	z-index: 110;
+	border-right: 0;
+	-webkit-border-radius: 3px 0 0 3px;
+	-moz-border-radius: 3px 0 0 3px;
+	border-radius:3px 0 0 3px;
+	outline: 0;
+}
+
+/*extends metoo*/
+.waiting {
+}
+
+/*extends tinybutton metoo */
+.joinhd {
+    margin-top: 0.615em;
+}
+
+
+
+.add-container {
+    clear: both;
+	padding: 4px 15px;
+}
+
+.single-add {
+    padding-left: 165px;
+}
+
+/*extends metoo*/
+.add-container .metoo {
+    background: transparent;
+    float: none;
+    padding: 0;
+}
+
+/* add links */
+.add,
+.add-container .metoo {
+    text-decoration: underline;
+    padding-left: 15px;
+    background: url(../gfx/misc-sprite.png) no-repeat 0 3px;
+}
+
+/*extends .add*/
+.fieldset-info .add,
+.icon-buttons .add {
+    background-image: none;
+}
+
+a.error {
+	background-color: #f20;
+}
+
+/* extends a*/
+.more {
+	clear: both;
+	float: right;
+}
+
+/*extends a.more
+	and .index li a
+*/
+.index li .more {
+	float: none;
+	padding-right: 15px;
+	background-image: none;
+}
+
+.index li .more:hover {
+	text-decoration: underline;
+}
+
+/*extends a*/
+.field {
+	font-size: 116%;
+}
+
+/*extends a.linkbutton */
+a.update { /* be careful, has to be stronger then skin stylesheet*/
+	border: 1px solid #a8a8a8;
+	color: #666;
+	background: #efefef url(../gfx/bg/grad_linkbutton-update.png) repeat-x 0 100%;
+	float: right;
+	box-shadow : 2px 2px 2px rgba(0,0,0,0.2);
+	-webkit-box-shadow : 2px 2px 2px rgba(0,0,0,0.2);
+	-moz-box-shadow : 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+/*extends .tinybutton*/
+.remove {
+    clear: none;
+    text-decoration: underline;
+    background: none;
+    border: 0;
+    padding: 1px 10px 1px 15px; /*1px top/bottom for border space*/
+    background: url(../gfx/icons-sprite.png) no-repeat 0 -1247px;
+}
+
+
+/*icons*/
+.icon {
+	padding-left: 35px;
+	background-image: url(../gfx/icons-sprite.png);
+	background-repeat: no-repeat;
+}
+
+option.icon,
+label.icon {
+    padding-left:0;
+}
+
+/*extends .icon*/
+.add .icon {
+    padding: 3px 0 0 0; /*3px for aligning icons*/
+    float: left;
+    display: block;
+    width: 30px;
+    margin-left: 5px;
+    height: 16px;
+    text-indent: -999px;
+    overflow: hidden;
+}
+.icon-twitter-xl {
+	padding: 0 0 10px 39px;
+	display: block;
+	background: url(../gfx/icon_twitter_bird.png) no-repeat 0 0;
+}
+
+.icon-twitter {
+    background-position: 100% -746px;
+}
+
+.icon-facebook {
+    background-position: 100% -696px
+}
+
+.icon-website {
+    background-position: 100% -946px
+}
+
+.icon-linkedin {
+    background-position: 100% -796px
+}
+
+.icon-blog {
+    background-position: 100% -896px
+}
+
+.icon-slideshare {
+    background-position: 100% -996px
+}
+
+.icon-flickr {
+    background-position: 100% -846px
+}
+
+.icon-youtube {
+    background-position: 100% -646px
+}
+
+.icon-blogger {
+    background-position: 100% -1096px
+}
+
+.icon-posterous {
+    background-position: 100% -1346px
+}
+
+.icon-wordpress {
+    background-position: 100% -1146px
+}
+
+.icon-tumblr {
+    background-position: 100% -1396px
+}
+
+/* tiny icons */
+
+/* extends a */
+.tinyicon {
+    padding-left: 15px;
+    background: url(../gfx/icons-sprite.png) no-repeat 0 -1050px;
+    font-size: 0.91667em;
+    line-height: 1.4545;
+}
+
+/* extends tinyicon */
+.tinyicon-twitter {
+    background-position: 0 -1050px;
+}
+
+/*extends .tinyicon */
+.tel-tweet .tinyicon {
+    margin-left: 5px;
+}
+
+/*extends .icon*/
+.list {
+	float: left;
+	padding:0;
+	width: 20px;
+	background-position: 5px -496px;
+	overflow: hidden;
+	text-indent: -9999px;
+}
+
+/*extends .icon*/
+.user {
+	background-position: 0 0;
+}
+
+.pref {
+	background-position: 0 -97px;
+}
+
+.article img {
+	margin: 0 0 15px 0;
+}
+
+.article p {
+	margin: 0 0 1.3333em 0; /* margin-bottom: 16px -> 1 regel*/
+}
+
+.article li p {
+    margin: 0
+}
+
+.article dl {
+    margin: 0 0 1.3333em 0;
+}
+
+.article dt {
+    font-weight: bold;
+    float: left;
+    width: 100px;
+}
+
+.article dd {
+    overflow: hidden;
+}
+#Footer h3 {
+    font-size: 1.1667em;
+    margin-bottom: 5px;
+}
+
+#Footer h3 img {
+    vertical-align: middle;
+}
+
+
+

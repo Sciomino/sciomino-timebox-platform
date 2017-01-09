@@ -1,0 +1,100 @@
+/* BEGIN: herman: 20120302, copied INSIGHTS skin elements to this file
+*/
+
+/* images
+*/
+
+.puu-insight .puu-events .puu-subset h3 {
+	background-image: url("../insights/bg_anno_hi.png");
+}
+
+.puu-insight .puu-events .puu-subset.puu-tomorrow h3 {
+	background-image: url("../insights/bg_tomorrow.png");
+}
+
+.puu-insight .puu-events .puu-subset.puu-cal h3 {
+	background-image: url("../insights/bg_cal.png");
+}
+
+/* colors
+*/
+
+.puu-insight h1 {
+	color: #4987C8;
+}
+
+.puu-insight .puu-face .role {
+	color: #5C5C5C;
+}
+
+.puu-insight .puu-score {
+	color: #4987C8;
+}
+
+.puu-insight .puu-score.puu-neg {
+	color: #b71a00;
+}
+
+.puu-insight .puu-set.puu-publications tr .puu-score {
+	color: #4987C8;
+}
+
+.puu-insight .puu-set.puu-publications tr:hover {
+	background-color: #e2ebef;
+}
+
+.puu-insight .puu-set .puu-male h4 {
+	color: #4987C8;
+}
+
+.puu-insight .puu-male .puu-score .puu-gauge {
+	background-image: url("../insights/gauge_fill_male.gif");
+}
+
+.puu-insight .puu-set .puu-female h4 {
+	color: #8668b5;
+}
+
+.puu-insight .puu-age > div > div > div {
+	background-color: #8668b5;
+}
+
+.puu-insight .puu-female .puu-score .puu-gauge {
+	background-image: url("../insights/gauge_fill_female.gif");
+}
+
+.puu-insight .puu-set .puu-months .puu-bar {
+	background-color: #77b4d2;
+}
+
+.puu-insight .puu-set .puu-months .odd .puu-bar {
+	background-color: #4987C8;
+}
+
+.puu-insight .puu-set .puu-months .puu-now .puu-bar {
+	background-color: #FBB62B;
+}
+
+.puu-insight .puu-board .puu-idx {
+	color: #4987C8;
+}
+
+.puu-insight .puu-age > div > div > div:first-child {
+	background-color: #4987C8;
+}
+
+.puu-insight .puu-caldaypicker .puu-days:hover {
+	background-color: #eee;
+}
+
+.puu-insight .puu-board a {
+	color: #2785d2;
+}
+
+.puu-insight .puu-face .fn {
+	color: #2785d2;
+}
+
+/* END: Herman */
+
+

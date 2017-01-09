@@ -1,0 +1,94 @@
+/* BEGIN: herman: 20120302, copied ACT skin elements to this file
+*/
+
+/* images
+*/
+
+.puu-connect .puu-find .puu-sbt input {
+	background-image: url("/ui/skin/sheerenloo/act/bg_sbt.png");
+}
+
+.puu-connect .puu-result .puu-sbt input {
+	background-image: url("/ui/skin/sheerenloo/act/bg_place.png");
+}
+
+.puu-connect .puu-result .puu-edit,
+.puu-connect .puu-details .puu-edit,
+.X {
+	background-image: url("/ui/skin/sheerenloo/act/bg_edit.png");
+}
+
+/* colors
+*/
+
+.puu-connect .puu-find,
+.puu-connect .puu-find legend,
+.X {
+	color: #000;
+	background-color: #EEE;
+}
+
+.puu-connect .puu-find {
+	color: #000;
+}
+
+.puu-connect .puu-find legend,
+.puu-connect .puu-result legend,
+.X {
+	color: #000;
+}
+
+.puu-connect .puu-experience .puu-status {
+	color: #2785D2;
+	background-color: #f2f4f7;
+}
+
+.puu-connect .puu-experience .puu-content .header .puu-mug {
+ 	background-color: #f2f4f7;
+}
+
+.puu-connect .puu-expired .puu-content .header .puu-mug {
+	background-color: #f4f4f4;
+}
+
+.puu-connect .puu-expired .puu-status {
+	color: #999;
+	background-color: #f4f4f4;
+}
+
+.puu-connect .puu-content .header h1 a .fn {
+	color: #2785D2;
+}
+
+.puu-connect .puu-hashtag {
+	color: #FBB62B;
+}
+
+.puu-connect .puu-story,
+.puu-connect .puu-content .footer .puu-no_story,
+.puu-connect.puu-widget .puu-no_story,
+.X {
+	color: #fff;
+	background-color: #FBB62B;
+}
+
+.puu-connect .puu-content .footer .puu-no_story,
+.puu-connect.puu-widget .puu-no_story,
+.X {
+	background-color: #999;
+}
+
+.puu-connect.puu-widget h4 .fn {
+	color: #6e9b1b;
+}
+
+.puu-connect .puu-status,
+.puu-connect .puu-content .header .puu-mug,
+.puu-connect .puu-acts > li:hover,
+.X {
+	color: #2785d2;
+	background-color: #f2f4f7;
+}
+
+/* END: Herman */
+

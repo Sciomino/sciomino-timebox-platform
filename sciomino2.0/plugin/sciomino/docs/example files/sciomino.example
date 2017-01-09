@@ -1,0 +1,59 @@
+<?php
+
+    global $XCOW_B;
+
+	$XCOW_B['sciomino']['version'] = "1-2-o-20131209";
+
+	# skin
+	$XCOW_B['sciomino']['skin'] = "<!--SC_SKIN-->";
+	$XCOW_B['sciomino']['skin-directory'] = $XCOW_B['base']."/data/model/web/sciomino/skin/".$XCOW_B['sciomino']['skin'];
+	$XCOW_B['sciomino']['skin-network'] = "no"; # toon network funtionality, yes|no
+	$XCOW_B['sciomino']['skin-insights'] = "yes"; # toon insights tab, yes|no
+	$XCOW_B['sciomino']['skin-privacy'] = "yes"; # toon prive personalia velden, yes|no
+	$XCOW_B['sciomino']['skin-notify'] = 0; # notification default, 0|1 => 0:off and 1:on
+
+	# skin items for demo sites
+	$XCOW_B['sciomino']['skin-name'] = "<!--SC_SKIN_NAME-->"; # klantnaam in sciomino skin
+	$XCOW_B['sciomino']['skin-register'] = "<!--SC_SKIN_REGISTER-->"; # yes|no
+
+	# exclude personalia 
+	# - personal: calendar, photo
+	# - work: industry, company, building, room, role, division, section, parttime
+	# - work contact: email, telIntern, telExtern, mobile, lync, pager, fax, pac, myId, assistentId, managerId
+	# => when calendar is excluded, everybody is shown in the calendar
+	# => when the other fields are excluded, these fields are not shown
+	$XCOW_B['sciomino']['personalia-exclude'] = array(<!--SC_SKIN_PERSONALIA_EXCLUDE_LIST-->);
+	# filled personalia (by remote update)
+	# - personal: title, firstname, lastname, dateofbirth, gender
+	# - work: industry, company, building, room, role, division, section, parttime
+	# - work contact: email, telIntern, telExtern, mobile, lync, pager, fax, pac, myId, assistentId, managerId
+	# - work address: address, postalcode, city, country
+	$XCOW_B['sciomino']['personalia-filled'] = array(<!--SC_SKIN_PERSONALIA_FILLED_LIST-->);
+
+	# local or remote setup differences
+	$XCOW_B['sciomino']['shortcut-view'] = "<!--SC_AUTH-->"; # remote|local
+	$XCOW_B['sciomino']['personalia-view'] = "<!--SC_AUTH-->"; # remote|local
+
+	# dutch or english wikipedia
+	$XCOW_B['sciomino']['suggest-wiki-on'] = <!--SC_SKIN_WIKI-->;
+	$XCOW_B['sciomino']['connect-wiki'] = "<!--SC_SKIN_WIKI_NAME-->"; # wikipedia|wikipedia-en
+
+	# API max, shows '+' sign
+	$XCOW_B['sciomino']['user-api-max'] = "500";
+	$XCOW_B['sciomino']['answers-api-max'] = "500";
+
+	# import
+	# size in pixels, defines both width & height of the original photo, for example: 256
+	# if size=0 => keep original size
+	$XCOW_B['sciomino']['original-photo-size'] = 0;
+
+	$XCOW_B['sciomino']['import-done'] = 0;
+
+	$XCOW_B['sciomino']['import-update-directory'] = $XCOW_B['base']."/save/logs/log";
+	$XCOW_B['sciomino']['import-update-table'] = "nummers";
+	$XCOW_B['sciomino']['import-update-file-prefix'] = "PSSB_";
+	$XCOW_B['sciomino']['import-update-file-extension'] = ".XML";
+
+	$XCOW_B['sciomino']['import-map-file'] = "import-map.php";
+
+?>

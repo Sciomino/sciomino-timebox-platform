@@ -1,0 +1,939 @@
+/**
+ form styles
+ */
+.form {
+	padding: 0;
+}
+
+.form .hgroup {
+	padding-left: 15px;
+}
+/*extends .img-item (components.css)*/
+fieldset.img-item {
+	margin: 15px 0 0 0;
+}
+
+/*extends .highlight (components.css)*/
+fieldset.highlight {
+	padding: 15px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius:5px
+}
+
+/*extends .img-items .img (components.css)*/
+fieldset.img-item .img {
+	border: 1px solid #fff;
+	padding: 5px 5px 0 5px;
+}
+fieldset.img-item a {
+    display: block;
+    text-align: center;
+}
+
+/* extends fieldset */
+.startset {
+    padding-top: 15px;
+    background: url(../gfx/bg/grad_softgreen.png) repeat-x 0 0;
+}
+
+/*extends fieldset*/
+.divider {
+	border-bottom: 1px solid;
+}
+
+/*extends fieldset*/
+.user-defined {
+}
+
+/*extends h3 in content.css*/
+.legend {
+    font-size: 1.231em;
+	padding-left: 172px;
+}
+
+/*extends fieldset*/
+.user-defined .legend {
+    padding-left: 15px;
+}
+
+/* input:text */
+.text,
+textarea {
+	border: 1px solid #b9b9b9;
+	padding: 4px 5px;
+	width: 260px;
+	margin-right: 5px;
+}
+
+.img-item textarea {
+	height: 97px;
+}
+
+
+select {
+	width: 272px;
+	margin: 0 5px 0 0;
+	background: #fff;
+	padding: 3px 0;
+	border: 1px solid;
+}
+
+/* extends select */
+.select-label {
+    width: 270px;
+}
+
+.select-label option {
+    padding: 4px 40px 4px 0;
+    text-align: right;
+}
+
+select.s {
+    width: 175px;
+}
+
+.selectgroup select.s {
+    width: 60px;
+}
+
+select.m {
+    width: 100px;
+}
+
+/* Search bar */
+#Search {
+    text-align: right;
+    padding: 10px;
+}
+
+#Search .search {
+    display: inline;
+    
+}
+
+#Search .search .text {
+    width: 200px;
+}
+
+/* extends input.text */
+.search .text {
+	border-color: #dedede;
+	padding-right: 25px;
+}
+
+/* extends textarea */
+.user-defined textarea {
+    width: 510px;
+}
+
+/* extends input.text */
+.search-xl {
+	width: 500px;
+	font-size: 1.231em;
+	margin-right: 2px;
+	vertical-align: middle;
+}
+
+/*extends textarea*/
+textarea.intro {
+	height: 100px;
+}
+
+.nolabel {
+	margin-left: 150px;
+}
+
+textarea {
+
+}
+
+.buzz textarea {
+	height: 4em;
+	margin-bottom: 15px;
+	line-height: 1.3333;
+	width: 290px; /* liever geen width, maaruh*/
+}
+
+/*input:submit */
+.submit {
+	padding: 0;
+	cursor: pointer;
+	background: #aaa;
+	border: 1px solid #757b67;
+	border-color: #b8c1a2 #757b67 #757b67 #b8c1a2;
+	padding: 4px 15px;
+	clear: both;
+	color: #fff;
+	font-size: 1.1667em;
+	font-weight: bold;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	overflow: visible;
+	
+}
+
+/* disabled saveall submit button */
+.disabled input.button-saveall {
+    color: #f1f1f1;
+    border: 1px solid #9c9c9c;
+}
+
+.disabled .cancelbox {
+    visibility: hidden;
+}
+
+/* instances */
+.united {
+	position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.search input {
+    vertical-align: middle;
+}
+
+button.search-start,
+input.search-button { /* careful skin stylesheet is blow this one*/
+	width: 25px;
+	height: 25px;
+	text-indent: -999px;
+	overflow: hidden;
+	border: 0;
+}
+
+button.search-start {
+    width: 31px;
+    height: 27px;
+    vertical-align: middle;
+}
+
+fieldset.unite {
+	position: relative;
+}
+
+fieldset.unite input {
+    margin-right: 0; /*IE6/7*/
+}
+
+input.checkbox {
+}
+
+input.radio {
+	float: left;
+}
+
+button {
+	padding: 3px 15px;
+	text-align: center;
+	cursor: pointer;
+	overflow: visible;
+}
+
+a.buttonbold,
+button.bold {
+	border: 1px solid #cfcfcf;
+	display: inline-block;
+	text-decoration: none;
+	clear: both;
+	overflow: hidden;
+	text-align: center;
+	font-size: 1.25em;
+	color: #000;
+	background: #fff url(../gfx/bg/grad_buttonbold.png) repeat-x 0 100%;
+	padding: 5px 0;
+	margin: 15px 0;
+	width: 100%;
+}
+
+.sendcontrols {
+	display: block;
+	float: right;
+	padding: 0 5px 0 0;
+	background: #fdaf5a;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fdaf5a), to(#f67b2b), color-stop(.25, #fdaf5a));
+	background: -moz-linear-gradient(top, #fdaf5a 25%, #f67b2b);
+	border: 1px solid #e69764;
+}
+
+.up {
+	margin-top: 10px;
+}
+
+.sendcontrols button, /*extends button */
+.sendcontrols .button { /* extends a */
+	border: 0;
+	color: #fff;
+	padding: 3px 20px 3px 10px;
+	border-right: 1px solid #e69764;
+	margin-right: 3px;
+	line-height: 2em;
+	display: inline;
+}
+
+
+.up button/* extends .sendcontrols button*/,
+.up .button { /* extends .sendcontrols a.button*/
+}
+
+.listbutton {
+	display: block;
+	float: left;
+	background: #eee;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
+	background: -moz-linear-gradient(top, #fff, #eee);
+	border: 1px solid #e8e8e8;
+	font-size: 0.91667em;
+	margin-right: 10px;
+}
+
+/* forms layout */
+fieldset {
+	margin: 10px 0;
+	padding: 0 0 10px 0;
+}
+
+fieldset fieldset {
+    padding-left: 0;
+}
+
+.metoo-content fieldset {
+    padding-left: 0;
+}
+
+/*extends fieldset*/
+.final {
+	border-bottom: 0;
+}
+
+/*extends fieldset*/
+.buzz {
+	margin: 0;
+}
+
+/*extends fieldset*/
+.search fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: inline;
+}
+
+.inputset {
+	padding: 4px 15px;
+	overflow: hidden;
+	clear: both;
+}
+
+/*extends inputset*/
+.img-item .inputset {
+	padding-left: 0;
+	padding-right: 0;
+}
+.img-item .inputset,
+.img-item .inputset:hover {
+	background: none;
+}
+
+/*extends inputset */
+.user-defined .inputset input.text {
+	margin-left: -6px;
+}
+.dropdown .inputset {
+    margin: 0;
+	padding: 0;
+}
+
+/*extends a .nav-user a, .dropdown a */
+.dropdown a.listname {
+    float: left;
+    background: #fff;
+    width: 120px;
+    margin-right: 5px;
+    padding-left: 5px;
+}
+
+.dropdown a.listname:hover,
+.dropdown a.listname:focus {
+    text-decoration: underline;
+	outline: none;
+}
+
+/*extends input.text*/
+.inputset .text,
+.inputset label,
+.inputset textarea,
+.inputset select {
+	float: left;
+}
+
+/*extends input.text */
+.dropdown .text {
+    width: 140px;
+    padding: 0 2px;
+    margin: 4px 0 0 0;
+}
+
+/*extends .inputset*/
+.bd .inputset {
+	clear: none;
+}
+
+fieldset.img-item .textarea {
+	padding: 0;
+}
+
+.buttons {
+	text-align: right;
+	margin-top: 15px;
+	padding: 10px 0 3px 0;
+	
+}
+
+label {
+	float: left;
+	font-weight: bold;
+	width: 120px;
+	padding: 0.333em 15px;
+	text-align: right;
+}
+
+span.label {
+    float: left;
+    padding-right:15px;
+    padding-top:3px;
+}
+/* extends label */
+.img-item label {
+	width: 120px;
+}
+
+/*extends .legend*/
+.img-item .legend {
+    padding-left: 157px;
+}
+
+/* extends label */
+label.icon {
+    padding-right: 40px;
+    padding-left: 0;
+    width: 110px;
+}
+
+/* extends label */
+.user-defined label {
+    text-align: left;
+}
+
+/*extends fieldset */
+.simpleForm {
+    width: 362px;
+    padding: 0;
+}
+
+/* extends label */
+.simpleForm label {
+    float: none;
+    display: block;
+    width: auto;
+    padding: 0 0 5px 0;
+    text-align: left;
+}
+
+.simpleForm textarea {
+    width: 350px;
+    margin: 0 0 15px 0;
+
+}
+
+.simpleForm .submit {
+    float: right;
+}
+
+/*extends input.text*/
+.label-input {
+	width: 253px; /* border adds to width*/
+	padding-right: 5px;
+	margin-right: 10px;
+	padding-left: 0;
+	text-align: right;
+}
+
+/*extends input.label*/
+.latent {
+	border-width: 0;
+	margin: 1px 10px 1px 1px;
+	font-weight: bold;
+}
+
+.isInput {
+	background: #ffc url(../gfx/icons/icon-edit.png) no-repeat 5px 50%;
+	border-width: 1px;
+	margin: 0 10px 0 0;
+}
+
+/*extends label */
+.checkbox label {
+    width: 80px;
+    text-align: left;
+}
+
+/*extends checkbox */
+.checkbox input.checkbox {
+    margin: 1px 0 0 0;
+    float: left;
+}
+
+/*extends checkbox */
+input.message {
+    margin: 0 5px 0 0;
+}
+
+/*extends inputset*/
+.selectbox {
+    padding-top:5px;
+}
+
+/* controls in filtered user */
+.controls {
+	float: right;
+}
+
+/* interact links next to input sets*/
+.interact {
+    float: left;
+	padding: 4px 0 0 0;
+}
+
+.form .interact {
+    float: none;
+    overflow: hidden;
+}
+
+/*extends interact*/
+.checkbox .interact {
+    float: right;
+}
+
+.lists .cancelbox {
+    clear: both;
+}
+
+/* extends label */
+.checkbox label {
+    width: auto;
+}
+
+/*extends .dropdown li a*/
+.dropdown .add {
+    margin-top: 5px;
+    margin-left: 4px;
+    padding: 0 0 0 15px;
+}
+.dropdown .add:hover,
+.dropdown .add:focus {
+    background-color: transparent;
+}
+
+.interact a {
+	float: left;
+	padding: 0;
+	text-align: center;
+	margin: 0;
+	width: 20px;
+	height: 16px;
+	overflow: hidden;
+	text-indent: -100px;
+	background: #dedede;
+	font-weight: bold;
+}
+
+/*extends .interact a*/
+.inputset .cancelbox a,
+.inputset .cancelbox a:hover,
+.interact .cancelbox a:focus {
+    float: none;
+    display: inline;
+    font-weight: normal;
+    padding: 0;
+    background: none;
+    text-decoration: underline;
+}
+
+/*extends .interact a*/
+.checkbox .interact a{
+    padding: 0;
+}
+
+.interact .remove,
+.interact .remove:hover,
+.interact .remove:focus {
+    background: url(../gfx/icons-sprite.png) no-repeat 0 -1198px;
+}
+
+.interact .edit,
+.interact .edit:hover, 
+.interact .edit:focus {
+    background: url(../gfx/icons-sprite.png) no-repeat 0 -1298px;
+}
+
+.dropdown input.checkbox {
+	margin: 4px 5px 0 0;
+}
+
+/* extends tinybutton */
+fieldset.interactive-set a.save:focus
+fieldset.interactive-set a.save:hover, 
+fieldset.interactive-set .save{
+    clear: none;
+}
+
+
+.item:hover {
+	background-color: #f7f7f7;
+}
+
+.dropdown .item:hover {
+	background: none;
+}
+
+/* interactive states save/cancel buttons */
+
+.interactive-set .cancelbox, 
+.interactive-set a.save,
+.form .interactive-set a.remove,
+.form .interactive-set .item:hover .saveable a.remove,
+.interactive-set .saveable a.edit,
+.interactive-set .saveable a.remove,
+.message-counter {
+    display: none;
+}
+
+.form .interactive-set .item:hover a.remove,
+.interactive-set .saveable .message-counter,
+.interactive-set .saveable a.save,
+.interactive-set .saveable .cancelbox,
+.interactive-set .fieldset-info a.save {
+    display: block;
+}
+
+/* message of day */
+fieldset.message {
+    margin: 0;
+    padding: 10px;
+	width: 227px;
+}
+
+/* extends textarea */
+.message textarea {
+    width: 215px;
+    height: 65px;
+    margin: 0 0 3px 0;
+}
+
+.message-counter {
+    float:left;
+    padding-top:2px;
+}
+
+/*extends message-counter*/
+.gt {
+	font-weight: bold;
+}
+ 
+/* extends interact */
+.message .interact {
+    float: right;
+    padding: 5px 0;
+}
+
+.message .helpers {
+    clear: both;
+    overflow: hidden;
+    border-top: 1px solid;
+}
+
+.dropdown .dividebot {
+	border-bottom: 1px solid;
+	padding-bottom: 3px;
+}
+
+.message .edit,
+.message .save {
+    float: right;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.helpers .save {
+    float: none;
+    margin: 0
+}
+
+.helpers ul {
+    margin-top: 5px;
+}
+
+.helpers li {
+    border:0;
+    padding: 0;
+}
+
+.helpers .add-message {
+    padding: 0 2px;
+    text-decoration: underline;
+}
+
+/*extends form*/
+.connect-checkboxes{
+	background: url(../gfx/bg/bg_vdots.gif) repeat-y 100% 0;
+}
+
+.connect-checkboxes .last {
+	padding-right: 20px; /*laat het niet over vdots lopen*/
+}
+/*extends input.submit*/
+.buzz .submit {
+	float: right;
+	margin-left: 15px;
+}
+
+/* Drawer */
+/*extends input.text*/
+fieldset.review .text {
+	width: 140px;
+}
+
+.last ul.fail {
+	margin-left: 11px;
+}
+
+/*extends inputset */
+.metoo-content .inputset {
+	padding: 4px 0;
+}
+
+/*extends label */
+.metoo-content label {
+	width: 92px;
+	text-align: left;
+	padding-left: 0;
+}
+
+.metoo-content .radio .grouplabel {
+	font-weight: bold;
+	line-height: 1;
+	float: left;
+	width: 92px;
+	padding-right: 10px;
+}
+
+/*extends metoo-content label*/
+.metoo-content .checkbox label {
+    width: auto;
+    padding: 0 0 0 10px;
+}
+
+.metoo-content select,
+.metoo-content textarea,
+.metoo-content .text {
+    width: 231px;
+    margin: 0;
+}
+
+.metoo-content select {
+    width: 242px;
+}
+
+.metoo-content textarea {
+    height: 4em; 
+}
+
+/*extends label */
+.radio label {
+	width: auto;
+	font-weight: normal;
+    padding: 0 15px 0 5px;
+    line-height: 1;
+}
+
+.radio .inputset {
+	padding-left: 102px;
+}
+
+.radio .grouplabeled {
+	padding-left: 0;
+}
+
+/* extends fieldset*/
+.metoo-content .emph,
+.emph {
+	padding: 5px;
+}
+
+/* extends fieldset*/
+.complete {
+	text-align: right;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.complete .extra {
+	float: left;
+	width: 100px;
+	text-align: left;
+}
+
+/*extends a*/
+.add-photo {
+	display: block;
+	clear: left;
+	text-decoration: underline;
+}
+
+.cancelbox {
+	padding: 10px 0 0 0;
+}
+
+.form .cancelbox {
+    float: left;
+    padding: 1px 0 0 10px;
+}
+
+.buttons .cancelbox {
+    display: block;
+    float: none;
+    text-align: right;
+    padding: 10px 0 0 0;
+}
+
+.lists .cancelbox,
+.message .cancelbox {
+    text-align: right;
+    clear: both;
+    padding-top: 0;
+}
+
+.lists .cancelbox {
+    float: none;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+/*extends a*/
+.cancel {
+	text-decoration: underline;
+}
+
+/*slider*/
+.sliderbox {
+	overflow: hidden;
+	float: right;
+	width: 243px;
+	height:31px;
+}
+
+.js .sliderbox {
+	background: url(../gfx/bg/bg_slider-review.png) no-repeat 0 0;
+}
+
+/* extends sliderbox*/
+.js .thumbs-1 {
+    background-position: 0 -31px;
+}
+
+.js .thumbs-2 {
+    background-position: 0 -62px;
+}
+
+.js .thumbs-3 {
+    background-position: 0 -93px;
+}
+
+.js .slider {
+	margin: 10px auto;
+	width: 140px;
+	height: 4px;
+	border: 1px solid #c9c9c9;
+	background: #ebebeb;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius:3px
+}
+
+.js .sliderbox select {
+	display: none;
+}
+
+#Slider-result {
+	display: none;
+}
+
+.js #Slider-result {
+	display: block;
+	overflow: hidden;
+}
+
+.slider-result {
+	padding: 0.333em 0 0.333em 3px;
+}
+
+.ui-slider {
+	position: relative;
+}
+
+.ui-slider-handle {
+	position: absolute;
+	margin-left: -14px; /* compensate width/arrow position*/
+	top: -10px;
+	width: 29px;
+	height: 32px;
+	background: url(../gfx/icons-sprite.png) no-repeat 5px -568px;
+	outline: none;
+	cursor: move;
+}
+
+/*extends h3*/
+.colheader {
+	float: left;
+	width: 245px;
+	padding: 0 15px;
+	margin-right: 20px
+}
+
+/*extends span*/
+.colheader .info {
+	display: block;
+	font-size: 0.7333em;
+	font-weight: normal;
+}
+
+/*extends input.text*/
+.col-label .text {
+    margin-right: 5px;
+}
+
+/* info box in forms */
+.fieldset-info {
+	padding: 10px 15px;
+	margin: 10px 0 10px 0;
+}
+
+/* extends fieldset-info */
+.dropdown .fieldset-info {
+    width: auto;
+	padding: 5px 8px;
+	margin: 0;
+}
+
+/* error messages */
+form .message {
+    padding: 5px 0 0 150px;
+    clear: both;
+}
+
+.metoo-content form .message {
+    padding-left: 107px;
+}

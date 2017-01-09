@@ -1,0 +1,8 @@
+#!/bin/bash
+
+URL="http://<!--SC_URL-->/import/connect-update"
+
+OUTFILE="<!--SC_BASE-->/plugin/sciomino/scripts/cron/connect-update.html"
+LOGFILE="<!--SC_BASE-->/plugin/sciomino/scripts/cron/connect-update.log"
+
+/usr/bin/wget --timeout=3600 -O $OUTFILE -o $LOGFILE "$URL"

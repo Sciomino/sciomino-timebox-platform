@@ -1,0 +1,156 @@
+/*typo*/
+
+/*extends h2*/
+.softdivide h2 {
+	color: #5c5c5c;
+}
+
+/*links*/
+.dropdown a.listname:hover,
+.dropdown a.listname:focus {
+    background: #fff;
+}
+
+.message-counter,
+.count {
+	color: #8e8e8e;
+}
+
+/* extends message-counter */
+.gt {
+    color: #bd1616;
+}
+
+/*backgrounds*/
+.nav-user .show a.control {
+	background-color: #fff;
+}
+.nav-user .show .dropdown a {
+}
+
+.dropdown-item .all a { /*extends .dropdown li a in components.css*/
+	border-color: #9d9d9d;
+}
+
+.dropdown-item a:hover {
+	text-decoration: none;
+}
+
+.control { /* extends a*/
+	color: #3c3c3c;
+}
+
+.ui-autocomplete,
+.dropdown {
+	border-color: #e6e6e6;
+	-webkit-box-shadow : 2px 2px 2px #d4d4d4;
+	-moz-box-shadow : 2px 2px 2px #d4d4d4;
+	box-shadow : 2px 2px 2px #d4d4d4;
+}
+
+.rgba .ui-autocomplete,
+.rgba .dropdown {
+	border-color: rgba(199, 199, 199, 0.5);
+	-webkit-box-shadow : 3px 3px 0 rgba(0, 0, 0, 0.15);
+	-moz-box-shadow : 3px 3px 0 rgba(0, 0, 0, 0.15);
+	box-shadow : 3px 3px 0 rgba(0, 0, 0, 0.15);
+}
+
+.rgba #Drawer-content {
+	-webkit-box-shadow :  2px 2px 4px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow :  2px 2px 4px rgba(0, 0, 0, 0.4);
+	box-shadow :  2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* borders */
+.add-header,
+.divider { /*extends fieldset*/
+	border-bottom: 1px solid #dedede;
+}
+
+.dropdown .dividebot,
+.message .helpers,
+.text,
+textarea,
+select {
+	border-color: #dedede;
+}
+
+.error .text,
+.error textarea {
+    border-color: #f20
+}
+
+/*extends a*/
+.sectionhead,
+.ui-autocomplete a,
+.userlink {
+	color: #5c5c5c;
+}
+
+#Drawer-content, 
+hr {
+	border-color: #E7E7E7;
+}
+
+.userlink:hover {
+	text-decoration: underline;
+	/*skin.css for color*/
+}
+
+/* extends input.text */
+.current-message,
+.placeholder {
+    color: #8e8b81;
+}
+
+/*extends input.text/select */
+.prefill {
+	color: #8e8b81;
+	background: #f1f1f1;
+}
+
+/* extends input.text */
+input.prefill {
+	background: #f1f1f1;
+}
+
+
+/*#888 grey*/
+.review th {
+	color: #888;
+}
+
+/* #5c5c5c dark grey*/
+.breadcrumbs a,
+.filter-detail .active {
+	color: #5c5c5c
+}
+
+/* #333 */
+input:focus,
+textarea:focus,
+.cancel .prefix, 
+.img-item label,
+.focusheader h2, /*extends h2*/
+.icon-twitter-xl {/*extends .icon*/
+	color: #333;
+}
+
+.tinybutton {
+	border-color: #e2e4c3
+}
+
+.linkbutton {
+	color: #5c5c5c;
+}
+
+.error label {
+    color: #f30;
+}
+
+/* yellowish message container */
+#AnyMessage {
+    background: #ffffd6;
+    border-color: #dedede;
+}

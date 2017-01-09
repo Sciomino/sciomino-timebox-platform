@@ -1,0 +1,4 @@
+/* fix vertically expanding box in IE8 */
+.group {
+    float: left;
+}

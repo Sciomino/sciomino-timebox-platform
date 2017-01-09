@@ -1,0 +1,6 @@
+a:hover {
+	-o-transition: color .12s;
+	-ms-transition: color .12s;
+	-moz-transition: color .12s;
+	-webkit-transition: color .12s;
+}

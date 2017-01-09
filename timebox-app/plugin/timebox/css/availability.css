@@ -1,0 +1,174 @@
+/**** AVAILABILITY ****/
+div.availability, div.calendar {
+	padding-top:44px;
+}
+div.calendarHeader h2,
+div.availabilityHeader h2 {
+	background-color:#049348;
+	color:#fff;
+	font-size:1em;
+	text-transform:uppercase;
+	text-shadow:none !important;
+	padding:10px 0;
+}
+div.calendarHeader > h2 a,
+div.availabilityHeader > h2 a {
+	position:absolute;
+	left:10px;
+	top:13px;
+}
+div.availability fieldset,
+div.availability > form > div { 
+	margin:0;
+	padding:6px 0;
+}
+div.availability button {
+	background-color:#ebad3f !important;
+	color:#fff !important;
+	text-transform:uppercase;
+	padding:10px 0;
+	font-weight:normal;
+}
+div.availability div#currentavailset,
+div.availability div#currentuntillset,
+div.availability div#afteravailset { background-color:#dbd8cd; }
+div.availability div#currentavailset,
+div.availability div#afteravailset { margin:10px 0 0; }
+div.availability div#currentuntillset{ 
+	border-top:1px solid #c2bfb6; 
+	padding:12px 0 16px;
+	margin:0 0 10px; 
+	position:relative;
+}
+div.availability div#currentuntillset a {
+	display:block;
+	position:relative;
+	font-weight:400;
+	color:#83817b;
+	text-decoration:none;
+	width:80%;
+	text-align:left;
+	margin:0 auto;
+}
+div.availability div#currentuntillset a strong { 
+	margin-left:60px; 
+	position:absolute;
+	right:30px;
+	top:0;
+	pointer-events:none;
+}
+div.availability div#currentuntillset a.selected strong { color:#00a94e; }
+div.availability div#currentuntillset a span {
+	position:absolute;
+	right:0;
+	top:3px;
+	display:block;
+	text-indent:-9999px;
+	background:transparent url(../../images/btns.png) -22px 0 no-repeat;
+	width:22px;
+	height:18px;
+	pointer-events:none;
+}
+div.availability div#currentavailset fieldset,
+div.availability div#afteravailset fieldset { 
+	border-bottom:1px solid #c2bfb6; 
+	margin-bottom:4px;
+	padding-bottom:18px;
+}
+div.availability div#currentavailset fieldset:last-child,
+div.availability div#afteravailset fieldset:last-child { 
+	border-bottom:0; 
+	padding-bottom:0;
+}
+/*** unavailable buttons ***/
+div.availability form > div:first-child .ui-radio:last-child .ui-btn-active,
+div.availability form > div:nth-child(4)  .ui-radio:last-child .ui-btn-active{ background-color:#ed5740 !important; }
+#submitavailability { 
+	width:90%; 
+	margin:26px auto;
+}
+/*** BUTTONS ***/
+div.availability .ui-checkbox label,
+div.availability .ui-radio label {
+	border-color:#d1cec4 !important;
+	background-color:#e6e3d8;
+	font-weight:normal;
+	text-transform:uppercase;
+}
+div.availability div#currentavailset .ui-checkbox label,
+div.availability div#currentavailset .ui-radio label,
+div.availability div#afteravailset .ui-checkbox label,
+div.availability div#afteravailset .ui-radio label { background-color:#dbd8cd; }
+div.availability div#currentavailset .ui-checkbox label.ui-checkbox-on,
+div.availability div#currentavailset .ui-radio label.ui-radio-on,
+div.availability div#afteravailset .ui-checkbox label.ui-checkbox-on,
+div.availability div#afteravailset .ui-radio label.ui-radio-on {
+	background-color:#00a94f;
+	color:#fff;
+	border-color:#00a94f;
+}
+div.availability .ui-radio-on,
+div.availability .ui-checkbox-on,
+div.availability .ui-btn-active {
+	background-color:#00a94f;
+	color:#fff;
+	border-color:#00a94f;
+}
+div.availability .ui-btn:hover { background-color:#e6e3d8; }
+div.availability .ui-btn.ui-btn-active:hover { background-color:#00a94f; }
+/* button sizes */
+#currentset .ui-radio label,
+#afterthatset .ui-radio label { padding:0.6em 0.9em; }
+fieldset.maxhoursset .ui-radio label { padding:0.6em 0.8em; }
+fieldset.preferreddaysset .ui-checkbox label { padding:0.6em 0.7em; }
+/*** CALENDAR ***/
+div.calendar > div { color:#83817b; }
+div.calendar > div h3 {
+	width:100%;
+	text-align:center;
+	text-transform:uppercase;
+	font-size:18px;
+	font-weight:bold;
+	color:#66635f;
+	border-bottom:1px solid #d1cec4;
+	padding:12px 0;
+}
+div.calendar table { 
+	width:100%;
+	margin-bottom:10px;
+}
+div.calendar table thead {
+	text-transform:uppercase;
+	font-size:14px;
+}
+div.calendar table tbody td {
+	background-color:#d9d6cc;
+	width:45px;
+	height:43px;
+}
+div.calendar table tbody td a {
+	color:#66635f !important;
+	text-decoration:none;
+	display:block;
+	width:100%;
+	height:100%;
+	line-height:45px;
+	border-bottom:2px solid #d9d6cc;
+}
+div.calendar table tbody td a:hover,
+div.calendar table tbody td a.selected { 
+	border-bottom:2px solid #00a94f;
+	color:#66635f !important;
+}
+div.calendar table tbody td.disabled a { color:#b2afa7 !important; }
+div.calendar table tbody td.disabled a:hover {
+	border-bottom:2px solid #d9d6cc !important;
+	cursor:default !important;
+}
+#afteravailset legend,
+#currentavailset legend {
+	margin:0 auto;
+	width:80%;
+	text-align:left;
+	color:#83817b;
+}

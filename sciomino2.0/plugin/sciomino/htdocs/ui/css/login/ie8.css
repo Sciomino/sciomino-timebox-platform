@@ -1,0 +1,12 @@
+.puu-nav {
+	height: 34px;
+}
+
+.puu-cnt .puu-vis {
+	position: absolute;
+	margin-left: -184px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+    border: 1px solid #DDD;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#EEEEEE')";
+	}

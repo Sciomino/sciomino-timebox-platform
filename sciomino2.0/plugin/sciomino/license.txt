@@ -1,0 +1,15 @@
+    Copyright (C) 2010 Sciomino. All rights reserved.
+
+    This copyright covers all code in each source file that is part 
+    of this program.
+
+    This program is licensed software; you cannot redistribute and/or
+    modify it.
+   
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY.
+
+    You should have received a copy of the Sciomino license along with
+    this program; if not, ask us.
+
+    Sciomino (info@sciomino.com)

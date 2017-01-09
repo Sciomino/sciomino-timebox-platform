@@ -1,0 +1,22 @@
+httpd.conf:
+AddCharset UTF-8 .utf8
+AddDefaultCharset UTF-8
+
+php.ini
+default_charset = "utf-8"
+
+my.cnf
+character-set-server=utf8
+default-collation=utf8_unicode_ci
+
+Then, if you're writing PHP scripts, soon after opening your connection to mysql, issue one of the following:
+SET NAMES 'utf8';
+
+
+AND when inserting input data from the web, do it safe:
+
+function safe($value){
+   return mysql_real_escape_string($value);
+}
+
+TODO: don't forget to put utf8 in your html page

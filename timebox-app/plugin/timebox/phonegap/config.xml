@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.sciomino.timebox" version="1.0.4" android-versionCode="141" ios-CFBundleVersion="141" xmlns="http://www.w3.org/ns/widgets">
+
+    <!-- App Info -->
+    <name>Timebox</name>
+    <description>
+        Keep your availability up to date.
+    </description>
+    <author email="timebox@sciomino.com" href="http://gettimeboxnow.com/">
+        Sciomino
+    </author>
+    
+    <!-- starting page -->
+	<content src="index.html" />
+
+    <!-- external access -->
+    <!-- <access origin="http://sciomino.com" subdomains="true" />
+    <access origin="http://sciomino.nl" subdomains="true" /> -->
+    <access origin="*" subdomains="true" />
+    
+    <!-- debug off -->
+    <!-- <feature name="debug-server" required="false" /> -->
+
+    <!-- App preferences -->
+    <preference name="orientation" value="portrait" /> 
+    <!-- fix ui --> 
+    <preference name="DisallowOverscroll" value="true" /> 
+    <!-- splashscreen options --> 
+    <preference name="AutoHideSplashScreen" value="false" /> 
+    <preference name="ShowSplashScreenSpinner" value="false" /> 
+    <!-- Adroid specific -->
+    <!-- target an android sdk version for hardware acceleration -->
+    <preference name="android-minSdkVersion" value="14"/> //android 4.0
+	<preference name="android-targetSdkVersion" value="19"/> //android 4.4
+	<!-- iOS specific -->
+	<preference name="target-device" value="handset" />
+	<preference name="deployment-target" value="6.0" />
+	<!-- no funky stuff with the statusbar -->
+	<preference name="StatusBarOverlaysWebView" value="false" />
+
+    <!-- App icons -->
+    <platform name="android">
+		<icon src="www/gfx/timebox/icons/36.png" density="ldpi" />
+		<icon src="www/gfx/timebox/icons/48.png" density="mdpi" />
+		<icon src="www/gfx/timebox/icons/72.png" density="hdpi" />
+		<icon src="www/gfx/timebox/icons/96.png" density="xhdpi" />
+ 		<icon src="www/gfx/timebox/icons/36.png" density="port-ldpi" />
+		<icon src="www/gfx/timebox/icons/48.png" density="port-mdpi" />
+		<icon src="www/gfx/timebox/icons/72.png" density="port-hdpi" />
+		<icon src="www/gfx/timebox/icons/96.png" density="port-xhdpi" />
+   </platform>
+
+    <platform name="ios"> 
+		<!-- iPhone 6 / 6+ -->
+		<icon src="www/gfx/timebox/icons/Icon-60@3x.png" width="180" height="180" />
+		<!-- iPhone / iPod Touch  -->
+		<icon src="www/gfx/timebox/icons/Icon-60.png" width="60" height="60" />
+		<icon src="www/gfx/timebox/icons/Icon-60@2x.png" width="120" height="120" />
+		<!-- iPad -->
+		<icon src="www/gfx/timebox/icons/Icon-76.png" width="76" height="76" />
+		<icon src="www/gfx/timebox/icons/Icon-76@2x.png" width="152" height="152" />
+		<!-- Settings Icon -->
+		<icon src="www/gfx/timebox/icons/Icon-Small.png" width="29" height="29" />
+		<icon src="www/gfx/timebox/icons/Icon-Small@2x.png" width="58" height="58" />
+		<!-- Spotlight Icon -->
+		<icon src="www/gfx/timebox/icons/Icon-Small-40.png" width="40" height="40" />
+		<icon src="www/gfx/timebox/icons/Icon-Small-40@2x.png" width="80" height="80" />
+		<!-- < iOS 7.0 -->
+		<icon src="www/gfx/timebox/icons/Icon.png" width="57" height="57" />
+		<icon src="www/gfx/timebox/icons/Icon@2x.png" width="114" height="114" />
+		<icon src="www/gfx/timebox/icons/Icon-72.png" width="72" height="72" />
+		<icon src="www/gfx/timebox/icons/Icon-72@2x.png" width="144" height="144" />
+		<icon src="www/gfx/timebox/icons/Icon-Small-50.png" width="50" height="50" />
+		<icon src="www/gfx/timebox/icons/Icon-Small-50@2x.png" width="100" height="100" />
+	</platform>
+
+    <!-- Splash screens -->
+	<platform name="android">
+		<splash src="www/gfx/timebox/splash/ldpi.png" density="ldpi"/>
+		<splash src="www/gfx/timebox/splash/mdpi.png" density="mdpi"/>
+		<splash src="www/gfx/timebox/splash/hdpi.png" density="hdpi"/>
+		<splash src="www/gfx/timebox/splash/xhdpi.png" density="xhdpi"/>
+		<splash src="www/gfx/timebox/splash/ldpi.png" density="port-ldpi"/>
+		<splash src="www/gfx/timebox/splash/mdpi.png" density="port-mdpi"/>
+		<splash src="www/gfx/timebox/splash/hdpi.png" density="port-hdpi"/>
+		<splash src="www/gfx/timebox/splash/xhdpi.png" density="port-xhdpi"/>
+	</platform>
+
+	<platform name="ios">
+		<!-- iPhone and iPod touch -->
+		<splash src="www/gfx/timebox/splash/splash-iphone.png" width="320" height="480"/>
+		<splash src="www/gfx/timebox/splash/splash-iphone@2x.png" width="640" height="960"/>
+		<!-- iPhone 5 / iPod Touch (5th Generation) -->
+		<splash src="www/gfx/timebox/splash/splash-568h@2x.png" width="640" height="1136"/>
+		<!-- iPhone 6 -->
+		<splash src="www/gfx/timebox/splash/splash-667h@2x.png" width="750" height="1334"/>
+		<splash src="www/gfx/timebox/splash/splash-736h@3x.png" width="1242" height="2208"/>
+		<!-- <splash src="res/screen/ios/Default-Landscape-736h.png" width="2208" height="1242"/> -->
+		<!-- iPad -->
+		<!-- <splash src="res/screen/ios/Default-Portrait~ipad.png" width="768" height="1024"/>
+		<splash src="res/screen/ios/Default-Landscape~ipad.png" width="1024" height="768"/> -->
+		<!-- Retina iPad -->
+		<!-- <splash src="res/screen/ios/Default-Portrait@2x~ipad.png" width="1536" height="2048"/>
+		<splash src="res/screen/ios/Default-Landscape@2x~ipad.png" width="2048" height="1536"/> -->
+	</platform>
+
+    <!-- plugins
+    dialog: cordova plugin add org.apache.cordova.dialogs
+    splash: cordova plugin add org.apache.cordova.splashscreen 
+    browser: cordova plugin add org.apache.cordova.inappbrowser 
+    device: (NOT YET NEEDED)
+    network: cordova plugin add org.apache.cordova.network-information 
+    globalization: (NOT YET NEEDED)
+    camera: cordova plugin add org.apache.cordova.camera
+    statusbar: cordova plugin add org.apache.cordova.statusbar
+
+    social sharing: cordova plugin add https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin.git
+    custom url: cordova plugin add https://github.com/EddyVerbruggen/LaunchMyApp-PhoneGap-Plugin.git \-\-variable URL_SCHEME=timebox
+    toast: cordova plugin add nl.x-services.plugins.toast
+    keyboard: cordova plugin add com.ionic.keyboard
+    -->
+ 
+</widget>

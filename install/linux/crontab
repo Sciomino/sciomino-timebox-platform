@@ -1,0 +1,39 @@
+#####
+# API
+#####
+
+# update statistics every day
+0 6 * * * /var/www-virtual/sciomino/sciomino-api/plugin/user/scripts/cron/stats-update.sh
+
+# every minute, check if index update script for api's are running
+*/1 * * * * /var/www-virtual/sciomino/sciomino-api/plugin/user/scripts/cron/checkDaemon.sh
+*/1 * * * * /var/www-virtual/sciomino/sciomino-answers/plugin/answers/scripts/cron/checkDaemon.sh
+
+##########
+# FRONTEND
+##########
+
+# at 01:01, update twitter & linked info
+#1 1 * * * /var/www-virtual/sciomino/sciomino1.2/plugin/sciomino/scripts/cron/connect-update.sh
+#15 1 * * * /var/www-virtual/sciomino/sciomino2.0/plugin/sciomino/scripts/cron/connect-update.sh
+
+# at 03:01 and 04:01, mail and delete nonactive accounts
+# ONLY sites with register on
+1 3 * * * /var/www-virtual/sciomino/sciomino1.2/plugin/sciomino/scripts/cron/mail-user.sh
+15 3 * * * /var/www-virtual/sciomino/sciomino2.0/plugin/sciomino/scripts/cron/mail-user.sh
+
+1 4 * * * /var/www-virtual/sciomino/sciomino1.2/plugin/sciomino/scripts/cron/delete-nonactive.sh
+15 4 * * * /var/www-virtual/sciomino/sciomino2.0/plugin/sciomino/scripts/cron/delete-nonactive.sh
+
+# start sending mail at 5:00
+1 5 * * * /var/www-virtual/sciomino/sciomino1.2/plugin/sciomino/scripts/cron/mail-knowledge.sh
+15 5 * * * /var/www-virtual/sciomino/sciomino2.0/plugin/sciomino/scripts/cron/mail-knowledge.sh
+
+# update availability data at 7
+# version 2.0 only
+1 7 * * * /var/www-virtual/sciomino/sciomino2.0/plugin/sciomino/scripts/cron/availability-update.sh
+
+# every 10 minutes, send mail for reactions
+*/10 * * * * /var/www-virtual/sciomino/sciomino1.2/plugin/sciomino/scripts/cron/mail-react.sh
+*/10 * * * * /var/www-virtual/sciomino/sciomino2.0/plugin/sciomino/scripts/cron/mail-react.sh
+

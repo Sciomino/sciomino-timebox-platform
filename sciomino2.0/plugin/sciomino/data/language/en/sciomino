@@ -1,0 +1,859 @@
+<?php
+
+global $XCOW_B;
+
+$lang = array();
+
+###########
+# ENGLISH
+###########
+
+# 1. page title
+$lang['sciomio_title_login'] = "Welcome to ".$XCOW_B['this_name'];
+$lang['sciomio_title_main'] = $XCOW_B['this_name'];
+$lang['sciomio_title_search'] = "Searchresults and business cards";
+$lang['sciomio_title_view'] = "Profile of ";
+$lang['sciomio_title_browse'] = "Browse";
+$lang['sciomio_title_insights'] = "Insights";
+$lang['sciomio_title_insights_date'] = "Birthdays";
+$lang['sciomio_title_insights_location'] = "Locations";
+$lang['sciomio_title_insights_social'] = "Social Insights";
+$lang['sciomio_title_knowledge'] = "Knowledge area: ";
+$lang['sciomio_title_hobby'] = "Hobby: ";
+$lang['sciomio_title_tag'] = "Tag: ";
+$lang['sciomio_title_experience'] = "Experience with: ";
+$lang['sciomio_title_user'] = "Your profile";
+$lang['sciomio_title_act'] = "Ask &amp; Share";
+$lang['sciomio_title_act_view'] = "View discussion";
+$lang['sciomio_title_error'] = "Error page";
+$lang['sciomio_title_wizard'] = "Welcome to Sciomino!";
+$lang['sciomio_title_setting'] = "Settings";
+
+# 2. page header
+$lang['sciomio_header_login_title'] = "Marketplace of skills";
+$lang['sciomio_header_login_title_tagline'] = "Easily find people with the knowledge you need.";
+$lang['sciomio_header_login_work'] = "Bring Sciomino to work";
+$lang['sciomio_header_login_tagline'] = "And start mining the knowledge and experiences of your colleagues. <br/>Learn more about ";
+$lang['sciomio_text_login_tagline_link'] = "Sciomino for Business";
+$lang['sciomio_text_login_footer'] = "Sciomino &copy; 2014 | <strong>Connecting the dots: People. Needs. Knowledge. Experiences.</strong>";
+$lang['sciomio_text_login_tweet'] = "I just joined #sciomino, the marketplace of skills. Join me, and show what you are made of! ";
+
+$lang['sciomio_header_main_search'] = "Who has knowledge of, or experience with&hellip;";
+$lang['sciomio_header_main_kennis'] = "Knowledge wanted";
+$lang['sciomio_header_main_kennisvelden'] = "Largest knowledge areas ";
+$lang['sciomio_header_main_ervaringen'] = "Our experiences with";
+$lang['sciomio_header_main_you'] = "People like you";
+$lang['sciomio_header_main_faces'] = "Faces";
+$lang['sciomio_header_main_activity'] = "Updates";
+
+$lang['sciomio_header_search_focus'] = "Your selection";
+$lang['sciomio_header_search_filter'] = "persons found";
+$lang['sciomio_header_search_filter_een'] = "person found";
+$lang['sciomio_header_search_filter_knowledge'] = "Their knowledge areas";
+$lang['sciomio_header_search_filter_experience'] = "Their experiences";
+$lang['sciomio_header_search_filter_tags'] = "Their tags";
+$lang['sciomio_header_search_filter_personal'] = "Are part of";
+$lang['sciomio_header_search_filter_location'] = "Their locations";
+$lang['sciomio_header_search_noResult'] = "Suggestions";
+
+$lang['sciomio_header_view_same'] = "Similar to \$user\$";
+$lang['sciomio_header_view_knowledge'] = "About \$user\$";
+$lang['sciomio_header_view_knowledge_sub'] = "Domain expertise";
+$lang['sciomio_header_view_hobby'] = "Hobbies, passions and interests";
+$lang['sciomio_header_view_tag'] = "Tags";
+$lang['sciomio_header_view_experience'] = "Experiences";
+$lang['sciomio_header_view_product'] = "Products";
+$lang['sciomio_header_view_company'] = "Companies and Clients";
+$lang['sciomio_header_view_event'] = "Events &amp; seminars";
+$lang['sciomio_header_view_education'] = "Training &amp; courses";
+$lang['sciomio_header_view_publication'] = "Publications";
+$lang['sciomio_header_view_networks'] = "Networks";
+
+$lang['sciomio_header_browse_top'] = "\$count\$ colleagues with an abundance of knowledge and experiences";
+$lang['sciomio_header_browse_knowledge'] = "Their knowledge areas";
+$lang['sciomio_header_browse_knowledge_knowledge'] = "Their knowledge areas";
+$lang['sciomio_header_browse_hobby'] = "Their hobbies";
+$lang['sciomio_header_browse_knowledge_hobby'] = "Their hobbies";
+$lang['sciomio_header_browse_tag'] = "Their tags";
+$lang['sciomio_header_browse_knowledge_tag'] = "Their tags";
+
+$lang['sciomio_header_browse_experience'] = "Their experiences";
+$lang['sciomio_header_browse_knowledge_list'] = "persons with knowledge of: ";
+$lang['sciomio_header_browse_knowledge_list_een'] = "person with knowledge of: ";
+$lang['sciomio_header_browse_knowledge_external'] = "Definition by wikipedia";
+$lang['sciomio_header_browse_hobby_list'] = "persons with passion for: ";
+$lang['sciomio_header_browse_hobby_list_een'] = "person with passion for: ";
+$lang['sciomio_header_browse_hobby_external'] = "Definition by wikipedia";
+$lang['sciomio_header_browse_tag_list'] = "persons with the tag: ";
+$lang['sciomio_header_browse_tag_list_een'] = "person with the tag: ";
+$lang['sciomio_header_browse_experience_list'] = "Experiences with";
+$lang['sciomio_header_browse_experience_list_een'] = "Experience with";
+$lang['sciomio_header_browse_experience_listSub'] = "Experiences with ";
+
+$lang['sciomio_header_insights_top'] = "\$count\$ colleagues, a varied group&hellip; <em>Online and offline.</em>";
+$lang['sciomio_header_insights_publications'] = "Online presence &amp; publications";
+$lang['sciomio_header_insights_global'] = "Global presence";
+$lang['sciomio_header_insights_scope'] = "About us:";
+$lang['sciomio_header_insights_gender'] = "Men and women";
+$lang['sciomio_header_insights_birthday'] = "Birthdays";
+$lang['sciomio_header_insights_location'] = "Where we live and work";
+$lang['sciomio_header_insights_work'] = "Where we live and work";
+$lang['sciomio_header_insights_home'] = "Insights";
+$lang['sciomio_header_insights_date'] = "Age and birthdays";
+$lang['sciomio_header_insights_age'] = "Age categories";
+$lang['sciomio_header_insights_coworkers'] = "Colleagues";
+$lang['sciomio_header_insights_you'] = "You and your";
+$lang['sciomio_header_insights_calendar'] = "Calendar";
+$lang['sciomio_header_insights_social'] = "Online presence &amp; publications";
+$lang['sciomio_header_insights_social_twitter'] = "Twitter";
+$lang['sciomio_header_insights_social_linkedin'] = "Linkedin";
+$lang['sciomio_header_insights_social_blog'] = "Blogs";
+$lang['sciomio_header_insights_social_presentation'] = "Slideshare";
+$lang['sciomio_header_insights_social_website'] = "Websites";
+$lang['sciomio_header_insights_social_publication'] = "Articles";
+
+$lang['sciomio_header_user_personalia'] = "Who are you?";
+$lang['sciomio_header_user_connect'] = "Your external connections";
+$lang['sciomio_header_user_networks'] = "Networks";
+$lang['sciomio_header_user_experience'] = "Experiences";
+$lang['sciomio_header_user_experience_product'] = "Products";
+$lang['sciomio_header_user_experience_company'] = "Companies and Clients";
+$lang['sciomio_header_user_experience_event'] = "Events &amp; seminars";
+$lang['sciomio_header_user_experience_education'] = "Training &amp; courses";
+$lang['sciomio_header_user_focus'] = "Your saved selections";
+$lang['sciomio_header_user_focus_item'] = "Selection";
+$lang['sciomio_header_user_knowledge'] = "What defines you?";
+$lang['sciomio_header_user_knowledge_knowledge'] = "Your Knowledge and Expertise";
+$lang['sciomio_header_user_knowledge_hobby'] = "Your hobbies, passions and interests";
+$lang['sciomio_header_user_publication'] = "Where do you publish your thoughts?";
+$lang['sciomio_header_user_publication_blog'] = "Blogs";
+$lang['sciomio_header_user_publication_share'] = "Presentation Sites";
+$lang['sciomio_header_user_publication_website'] = "Personal websites";
+$lang['sciomio_header_user_publication_otherPub'] = "Other publications (articles, books)";
+$lang['sciomio_header_user_tag'] = "Use extra tags";
+$lang['sciomio_header_user_tag_tag'] = "Your #tags";
+
+$lang['sciomio_header_act_top'] = "Ask your question. Share your knowledge. Use each other's talents!";
+$lang['sciomio_header_act_filter'] = "Posts";
+$lang['sciomio_header_act_filter_een'] = "Post";
+$lang['sciomio_header_act_review'] = "People who like this";
+
+$lang['sciomio_header_footer'] = "Powered by <b><a target='_blank' href='http://business.sciomino.com/'>Sciomino&trade;</a></b>";
+$lang['sciomio_header_footer_support'] = "<b>Need help?</b>";
+
+$lang['sciomio_header_error'] = "This leads nowhere";
+$lang['sciomio_header_error_401'] = "Access is not allowed&hellip;";
+$lang['sciomio_header_error_404'] = "The page was not found&hellip;";
+
+$lang['sciomio_header_wizard'] = "Welcome to Sciomino!";
+$lang['sciomio_header_wizard_1'] = "1. Tell us who you are";
+$lang['sciomio_header_wizard_2'] = "2. Connect LinkedIn and Twitter";
+$lang['sciomio_header_wizard_3'] = "3. Select the networks you want to be part of";
+$lang['sciomio_header_wizard_4'] = "4. Add your profile picture";
+
+$lang['sciomio_header_account_delete'] = "Remove your account";
+
+$lang['sciomio_header_setting_password'] = "Change your password";
+$lang['sciomio_header_setting_account'] = "Remove your account";
+$lang['sciomio_header_setting_notification'] = "Your email preference";
+$lang['sciomio_header_setting_language'] = "Available languages";
+
+# 3. page text
+$lang['sciomio_text_main_search'] = "eg. Renewable energy or Six sigma";
+$lang['sciomio_text_main_browse'] = "Or maybe you'd rather ";
+$lang['sciomio_text_main_kennis'] = "";
+
+$lang['sciomio_text_view_personal_private'] = "private;:";
+$lang['sciomio_text_view_personal_email'] = "E-mail";
+$lang['sciomio_text_view_personal_phone'] = "Phone";
+$lang['sciomio_text_view_personal_phone_internal'] = "Phone ext.";
+$lang['sciomio_text_view_personal_mobile'] = "Mobile";
+$lang['sciomio_text_view_personal_lync'] = "Lync";
+$lang['sciomio_text_view_personal_pager'] = "Pager";
+$lang['sciomio_text_view_personal_fax'] = "Fax";
+$lang['sciomio_text_view_personal_pac'] = "Post room id";
+$lang['sciomio_text_view_personal_myId'] = "Personal id";
+$lang['sciomio_text_view_personal_assistentId'] = "Assistent";
+$lang['sciomio_text_view_personal_managerId'] = "Manager";
+$lang['sciomio_text_view_personal_managerList'] = "Direct colleagues";
+$lang['sciomio_text_view_personal_managerList_prefix'] = "Team ";
+$lang['sciomio_text_view_personal_teamList'] = "Manages";
+$lang['sciomio_text_view_personal_teamList_prefix'] = "Team ";
+$lang['sciomio_text_view_personal_role'] = "Job title";
+$lang['sciomio_text_view_personal_industry'] = "Industry";
+$lang['sciomio_text_view_personal_company'] = "Company";
+$lang['sciomio_text_view_personal_businessunit'] = "Division";
+$lang['sciomio_text_view_personal_section'] = "Department";
+$lang['sciomio_text_view_personal_parttime'] = "I don't work on";
+$lang['sciomio_text_view_personal_room'] = "Room";
+$lang['sciomio_text_view_personal_building'] = "Building";
+$lang['sciomio_text_view_personal_workplace'] = "Office location";
+$lang['sciomio_text_view_personal_hometown'] = "Home town";
+$lang['sciomio_text_view_same'] = "";
+$lang['sciomio_text_view_pluspunten'] = "pros";
+$lang['sciomio_text_view_minpunten'] = "cons";
+
+$lang['sciomio_text_browse_breadcrumb'] = "All knowledge &amp; experiences";
+$lang['sciomio_text_browse_breadcrumb_experience'] = "experience with ";
+$lang['sciomio_text_browse_choose_knowledge'] = "Find a knowledge area&hellip;";
+$lang['sciomio_text_browse_choose_hobby'] = "Find a hobby&hellip;";
+$lang['sciomio_text_browse_choose_tag'] = "Find a tag&hellip;";
+$lang['sciomio_text_browse_choose_product'] = "Choose a brand";
+$lang['sciomio_text_browse_label_product'] = " (change)";
+$lang['sciomio_text_browse_choose_product_alternative'] = "Choose a model/type";
+$lang['sciomio_text_browse_choose_other'] = "Select one";
+$lang['sciomio_text_browse_best_worst'] = "Best vs. worst revealed";
+$lang['sciomio_text_browse_knowledge_notfound'] = "Not found";
+$lang['sciomio_text_browse_experience_word'] = "experiences";
+$lang['sciomio_text_browse_experience_word_een'] = "experience";
+$lang['sciomio_text_browse_experience_noproduct'] = "There are no experiences yet.";
+$lang['sciomio_text_browse_experience_nocompany'] = "There are no experiences yet.";
+$lang['sciomio_text_browse_experience_noevent'] = "There are no experiences yet.";
+$lang['sciomio_text_browse_experience_noeducation'] = "There are no experiences yet.";
+
+$lang['sciomio_text_insights_twitter'] = "Twitter";
+$lang['sciomio_text_insights_twitter_description'] = "Twitter is a website, owned and operated by Twitter Inc., which offers a social networking and microblogging service, enabling its users to send and read messages called tweets. <cite><a href='http://en.wikipedia.org/wiki/Twitter'>Bron: Wikipedia</a></cite>";
+$lang['sciomio_text_insights_twitter_description_url'] = "http://en.wikipedia.org/wiki/Twitter";
+$lang['sciomio_text_insights_linkedin'] = "LinkedIn";
+$lang['sciomio_text_insights_linkedin_description'] = "LinkedIn is a business-oriented social networking site. Founded in December 2002 and launched in May 2003, it is mainly used for professional networking. <cite><a href='http://en.wikipedia.org/wiki/Linkedin'>Bron: Wikipedia</a></cite>";
+$lang['sciomio_text_insights_linkedin_description_url'] = "http://en.wikipedia.org/wiki/Linkedin";
+$lang['sciomio_text_insights_blog'] = "Blogs";
+$lang['sciomio_text_insights_blog_description'] = "Blogs";
+$lang['sciomio_text_insights_blog_description_url'] = "";
+$lang['sciomio_text_insights_presentation'] = "Slideshare";
+$lang['sciomio_text_insights_presentation_description'] = "Presentations";
+$lang['sciomio_text_insights_presentation_description_url'] = "";
+$lang['sciomio_text_insights_website'] = "Websites";
+$lang['sciomio_text_insights_website_description'] = "Websites";
+$lang['sciomio_text_insights_website_description_url'] = "";
+$lang['sciomio_text_insights_other_publication'] = "Articles";
+$lang['sciomio_text_insights_other_publication_description'] = "Articles";
+$lang['sciomio_text_insights_other_publication_description_url'] = "";
+$lang['sciomio_text_insights_workplace'] = "\$count\$ offices";
+$lang['sciomio_text_insights_workplace_een'] = "\$count\$ office";
+$lang['sciomio_text_insights_hometown'] = "\$count\$ home towns";
+$lang['sciomio_text_insights_hometown_een'] = "\$count\$ home town";
+$lang['sciomio_text_insights_country'] = "spread over \$count\$ countries";
+$lang['sciomio_text_insights_country_een'] = "spread over \$count\$ country";
+$lang['sciomio_text_insights_no_birthday'] = "Nobody's birthday this day";
+$lang['sciomio_text_insights_location_workplace'] = "Offices";
+$lang['sciomio_text_insights_location_hometown'] = "Home towns";
+$lang['sciomio_text_insights_location_topcountry'] = "Most in:";
+$lang['sciomio_text_insights_location_bottomcountry'] = "Least in:";
+$lang['sciomio_text_insights_location_topcity'] = "Most from:";
+$lang['sciomio_text_insights_location_bottomcity'] = "Least from:";
+$lang['sciomio_text_insights_location_country'] = "Country";
+$lang['sciomio_text_insights_location_city'] = "Place";
+$lang['sciomio_text_insights_search_list'] = "Search by Firstname…";
+$lang['sciomio_text_insights_people'] = "Data is unknown for \$count\$ persons";
+$lang['sciomio_text_insights_people_een'] = "Data is unknown for \$count\$ person";
+
+$lang['sciomio_text_user_personalia'] = "It's simple. Change what you like, and click on 'Save all changes'";
+$lang['sciomio_text_user_connect'] = "With these connections it's possible to show more information on your profile.";
+$lang['sciomio_text_user_networks'] = "Choose the networks you want to be part of.";
+$lang['sciomio_text_user_networks_for_users'] = "When you join a network, your knowledge becomes more visible to the members. You can receive relevant information from the network itself, and your expertise can be used on their own website. Think of it as a community, but then through Sciomino.";
+$lang['sciomio_text_user_networks_for_networks'] = "Network organizations, associations, cooperatives can effectively reach their members through Sciomino-'networks'. Do you want to add value to your target audience by offering a network in Sciomino? <a href='mailto:info@sciomino.com?subject=I%20am%20interested%20in%20a%20network'> Get in touch </ a>.";
+$lang['sciomio_text_user_experience'] = "Share your experiences with your colleagues";
+$lang['sciomio_text_user_focus'] = "Get back to that one cross-section of all your colleagues";
+$lang['sciomio_text_user_knowledge'] = "Which knowledge, expertise, hobbies and passions do you have? We want to get a clear picture of you.";
+$lang['sciomio_text_user_knowledge_suggest'] = "The following knowledge areas are already available among your direct colleagues. Easily add them just by clicking.";
+$lang['sciomio_text_user_knowledge_knowledgeColumn'] = "Knowledge area";
+$lang['sciomio_text_user_knowledge_knowledgeColumnInfo'] = "";
+$lang['sciomio_text_user_knowledge_levelColumn'] = "Level of expertise";
+$lang['sciomio_text_user_knowledge_hobbyColumn'] = "Hobbies, passions and interests";
+$lang['sciomio_text_user_publication'] = "Online, offline, on a blog, maybe in a book?";
+$lang['sciomio_text_user_publication_connect'] = "Note: with <b>Twitter</b> and <b>Linkedin</b> we like to 'connect', please go to ";
+$lang['sciomio_text_user_tag'] = "Just like on twitter you can use #hashtags to make yourself even more findable. Many use #hashtags for projects or workgroups.";
+$lang['sciomio_text_user_tag_suggest'] = "The following tags are already available among your direct colleagues. Easily add them just by clicking.";
+
+$lang['sciomio_text_act_new'] = "Create a new post&hellip;";
+$lang['sciomio_text_act_new_show'] = "Label your post to get it noticed";
+$lang['sciomio_text_act_new_show_remark'] = "Your post will be shown on the homepage and in the weekly mail we send out to experts";
+$lang['sciomio_text_act_new_show_knowledge'] = "Attach knowledge areas";
+$lang['sciomio_text_act_new_show_hobby'] = "Attach hobbies or passions";
+$lang['sciomio_text_act_new_choose_knowledge'] = "Choose knowledge areas&hellip;";
+$lang['sciomio_text_act_new_choose_hobby'] = "Choose hobbies/passions&hellip;";
+$lang['sciomio_text_act_new_choose_networks'] = "Select a network (optional)";
+$lang['sciomio_text_act_new_choose_networks_option'] = "No, for everyone";
+$lang['sciomio_text_act_new_submit'] = "Post message";
+$lang['sciomio_text_act_new_status_ok'] = "Your message is posted.";
+$lang['sciomio_text_act_new_status_wrong'] = "Your message could not be posted.";
+$lang['sciomio_text_act_search'] = "Search";
+$lang['sciomio_text_act_time_2go'] = "\$time\$ left";
+$lang['sciomio_text_act_time_passed'] = "\$time\$ ago";
+$lang['sciomio_text_act_time_expired'] = "closed";
+$lang['sciomio_text_act_time_story'] = "Experience";
+$lang['sciomio_text_act_review_like'] = "Like";
+$lang['sciomio_text_act_review_dislike'] = "Unlike";
+$lang['sciomio_text_act_review_likestring'] = "You like this";
+$lang['sciomio_text_act_review_likestring_count'] = "You and <a class='puu-review-list' href='act=\$act\$'>\$count\$ others</a> like this";
+$lang['sciomio_text_act_review_likestring_others'] = "<a class='puu-review-list' href='act=\$act\$'>1 other</a> likes this";
+$lang['sciomio_text_act_review_likestring_others_count'] = "<a class='puu-review-list' href='act=\$act\$'>\$count\$ others</a> like this";
+$lang['sciomio_text_act_mailblock_block'] = "Stop notifications";
+$lang['sciomio_text_act_mailblock_unblock'] = "Get notifications";
+$lang['sciomio_text_act_react'] = "Comment";
+$lang['sciomio_text_act_react_one'] = "1 comment";
+$lang['sciomio_text_act_react_more'] = "\$count\$ comments";
+$lang['sciomio_text_act_react_new'] = "Write a comment&hellip;";
+$lang['sciomio_text_act_mail'] = "Forward this post to:";
+$lang['sciomio_text_act_mail_search'] = "Select recipients&hellip;";
+$lang['sciomio_text_act_close'] = "How satisfied are you with the results?";
+$lang['sciomio_text_act_close_ervaring'] = "Your experience";
+$lang['sciomio_text_act_close_story'] = "Tell your story";
+$lang['sciomio_text_act_close_story_description'] = "";
+$lang['sciomio_text_act_close_count'] = "";
+$lang['sciomio_text_act_close_submit'] = "Post message";
+$lang['sciomio_text_act_close_photo'] = "Picture";
+$lang['sciomio_text_act_close_photo_add'] = "Add picture";
+$lang['sciomio_text_act_close_new_status_ok'] = "Your story is posted.";
+$lang['sciomio_text_act_close_new_status_wrong'] = "Your story could not be posted.";
+$lang['sciomio_text_act_close_edit_status_ok'] = "Your story is changed.";
+$lang['sciomio_text_act_close_edit_status_wrong'] = "Your story could not be changed.";
+$lang['sciomio_text_act_story'] = "Experience";
+$lang['sciomio_text_act_story_yes'] = "with experience";
+$lang['sciomio_text_act_story_no'] = "closed";
+$lang['sciomio_text_act_widget_home'] = "Questions and offers";
+$lang['sciomio_text_act_widget_home_personal'] = "";
+$lang['sciomio_text_act_widget_home_new'] = "Most recent posts";
+$lang['sciomio_word_act_widget_home_meer'] = "Show all posts";
+$lang['sciomio_word_act_widget_home_geen'] = "There are no relevant posts at the moment&hellip;";
+$lang['sciomio_text_act_widget_open'] = "Questions and offers";
+$lang['sciomio_text_act_widget_closed'] = "Expired posts";
+$lang['sciomio_text_act_filter_back'] = "Return to the previous selection";
+$lang['sciomio_text_act_confirm_delete'] = "Are you sure you want to delete this post?";
+$lang['sciomio_text_act_view_back'] = "Show all messages";
+$lang['sciomio_text_act_view_show_knowledge'] = "Attached knowledge areas";
+$lang['sciomio_text_act_view_show_hobby'] = "Attached hobbies or passions";
+$lang['sciomio_text_act_view_show_network'] = "Attached network";
+$lang['sciomio_text_act_filter_status'] = "All posts";
+$lang['sciomio_text_act_filter_my'] = "Everyone";
+$lang['sciomio_text_act_filter_businessunit'] = "All";
+$lang['sciomio_text_act_filter_workplace'] = "All";
+$lang['sciomio_text_act_filter_knowledge'] = "All";
+$lang['sciomio_text_act_filter_hobby'] = "All";
+$lang['sciomio_text_act_filter_network'] = "All";
+
+$lang['sciomio_text_footer'] = "";
+$lang['sciomio_text_footer_support'] = "Remain calm, and visit our <a target='_blank' href='https://sciomino.zendesk.com/home'>support page</a>";
+
+# snippets
+$lang['sciomio_text_session_motd'] = "Your status";
+$lang['sciomio_text_session_lists'] = "Your lists";
+$lang['sciomio_text_session_networks'] = "Your networks";
+$lang['sciomio_text_session_networks_link'] = "Wat are networks?";
+
+$lang['sciomio_text_search'] = "Who has knowledge of&hellip;";
+$lang['sciomio_text_search_person'] = "Find people by name&hellip;";
+$lang['sciomio_text_search_detail'] = "within this selection";
+$lang['sciomio_text_search_noResult_1_label'] = "Were you looking for a specific <b>knowledge area</b>, and do you want to inform others about your search?";
+$lang['sciomio_text_search_noResult_1_action'] = "Place '<b>\$knowledge\$</b>' on the startpage.";
+$lang['sciomio_text_search_noResult_2_label'] = "Do you have this knowledge yourself?";
+$lang['sciomio_text_search_noResult_2_action'] = "Add '<b>\$knowledge\$</b>' to your profile.";
+$lang['sciomio_text_search_noResult_3_label'] = "Check your spelling, perhaps you typed too quickly?";
+$lang['sciomio_text_search_noResult_4_label'] = "You can also put up a new post in 'Ask &amp; Share', if you want to ask a broader question.";
+$lang['sciomio_text_search_noResult_4_action'] = "Create a <b>new post</b>.";
+$lang['sciomio_text_search_noResult_5_label'] = "Maybe you were looking for a <b>knowledge area or experience</b> instead of a person?";
+$lang['sciomio_text_search_noResult_5_action'] = "Search everything for '<b>\$name\$</b>'";
+$lang['sciomio_text_search_suggest'] = "Did you mean:";
+
+$lang['sciomio_text_activity_search'] = "Wanted by ";
+$lang['sciomio_text_activity_time'] = " \$time\$ ago";
+$lang['sciomio_text_activity_home_geen'] = "All required knowledge seems present.";
+$lang['sciomio_text_activity_motd'] = "Status: ";
+$lang['sciomio_text_activity_knowledge'] = "Searching for knowledge: ";
+$lang['sciomio_text_activity_save_user'] = "Joined Sciomino.";
+$lang['sciomio_text_activity_save_knowledge'] = "New knowledge: ";
+$lang['sciomio_text_activity_save_hobby'] = "New hobby: ";
+$lang['sciomio_text_activity_save_tag'] = "New label: ";
+
+$lang['sciomio_text_icanhelp'] = " is looking for";
+$lang['sciomio_text_icanhelp_mail'] = "Message to";
+$lang['sciomio_text_icanhelp_knowledge'] = "Add to my knowledge areas";
+$lang['sciomio_text_icanhelp_level'] = "Level";
+$lang['sciomio_text_icanhelp_toevoegen'] = "Send";
+$lang['sciomio_text_icanhelp_save1'] = "Your help&hellip;";
+$lang['sciomio_text_icanhelp_save2'] = "Has been sent!";
+$lang['sciomio_text_icanhelp_save_error'] = "Your help is not processed.<br/>You have not filled out all mandatory fields.";
+
+$lang['sciomio_text_motd_noMessage'] = "You haven't posted a message yet";
+$lang['sciomio_text_motd_defaultMessage'] = "What are you working on?";
+$lang['sciomio_text_motd_standardMessage'] = "Or select a preset message";
+$lang['sciomio_text_motd_message_1'] = "Please don't disturb, I'm busy";
+$lang['sciomio_text_motd_message_2'] = "Working at home";
+$lang['sciomio_text_motd_message_3'] = "On vacation";
+$lang['sciomio_text_motd_time'] = "Lastupdate: \$time\$ ago";
+
+$lang['sciomio_text_lijst_toevoegen'] = "new list&hellip;";
+
+$lang['sciomio_text_connect_ok'] = "The connection is active.";
+$lang['sciomio_text_connect_status'] = "Connected as:";
+$lang['sciomio_text_connect_linkedin_error'] = "The connection with linkedin timed out (or is not accepted). ";
+$lang['sciomio_text_connect_linkedin_renew'] = "Renew the connection for 60 days.";
+$lang['sciomio_text_connect_linkedin_days'] = " days to go. ";
+
+$lang['sciomio_text_user_profile_title'] = "Title";
+$lang['sciomio_text_user_profile_firstname'] = "First name";
+$lang['sciomio_text_user_profile_lastname'] = "Last name";
+$lang['sciomio_text_user_profile_description'] = "About you";
+$lang['sciomio_text_user_profile_dateofbirth'] = "Birthday";
+$lang['sciomio_text_user_profile_dateofbirth_day'] = "day:";
+$lang['sciomio_text_user_profile_dateofbirth_month'] = "month:";
+$lang['sciomio_text_user_profile_dateofbirth_year'] = "year:";
+$lang['sciomio_text_user_profile_dateofbirth_show'] = "show in calendar";
+$lang['sciomio_text_user_profile_dateofbirth_month_1'] = "January";
+$lang['sciomio_text_user_profile_dateofbirth_month_2'] = "February";
+$lang['sciomio_text_user_profile_dateofbirth_month_3'] = "March";
+$lang['sciomio_text_user_profile_dateofbirth_month_4'] = "April";
+$lang['sciomio_text_user_profile_dateofbirth_month_5'] = "May";
+$lang['sciomio_text_user_profile_dateofbirth_month_6'] = "June";
+$lang['sciomio_text_user_profile_dateofbirth_month_7'] = "July";
+$lang['sciomio_text_user_profile_dateofbirth_month_8'] = "August";
+$lang['sciomio_text_user_profile_dateofbirth_month_9'] = "September";
+$lang['sciomio_text_user_profile_dateofbirth_month_10'] = "October";
+$lang['sciomio_text_user_profile_dateofbirth_month_11'] = "November";
+$lang['sciomio_text_user_profile_dateofbirth_month_12'] = "December";
+$lang['sciomio_text_user_profile_gender'] = "I am";
+$lang['sciomio_text_user_profile_gender_select'] = "Select sex";
+$lang['sciomio_text_user_profile_gender_male'] = "Male";
+$lang['sciomio_text_user_profile_gender_female'] = "Female";
+$lang['sciomio_text_user_profile_photo'] = "Change picture";
+$lang['sciomio_text_user_profile_contact_home'] = "Private contact details";
+$lang['sciomio_text_user_profile_contact_home_email'] = "E-mail";
+$lang['sciomio_text_user_profile_contact_home_phone'] = "Phone";
+$lang['sciomio_text_user_profile_contact_home_mobile'] = "Mobile";
+$lang['sciomio_text_user_profile_address_home'] = "Home address";
+$lang['sciomio_text_user_profile_address_home_address'] = "Address";
+$lang['sciomio_text_user_profile_address_home_postalcode'] = "Postal code";
+$lang['sciomio_text_user_profile_address_home_city'] = "City";
+$lang['sciomio_text_user_profile_address_home_country'] = "Country";
+$lang['sciomio_text_user_profile_work'] = "Work";
+$lang['sciomio_text_user_profile_work_industry'] = "Industry";
+$lang['sciomio_text_user_profile_work_company'] = "Company";
+$lang['sciomio_text_user_profile_work_building'] = "Building";
+$lang['sciomio_text_user_profile_work_room'] = "Room";
+$lang['sciomio_text_user_profile_work_role'] = "Job title";
+$lang['sciomio_text_user_profile_work_businessunit'] = "Division";
+$lang['sciomio_text_user_profile_work_section'] = "Department";
+$lang['sciomio_text_user_profile_work_startdate'] = "Start date";
+$lang['sciomio_text_user_profile_work_enddate'] = "End date";
+$lang['sciomio_text_user_profile_work_parttime'] = "I don't work on";
+$lang['sciomio_text_user_profile_contact_work'] = "Business contact details";
+$lang['sciomio_text_user_profile_contact_work_email'] = "E-mail";
+$lang['sciomio_text_user_profile_contact_work_phoneinternal'] = "Phone ext.";
+$lang['sciomio_text_user_profile_contact_work_phoneexternal'] = "Phone";
+$lang['sciomio_text_user_profile_contact_work_mobile'] = "Mobile";
+$lang['sciomio_text_user_profile_contact_work_lync'] = "Lync";
+$lang['sciomio_text_user_profile_contact_work_pager'] = "Pager";
+$lang['sciomio_text_user_profile_contact_work_fax'] = "Fax";
+$lang['sciomio_text_user_profile_contact_work_pac'] = "Post room id";
+$lang['sciomio_text_user_profile_contact_work_myId'] = "Personal id";
+$lang['sciomio_text_user_profile_contact_work_assistentId'] = "Assistent id";
+$lang['sciomio_text_user_profile_contact_work_managerId'] = "Manager id";
+$lang['sciomio_text_user_profile_address_work'] = "Work address";
+$lang['sciomio_text_user_profile_address_work_address'] = "Address";
+$lang['sciomio_text_user_profile_address_work_postalcode'] = "Postal code";
+$lang['sciomio_text_user_profile_address_work_city'] = "City";
+$lang['sciomio_text_user_profile_address_work_country'] = "Country";
+$lang['sciomio_text_user_profile_toevoegen'] = "Nothing to save";
+$lang['sciomio_text_user_profile_address_country_select'] = "Select a country (default nl)";
+$lang['sciomio_text_user_profile_edit_status_ok'] = "Your profile is changed.";
+$lang['sciomio_text_user_profile_edit_status_wrong'] = "Your profile could not be changed.";
+
+$lang['sciomio_text_user_personal_knowledgefield_1'] = "with experience of:";
+$lang['sciomio_text_user_personal_knowledgefield_2'] = "familiar with:";
+$lang['sciomio_text_user_personal_knowledgefield_3'] = "who like to learn about:";
+$lang['sciomio_text_user_personal_hobby'] = "with hobby:";
+$lang['sciomio_text_user_personal_tag'] = "with tag:";
+$lang['sciomio_text_user_personal_network'] = "in network:";
+$lang['sciomio_text_user_personal_all'] = "Or view all ";
+$lang['sciomio_text_user_personal_others'] = "Discover people with your ";
+$lang['sciomio_text_user_faces_birthday'] = "Birthday";
+$lang['sciomio_text_user_faces_new'] = "New";
+
+$lang['sciomio_text_knowledge_toevoegen'] = "add knowledge area&hellip;";
+$lang['sciomio_text_knowledge_none'] = "No knowledge areas found.";
+$lang['sciomio_text_knowledge_ikooktitel'] = "Add knowledge area";
+$lang['sciomio_text_knowledge'] = "Knowledge area";
+$lang['sciomio_text_knowledge_level'] = "Level of expertise";
+$lang['sciomio_text_knowledge_toevoegen2'] = "Add to your profile";
+$lang['sciomio_text_knowledge_save1'] = "Your knowledge area&hellip;";
+$lang['sciomio_text_knowledge_save2'] = "Has been saved!";
+$lang['sciomio_text_knowledge_save_error'] = "The knowledge area has not been saved.<br/>You've allready added it to your profile.";
+$lang['sciomio_text_knowledge_all_toevoegen'] = "Nothing to save";
+
+$lang['sciomio_text_hobby_toevoegen'] = "add hobby/passion&hellip;";
+$lang['sciomio_text_hobby_none'] = "No hobbies found.";
+$lang['sciomio_text_hobby_ikooktitel'] = "Add hobby/Passion";
+$lang['sciomio_text_hobby'] = "Hobby/Passion";
+$lang['sciomio_text_hobby_toevoegen2'] = "Add to your profile";
+$lang['sciomio_text_hobby_save1'] = "Your hobby/passion&hellip;";
+$lang['sciomio_text_hobby_save2'] = "Has been saved!";
+$lang['sciomio_text_hobby_save_error'] = "The hobby/passion has not been saved.<br/>You've allready added it to your profile.";
+
+$lang['sciomio_text_tag_toevoegen'] = "add tag&hellip;";
+$lang['sciomio_text_tag_none'] = "No tags found.";
+$lang['sciomio_text_tag_ikooktitel'] = "Add tag";
+$lang['sciomio_text_tag'] = "Tag";
+$lang['sciomio_text_tag_toevoegen2'] = "Add to your profile";
+$lang['sciomio_text_tag_save1'] = "Your tag&hellip;";
+$lang['sciomio_text_tag_save2'] = "Has been saved!";
+$lang['sciomio_text_tag_save_error'] = "The tag has not been saved.<br/>You've allready added it to your profile.";
+$lang['sciomio_text_tag_all_toevoegen'] = "Nothing to save";
+
+$lang['sciomio_text_blog'] = "Blog: ";
+$lang['sciomio_text_blog_toevoegen'] = "Add blog&hellip;";
+$lang['sciomio_text_blog_blog'] = "Other blog / RSS";
+$lang['sciomio_text_blog_blogger'] = "Blogger";
+$lang['sciomio_text_blog_wordpress'] = "Wordpress";
+$lang['sciomio_text_blog_tumblr'] = "Tumblr";
+$lang['sciomio_text_blog_posterous'] = "Posterous";
+
+$lang['sciomio_text_share_toevoegen'] = "Add account&hellip;";
+$lang['sciomio_text_share_slideshare'] = "Slideshare Profile";
+
+$lang['sciomio_text_website_toevoegen'] = "Add a website&hellip;";
+$lang['sciomio_text_website_website'] = "Website Url";
+
+$lang['sciomio_text_publication_title'] = "Title";
+$lang['sciomio_text_publication_alternative'] = "ISBN";
+$lang['sciomio_text_publication_description'] = "More info";
+$lang['sciomio_text_publication_link'] = "Link (Url)";
+$lang['sciomio_text_publication_toevoegen'] = "Add publication&hellip;";
+$lang['sciomio_text_publication_view_websites'] = "Websites";
+$lang['sciomio_text_publication_view_otherPub'] = "Other publications";
+$lang['sciomio_text_publication_all_toevoegen'] = "Nothing to save";
+
+$lang['sciomio_text_ervaring_toevoegen'] = "Add experience&hellip;";
+$lang['sciomio_text_ervaring_geen'] = "You haven't added any experiences yet";
+$lang['sciomio_text_ervaring_een'] = "You have <strong>1</strong> experience";
+$lang['sciomio_text_ervaring_meer'] = "You have <strong>\$count\$</strong> experiences";
+$lang['sciomio_text_ervaring'] = "Your experience with&hellip;";
+$lang['sciomio_text_ervaring_save1'] = "Your experience&hellip;";
+$lang['sciomio_text_ervaring_save2'] = "Has been saved!";
+$lang['sciomio_text_ervaring_save_error'] = "The experience has not been saved.<br/>You have not filled out all mandatory fields.";
+
+$lang['sciomio_text_company'] = "Company or client";
+$lang['sciomio_text_company_title'] = "Name of company/client";
+$lang['sciomio_text_company_subject'] = "Type of business";
+$lang['sciomio_text_company_date'] = "When";
+$lang['sciomio_text_company_like'] = "Your experience";
+$lang['sciomio_text_company_description'] = "Short description";
+$lang['sciomio_text_company_toevoegen'] = "Add to your profile";
+$lang['sciomio_text_company_wijzigen'] = "Save";
+
+$lang['sciomio_text_education'] = "Training course";
+$lang['sciomio_text_education_title'] = "Title";
+$lang['sciomio_text_education_publisher'] = "Provider";
+$lang['sciomio_text_education_subject'] = "Subject";
+$lang['sciomio_text_education_date'] = "Completed when";
+$lang['sciomio_text_education_like'] = "Your experience";
+$lang['sciomio_text_education_description'] = "Short description";
+$lang['sciomio_text_education_relation-self'] = "More info on";
+$lang['sciomio_text_education_toevoegen'] = "Add to your profile";
+$lang['sciomio_text_education_wijzigen'] = "Save";
+
+$lang['sciomio_text_event'] = "Event or Seminar";
+$lang['sciomio_text_event_title'] = "Title";
+$lang['sciomio_text_event_publisher'] = "Organizer";
+$lang['sciomio_text_event_subject'] = "Type of event";
+$lang['sciomio_text_event_date'] = "Visited when";
+$lang['sciomio_text_event_like'] = "Your experience";
+$lang['sciomio_text_event_description'] = "Short description";
+$lang['sciomio_text_event_relation-self'] = "More info on";
+$lang['sciomio_text_event_toevoegen'] = "Add to your profile";
+$lang['sciomio_text_event_wijzigen'] = "Save";
+
+$lang['sciomio_text_product'] = "Product";
+$lang['sciomio_text_product_title'] = "Brand";
+$lang['sciomio_text_product_alternative'] = "Model/type";
+$lang['sciomio_text_product_subject'] = "Type of product";
+$lang['sciomio_text_product_like'] = "Your experience";
+$lang['sciomio_text_product_plus'] = "Pros";
+$lang['sciomio_text_product_min'] = "Cons";
+$lang['sciomio_text_product_toevoegen'] = "Add to your profile";
+$lang['sciomio_text_product_wijzigen'] = "Save";
+
+$lang['sciomio_text_mail'] = "Send a message to these \$count\$ persons.";
+$lang['sciomio_text_mail_max'] = " (This is the max. You tried to reach \$total\$ people.)";
+$lang['sciomio_text_mail_message'] = "Your message";
+$lang['sciomio_text_mail_toevoegen'] = "Send";
+
+$lang['sciomio_text_twitter'] = "Send a tweet to ";
+$lang['sciomio_text_twitter_message'] = "Your tweet";
+$lang['sciomio_text_twitter_toevoegen'] = "Send";
+$lang['sciomio_text_twitter_connect'] = "You can't send tweets yet. You have to <a href='/user/connect'>connect</a> your profile to twitter first. (Note: You will leave this page.)";
+$lang['sciomio_text_twitter_time'] = "ago";
+$lang['sciomio_text_twitter_following_'] = "";
+$lang['sciomio_text_twitter_followby_'] = "";
+$lang['sciomio_text_twitter_following_true'] = "You follow.";
+$lang['sciomio_text_twitter_followby_true'] = "Follows you.";
+$lang['sciomio_text_twitter_following_false'] = "You don't follow.";
+$lang['sciomio_text_twitter_followby_false'] = "Doesn't follow you.";
+$lang['sciomio_text_twitter_new_status_ok'] = "Your tweet has been sent.";
+$lang['sciomio_text_twitter_new_status_wrong'] = "Your tweet has not been sent, try again later.";
+
+$lang['sciomio_text_wizard'] = "1: About you - 2: LinkedIn & Twitter - 3: Networks - 4: Profile picture";
+$lang['sciomio_text_wizard_linkedin'] = "If you connect with linkedin, we will import this information for you: 'summary, industry & current positions'.";
+$lang['sciomio_text_wizard_twitter'] = "If you connect with Twitter, we show your last tweets on your profile and you can sent tweets directly from Sciomino.";
+$lang['sciomio_text_wizard_photo'] = "Choose a file (jpg, png, gif) on your computer:";
+$lang['sciomio_text_wizard_photo_status_ok'] = "Your photo is saved.";
+$lang['sciomio_text_wizard_personalia'] = "* Gender and date of birth are only used for statistics.";
+
+$lang['sciomio_text_account_delete'] = "Are you really sure?";
+
+$lang['sciomio_text_setting_password'] = "";
+$lang['sciomio_text_setting_account'] = "Your information will be deleted and can not be recovered.";
+$lang['sciomio_text_setting_notification'] = "Select which notifications you want to receive.";
+$lang['sciomio_text_setting_notification_mailKnowledgePreference_name'] = "Personal insights";
+$lang['sciomio_text_setting_notification_mailKnowledgePreference_description'] = "Your knowledge is compared to those of all others. Plus we add the most relevant posts for you. Frequency: once a week.";
+$lang['sciomio_text_setting_language'] = "Choose the language for the website and notification mails.";
+
+# misc
+$lang['sciomio_text_vcard_motd'] = "Latest update";
+$lang['sciomio_text_vcard_saveList'] = "Add to list";
+$lang['sciomio_text_stats_like_1'] = "Recommended!";
+$lang['sciomio_text_stats_like_2'] = "Ok";
+$lang['sciomio_text_stats_like_3'] = "Not ok";
+$lang['sciomio_text_stats_like_4'] = "Terrible!";
+
+# 4. page link / word
+$lang['sciomio_word_search_filter_map'] = "(show all on map)";
+$lang['sciomio_word_search_focus_save'] = "save this";
+$lang['sciomio_word_search_focus_allKnowledge'] = "All levels";
+$lang['sciomio_word_search_focus_allHas'] = "All posessions";
+$lang['sciomio_word_search_focus_allLike'] = "All experiences";
+$lang['sciomio_word_search_focus_allProducts'] = "All brands";
+$lang['sciomio_word_search_focus_allProductAlternatives'] = "All models";
+$lang['sciomio_word_search_focus_allCompanies'] = "All companies";
+$lang['sciomio_word_search_focus_allEvents'] = "All events";
+$lang['sciomio_word_search_focus_allEducations'] = "All courses";
+
+$lang['sciomio_word_view_profile_edit'] = "Edit your profile.";
+$lang['sciomio_word_view_more'] = "Show this profile with more experiences &raquo;";
+
+$lang['sciomio_word_browse_knowledge_external_more'] = "Read more on wikipedia&nbsp;&raquo;";
+$lang['sciomio_word_browse_hobby_external_more'] = "Read more on wikipedia&nbsp;&raquo;";
+$lang['sciomio_word_browse_tag_external_more'] = "Read more on wikipedia&nbsp;&raquo;";
+$lang['sciomio_word_browse_digg'] = "Digg Deeper&nbsp;&raquo;";
+
+$lang['sciomio_word_insights_other_day'] = "other day";
+
+$lang['sciomio_word_user_publication_connect'] = "Linked accounts.";
+
+$lang['sciomio_word_user_focus_view'] = "Jump to this selection";
+$lang['sciomio_word_user_focus_delete'] = "Delete";
+
+$lang['sciomio_word_user_experience_more'] = "Show all experiences &raquo;";
+
+$lang['sciomio_word_linkedin_view'] = "View profile on Linkedin";
+$lang['sciomio_word_linkedin_skills'] = "Suggested skills: ";
+
+$lang['sciomio_word_act_edit'] = "Edit";
+$lang['sciomio_word_act_end'] = "Close";
+$lang['sciomio_word_act_add'] = "Add review";
+$lang['sciomio_word_act_more'] = "Show all comments";
+
+# misc
+$lang['sciomio_word_search'] = "Search";
+$lang['sciomio_word_browse'] = "Browse";
+$lang['sciomio_word_edit'] = "Edit";
+$lang['sciomio_word_delete'] = "Delete";
+$lang['sciomio_word_close'] = "Close";
+$lang['sciomio_word_message'] = "Send message to";
+$lang['sciomio_word_more'] = "More &raquo;";
+$lang['sciomio_word_moreResults'] = "More results";
+$lang['sciomio_word_moreActs'] = "More messages";
+$lang['sciomio_word_morePosts'] = "More posts &raquo;";
+$lang['sciomio_word_moreTweets'] = "More tweets &raquo;";
+$lang['sciomio_word_home'] = "More results";
+$lang['sciomio_word_showAll'] = "(show all)";
+$lang['sciomio_word_metoo'] = "me too";
+$lang['sciomio_word_youtoo'] = "you too";
+$lang['sciomio_word_you'] = "You";
+$lang['sciomio_word_your'] = "Your";
+$lang['sciomio_word_icanhelp'] = "I can help";
+$lang['sciomio_word_ihave'] = "I have";
+$lang['sciomio_word_or'] = "or";
+$lang['sciomio_word_resetAll'] = "Cancel all";
+$lang['sciomio_word_reset'] = "Cancel";
+$lang['sciomio_word_ok'] = "OK";
+$lang['sciomio_word_disconnect'] = "(Disconnect)";
+$lang['sciomio_word_connect'] = "Connect now!";
+$lang['sciomio_word_share'] = "Share";
+$lang['sciomio_word_forward'] = "Forward";
+$lang['sciomio_word_valid'] = "valid";
+$lang['sciomio_word_today'] = "Today";
+$lang['sciomio_word_tomorrow'] = "Tomorrow";
+$lang['sciomio_word_all'] = "All";
+$lang['sciomio_word_select'] = "Select...";
+$lang['sciomio_word_next'] = "Next";
+$lang['sciomio_word_finish'] = "Enter Sciomino!";
+$lang['sciomio_word_photo_upload'] = "Upload photo";
+$lang['sciomio_word_account_delete'] = "Yes, delete everything now";
+$lang['sciomio_word_yes'] = "Yes";
+$lang['sciomio_word_no'] = "No";
+$lang['sciomio_word_not_found'] = "No results found.";
+
+# nav
+$lang['sciomio_word_nav_search'] = "Home";
+$lang['sciomio_word_nav_browse'] = "Browse";
+$lang['sciomio_word_nav_insights'] = "Insights";
+$lang['sciomio_word_nav_act'] = "Ask &amp; Share";
+$lang['sciomio_word_nav_user'] = "You";
+$lang['sciomio_word_nav_head_profile'] = "Your profile";
+$lang['sciomio_word_nav_head_profile_dropdown'] = "Edit your profile";
+$lang['sciomio_word_nav_profile'] = "My profile";
+$lang['sciomio_word_nav_personalia'] = "Profile";
+$lang['sciomio_word_nav_publicaties'] = "Publications";
+$lang['sciomio_word_nav_kennis'] = "Knowledge &amp; Passions";
+$lang['sciomio_word_nav_tags'] = "Tags";
+$lang['sciomio_word_nav_ervaringen'] = "Experiences";
+$lang['sciomio_word_nav_head_features'] = "Other settings";
+$lang['sciomio_word_nav_settings'] = "Settings";
+$lang['sciomio_word_nav_focus'] = "Selections";
+$lang['sciomio_word_nav_connect'] = "Social Media";
+$lang['sciomio_word_nav_networks'] = "Networks";
+$lang['sciomio_word_nav_head_account'] = "Your account";
+$lang['sciomio_word_nav_account'] = "Account";
+$lang['sciomio_word_nav_password'] = "Password";
+$lang['sciomio_word_nav_notification'] = "Email";
+$lang['sciomio_word_nav_language'] = "Language";
+
+# like
+$lang['sciomio_word_like_1'] = "Recommended!";
+$lang['sciomio_word_like_2'] = "Ok";
+$lang['sciomio_word_like_3'] = "Not ok";
+$lang['sciomio_word_like_4'] = "Just don't";
+
+# has
+$lang['sciomio_word_has_1'] = "Have it";
+$lang['sciomio_word_has_2'] = "Used to have it";
+$lang['sciomio_word_has_3'] = "Would love to have it";
+
+# knowledgelevel
+$lang['sciomio_word_knowledgefield_1'] = "Extensive experience";
+$lang['sciomio_word_knowledgefield_2'] = "Familiar with the topic";
+$lang['sciomio_word_knowledgefield_3'] = "Like to learn more";
+
+# search filter
+$lang['sciomio_word_filter_knowledge'] = "Knowledge areas";
+$lang['sciomio_word_filter_hobby'] = "Hobbies &amp; Passions";
+$lang['sciomio_word_filter_product'] = "Products";
+$lang['sciomio_word_filter_company'] = "Companies &amp; Clients";
+$lang['sciomio_word_filter_event'] = "Events";
+$lang['sciomio_word_filter_education'] = "Training courses";
+$lang['sciomio_word_filter_tag'] = "Tags";
+$lang['sciomio_word_filter_list'] = "Your lists";
+$lang['sciomio_word_filter_managerList'] = "Team lists";
+$lang['sciomio_word_filter_publicList'] = "Networks";
+$lang['sciomio_word_filter_industry'] = "Industries";
+$lang['sciomio_word_filter_organization'] = "Companies";
+$lang['sciomio_word_filter_businessunit'] = "Divisions";
+$lang['sciomio_word_filter_section'] = "Departments";
+$lang['sciomio_word_filter_role'] = "Job titles";
+$lang['sciomio_word_filter_hometown'] = "Home towns";
+$lang['sciomio_word_filter_workplace'] = "Workplaces";
+$lang['sciomio_word_filter_network'] = "Networks";
+
+$lang['sciomio_word_filter_statusList'] = "Status";
+$lang['sciomio_word_filter_my'] = "Posts from&hellip;";
+
+# search focus
+$lang['sciomio_word_focus_name'] = "name";
+$lang['sciomio_word_focus_query'] = "you searched for";
+$lang['sciomio_word_focus_knowledge'] = "knowledge area";
+$lang['sciomio_word_focus_hobby'] = "hobby/passion";
+$lang['sciomio_word_focus_Product'] = "product";
+$lang['sciomio_word_focus_Company'] = "company/client";
+$lang['sciomio_word_focus_Event'] = "event";
+$lang['sciomio_word_focus_Education'] = "training course";
+$lang['sciomio_word_focus_tag'] = "tag";
+$lang['sciomio_word_focus_list'] = "your list";
+$lang['sciomio_word_focus_managerList'] = "team list";
+$lang['sciomio_word_focus_publicList'] = "network";
+$lang['sciomio_word_focus_industry'] = "industry";
+$lang['sciomio_word_focus_organization'] = "company";
+$lang['sciomio_word_focus_businessunit'] = "division";
+$lang['sciomio_word_focus_section'] = "department";
+$lang['sciomio_word_focus_role'] = "job title";
+$lang['sciomio_word_focus_hometown'] = "home town";
+$lang['sciomio_word_focus_workplace'] = "workplace";
+
+# act expiration
+$lang['sciomio_word_act_expiration_name_1'] = "1 day";
+$lang['sciomio_word_act_expiration_name_2'] = "1 week";
+$lang['sciomio_word_act_expiration_name_3'] = "2 weeks";
+$lang['sciomio_word_act_expiration_name_4'] = "1 month";
+$lang['sciomio_word_act_expiration_name_5'] = "2 months";
+$lang['sciomio_word_act_expiration_value_1'] = 60*60*24;
+$lang['sciomio_word_act_expiration_value_2'] = 60*60*24*7;
+$lang['sciomio_word_act_expiration_value_3'] = 60*60*24*7*2;
+$lang['sciomio_word_act_expiration_value_4'] = 60*60*24*30;
+$lang['sciomio_word_act_expiration_value_5'] = 60*60*24*30*2;
+
+# act filter
+$lang['sciomio_word_filter_act_status_all'] = "All posts";
+$lang['sciomio_word_filter_act_status_relevant'] = "Relevant";
+$lang['sciomio_word_filter_act_status_open'] = "Open";
+$lang['sciomio_word_filter_act_status_open_day'] = "Today";
+$lang['sciomio_word_filter_act_status_open_week'] = "This week";
+$lang['sciomio_word_filter_act_status_open_month'] = "This month";
+$lang['sciomio_word_filter_act_status_closed'] = "Closed";
+$lang['sciomio_word_filter_act_status_closed_story'] = "With story";
+$lang['sciomio_word_filter_act_my_act'] = "Me";
+$lang['sciomio_word_filter_act_my_react'] = "With my comments";
+
+# months
+$lang['sciomio_word_month_1'] = "January";
+$lang['sciomio_word_month_2'] = "February";
+$lang['sciomio_word_month_3'] = "March";
+$lang['sciomio_word_month_4'] = "April";
+$lang['sciomio_word_month_5'] = "May";
+$lang['sciomio_word_month_6'] = "June";
+$lang['sciomio_word_month_7'] = "July";
+$lang['sciomio_word_month_8'] = "August";
+$lang['sciomio_word_month_9'] = "September";
+$lang['sciomio_word_month_10'] = "October";
+$lang['sciomio_word_month_11'] = "November";
+$lang['sciomio_word_month_12'] = "December";
+$lang['sciomio_word_month_short_1'] = "Jan.";
+$lang['sciomio_word_month_short_2'] = "Feb.";
+$lang['sciomio_word_month_short_3'] = "Mar.";
+$lang['sciomio_word_month_short_4'] = "Apr.";
+$lang['sciomio_word_month_short_5'] = "May";
+$lang['sciomio_word_month_short_6'] = "Jun.";
+$lang['sciomio_word_month_short_7'] = "Jul.";
+$lang['sciomio_word_month_short_8'] = "Aug.";
+$lang['sciomio_word_month_short_9'] = "Sep.";
+$lang['sciomio_word_month_short_10'] = "Oct.";
+$lang['sciomio_word_month_short_11'] = "Nov.";
+$lang['sciomio_word_month_short_12'] = "Dec.";
+
+# 5. page status
+$lang['sciomio_status_error400'] = "400 Bad Request";
+
+# 6. mail
+$lang['sciomio_mail_bericht_subject'] = "\$user\$ sends you a message from \$name\$";
+$lang['sciomio_mail_bericht_body'] = "\$user\$ writes:\n\n\"\$message\$\"\n\n--\n";
+$lang['sciomio_mail_bericht_status_ok'] = "Your message has been sent.";
+$lang['sciomio_mail_bericht_status_wrong'] = "Your message has not been sent.";
+$lang['sciomio_mail_help_subject'] = "\$user\$ sends you a message about '\$knowledge\$' on \$name\$";
+$lang['sciomio_mail_help_body'] = "You were looking for '\$knowledge\$'\n\n\$user\$ writes:\n\n\"\$message\$\"\n\n--\n";
+$lang['sciomio_mail_help_status_ok'] = "Your message has been sent.";
+$lang['sciomio_mail_help_status_wrong'] = "Your message has not been sent.";
+$lang['sciomio_mail_act_subject'] = "\$user\$ wants to notify you to a message on \$name\$";
+$lang['sciomio_mail_act_body'] = "\$user\$ forwards you the following message:\n\n\"\$actMessage\$\"\n\nView this message: \$actUrl\$\n\n---\nMessage of \$user\$:\n\"\$message\$\"\n---\n";
+$lang['sciomio_mail_act_status_ok'] = "Your message has been sent.";
+$lang['sciomio_mail_act_status_wrong'] = "Your message has not been sent.";
+$lang['sciomio_mail_act_react_subject'] = "\$user\$ reacted to your message on \$name\$";
+$lang['sciomio_mail_act_react_body'] = "Message from \$user\$:\n\n\"\$message\$\"\n\n---\nOriginal message:\n\"\$actMessage\$\"\n\nView this message: \$actUrl\$\n---\n";
+$lang['sciomio_mail_act_react_status_ok'] = "Your message has been sent.";
+$lang['sciomio_mail_act_react_status_wrong'] = "Your message has not been sent.";
+
+###########
+
+# APPEND SKIN HERE #
+
+$XCOW_B['language'] = $XCOW_B['language'] + $lang;
+
+?>

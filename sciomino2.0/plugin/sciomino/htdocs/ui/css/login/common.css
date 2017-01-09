@@ -1,0 +1,842 @@
+body {
+	font-size: 1em; /* 14/16 */
+	line-height: 150%;
+	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	color: #333;
+	background-color: #fff;
+	margin: 0;
+	margin-top: 20px;
+/*	margin-bottom: 119px; */
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: #333;
+}
+
+a:link img {
+	border: none;
+}
+
+a:hover {
+	color: #afafaf;
+}
+
+ul {
+	padding-left: 0;
+	margin-left: 0;
+}
+
+abbr {
+	border: none;
+}
+
+td, th {
+	vertical-align: top;
+}
+
+.puu-nav ul:before,
+.puu-nav ul:after,
+.puu-home:before,
+.puu-home:after,
+.puu-team:before,
+.puu-team:after,
+.puu-ftr:before,
+.puu-ftr:after,
+.puu-tes ul:before,
+.puu-tes ul:after,
+.X {
+	content: "";
+	display: table;
+}
+
+.puu-nav ul:after,
+.puu-team:after,
+.puu-home:after,
+.puu-ftr:after,
+.puu-tes ul:after,
+.X {
+	clear: both;
+}
+
+.puu-main,
+.puu-tes .puu-cnt,
+.puu-ftr .puu-cnt,
+.puu-sosumi,
+.X {
+	max-width: 1041px;
+	padding: 0 20px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.puu-main *,
+.puu-tes .puu-cnt *,
+.puu-ftr .puu-cnt *,
+.puu-sosumi *,
+.X {
+	text-align: left;
+}
+
+h1 {
+	font-size: 3.571em; /* 50/14 */
+	line-height: 100%;
+	color: #fdc02a;
+	clear: both;
+	padding-top: 0;
+}
+
+h2 {
+	font-size: 1.3em;
+}
+
+.puu-lgo {
+	float: left;
+	width: 20%;
+}
+
+.puu-nav .active,
+.puu-snav .active,
+.X {
+	font-style: normal;
+	font-weight: 800;
+}
+
+.puu-snav .active {
+	font-weight: 800;
+}
+
+.puu-nav {
+	float: right;
+	width: 75%;
+	border-bottom: 1px solid #AFAFAF;
+	position: relative;
+	height: 38px;
+	margin-top: 10px;
+}
+
+.puu-nav ul {
+	list-style-type: none;
+}
+
+.puu-nav li {
+	display: block;
+	float: left;
+	border-left: 1px solid #c9c9c9;
+	padding: 0 12px;
+	line-height: 100%; 
+}
+
+.puu-nav li:first-child {
+	border-left: none;
+}
+
+.puu-nav li .active,
+.puu-snav .active,
+.X {
+	background-image: url("/ui/skin/sciomino/gfx/login/bg_dot.png");
+}
+
+.puu-nav li .active {
+	background-repeat: no-repeat;
+	background-position: 50% 100%;
+	padding-bottom: 10px;
+}
+
+.puu-nav .puu-login {
+	font-size: 0.857em; /* 12/14 */
+	position: absolute;
+	right: 20px;
+	top: 22px;
+	border: none;
+	background-color: #fff;
+	padding: 0 20px;
+}
+
+/* HERMAN: set background image on span, keep color on a */
+.puu-nav .puu-login a {
+	color: #fff;
+}
+
+.puu-nav .puu-login a:hover {
+	color: #afafaf;
+}
+
+.puu-nav .puu-login span {
+	display: block;
+	color: #fff;
+	background-color: #3c3c3c;
+	background-color: transparent;
+	background-image: url("/ui/skin/sciomino/gfx/login/bg_login.png");
+	background-repeat: no-repeat;
+	width:108px;
+	height: 32px;
+	line-height: 29px;
+	text-align: center;
+}
+
+.puu-nav .puu-login span:hover {
+	background-position: 0 -32px;
+}
+
+.puu-snav {
+	position: absolute;
+	top: 226px;
+	background-color: #fff;
+	padding-right: 1em;
+}
+
+.puu-snav ul {
+	border-left: 1px solid #AFAFAF;
+	list-style-type: none;
+	padding-left: 20px;
+}
+
+.puu-snav .active {
+	position: relative;
+	left: -25px;
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	padding-left: 25px;
+}
+
+.puu-snav .puu-sep {
+	margin-top: 1em;
+}
+
+.puu-main .puu-cnt {
+	margin-left: 261px;
+	margin-bottom: 0;
+	padding-bottom: 60px;
+}
+
+.puu-main .puu-cnt > h1 {
+	padding-top: 44px;
+}
+
+.puu-main .puu-cnt h2 {
+    margin-bottom: 0px;
+    padding: 0;
+}
+
+.puu-main .puu-cnt p {
+    margin-top: 2px;
+}
+
+.puu-main .puu-cnt .puu-sec {
+	margin-left: 184px;
+	min-height: 186px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	max-width: 460px;
+}
+
+.puu-cnt .puu-vis {
+	position: absolute;
+	margin-left: -184px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+    border: 1px solid #DDD;
+    -moz-box-shadow: 3px 3px 4px #000;
+    -webkit-box-shadow: 3px 3px 4px #000;
+    box-shadow: 3px 3px 4px #EEE;
+}
+
+.puu-cnt .puu-vis2 {
+	position: absolute;
+	margin-left: -184px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.puu-main .puu-cnt .puu-sec h2 {
+	margin-left: 80px;
+    margin-bottom: 0px;
+    padding: 0;
+}
+
+.puu-main .puu-cnt .puu-sec p {
+    margin-left: 80px;
+    margin-top: 2px;
+}
+
+.puu-main .puu-cnt .puu-sec li {
+	margin-left: 100px;
+}
+
+/* industries content */
+.puu-main .puu-cnt .puu-sec2 {
+	margin-left: 184px;
+	min-height: 186px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	max-width: 460px;
+}
+
+.puu-main .puu-cnt .puu-sec2 h2 {
+	margin-left: -40px;
+	margin-bottom: 0px;
+	padding: 0;
+}
+
+.puu-main .puu-cnt .puu-sec2 p {
+	margin-left: -40px;
+	margin-top: 2px;
+}
+
+.puu-main .puu-cnt .puu-sec2 li {
+	margin-left: -20px;
+}
+
+.puu-main .puu-cnt .puu-sec2 .puu-credit {
+	margin-top: 0;
+	font-weight: 800;
+}
+
+.puu-main .puu-cnt .puu-sec2 .puu-credit a {
+	margin-top: 0;
+	font-weight: 800;
+	color: black;
+}
+
+.puu-cnt .puu-vis3 {
+	position: absolute;
+	margin-left: -304px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+/* einde industries content */
+
+/* testimonial incontent */
+.puu-main .puu-cnt .puu-sec .puu-ava {
+	position: absolute;
+	margin-top: 4px;
+	margin-left: -10px;
+	margin-right: 20px;
+}
+
+.puu-main .puu-cnt .puu-sec blockquote,
+.puu-main .puu-cnt .puu-sec blockquote p,
+.X {
+	font-style: italic;
+	margin: 0;
+}
+
+.puu-main .puu-cnt .puu-sec blockquote {
+	margin-top: 10px;
+    margin-left: 80px;
+}
+
+.puu-main .puu-cnt .puu-sec .puu-credit {
+	margin-top: 0;
+	font-weight: 800;
+}
+
+.puu-main .puu-cnt .puu-sec .puu-credit a {
+	margin-top: 0;
+	font-weight: 800;
+	color: black;
+}
+
+/* einde testimonial incontent*/
+
+.puu-cnt p {
+	max-width: 644px;
+}
+
+.puu-cnt a {
+    color: #1388BF
+}
+
+.puu-cnt > h1 {
+	margin-bottom: 13px;
+}
+
+.puu-cnt .puu-sum {
+	font-size: 1.7em; /* 30/14 */
+	line-height: 107%;
+	color: #afafaf;
+	max-width: 100%;
+	height: 100%;
+	margin-top: 0;
+	margin-bottom: 24px;
+}
+
+.puu-tes,
+.puu-plans .puu-sep,
+.X {
+	background-color: #f6f6f6;
+	background-image: url("/ui/skin/sciomino/gfx/login/bg_tes.png");
+}
+
+.puu-tes {
+	border-top: 1px solid #afafaf;
+	border-bottom: 1px solid #333;
+}
+
+.puu-tes ul {
+	list-style-type: none;
+	min-height: 67px;
+	margin-bottom: 10px;
+}
+
+.puu-tes li  {
+	width: 23%;
+	float: left;
+	margin-left: 11.3%;
+}
+
+.puu-tes li:first-child  {
+	margin-left: 8.4%;
+}
+
+.puu-tes li .puu-ava {
+	position: absolute;
+	margin-top: 4px;
+	margin-left: -89px;
+	margin-right: 20px;
+}
+
+.puu-tes li blockquote,
+.puu-tes li blockquote p,
+.X {
+	font-style: italic;
+	margin: 0;
+}
+
+.puu-tes li blockquote p a{
+	color: #333;
+}
+
+.puu-tes li blockquote {
+	margin-top: 10px;
+}
+
+.puu-tes li .puu-credit {
+	margin-top: 0;
+	font-weight: 800;
+}
+
+.puu-tes h1 {
+	margin-top: 19px;
+}
+
+.puu-tes h1,
+.puu-ftr h1,
+.X {
+	font-size: 1.357em; /* 19/14 */
+	color: #333;
+}
+
+.puu-ftr {
+	background-color: #333;
+}
+
+.puu-ftr .puu-sec {
+	width: 50%;
+	float: right;
+}
+
+.puu-ftr .puu-sec:first-child {
+	width: 50%;
+	float: left;
+}
+
+.puu-ftr .puu-sec ul {
+	float: left;
+	width: 170px;
+}
+
+.puu-ftr h1 {
+	color: #fdc02a;
+	padding-top: 6px;
+	margin-bottom: 11px;
+}
+
+.puu-ftr ul {
+	margin-top: 0;
+	margin-bottom: 24px;
+}
+
+.puu-ftr li {
+	font-size: .929em; /* 13/14 */
+	list-style-type: none;
+}
+
+.puu-ftr a {
+	color: #fff;
+}
+
+.puu-ftr a:hover {
+	color: #afafaf;
+}
+
+.puu-ftr .puu-sec:first-child ul {
+	max-width: 170px;
+}
+
+.puu-ftr ul a em {
+	font-style: normal;
+	color: #fdc02a;
+}
+
+.puu-ftr ul a:hover em {
+	color: #afafaf;
+}
+
+.puu-sosumi {
+	font-size: .929em;
+	line-height: 200%;
+}
+
+.puu-team li {
+	list-style-type: none;
+	float: left;
+	width: 44%;
+	padding-bottom: 20px;
+}
+
+.puu-team li li {
+	padding-bottom: 0;
+}
+
+.puu-team .puu-ava {
+	float: left;
+}
+
+.puu-team li div {
+	margin-left: 124px;
+}
+
+.puu-team h2 {
+	font-size: 1em;
+	line-height: 100%;
+	padding-top: 5px;
+	margin-bottom: 2px;
+}
+
+.puu-team .puu-role {
+	margin: 0;
+	color: #afafaf;
+}
+
+.puu-team .puu-role a {
+	color: #afafaf;
+}
+
+.puu-team .puu-role a:hover {
+	color: #1388BF;
+}
+
+.puu-team .puu-link,
+.puu-team .puu-twit,
+.puu-team .puu-web,
+.X {
+	background-image: url("/ui/skin/sciomino/gfx/login/ico_linkedin.png");
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	padding-left: 21px;
+}
+
+.puu-team .puu-link a,
+.puu-team .puu-twit a,
+.puu-team .puu-web a,
+.X {
+	color: #1388bf;
+}
+
+.puu-team .puu-link a:hover,
+.puu-team .puu-twit a:hover,
+.puu-team .puu-web a:hover,
+.X {
+	color: #afafaf;
+}
+
+.puu-team .puu-twit {
+	background-image: url("/ui/skin/sciomino/gfx/login/ico_twitter.png");
+}
+
+.puu-team .puu-web {
+	background-image: url("/ui/skin/sciomino/gfx/login/ico_website.png");
+}
+
+.puu-cnt.puu-home {
+	margin-left: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.puu-cnt.puu-home h1 {
+	text-align: center;
+	color: #3c3c3c;
+	padding-top: 10px;
+	margin-bottom: 12px;
+}
+
+.puu-cnt.puu-home h1 a{
+    color: #333;
+}
+
+.puu-cnt.puu-home .puu-sum {
+    font-size: 1.4em; /* 30/14 */
+    line-height: 1.2em;
+    text-align: center;
+	max-width: 710px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 12px;
+	margin-bottom: 50px;
+}
+
+.puu-cnt.puu-home .puu-sum .puu-fup {
+	color: #fdc02a;
+}
+
+.puu-cnt.puu-home .puu-sum .puu-fup:hover {
+	color: #afafaf;
+}
+
+.puu-cnt.puu-home .puu-shots {
+	float: left;
+	margin-left: 28px;
+}
+
+.puu-cnt.puu-home .puu-pitch {
+	padding-top: 14px;
+	margin-left: 687px;
+	margin-right: 28px;
+}
+
+.puu-cnt.puu-home .puu-usp {
+	list-style-type: none;
+}
+
+.puu-cnt.puu-home .puu-usp li {
+	background-image: url("/ui/skin/sciomino/gfx/login/ico_time.png");
+	background-repeat: no-repeat;
+	padding-left: 85px;
+	min-height: 67px;
+	margin-bottom: 28px;
+}
+
+.puu-cnt.puu-home .puu-usp h2 {
+	padding-top: 3px;
+	margin-bottom: 6px;
+	font-size: 1.1em;
+}
+
+.puu-cnt.puu-home .puu-usp li p  {
+	font-size: 1em; /* 15/14 */
+	line-height: 1.267em; /* 19/15 */
+	font-weight: 500;
+	color: #afafaf;
+	margin-top: 0;
+}
+
+.puu-cnt.puu-home .puu-usp a  {
+    color: #FDC02A;
+}
+
+.puu-cnt.puu-home .puu-usp a:hover  {
+    color: #afafaf;
+}
+
+.puu-cnt.puu-home li.puu-money {
+	background-image: url("/ui/skin/sciomino/gfx/login/ico_money.png");
+}
+
+.puu-cnt.puu-home li.puu-reuse {
+	background-image: url("/ui/skin/sciomino/gfx/login/ico_reuse.png");
+}
+
+.puu-cnt.puu-home .puu-pitch .puu-contact {
+	margin-top: 0;
+	border-top: 1px solid #afafaf;
+	padding-top: 10px;
+}
+
+.puu-cnt.puu-home .puu-pitch .puu-contact h2 {
+	font-size: 1.2em;
+	float: left;
+	max-width: 60%;
+}
+
+.puu-cnt.puu-home .puu-pitch .puu-contact a:link {
+	color: #1388bf;
+}
+
+.puu-cnt.puu-home .puu-pitch .puu-contact a:hover {
+	color: #afafaf;
+}
+
+.puu-cnt.puu-home .puu-pitch .puu-contact a.puu-btn {
+	font-size: 1.071em; /* 15/14 */
+	float: right;
+	display: block;
+	background-image: url("/ui/skin/sciomino/gfx/login/bg_contact.png");
+	background-repeat: no-repeat;
+	width: 120px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	font-weight: 800;
+	color: #3c3c3c;
+	margin-top: 22px;
+}
+
+.puu-cnt.puu-home .puu-pitch .puu-contact p {
+	float: left;
+	margin: 0;
+	line-height: 121%; /* 17/14 */
+}
+
+.puu-cnt.puu-home .puu-pitch .puu-contact a.puu-btn:hover {
+	background-position: 0 -34px;
+}
+
+/* test van edwin om knop ook in nieuwe subtes te krijgen */
+.puu-tes .puu-contact {
+	margin-top: 0;
+}
+
+.puu-tes .puu-contact h2 {
+	font-size: 1.2em;
+    float: left;
+	max-width: 80%;
+    margin-left: -80px;
+}
+
+.puu-tes .puu-contact a:link {
+	color: #1388bf;
+}
+
+.puu-tes .puu-contact a:hover {
+	color: #afafaf;
+}
+
+.puu-tes .puu-contact a.puu-btn {
+	font-size: 1.071em; /* 15/14 */
+	float: right;
+	display: block;
+	background-image: url("/ui/skin/sciomino/gfx/login/bg_contact.png");
+	background-repeat: no-repeat;
+	width: 120px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	font-weight: 800;
+	color: #3c3c3c;
+	margin: 22px 0;
+}
+
+.puu-tes .puu-contact p {
+	float: left;
+	margin: 0;
+	line-height: 121%; /* 17/14 */
+}
+
+.puu-tes .puu-contact a.puu-btn:hover {
+	background-position: 0 -34px;
+}
+/* einde test */
+
+.puu-plans {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.puu-plans thead td {
+	font-size: 1.429em; /* 20/14 */
+	color: #fdc02a;
+	background-color: #3c3c3c;
+	padding: 15px 20px 10px 20px;
+	width: 33%;
+	background-image: url("/ui/skin/sciomino/gfx/login/bg_th_second.png");
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+	line-height: 100%;
+}
+
+.puu-plans thead td.puu-st {
+	background-image: url("/ui/skin/sciomino/gfx/login/bg_th_first.png");
+	background-position: 0 0;
+}
+
+.puu-plans thead td .puu-price {
+	font-size: .7em; /* 14/20 */
+	color: #afafaf;
+	margin: 0;
+	margin-top: 5px;
+}
+
+.puu-plans thead td .puu-price .puu-amount {
+	font-size: 1.429em; /* 20/14 */
+}
+
+.puu-plans tbody td,
+.puu-plans tbody th,
+.X {
+	border-bottom: 1px solid #afafaf;
+	font-weight: normal;
+	padding: 14px 20px;
+}
+
+.puu-plans tbody td .puu-note {
+	margin: 0;
+	font-size: .786em; /* 11/14 */
+}
+
+.puu-plans td {
+	background-color: #e2e2e2;
+	border-left: 1px solid #fff;
+}
+
+.puu-plans .puu-bool td {
+	text-align: center;
+}
+
+.puu-plans .puu-sep th {
+	text-transform: uppercase;
+	font-weight: 800;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.puu-contact label {
+    display: block;
+}
+
+.puu-contact .puu-field, .puu-contact textarea, .X {
+    border: 1px solid #AFAFAF;
+    font-size: 1em;
+    margin-top: 0.5em;
+    padding: 5px 10px;
+    width: 100%;
+}
+/*
+div.puu-cnt.puu-home img.puu-shots{
+    margin-bottom: -24px;
+}
+*/
+div.puu-cnt.puu-home .puu-creds {
+    position: relative;
+    float: left;
+    left: 46px; /* same margin as pic */
+    font-size: 0.8em;
+    background-color: #333333;
+    padding: 0 10px;
+    text-align: center;
+    opacity:0.7;
+    filter:alpha(opacity=70); /* For IE8 and earlier */
+    border-top-right-radius: 10px;
+}
+ 
+div.puu-creds a, div.puu-creds a:visited{
+    color: #ffffff;
+}
+div.puu-creds a:hover{
+    color: #afafaf;
+    opacity:1.0;
+   filter:alpha(opacity=100); /* For IE8 and earlier */
+}

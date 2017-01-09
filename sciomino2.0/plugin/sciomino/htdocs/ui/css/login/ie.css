@@ -1,0 +1,32 @@
+.puu-nav {
+	height: 33px;
+}
+
+.puu-nav .puu-login {
+	top: 20px;
+}
+
+.puu-nav .puu-login a {
+	height: 31px;
+}
+
+.puu-nav li em,
+.puu-snav em,
+.X {
+	background-image: url("/ui/skin/sciomino/gfx/login/bg_dot_ie.png");
+}
+
+.puu-snav em {
+	background-position: -1px 50%;
+}
+
+.puu-team .puu-scio,
+.puu-team .puu-twit,
+.X {
+	background-image: url("/ui/skin/sciomino/gfx/login/ico_sciomino_ie.png");
+	background-position: -1px 50%;
+}
+
+.puu-team .puu-twit {
+	background-image: url("/ui/skin/sciomino/gfx/login/ico_twitter_ie.png");
+}

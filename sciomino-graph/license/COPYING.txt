@@ -1,0 +1,28 @@
+    Copyright (C) 2004 Herman van Dompseler. All rights reserved.
+
+    This copyright covers all code in each source file that is part 
+    of this program.
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of version 2 of the GNU General Public License (GPL) 
+    as published by the Free Software Foundation. The GPL is copyrighted by 
+    the Free Software Foundation, but the code that it refers to is 
+    copyrighted by me. Redistributions of any form must retain the 
+    following acknowledgment:
+
+        "This product includes software developed by Herman van Dompseler
+         (http://www.dompseler.nl/)."
+
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, surf to http://www.gnu.org/licenses/.
+
+    Herman van dompseler (herman@dompseler.nl)
+
+    Note: Please contact me if you want to copy (pieces of) the code in 
+          your non-free program.

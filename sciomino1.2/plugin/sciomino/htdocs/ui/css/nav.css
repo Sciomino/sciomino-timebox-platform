@@ -1,0 +1,192 @@
+/**
+ navigation elements
+ */
+
+.home .nav {
+	padding-top: 20px;
+}
+
+.nav li {
+	float: left;
+	border: 0;
+	padding: 0;
+}
+
+.navlabel,
+.nav a {
+	display: block;
+	font-size: 1.1667em;
+	padding: 6px 15px;
+	margin-right: 1px;
+	color: #000;
+	text-decoration: none;
+}
+
+/*extends .nav a */
+.nav-u a.edit {
+	float: left;
+	padding: 5px 0 5px 20px;
+	margin-left: 15px;
+	background: url(../gfx/icons-sprite.png) no-repeat 0 -1292px;
+}
+
+.navlabel {
+    float: left;
+}
+
+/*extends .nav*/
+.nav-u {
+	width: 100%;
+	overflow: hidden;
+	padding-top: 30px;
+	background: #fff url(../gfx/bg/grad_nav-u.png) repeat-x 0 100%;
+}
+
+/*extends  h3*/
+.nav-u h3 {
+	line-height: 1.777em;
+	font-size: 1.5em;
+}
+
+/*extends .nav ul*/
+.nav-main {
+	float: left;
+	margin-left: 15px;
+}
+
+.nav-main a {
+	background: #fff;
+	font-weight: bold;
+}
+
+.nav-main a:hover,
+.nav-main a:focus,
+.nav-main a.active {
+	background: #999;
+	color: #fff;
+	text-decoration: none;
+}
+
+/* extends .nav ul */
+.nav-user {
+	float: right;
+	margin-top: 5px;
+	padding-right: 15px;
+	color: #5c5c5c;
+}
+
+.nav-user a {
+	padding: 3px 20px 3px 5px;
+	font-size: 1em;
+	margin: 0;
+}
+
+.nav-user img {
+    display: inline-block;
+    margin: -10px 5px 0 0;
+    vertical-align: bottom;
+}
+
+/* extends .nav ul */
+.nav-u h1 {
+	padding-bottom: 15px;
+	margin: 0;
+	margin-left: 15px;
+}
+
+.nav-u h3 {
+	padding-bottom: 15px;
+	margin: 0;
+}
+
+.nav-u li {
+	background-repeat: no-repeat;
+	background-position: 0 100%;
+	background-image: url(../gfx/bg/border_nav-profile.png);
+	padding-left: 1px;
+	float: left;
+}
+
+.nav-u li:first-child {
+	background-image: none;
+}
+
+.nav-u ul a { /* prefent divider to be next to hover/active a*/
+	margin: 0;
+	color: #5c5c5c;
+}
+
+.nav-u ul a:hover,
+.nav-u ul a:focus,
+.nav-u ul a.active {
+	background: #999;
+	color: #fff;
+	text-decoration: none;
+}
+
+.nav-profile {
+	margin-left:15px;
+}
+
+/* weergave opties, views */
+.views {
+	overflow: hidden;
+	line-height: 2em;
+	color: #888;
+	margin: 0 0 15px 0;
+}
+.views .label {
+	float: left;
+	padding: 0 5px 0 15px;
+}
+.views ul {
+	float: left;
+	border: 1px solid #e7e7e7;
+	border-width: 1px 1px 1px 0;
+}
+
+.views li {
+	padding: 0;
+	border: 0;
+	float: left;
+	background: url(../gfx/bg/grad_viewbutton.png) repeat-x 0 100%;
+}
+
+.views a {
+	display: block;
+	color: #888;
+	padding: 0 10px;
+	border-left: 1px solid #d9d9d9;
+}
+/*extends .views li*/
+.views li.active {
+	background: url(../gfx/bg/grad_viewbutton-active.png) repeat-x 0 0;
+}
+
+/*extends .views a */
+.views li.active a {
+	color: #3c3c3c;
+}
+
+.sort a {
+	padding-right: 20px;
+}
+
+.sort a:hover,
+.sort a:focus {
+	text-decoration: none;
+}
+
+a.sortZA {
+	background-position: 100% -112px;
+}
+.active a.sortZA {
+	background-position: 100% -152px;
+}
+a.sortAZ {
+	background-position: 100% -192px;
+}
+.active a.sortAZ {
+	background-position: 100% -232px;
+}
+

@@ -1,0 +1,110 @@
+body {
+	/* background-image:url('/gfx/bg.jpg'); */
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+	
+	background-color:#444444;
+	color:#010101;
+	
+	text-align: left;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+} 
+
+#page {
+	background-color:#fffaff;
+	border-radius:40px 40px 20px 20px;
+	-moz-border-radius:40px 40px 20px 20px;
+}
+
+#header {
+}
+	
+h1 {
+	color:#00699F;
+	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+}
+
+#logo > hgroup > h1 {
+	color:#00699F;
+	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+}
+
+#logo > hgroup > h4 {
+	color:#78B0CC;
+	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+}
+
+#main-nav-top > ul {
+	list-style-type: none;
+}
+
+#content {
+	border-left: solid 1px #031b0d;
+}
+
+#content > section > h1 {
+	text-align:left;
+}
+
+#sidebar {
+	font-size: 0.9em;
+}
+
+#sidebar > section > ul {
+	margin-left: 10px;
+	padding: 0px;
+}
+
+#sidebar > section > ul >li {
+	margin-bottom: 10px;
+}
+
+#sidebar > section > h1 {
+	color:#031b0d;
+	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+	font-size: 1.1em;
+}
+
+#sidebar {
+	background: linear-gradient(top, #78B0CC, #fff);
+	background: -webkit-gradient(linear, left top, left bottom, from(#78B0CC), to(#fff));
+	background: -moz-linear-gradient(top,  #78B0CC,  #fff);
+	background: -o-linear-gradient(top,  #78B0CC,  #fff);
+	border-radius:20px 20px 10px 10px;
+	-moz-border-radius:20px 20px 10px 10px;
+	text-align: left;
+}
+
+#next {
+	margin-top:10px;
+	float:right;
+	font-size:0.8em;
+}
+
+#prev {
+	margin-top:10px;
+	float:left;
+	font-size:0.8em;
+}
+
+#flowchart {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	color:#00699F;
+}
+
+li.selected {
+	background: linear-gradient(right, #78B0CC, #fff);
+	background: -webkit-gradient(linear, top right, top left, from(#78B0CC), to(#fff));
+	background: -moz-linear-gradient(right,  #78B0CC,  #fff);
+	background: -o-linear-gradient(right,  #78B0CC,  #fff);
+}
+
+blockquote {
+	text-align: left;
+	font-family: ‘Courier New’, Courier, monospace;
+}

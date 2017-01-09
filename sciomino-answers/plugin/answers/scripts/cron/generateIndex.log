@@ -1,0 +1,12 @@
+--2017-01-07 23:50:01--  http://sciomino-answers/index/generate?action=queue&answers_api_id=sciomino12&answers_api_nonce=60de03bea6549cb8cffa2b22ffe157c3&user_api_key&answers_api_key=715cac14dc58e72c84036fcc0505874321410229
+Resolving sciomino-answers (sciomino-answers)... 127.0.0.1
+Connecting to sciomino-answers (sciomino-answers)|127.0.0.1|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Syntax error in Set-Cookie: =nl; expires=Sun, 07-Jan-2018 22:50:01 GMT; Max-Age=31536000; path=/ at position 0.
+Length: 265 [text/xml]
+Saving to: ‘/var/www-virtual/sciomino/sciomino-answers/plugin/answers/scripts/cron/generateIndex.html’
+
+     0K                                                       100% 83,4M=0s
+
+2017-01-07 23:50:01 (83,4 MB/s) - ‘/var/www-virtual/sciomino/sciomino-answers/plugin/answers/scripts/cron/generateIndex.html’ saved [265/265]
+

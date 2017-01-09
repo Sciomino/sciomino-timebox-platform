@@ -1,0 +1,1111 @@
+.puu-connect .puu-clr {
+	clear: both;
+	height: 1px;
+}
+
+.puu-acts li section {
+	display: table;
+}
+
+.puu-connect .puu-create_act,
+.puu-connect .puu-filter_acts,
+.puu-connect .puu-acts,
+.puu-connect .puu-all,
+.X {
+	width: 980px;
+	margin: 0 auto;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.puu-connect .puu-find {
+	padding: 0 15px 15px 15px;
+	margin-bottom: 0;
+}
+
+.puu-connect .puu-find,
+.puu-connect .puu-find legend,
+.X {
+	color: #6e9b1b;
+	background-color: #ebf6ce;
+}
+
+.puu-connect .puu-find {
+	color: #000;
+}
+
+.puu-connect .puu-find a {
+	text-decoration: underline;
+}
+
+.puu-connect .puu-find legend,
+.puu-connect .puu-result legend,
+.X {
+	font-weight: 800;
+	font-size: 14px;
+	line-height: 24px;
+	margin-left: -15px;
+	margin-right: -15px;
+	padding: 15px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	width: 100%;
+	color: #6e9b1b;
+}
+
+.puu-connect .puu-find .puu-find_wrap {
+	width: 700px;
+}
+
+.puu-connect .puu-find .puu-msg {
+	float: left;
+}
+
+.puu-connect .puu-find textarea,
+.puu-connect .puu-find .puu-links select,
+.X {
+	width: 360px;
+}
+
+.puu-connect .puu-find textarea {
+	font-size: 12px;
+	line-height: 18px;
+	color: #333;
+	border: 1px solid #dedede;
+	width: 345px;
+	height: 22px;
+	padding-top: 6px;
+	padding-left: 9px;
+}
+
+.puu-connect .puu-find .puu-char_left {
+	text-align: right;
+	padding-right: 5px;
+	color: #999;
+}
+
+.puu-connect .puu-find .puu-duration {
+	float: left;
+	width: 170px;
+	margin-top: 25px;
+}
+
+.puu-connect .puu-find .puu-duration select {
+	width: 110px;
+}
+
+.puu-connect .puu-find .puu-sbt {
+	float: left;
+	width: 139px;
+	margin-top: 24px;
+}
+
+.puu-connect .puu-find .puu-sbt input {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 800;
+	border: none;
+	background-color: transparent;
+	color: #fff;
+	background-image: url("bg_sbt.png");
+	width: 139px;
+	height: 26px;
+}
+
+.puu-connect .puu-find .puu-bail {
+	text-align: right;
+	margin-top: 5px;
+}
+
+.puu-connect .puu-find h2 {
+	font-size: 14px;
+	line-height: 24px;
+	clear: both;
+	color: #666;
+}
+
+.puu-connect .puu-find .puu-links {
+	float: left;
+}
+
+.puu-connect .puu-find label {
+	float: none;
+	display: block;
+	width: auto;
+	text-align: left;
+	font-weight: normal;
+	padding-left: 0;
+}
+
+.puu-connect .puu-find .puu-ref {
+	color: #ef652f;
+}
+
+.puu-connect .puu-find .puu-mark {
+	color: #666;
+	margin-left: 380px;
+	margin-top: 80px;
+	text-indent: -.6em;
+	padding-left: .6em;
+}
+
+.puu-connect .puu-find .puu-chzn_3 a {
+	text-decoration: none;
+}
+
+.puu-connect .puu-find .puu-chzn_3 .chzn-search {
+	display: none;
+}
+
+.puu-connect .puu-all {
+	width: 965px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+}
+
+.puu-connect .puu-all a {
+	color: #000;
+	text-decoration: underline;
+}
+
+.puu-connect .puu-filter {
+	color: #000;
+	background-color: #f4f4f4;
+	margin-top: 1px;
+	padding: 15px;
+}
+
+.puu-connect .puu-filter input {
+	border: 1px solid #dedede;
+	background-image: url("bg_search.png");
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+	padding-right: 25px;
+	padding-left: 9px;
+}
+
+.puu-connect .puu-filter p {
+	float: left;
+}
+
+.puu-connect .puu-filter input,
+.puu-connect .puu-filter select,
+.X {
+	color: #000;
+	font-size: 12px;
+	line-height: 2em;
+	height: 22px;
+}
+
+.puu-connect .puu-filter input#zoekwoord {
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.puu-connect .puu-filter .chzn-container {
+	margin-right: 10px;
+}
+
+.puu-connect .puu-filter .chzn-container-multi .chzn-choices .search-field input {
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.puu-connect .puu-filter label,
+.puu-connect .puu-filter select,
+.X {
+	width: 10em;
+	margin-left: 15px;
+}
+
+.puu-connect .puu-filter select#status {
+	width: 162px;
+}
+
+.puu-connect .puu-filter select#lijst {
+	width: 142px;
+}
+
+.puu-connect .puu-filter .puu-search label {
+	width: 195px;
+	margin-left: 15px;
+}
+
+.puu-connect .puu-filter label {
+	display: block;
+	float: none;
+	text-align: left;
+	padding: 0;
+	font-weight: normal;
+	padding-left: 7px;
+	padding-bottom: 7px;
+}
+
+.puu-connect .puu-filter p:first-child label {
+	margin-left: 0;
+	padding-left: 0;
+	font-weight: 800;
+}
+
+.puu-connect .puu-acts {
+	margin-bottom: 115px;
+}
+
+.puu-connect .puu-acts > li {
+	clear: both;
+	border: none;
+	padding: 0;
+	border-bottom: 1px solid #dedede;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+.puu-connect .puu-acts > li.puu-more {
+	border: none;
+}
+
+.puu-connect .puu-acts > li.puu-more:hover {
+	background-color: transparent;
+}
+
+.puu-connect .puu-acts > li .section {
+	margin: 0;
+	padding: 0;
+}
+
+.puu-connect .puu-status {
+	padding: 6px 10px 6px 10px;
+	width: 85px;
+	height: 45px;
+	float: left;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: 10px 6px;
+}
+
+.puu-connect .puu-status,
+.puu-connect .puu-content .header .puu-mug,
+.puu-connect .puu-acts > li:hover,
+.X {
+	color: #6e9b1b;
+	background-color: #ebf6ce;
+}
+
+.puu-connect .puu-status.happy_xl {
+	background-image: url("thumbs_up_2.png");
+}
+
+.puu-connect .puu-status.happy {
+	background-image: url("thumbs_up_1.png");
+}
+
+.puu-connect .puu-status.unhappy {
+	background-image: url("thumbs_down_1.png");
+}
+
+.puu-connect .puu-status.unhappy_xl {
+	background-image: url("thumbs_down_2.png");
+}
+
+.puu-connect .puu-acts > li.puu-experience:hover,
+.puu-connect .puu-experience .puu-status,
+.puu-connect .puu-experience .puu-content .header .puu-mug,
+.X {
+	color: #666;
+	background-color: #e8e8e8;
+}
+
+.puu-connect .puu-acts > li.puu-expired:hover,
+.puu-connect .puu-expired .puu-status,
+.puu-connect .puu-expired .puu-content .header .puu-mug,
+.X {
+	color: #999;
+	background-color: #f4f4f4;
+}
+
+.puu-connect .puu-acts.puu-act > li:hover,
+.puu-connect .puu-acts.puu-act > li.puu-expired:hover,
+.puu-connect .puu-acts.puu-act > li.puu-experience:hover,
+.X {
+	background-color: transparent;
+	cursor: default;
+}
+
+.puu-connect .puu-status .puu-lbl {
+	position: absolute;
+	bottom: 6px;
+	left: 10px;
+	font-weight: 800;
+}
+
+.puu-connect .puu-content {
+	float: left;
+	position: relative;
+	padding-right: 220px;
+	width: 655px;
+}
+
+.puu-connect .puu-details .puu-edit + .puu-content,
+.puu-connect .puu-details .puu-result + .puu-content,
+.X {
+	margin-left: 10px;
+}
+
+.puu-connect .puu-act .puu-comments,
+.puu-connect .puu-act .puu-write,
+.X {
+	margin-right: 200px;
+}
+
+.puu-connect .puu-non_edit .puu-comments,
+.puu-connect .puu-non_edit .puu-write,
+.X {
+	margin-right: 0;
+}
+
+/*
+.puu-connect .puu-details .puu-result + .puu-content {
+	float: left;
+	min-height: 430px;
+}
+*/
+
+.puu-connect .puu-details .puu-content {
+	margin-left: 172px;
+}
+
+.puu-connect .puu-content > div,
+.puu-connect .puu-content .header,
+.X {
+	display: inline;
+}
+
+.puu-connect .puu-content .header {
+	display: block;
+}
+
+.puu-connect .puu-content .header .puu-mug {
+	float: left;
+	margin-right: 10px;
+	padding: 4px 5px 1px 4px;
+}
+
+.puu-connect .puu-content .header .puu-mug:hover {
+	padding: 3px 4px 0px 3px;
+}
+
+.puu-connect .puu-content .header .puu-mug:hover img {
+	border: 1px solid #6e9b1b;
+}
+
+.puu-connect .puu-content .header h1 {
+	font-size: 13px;
+	line-height: 185.6%;
+	margin-top: 0;
+	margin-bottom: 3px;
+}
+
+.puu-connect .puu-content .header h1 a {
+	color: #999;
+}
+
+.puu-connect .puu-content .header h1 a:hover {
+	text-decoration: none;
+}
+
+.puu-connect .puu-content .header h1 a .fn {
+	color: #6e9b1b;
+}
+
+.puu-connect .puu-content .puu-blurb {
+	width: 540px;
+	display: block;
+	color: #333;
+	margin-left: 67px;
+}
+
+.puu-connect .puu-content .puu-media {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-right: -10px;
+}
+
+.puu-connect .puu-content .puu-media a {
+	float: left;
+	margin-right: 10px;
+}
+
+.puu-connect .puu-content .puu-media a.puu-photo,
+.puu-connect .puu-content .puu-media a.puu-video,
+.X {
+	margin-bottom: 15px;
+}
+
+.puu-connect .puu-content .puu-media a.puu-photo:before,
+.puu-connect .puu-content .puu-media a.puu-video:before,
+.X {
+	content: "";
+	width: 75px;
+	height: 56px;
+	background-image: url("bg_photo.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	position: absolute;
+}
+
+.puu-connect .puu-content .puu-media a.puu-video:before {
+	background-image: url("bg_video.png");
+}
+
+.puu-connect .puu-hashtag {
+	color: #ef652f;
+}
+
+.puu-connect .puu-content .footer {
+	display: block;
+	font-size: 11px;
+	line-height: 11px;
+	margin-top: .8em;
+	margin-left: 67px;
+	height: 36px;
+}
+
+.puu-connect .puu-content .puu-comments .footer {
+	padding-left: 50px;
+	margin-top: 0;
+	margin-left: 0;
+	border: none;
+	height: 20px;
+}
+
+.puu-connect .puu-content .footer a {
+	border-left: 1px solid #999;
+	padding-left: .4em;
+	padding-right: .2em;
+}
+
+.puu-connect .puu-content .footer a:first-child {
+	border: none;
+	padding-left: 0;
+}
+
+.puu-connect .puu-content .footer .puu-perma {
+	color: #999;
+}
+
+.puu-connect .puu-content .puu-sum {
+	line-height: 14px;
+	margin-top: 5px;
+	padding-bottom: 6px;
+}
+
+.puu-connect .puu-content .puu-sum > * {
+	display: inline;
+}
+
+.puu-connect .puu-content .puu-likes {
+	color: #999;
+	background-image: url("like.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	padding-left: 19px;
+	line-height: 13px;
+	margin-top: 6px;
+	padding-bottom: 7px;
+	width: auto;
+	height: 13px;
+}
+
+.puu-connect .puu-detail:hover {
+	cursor: pointer;
+}
+
+.puu-connect .puu-detail .puu-content .puu-likes {
+	width: 568px;
+	margin-right: 4px;
+}
+
+.puu-connect .puu-story,
+.puu-connect .puu-content .footer .puu-no_story,
+.puu-connect.puu-widget .puu-no_story,
+.X {
+	color: #fff;
+	background-color: #ef652f;
+	padding: 2px 4px;
+}
+
+.puu-connect .puu-content .footer .puu-no_story,
+.puu-connect.puu-widget .puu-no_story,
+.X {
+	background-color: #999;
+}
+
+.puu-connect .puu-details {
+	clear: both;
+	display: table;
+	border-top: 7px solid transparent;
+}
+
+.puu-connect .puu-details .puu-content {
+	padding-right: 0;
+	float: right;
+	width: 550px;
+}
+
+.puu-connect .puu-details .puu-narrative {
+	display: block;
+	float: left;
+	width: 568px;
+	padding: 10px;
+	background-color: #fdefea;
+	margin-bottom: 10px;
+	margin-left: 40px;
+}
+
+.puu-connect .puu-details .puu-narrative .footer .puu-likes {
+	margin-left: 0;
+	width: auto;
+	border: none;
+	border-left: 1px solid #999;
+	background-position: 5px 0;
+	padding-left: 25px;
+	display: inline;
+}
+
+.puu-connect .puu-content .puu-links {
+	clear: both;
+	width: 210px;
+}
+
+.puu-connect .puu-content .puu-links a {
+	float: none;
+}
+
+.puu-connect .puu-links h3 {
+	font-size: 12px;
+	color: #000;
+	font-weight: normal;
+}
+
+.puu-connect .puu-links ul {
+	margin-top: .5em;
+	margin-bottom: 1em;
+}
+
+.puu-connect .puu-links .chzn-container .chzn-results,
+.puu-connect .puu-links .chzn-container .chzn-choices,
+.X {
+	margin: 0;
+}
+
+.puu-connect .puu-links {
+	color: #666;
+	text-decoration: underline;
+}
+
+.puu-connect .puu-result {
+	position: absolute;
+	margin-left: 105px;
+	z-index: 4;
+}
+
+.puu-connect .puu-result + .puu-content {
+	border-top: 390px solid transparent;
+}
+
+.puu-connect .puu-result .puu-edit,
+.puu-connect .puu-details .puu-edit,
+.X {
+	float: left;
+	display: block;
+	color: #fff;
+	padding-left: 10px;
+	width: 95px;
+	height: 26px;
+	background-image: url("bg_edit.png");
+	margin-right: 57px;
+	text-align: left;
+	line-height: 26px;
+	font-weight: 800;
+}
+
+.puu-connect .puu-result .puu-edit {
+	margin-right: 0;
+}
+
+.puu-connect .puu-result .puu-content {
+	float: right;
+	padding: 8px 0;
+	width: 654px;
+	border: 1px solid #e7e7e7e;
+	background-color: #ebf6ce;
+}
+
+.puu-connect .puu-result .puu-content .puu-satisfaction {
+	margin-left: 8px;
+}
+
+.puu-connect .puu-result .puu-content legend {
+	padding-left: 0;
+	padding-top: 0;
+	width: 90%;
+	margin-left: 0;
+}
+
+.puu-connect .puu-result .puu-content .puu-close {
+	display: block;
+	float: right;
+	margin-right: 8px;
+	width: 16px;
+	height: 16px;
+	background-image: url("btn_close.png");
+	font-size: 0;
+}
+
+.puu-connect .puu-result .puu-content .puu-satisfaction {
+	position: relative;
+	top: -10px;
+}
+
+.puu-connect .puu-result .puu-content .puu-textual {
+	width: 430px;
+	float: left;
+}
+
+.puu-connect .puu-result .puu-content .puu-satisfaction .slider-result {
+	text-align: center;
+	color: #666;
+}
+
+.puu-connect .puu-result .puu-content .puu-satisfaction .sliderbox {
+	background-image: url("bg_slider_satisfaction.png");
+	width: 308px;
+	padding: 0;
+	height: 22px;
+	border: 1px solid #dedede;
+}
+
+.puu-connect .puu-result .puu-content .puu-satisfaction .sliderbox .slider {
+	margin-top: 8px;
+	width: 194px;
+}
+
+.puu-connect .puu-result .puu-content .puu-satisfaction .sliderbox.thumbs-1 {
+	background-position: 0 -22px;
+}
+
+.puu-connect .puu-result .puu-content .puu-satisfaction .sliderbox.thumbs-2 {
+	background-position: 0 -44px;
+}
+
+.puu-connect .puu-result .puu-content .puu-satisfaction .sliderbox.thumbs-3 {
+	background-position: 0 -66px;
+}
+
+.puu-connect .puu-result .puu-content .puu-textual .puu-tell label {
+	margin-top: 20px;
+}
+
+.puu-connect .puu-result .puu-content .puu-textual .puu-tell textarea {
+	color: #333;
+	margin-top: 15px;
+}
+
+.puu-connect .puu-result .puu-content .puu-textual .puu-tell .puu-char_left {
+	margin-top: 4px;
+	color: #666;
+}
+
+.puu-connect .puu-result .puu-content .puu-textual .puu-tell .puu-char_left .puu-count {
+	font-weight: 800;
+}
+
+.puu-connect .puu-result .puu-content .puu-media {
+	margin-top: 75px;
+}
+
+.puu-connect .puu-result .puu-content .puu-media a {
+	color: #666;
+	text-decoration: underline;
+}
+
+.puu-connect .puu-result .puu-content .puu-media .puu-crud a {
+	position: relative;
+	top: 1.7em;
+}
+
+.puu-connect .puu-result .puu-content .puu-textual label,
+.puu-connect .puu-result .puu-content .puu-textual .puu-movitate,
+.X {
+	width: 120px;
+}
+
+.puu-connect .puu-result .puu-content label {
+	clear: both;
+	float: left;
+	text-align: left;
+	padding: 0;
+}
+
+.puu-connect .puu-result .puu-content .puu-textual label .puu-motivate {
+	display: block;
+	color: #666;
+	font-weight: normal;
+}
+
+.puu-connect .puu-result .puu-content .puu-textual textarea {
+	margin: 0;
+	width: 298px;
+	height: 234px;
+}
+
+.puu-connect .puu-result .puu-content .puu-textual .puu-char_left {
+	text-align: right;
+}
+
+.puu-connect .puu-result .puu-content .puu-media {
+	width: 170px;
+	float: right;
+	margin-right: 0;
+	position: static;
+}
+
+.puu-connect .puu-result .puu-sbt {
+	margin-top: 32px;
+	width: 146px;
+	float: right;
+}
+
+.puu-connect .puu-result .puu-sbt input {
+	clear: both;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 800;
+	color: #fff;
+	width: 146px;
+	height: 26px;
+	border: none;
+	background-color: transparent;
+	background-image: url("bg_place.png");
+	display: block;
+	float: right;
+}
+
+.puu-connect .puu-result .puu-sbt .puu-bail {
+	clear: both;
+	padding-top: 5px;
+	text-align: right;
+}
+
+.puu-connect .puu-show_comments {
+	clear: both;
+	padding: 10px;
+	margin-left: 57px;
+}
+
+.puu-connect .puu-show_comments a {
+	color: #666;
+	text-decoration: underline;
+}
+
+.puu-connect .puu-details .puu-comments {
+	clear: both;
+}
+
+.puu-connect .puu-details > .puu-comments,
+.puu-connect .puu-details > .puu-write,
+.X {
+	float: right;
+}
+
+.puu-connect .puu-details .puu-narrative .puu-story {
+	margin-left: -10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.puu-connect .puu-details .puu-narrative h2 {
+	font-size: 12px;
+	font-weight: normal;
+	display: inline;
+}
+
+.puu-connect .puu-details .puu-narrative h2,
+.puu-connect .puu-details .puu-narrative h2 a,
+.X {
+	color: #999;
+}
+
+.puu-connect .puu-details .puu-narrative h2 a .fn {
+	font-weight: 800;
+	color: #666;
+}
+
+.puu-connect .puu-details .puu-links + .puu-comments {
+	margin-top: 9px;
+	border-top: 10px solid #fff;
+}
+
+.puu-connect .puu-details .puu-comments li:first-child {
+	padding-top: 0;
+	border: none;
+}
+
+.puu-connect .puu-details .puu-links + .puu-comments li:first-child {
+	border-top: 1px solid #dedede;
+}
+
+.puu-connect .puu-details .puu-narrative .footer {
+	margin-left: 0;
+	height: auto;
+	border: none;
+}
+
+.puu-connect .puu-details .puu-narrative > div {
+	line-height: 1.8em;
+	color: #666;
+}
+
+.puu-connect .puu-details .puu-comments > li {
+	width: 588px;
+	border-top: 1px solid #dedede;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #666;
+}
+
+.puu-connect .puu-details .puu-comments .puu-mug {
+	float: left;
+	width: 32px;
+	margin-right: 10px;
+	padding: 4px;
+	padding-bottom: 1px;
+	background-color: #f4f4f4;
+}
+
+.puu-connect .puu-details .puu-comments .puu-header {
+	color: #999;
+	font-weight: 800;
+}
+
+.puu-connect .puu-details .puu-comments .puu-narrative {
+	background-color: transparent;
+	float: none;
+	padding-top: 6px;
+	padding-bottom: 0;
+	margin-bottom: 8px;
+}
+
+.puu-connect .puu-details .puu-comments .puu-likes {
+	display: inline;
+	border-left: 1px solid #999;
+	width: auto;
+	margin-left: .5em;
+	background-position: 5px 0;
+	padding-left: 26px;
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+.puu-connect .puu-details .puu-write {
+	clear: both;
+	border: 1px solid #dedede;
+	border-left: none;
+	border-right: none;
+	width: 580px;
+	padding: 4px;
+	background-color: #f5f5f5;
+	margin-bottom: 10px;
+}
+
+.puu-connect .puu-details .puu-write textarea {
+	border: 1px solid #dedede;
+	width: 568px;
+	height: 16px;
+	color: #333;
+}
+
+.puu-connect .chzn-container {
+	font-size: 12px;
+}
+
+.puu-connect .chzn-container-multi .chzn-choices .search-choice {
+	color: #505050;
+}
+
+.puu-connect .puu-card_wrapper {
+	position: absolute;
+	cursor: pointer;
+	margin-top: -31px;
+	margin-left: 0;
+	padding-left: 11px;
+	display:table !important;
+	z-index: 5;
+}
+
+.puu-connect .puu-card {
+	padding: 6px 9px 6px 11px;
+	background-color: #fafafa;
+	border: 1px solid #999;
+	margin-left: 0;
+}
+
+.puu-connect .puu-card .puu-static {
+	min-width: 203px;
+	background-image: url("bg_card.png");
+	background-position: 0 5px;
+	background-repeat: no-repeat;
+	padding-left: 18px;
+	position: relative;
+	left: -18px;
+}
+
+.puu-connect .puu-card .puu-static .fn {
+	font-size: 13px;
+	color: #6e9b1b;
+	margin-bottom: 4px;
+}
+
+.puu-connect .puu-card .puu-static .role {
+	font-size: 12px;
+	color: #010101;
+	margin-bottom: 4px;
+}
+
+.puu-connect .puu-card .puu-static .email {
+	font-size: 11px;
+}
+
+.puu-connect .puu-card .puu-static .locality {
+	font-size: 11px;
+	color: #666;
+}
+
+.puu-connect .puu-card .puu-volatile {
+	font-size: 11px;
+	width: 244px;
+	position: relative;
+	left: 276px;
+	top: -51px;
+	color: #000;
+}
+
+.puu-connect .puu-card .puu-volatile .time {
+	font-size: 11px;
+	color: #666;
+}
+
+.puu-send_act label {
+	margin-top: 1em;
+}
+
+.puu-send_act label:first-child {
+	margin-top: 0;
+}
+
+.puu-connect.puu-widget {
+	width: 465px;
+	margin: 20px 15px 10px 15px;
+}
+
+.puu-connect.puu-widget li {
+	border: none;
+}
+
+.puu-connect.puu-widget h3 {
+	font-size: 17px;
+	color: #666;
+}
+
+.puu-connect.puu-widget ul {
+	margin-bottom: -4px;
+}
+
+.puu-connect.puu-widget li {
+	margin-top: 14px;
+	margin-bottom: 20px;
+	padding: 0;
+}
+
+.puu-connect.puu-widget h4 {
+	font-size: 12px;
+	font-weight: 800;
+	color: #999;
+	display: inline;
+	vertical-align: top;
+}
+
+.puu-connect.puu-widget h4 .fn {
+	color: #6e9b1b;
+}
+
+.puu-connect.puu-widget .puu-mug {
+	float: left;
+	padding-right: 10px;
+}
+
+.puu-connect.puu-widget h4,
+.puu-connect.puu-widget .puu-expire,
+.puu-connect.puu-widget .puu-story,
+.puu-connect.puu-widget .puu-no_story,
+.X {
+	position: relative;
+	top: -3px;
+}
+
+.puu-connect.puu-widget .puu-expire,
+.puu-connect.puu-widget .puu-story,
+.puu-connect.puu-widget .puu-no_story,
+.X {
+	font-size: 11px;
+	padding: 1px 4px;
+	margin-left: 7px;
+}
+
+.puu-connect.puu-widget .puu-expire {
+	color: #666;
+	background-color: #e8e8e8;
+}
+
+.puu-connect.puu-widget a:hover {
+	text-decoration: none;
+}
+
+.puu-connect.puu-widget a .puu-text {
+	color: #000;
+	margin-left: 58px;
+}
+
+.puu-connect.puu-confirmation_msg {
+	width: 360px;
+	min-height: 60px;
+	padding: 20px;
+	font-weight: 800;
+}
+
+.puu-connect.puu-confirmation_msg .puu-opt {
+	text-align: right;
+}
+
+.puu-connect.puu-confirmation_msg .puu-opt .puu-neg,
+.puu-connect.puu-confirmation_msg .puu-opt .puu-pos,
+.X {
+	font-size: 1.1em;
+	font-weight: 800;
+	color: #fff;
+	border: none;
+	background-color: transparent;
+	background-image: url("btn_neg.png");
+	width: 58px;
+	height: 26px;
+	margin-top: 20px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.puu-connect.puu-confirmation_msg .puu-opt .puu-pos {
+	background-image: url("btn_pos.png");
+	width: 47px;
+}

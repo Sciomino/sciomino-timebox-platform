@@ -1,0 +1,54 @@
+body {
+	width: 100%;
+}
+
+/* center the page in the body */
+#page {
+	width: 90%;
+	margin: auto;
+}
+
+/* the header is on the left */
+#header {
+	margin: 10px;
+	width: 25%;
+	float: left;
+}
+
+/* what about a logo and navigation */
+#logo {
+}
+
+#main-nav-top {
+	visibility: visible;
+	height: auto;
+}
+
+#main-nav-bottom {
+	visibility: hidden;
+	height: 0;
+}
+
+/* the content is in the center */
+#content {
+	margin: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 50%;
+	float: left;
+}
+
+/* a sidebar on the right*/
+#sidebar {
+	margin: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 15%;
+	float: left;
+}
+
+#footer {
+	margin: 10px;
+	clear: both;
+	width: auto;
+}

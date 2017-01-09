@@ -1,0 +1,266 @@
+body {
+	background-image:url('/gfx/bg-top.jpg');
+	background-repeat:no-repeat;
+	background-position:0px 15px;
+	/*background-color:#12c4ff;
+	background-color:#06d676;*/
+	background-color:#fff;
+	color:#031b0d;
+	text-align: justify;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+} 
+
+#page {
+	background-color:#fffaff;
+	border-radius:40px 40px 20px 20px;
+	-moz-border-radius:40px 40px 20px 20px;
+}
+
+/*
+h1 {
+	color:#00699F;
+	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+}
+
+#logo > hgroup > h1 {
+	color:#00699F;
+	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+}
+
+#logo > hgroup > h4 {
+	color:#78B0CC;
+	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+}
+*/
+
+#main-nav-top > ul {
+	list-style-type: none;
+}
+
+#content > section > h1 {
+	text-align:left;
+}
+
+/*
+#sidebar {
+	font-size: 0.9em;
+}
+* */
+
+#sidebar > section > ul {
+	margin-left: 10px;
+	padding: 0px;
+}
+
+#sidebar > section > ul >li {
+	margin-bottom: 10px;
+}
+
+/*
+#sidebar > section > h1 {
+	color:#031b0d;
+	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+	font-size: 1.1em;
+}
+*/
+
+#sidebar {
+	/*#78B0CC*/
+	background: linear-gradient(top, #4987c8, #fff);
+	background: -webkit-gradient(linear, left top, left bottom, from(#4987c8), to(#fff));
+	background: -moz-linear-gradient(top,  #4987c8,  #fff);
+	background: -o-linear-gradient(top,  #4987c8,  #fff);
+	border-radius:20px 20px 10px 10px;
+	-moz-border-radius:20px 20px 10px 10px;
+}
+
+#next {
+	float:right;
+	padding: 15px;
+}
+
+#prev {
+	float:left;
+	padding: 15px;
+}
+
+#flowchart {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	color:#00699F;
+}
+	
+li.selected {
+	background-color:#EEEEEE;
+
+	/*background: linear-gradient(right, #78B0CC, #fff);
+	background: -webkit-gradient(linear, top right, top left, from(#78B0CC), to(#fff));
+	background: -moz-linear-gradient(right,  #78B0CC,  #fff);
+	background: -o-linear-gradient(right,  #78B0CC,  #fff);*/
+}
+
+blockquote {
+	text-align: left;
+	font-family: ‘Courier New’, Courier, monospace;
+}
+	
+/* AVAILABILITY TABS */
+
+/* used in status-tabs
+.tabs {
+  position: relative;   
+  height: 2000px; /* This part sucks
+  clear: both;
+  margin: 25px 0;
+}
+.tab {
+  float: left;
+}
+.tab label {
+  background: #eee; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  margin-left: -1px; 
+  position: relative;
+  left: 1px; 
+  width: auto;
+}
+.tab [type=radio] {
+  display: none;   
+}
+.tab-content {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  padding-top: 40px;
+  border-top: 1px solid #ccc; 
+}
+[type=radio]:checked ~ label {
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+[type=radio]:checked ~ label ~ .tab-content {
+  z-index: 1;
+}
+*/
+
+.tabs {
+  position: relative;   
+  clear: both;
+  width: 100%;
+}
+.tab {
+  margin: 25px 0;
+  float: left;
+  width: 100%;
+}
+.tab-label {
+  background: #eee; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  margin-left: -1px; 
+  position: relative;
+  left: 1px; 
+  width: auto;
+}
+
+.tab-content {
+  /*position: absolute;*/
+  top: 28px;
+  left: 0;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  padding-top: 40px;
+  border-top: 1px solid #ccc; 
+}
+
+
+/* AVAILABILITY TABLE CELLS */
+
+.tableCellTrueCenter {
+	color:green;
+	background-color:green;
+
+    text-align: center;
+
+    font-family: "Arial Unicode MS",Arial,Helvetica;
+    border: 1px solid #eee;
+    padding: 2px 3px;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.tableCellFalseCenter {
+	color:red;
+	background-color:red;
+
+    text-align: center;
+
+    font-family: "Arial Unicode MS",Arial,Helvetica;
+    border: 1px solid #eee;
+    padding: 2px 3px;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.tableCellUnknownCenter {
+	color:#ccc;
+	background-color:#ccc;
+
+    text-align: center;
+
+    font-family: "Arial Unicode MS",Arial,Helvetica;
+    border: 1px solid #eee;
+    padding: 2px 3px;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.tableCellTrue {
+	color:green;
+	
+    font-family: "Arial Unicode MS",Arial,Helvetica;
+    border: 1px solid #eee;
+    padding: 2px 3px;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.tableCellFalse {
+	color:red;
+	
+    font-family: "Arial Unicode MS",Arial,Helvetica;
+    border: 1px solid #eee;
+    padding: 2px 3px;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.tableCellUnknown {
+	color:#aaa;
+	
+    font-family: "Arial Unicode MS",Arial,Helvetica;
+    border: 1px solid #eee;
+    padding: 2px 3px;
+    margin: 0;
+    vertical-align: middle;
+}
+
+#cal_table_header_left input,
+#user_table_header_left input {
+	height: 16px;
+	padding-top:3px;
+	padding-bottom:3px;
+	border-color: #ddd;
+}

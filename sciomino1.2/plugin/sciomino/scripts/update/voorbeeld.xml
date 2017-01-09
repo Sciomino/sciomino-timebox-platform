@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<users>
+ <user>
+  <id>1</id>
+  <action>add</action>
+  <voornaam>Herman</voornaam>
+  <achternaam>van Dompseler</achternaam>
+  <emailadres>herman@sciomino.com</emailadres>
+  <geboortedatum>9-9-1970</geboortedatum>
+  <geslacht>m</geslacht>
+  <bedrijf>Sciomino</bedrijf>
+  <functie>CTO</functie>
+  <telefoon>0207850914</telefoon>
+  <mobiel>0651451031</mobiel>
+  <plaats>landsmeer</plaats>
+  <land>nederland</land>
+  <knowledge>
+   <field>php</field>
+   <level>1</level>
+  </knowledge>
+  <knowledge>
+   <field>programmeren</field>
+  </knowledge>
+  <knowledge>
+   <field>social media</field>
+   <level>1</level>
+  </knowledge>
+  <hobby>
+   <field>yoga</field>
+  </hobby>
+  <tag>
+   <name>innovatie</name>
+  </tag>
+  <product>
+   <subject>computer</subject>
+   <title>dell</title>
+   <alternative>xps</alternative>
+   <like>2</like>
+  </product>
+  <company>
+   <subject>hosting</subject>
+   <title>NXS</title>
+   <like>1</like>
+  </company>
+  <education>
+   <subject>Wetenschappelijk onderwijs</subject>
+   <title>UVA</title>
+   <like>2</like>
+  </education>
+ </user>
+ <user>
+  <id>2</id>
+  <action>add</action>
+  <voornaam>Edwin</voornaam>
+  <achternaam>van de Bospoort</achternaam>
+  <emailadres>edwin@sciomino.com</emailadres>
+  <geboortedatum>24-3-1973</geboortedatum>
+  <geslacht>m</geslacht>
+  <bedrijf>Sciomino</bedrijf>
+  <functie>CEO</functie>
+  <mobiel>0624742451</mobiel>
+  <plaats>otterlo</plaats>
+  <land>nederland</land>
+  <knowledge>
+   <field>php</field>
+   <level>3</level>
+  </knowledge>
+  <knowledge>
+   <field>programmeren</field>
+  </knowledge>
+  <knowledge>
+   <field>social media</field>
+   <level>1</level>
+  </knowledge>
+  <knowledge>
+   <field>interaction design</field>
+   <level>1</level>
+  </knowledge>
+  <hobby>
+   <field>volleybal</field>
+  </hobby>
+  <tag>
+   <name>innovatie</name>
+  </tag>
+  <product>
+   <subject>computer</subject>
+   <title>apple</title>
+   <alternative>macbook pro</alternative>
+   <like>1</like>
+  </product>
+  <event>
+   <subject>congres</subject>
+   <title>social media congres 2012</title>
+   <like>2</like>
+  </event>
+ </user>
+</users>

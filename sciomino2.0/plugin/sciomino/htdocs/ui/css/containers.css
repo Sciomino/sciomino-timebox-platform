@@ -1,0 +1,147 @@
+/**
+ semanticly meaningfull containers
+ blocks used to give it's content special meaining
+ */
+#Header {
+	background: #e8e8e8;
+	border-bottom: 1px solid #6d9c00;
+	width: 990px;
+	margin: 0 auto;
+}
+
+#Content {
+	width: 990px;
+	min-height: 600px;
+	margin: 0 auto;
+	background: #fff;
+}
+
+#Footer {
+	background: #dadada url(../gfx/bg/grad_footer.gif) repeat-x 0 0;
+	clear: both;
+}
+
+hr {
+	border: 4px solid;
+	border-width: 0 0 4px 0;
+	margin: 0;
+	height: 1px;
+	overflow: hidden;
+	clear: both;
+}
+
+/*extends hr*/
+.subtle {
+	border-bottom-width: 1px;
+	margin: 5px 0;
+}
+
+/* section parent: unit*/
+.section {
+	padding: 0 15px;
+	margin: 15px 0;
+}
+
+.section .section {
+	padding: 0;
+}
+
+.divide .section {
+	margin-top: 0;
+}
+
+.article {
+	margin: 0 0 15px 0;
+	overflow: hidden;
+}
+
+
+/*extends .section*/
+.solo { /* create whitespace on right, for solid bg's */
+	margin-right: 15px;
+	padding: 15px;
+	overflow: hidden;
+}
+.moresolo {
+	margin-left: 15px;
+}
+
+.searchbox {
+    text-align: center;
+}
+
+.group .solo {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.wrap { /* for border around*/
+	padding: 15px;
+	border: 1px solid #e7e7e7;
+}
+
+.isolated { /* for solid grey background*/
+	background: #f1f1f1;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.merge-next {
+	margin-bottom: -14px;
+	border-bottom: 1px solid #d1d1d1;
+}
+
+/*extends .section*/
+.highlight {
+	background: #eee;
+}
+
+/*extends .highlight*/
+.userbox {
+	margin-left: 15px;
+	padding: 5px;
+}
+
+/*extends .group*/
+.highlight .user-info {
+	background: #fff;
+	padding: 10px 0;
+	margin: 0;
+}
+
+/**
+ extends .section
+ border border-radius 
+ */
+.filtergroup {
+	border: 1px solid #ededed;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius:5px;
+	padding: 5px 15px;
+}
+
+.filter {
+	padding: 10px 15px;
+	margin: 0 0 15px 0;
+	overflow: hidden;
+}
+
+/*extends .section */
+#Footer .section {
+	margin: 0;
+}
+
+.tour {
+	text-align: right;
+}
+
+.add-header {
+    padding: 10px 14px 10px 15px;
+    border-bottom:1px solid;
+}
+
+/*extends section*/
+.form .section .section {
+	padding: 15px;
+}

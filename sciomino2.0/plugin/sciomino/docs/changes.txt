@@ -1,0 +1,46 @@
+1.2o
+- veel updates, zou ook wel 1.3 genoemd kunnen worden :-)
+- zie aparte release notes voor een overzicht
+- grote nieuwe functionaliteiten zijn apart configureerbaar in sciomino.ini file
+- ook een aantal aanpassingen onder water
+-- verbeterde bescherming tegen xss
+-- alle invoervelden hebben een maximale lengte gekregen
+-- verbeterde suggest & checks op lege pagina's
+-- checkup van import script
+
+1.2n
+- kleine fixes en updates :-)
+- manager lijsten
+
+1.2m
+- kleine fixes en updates :-)
+- update nu ook met xml (net als sync vanuit mysql)
+- verbetering plaatsen tonen in map, met eigen geocache.
+
+1.2k/l
+- kleine fixes en updates :-)
+- performance update
+- apc cache update
+- error afhandeling
+- installeerbaar in subdirectory
+
+1.2j
+- kleine fixes en updates :-)
+- landen & map update, nu alle landen mogelijk
+
+1.2i
+- kleine fixes en updates :-)
+- een optie om de wikipedia suggest uit te zetten.
+
+1.2h
+- kleine fixes en updates :-)
+- een optie voor iedere gebruiker om zichzelf al dan niet in de verjaardagskalender op te nemen.
+- een extra authenticatie mogelijk om login met cleartrust mogelijk te maken
+
+1.2f/g
+- kleine fixes en updates :-)
+- nieuwe personalia velden (pac, persoonsnr, etc)
+- een import/sync mogelijkheid met een mysql tabel
+
+1.2e
+- first stable 1.2 release

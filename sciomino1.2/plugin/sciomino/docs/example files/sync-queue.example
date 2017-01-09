@@ -1,0 +1,8 @@
+#!/bin/bash
+
+URL="http://<!--SC_URL-->/import/sync?mode=all&stamp=queue&entries=3"
+
+OUTFILE="<!--SC_BASE-->/plugin/sciomino/scripts/cron/sync-queue.html"
+LOGFILE="<!--SC_BASE-->/plugin/sciomino/scripts/cron/sync-queue.log"
+
+/usr/bin/wget --timeout=300 -O $OUTFILE -o $LOGFILE "$URL"

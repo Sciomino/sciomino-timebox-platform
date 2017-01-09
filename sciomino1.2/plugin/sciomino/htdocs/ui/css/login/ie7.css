@@ -1,0 +1,42 @@
+.puu-nav li {
+	margin-top: 10px;
+	height: 1em;
+}
+
+.puu-nav li em {
+	display: block;
+	padding-bottom: 17px;
+}
+
+.puu-nav .puu-login {
+	display: block;
+	height: 32px;
+	top: 10px;
+}
+
+.puu-snav {
+	position: absolute;
+	clear: both;
+	float: left;
+	margin-left: -276px;
+	width: 260px;
+}
+
+.puu-cnt.puu-home .puu-pitch .puu-usp {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #afafaf;
+}
+
+.puu-cnt.puu-home .puu-pitch .puu-contact {
+	margin-top: -20px;
+	border: none;
+}
+
+.puu-cnt .puu-vis {
+	position: absolute;
+	margin-left: -184px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+    border: 1px solid #DDD;
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#EEEEEE');
+}

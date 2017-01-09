@@ -1,0 +1,314 @@
+/* BEGIN: herman: 20120227, copied skin elements to this file, BEFORE original elements
+*/
+
+/* from components.css
+*/
+
+.control { 
+	background: url(../gfx/arrows-sprite.png) no-repeat 100% -352px;
+}
+
+.breadcrumbs a {
+	background: url(../gfx/arrows-sprite.png) no-repeat 100% -75px;
+}
+
+/* from containers.css
+*/
+
+#Header {
+ 	background: #2a2828;
+	border-bottom: 1px solid #ffffff;
+}
+
+/* from content.css (&colors.css)
+*/
+
+.you-label,
+.tinybutton {
+	border-color: #e4ddc3;
+	border: 1px solid #e4ddc0;
+}
+
+.metoo {
+	background: url(../gfx/arrows-sprite.png) no-repeat 100% -546px; /* background-color via skin */
+}
+
+/* position after initilization, otherwise it won't show... */
+.metoo-active {
+	background-position: 90% -522px;
+}
+
+.waiting {
+	background-position: 0 0;
+}
+
+/* from forms.css
+*/
+
+.submit {
+	border-color: #cccccc #666666 #666666 #cccccc;
+}
+
+button.search-start,
+input.search-button {
+	background: url(../gfx/sc-sprite.png) no-repeat 8px 6px;
+}
+
+/* position after initilization, otherwise it won't show... */
+button.search-start {
+    background-position: 0 -40px;
+}
+
+.disabled input.button-saveall {
+    background-position: 0 -40px;
+}
+
+.sendcontrols {
+	background: #fdaf5a;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbb62b), to(#f67b2b), color-stop(.25, #fbb62b));
+	background: -moz-linear-gradient(top, #fbb62b 25%, #f67b2b);
+	border: 1px solid #e69764;
+}
+
+.sendcontrols button, /*extends button */
+.sendcontrols .button { /* extends a */
+	background: url(../gfx/arrows-sprite.png) no-repeat 100% -274px;
+}
+
+/* position after initilization, otherwise it won't show... */
+.up button/* extends .sendcontrols button*/,
+.up .button { /* extends .sendcontrols a.button*/
+	background-position: 100% -314px;
+}
+
+/* from lists.css
+*/
+
+.single {
+	background: url(../gfx/arrows-sprite.png) no-repeat 97% -490px;
+}
+
+.linklist li a {
+	background: url(../gfx/arrows-sprite.png) no-repeat 0 -75px;
+}
+
+/* position after initilization, otherwise it won't show... */
+.index li a {
+	background-position: 97% -405px;
+}
+
+li .sectionhead a {
+	background: none;
+}
+
+.js .togglelist .sectionhead {
+	background:  url(../gfx/arrows-sprite.png) no-repeat 0 6px;
+}
+
+/* position after initilization, otherwise it won't show... */
+.js .togglelist .open .sectionhead {
+	background-position: 0 -32px;
+}
+
+.filter-detail .active {
+	background: url(../gfx/arrows-sprite.png) no-repeat 0 -408px;
+}
+
+/* from nav.css
+*/
+.sort a {
+	background: url(../gfx/arrows-sprite.png) no-repeat 85% -112px;
+}
+
+/* END: Herman */
+
+/*fonts*/
+body {
+	/*font-size: 70%;*/
+    font-family: verdana;
+}
+#Sciomino {
+ 	background: #2a2828;
+}
+#SciominoForText {
+ 	color: white;
+	font-size: 1.4em;
+	font-weight: bold;
+	padding-left: 15px;
+}
+
+/**
+ kleurgebruik, specifiek voor merk
+ */
+.nav-main a {
+    background: #fbb62b;
+    color: #fff;
+}
+
+.nav-main a:hover,
+.nav-main a:focus,
+.nav-main a.active,
+.nav-u ul a:hover,
+.nav-u ul a:focus,
+.nav-u ul a.active {
+	background: #fff;
+	color: #000;
+}
+
+.pos {
+    background: #6D9C00;
+}
+
+.nav-user a {
+    color: #fff;
+}
+
+.show a {
+    color: #333;
+}
+
+.ui-autocomplete .ui-state-hover,
+.ui-autocomplete .ui-state-focus,
+.dropdown a:hover,
+.dropdown a:focus {
+    background-color: #E4EAF5;
+}
+
+/* sciomino blauw*/
+.inputset .cancelbox a,
+.inputset .cancelbox a:hover,
+.interact .cancelbox a:focus 
+.legend, /*extends h3 in content.css*/
+a,
+.message .add-message,
+.dropdown a.listname,
+.userlink:hover,
+th .verdict,
+.delete {
+	color : #4987c8;
+}
+
+h2 {
+	color : #333;
+}
+
+.text:focus,
+textarea:focus {
+	border-color : #4987C8;
+}
+
+/*extends h3 in content.css*/
+.legend {
+	color: #4987C8;
+}
+
+/* different blue */
+/* extends a.tag */
+.message .add-message:hover,
+.message .add-message:focus,
+.tag:hover,
+.tag:focus {
+    color: #fff;
+    background-color: #4987C8;
+}
+
+/* oranje secundaire kleur*/
+a.xl, /* extends a, tagcloud*/
+.exp-item dt a,
+.field, /* extends a*/
+.additional .hasvalue, /*extends .control*/
+a.exp-label, /* extends a*/
+.exp-link,/* extends a*/
+.alphabet .active,/* extends a*/
+.alphabet a:hover
+{ 
+	color: #2785d2;
+}
+
+.interactive-set .item .tinybutton,
+.metoo { /* extends a.tinybutton*/
+	background-color: #eee;
+} 
+
+.linkbutton {
+	background: #eee;
+}
+
+.submit {
+	background: #fbb62b url(../gfx/grad_submit-green.png) repeat-x 0 0;
+}
+
+/* alliander lichtgroene block achtergrond */
+.filtered .img-item:hover {
+	background: #ebf6ce;
+}
+
+/* extends fancybox, ui/js/libraries/jquery/fancybox/...css */
+#fancybox-content {
+	border-color: rgba(0, 0, 0, 0.3);
+}
+
+.rgba .filtered .img-item:hover {
+	
+	background: #e2ebef;
+}
+
+.updating,
+.highlight,/*extends .section*/
+.dropdown .current,
+.index li a:hover,
+.tinybutton  {
+	background-color: #eee;
+}
+
+/*extends tinybutton */
+.you-label {
+    background: #e8e8e8;
+    padding-right: 5px;
+}
+
+/* extends highlight */
+.fieldset-info {
+    background-color: #e4eaf5;
+}
+
+.delete {
+    background-color: transparent;
+}
+
+.nav-pref li {
+	background-color: #F1F1F1; /* for less capable browsers, (ie6 needs it especially here?!) */
+}
+.add-header,
+.nav-pref li {
+	background-color: #F1F1F1;
+}
+
+.nav-profile li {
+	background-color: #F1F1F1;
+}
+
+/*extends fieldset
+	extra green fill over highlight color
+*/
+.emph {
+	background-color:#dbeafb;
+}
+
+/* barometer */
+.neg {
+	background: #b71a00;
+}
+
+/* red */
+#AnyMessage.error,
+.error .message,
+.error label {
+    color: #b90606;
+}
+
+.error .text,
+.error textarea {
+    border-color: #b90606;
+}
+

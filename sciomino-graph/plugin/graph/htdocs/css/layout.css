@@ -1,0 +1,93 @@
+/* 
+   a device:
+   - width < 800
+   - portrait
+   - 160 dpi
+   - targets a mobile phone
+   - layout is one small column (with sidebar underneath)
+   
+   another device:
+   - width > 800
+   - landscape
+   - 160 dpi
+   - targets a tablet
+   - layout is two columns, one big with sidebar
+   
+   yet another device:
+   - width does not matter
+   - orientation does not matter
+   - > 240 dpi
+   - targets a high resolution screen, new smartphones and ipad3
+/*
+
+/* for normal size devices */
+body {
+  color: red;
+  background-color: #FFF;
+  font-size: 12px;
+}
+
+/* for high resolution devices, > 240 dpi */
+/* does not compute... */
+/* @media screen and (min-resolution: 200dpi) { */
+@media screen and (-webkit-min-device-pixel-ratio: 1.5) {
+  body {
+  	color: green;
+    background-color: #FFF;
+    font-size: 18px;
+  }
+}
+
+/* 
+   decide what to do with the layout:
+   1. fix to portrait or landscape mode.
+   2. fix to width of the device.
+*/
+
+/* fixed width layout */
+/* standard width */
+@media screen and (max-width: 799px) {
+	#page {
+		width: auto;
+	}
+	
+	#header {
+		height: auto;
+	}
+
+	#content {
+		width: auto;
+		float: none;
+	}
+
+	#sidebar {
+		float: none;
+	}
+}
+
+/* for layout with great widths */
+@media screen and (min-width: 800px) {
+	#default
+}
+
+/* for portrait or landscape layout */
+/*
+@media screen and (orientation: portrait) {
+    #portrait {
+    	visibility: visible;
+    }
+    #landscape {
+    	visibility: hidden;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    #portrait {
+    	visibility: hidden;
+    }
+    #landscape {
+    	visibility: visible;
+    }
+}
+*/
+

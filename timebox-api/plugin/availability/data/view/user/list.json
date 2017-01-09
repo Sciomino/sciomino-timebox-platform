@@ -1,0 +1,90 @@
+{
+	"header" : {
+		"status" : "<?php echo $session['response']['stats']['status'] ?>",
+		"request" : "<?php echo $session['response']['stats']['request'] ?>",
+		"responseDate" : "<?php echo $session['response']['stats']['date'] ?>",
+		"responseTime" : "<?php echo $session['response']['stats']['time'] ?>"
+	},
+	"content" : {
+		"user" : [
+			<?php
+				$firstUser = 1;
+				foreach ($session['response']['param']['userList'] as $key => $user) {
+					if ($firstUser) { $firstUser = 0; }
+					else { echo ","; }
+					echo "{";
+
+					// user
+					echo '"id" : "'.$user['userLoginName'].'",';
+					echo '"firstname" : "'.xmlTokens($user['userFirstName']).'",';
+					echo '"lastname" : "'.xmlTokens($user['userLastName']).'"';
+
+					/*
+					echo "    <LoginName>".xmlTokens($userLoginName)."</LoginName>\n";
+					echo "    <PageName>".xmlTokens($userPageName)."</PageName>\n";
+					echo "    <Timestamp>".$userTimestamp."</Timestamp>\n";
+					echo "    <Views>".$userViews."</Views>\n";
+					echo "    <Reference>".xmlTokens($reference)."</Reference>\n";
+					*/
+
+					// annotation
+					/*
+					foreach ($session['response']['param']['userList'][$key]['annotation'] as $annotation) {
+						echo "    <".$annotation['name'].">".xmlTokens($annotation['value'])."</".$annotation['name'].">\n";
+					}
+					*/
+
+					// sort profile list by group
+					$sortArray = array();
+					foreach($user['profile'] as $profile) {
+						$sortArray[] = $profile["group"];
+					}
+					array_multisort($sortArray, $user['profile']);
+
+					// profile
+					$prevProfileGroup = "";
+					$firstProfile = 1;
+					foreach ($user['profile'] as $profile) {
+						// only display availability data (not knowledge, hobby & tag)
+						if ($profile['group'] == "availability") {
+							if ($profile['group'] != $prevProfileGroup) {
+								$prevProfileGroup = $profile['group'];
+								if ($firstProfile) { echo ","; $firstProfile = 0; }
+								else { echo '],'; }
+								echo '"'.$prevProfileGroup.'" : [';
+							}
+							else {
+								echo ",";
+							}
+							echo "{";
+							echo '"id" : "'.$profile['id'].'",';
+							echo '"name" : "'.xmlTokens($profile['name']).'",';
+							
+							$firstAnnotation = 1;
+							foreach ($profile['annotation'] as $profileAnnotation) {
+								if ($firstAnnotation) { $firstAnnotation = 0; }
+								else { echo ','; }
+								echo '"'.$profileAnnotation['name'].'" : "'.xmlTokens($profileAnnotation['value']).'"';
+							}
+							echo "}";
+						}
+					}
+
+					// end profile list
+					if (! $firstProfile) {
+						echo "]";
+					}
+					
+					// end user
+					echo "}";
+
+				}
+			?>
+		],
+		"summary" : {
+			"completeListSize" : "<?php echo $session['response']['param']['listSize'] ?>",
+			"cursor" : "<?php echo $session['response']['param']['listCursor'] ?>"
+		}		
+	}
+}
+

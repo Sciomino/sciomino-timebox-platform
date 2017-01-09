@@ -1,0 +1,46 @@
+/* 
+   a device:
+   - width, mostly > 1024
+   - landscape
+   - 160 dpi
+   - targets a tablet
+   - layout is one big screen
+   
+   No layout options for another device, fix to landscape mode!
+   
+   prepare for high resolution screens:
+   - width does not matter
+   - orientation does not matter
+   - > 240 dpi
+   - targets a high resolution screen, ipad retina
+/*
+
+
+/* 1. high resolution devices
+ * what are high resolution devices? > 240 dpi
+ * 240 dpi = 2.5 x 96 dpi, so ratio is 2.5 */
+@media screen and (-webkit-min-device-pixel-ratio: 2.5),
+       screen and (min-resolution: 240dpi) {
+  /* most important, use double sized images an scale backround * 0.5 */
+}
+
+
+/* 2. fixed width layout */
+
+/* 2a. small width */
+@media screen and (max-width: 1024px) {
+}
+
+/* 2b. for layout with greater widths */
+@media screen and (min-width: 1025px) {
+}
+
+/* 3. portrait or landscape layout */
+
+/* 3a. portrait */
+@media screen and (orientation: portrait) {
+}
+
+/* 3b. landscape */
+@media screen and (orientation: landscape) {
+}

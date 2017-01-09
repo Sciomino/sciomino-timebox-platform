@@ -1,0 +1,350 @@
+.puu-plans tbody td:first-of-type {
+	background-color: #efefef;
+}
+
+a:hover {
+	transition: color .12s;
+}
+
+@media screen and (max-width: 1040px) {
+
+	body {
+		margin-bottom: 10px;
+	}
+
+	.puu-cnt.puu-home .puu-pitch {
+		padding-top: 0;
+	}
+
+}
+
+@media screen and (max-width: 1030px) {
+
+	.puu-cnt.puu-home .puu-shots {
+		margin-top: 40px;
+	}
+
+}
+
+@media screen and (max-width: 1020px) {
+
+	.puu-cnt.puu-home .puu-shots {
+		float: none;
+		display: block;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 100%;
+		height: auto;
+	}
+
+	.puu-cnt.puu-home .puu-pitch {
+		clear: both;
+		width: 100%;
+		margin-left: 0;
+		border-top: 1px solid #afafaf;
+	}
+
+	.puu-cnt.puu-home .puu-usp {
+		margin-top: 10px;
+	}
+
+	.puu-cnt.puu-home .puu-usp li {
+		display: block;
+		float: left;
+		width: 20%;
+		margin-top: 10px;
+		margin-bottom: 0;
+	}
+
+	.puu-cnt.puu-home .puu-usp li h2 {
+		margin-top: 0;
+	}
+
+	.puu-cnt.puu-home .puu-pitch .puu-contact {
+		clear: both;
+		padding-top: 0;
+	}
+
+	.puu-cnt.puu-home .puu-pitch .puu-contact h2 {
+		float: none;
+		width: auto;
+	}
+
+	.puu-cnt.puu-home .puu-pitch .puu-contact a.puu-btn {
+		float: left;
+		margin-top: 0;
+	}
+
+	.puu-cnt.puu-home .puu-pitch .puu-contact p {
+		clear: both;
+		margin: 10px 0;
+	}
+
+	.puu-tes li,
+	.puu-tes li:first-child,
+	.X {
+		float: none;
+		width: auto;
+		margin-left: 0;
+		clear: both;
+	}
+	
+	.puu-tes li .puu-ava {
+		float: left;
+		position: static;
+		margin-left: 0;
+	}
+
+	.puu-team li {
+		float: none;
+		clear: both;
+		width: auto;
+	}
+
+	.puu-team li li {
+		clear: none;
+	}
+
+	.puu-nav {
+		width: 60%;
+	}
+
+
+}
+
+@media screen and (max-width: 760px) {
+
+	.puu-main .puu-cnt {
+		margin-left: 0;
+	}
+
+	.puu-snav {
+		position: static;
+		clear: both;
+	}
+
+	.puu-snav ul {
+		text-align: right;
+		border: none;
+	}
+
+	.puu-snav li {
+		display: inline-block;
+		padding: 1em 0 0 1em;
+	}
+	
+	.puu-snav em {
+		padding: 0 0 1em 0;
+		background-position: 50% 100%;
+	}
+
+	.puu-cnt.puu-home .puu-usp {
+		width: auto;
+	}
+
+	.puu-nav .puu-login {
+		top: -10px;
+		right: 0;
+		padding: 0;
+	}
+
+	.puu-cnt.puu-home .puu-usp li {
+		width: 50%;
+		margin-bottom: 10px;
+	}
+
+	.puu-team li {
+		list-style-type: none;
+		clear: none;
+		float: left;
+		width: 44%;
+		padding-bottom: 20px;
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+
+	.puu-lgo,
+	.puu-nav,
+	.puu-cnt p,
+	.puu-team li,
+	.puu-tes li,
+	.puu-ftr .puu-sec,
+	.puu-cnt.puu-home .puu-usp,
+	.X {
+		float: none;
+		width: auto;
+		max-width: none;
+		margin-left: 0;
+	}
+
+	.puu-tes li .puu-credit {
+		text-align: right;
+	}
+
+	.puu-cnt.puu-home h1 {
+		padding-top: 0;
+	}
+
+	.puu-cnt.puu-home .puu-usp li {
+		width: auto;
+	}
+
+	.puu-nav {
+		height: 24px;
+	}
+
+	.puu-nav .puu-login {
+		top: -60px;
+	}
+
+	.puu-cnt.puu-home .puu-pitch .puu-contact h2 {
+		max-width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 400px) {
+
+	.puu-snav {
+		border-bottom: 1px solid #afafaf;
+		border-left: none;
+	}
+
+	.puu-snav li {
+		padding-top: 0;
+		padding-left: 0;
+		margin-left: 1em;
+	}
+
+	.puu-snav em {
+		background-position: 0 50%;
+		padding-bottom: 0;
+		padding-left: 12px;
+		padding-right: 0;
+		margin-right: 0;
+		position: relative;
+		left: 0;
+	}
+
+	.puu-snav li a {
+		text-decoration: underline;
+	}
+
+	h1 {
+		margin-top: 10px;
+	}
+
+	.puu-cnt.puu-home h1 {
+		padding-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.puu-main .puu-cnt .puu-sec {
+		margin-left: 0;
+	}
+
+	.puu-cnt .puu-vis {
+		position: static;
+		margin-left: 0;
+		margin-right: 0;
+		width: 100%;
+		height: auto;
+	}
+
+}
+
+@media screen and (max-width: 320px) {
+
+	body {
+		margin-bottom: 0;
+	}
+
+	.puu-main,
+	.puu-tes .puu-cnt,
+	.puu-ftr .puu-cnt,
+	.puu-sosumi,
+	.X {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.puu-nav,
+	.puu-ftr,
+	.puu-tes,
+	.X {
+		width: 100%;
+	}
+
+	.puu-nav {
+		height: 23px;
+	}
+
+	.puu-nav .puu-login {
+		top: -62px;
+	}
+
+	.puu-cnt.puu-home .puu-pitch .puu-contact h2 {
+		max-width: none;
+	}
+
+	.puu-cnt.puu-home .puu-pitch .puu-contact p {
+		margin: 20px 0;
+	}
+
+	.puu-main .puu-cnt .puu-sec {
+		margin-left: 0;
+	}
+
+	.puu-cnt .puu-vis {
+		position: static;
+		margin-left: 0;
+		margin-right: 0;
+		width: 100%;
+		height: auto;
+	}
+
+	.puu-team li {
+		float: none;
+		clear: both;
+		width: auto;
+	}
+
+	.puu-team li li {
+		clear: none;
+	}
+
+}
+
+@media screen and (max-width: 240px) {
+
+	.puu-nav {
+		height: auto;
+		border: none;
+		border-left: 1px solid #afafaf;
+	}
+
+	.puu-nav li {
+		float: none;
+		line-height: 200%;
+		border: none;
+	}
+
+	.puu-nav li em {
+		padding-left: 16px;
+		margin-left: -16px;
+		background-position: 0 50%;
+		padding-bottom: 0;
+	}
+
+	.puu-nav .puu-login {
+		top: 0px;
+	}
+
+	.puu-cnt.puu-home h1 {
+		margin-top: 0;
+	}
+
+}

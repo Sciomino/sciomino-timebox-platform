@@ -1,0 +1,85 @@
+<?php
+
+global $XCOW_B;
+
+$lang = array();
+
+###########
+# NEDERLANDS
+###########
+
+# 1. page title
+$lang['base_title_xcow'] = "Xcow home";
+$lang['base_title_example'] = "Xcow voorbeeld";
+
+# 2. page header
+$lang['base_header_mail_message'] = "Verstuur een bericht";
+$lang['base_header_file_upload'] = "Upload een file";
+
+# 3. page text
+$lang['base_text_hello_world'] = "Hallo wereld!";
+$lang['base_text_congratulations'] = "Gefeliciteerd, je hebt Xcow geinstalleerd! Dank je wel!";
+$lang['base_text_example'] = "Voorbeeld pagina";
+$lang['base_text_choose_language'] = "Kies een taal:";
+$lang['base_text_mail_username'] = "Jouw naam:";
+$lang['base_text_mail_usermail'] = "Jouw E-mail adres:";
+$lang['base_text_mail_subject'] = "Onderwerp:";
+$lang['base_text_mail_message'] = "Bericht:";
+$lang['base_text_file_file'] = "Selecteer een file:";
+
+# 4. page link / word
+$lang['base_word_xcow'] = "Xcow";
+$lang['base_word_home'] = "Home";
+$lang['base_word_register'] = "Registreren";
+$lang['base_word_close'] = "Sluiten";
+$lang['base_word_nederlands'] = "Nederlands";
+$lang['base_word_english'] = "English";
+$lang['base_word_mail_send'] = "Versturen";
+$lang['base_word_file_upload'] = "Upload";
+$lang['base_word_file_download'] = "Download";
+$lang['base_word_second'] = "seconde";
+$lang['base_word_seconds'] = "seconden";
+$lang['base_word_minute'] = "minuut";
+$lang['base_word_minutes'] = "minuten";
+$lang['base_word_hour'] = "uur";
+$lang['base_word_hours'] = "uren";
+$lang['base_word_day'] = "dag";
+$lang['base_word_days'] = "dagen";
+$lang['base_word_second_short'] = " sec.";
+$lang['base_word_minute_short'] = " min.";
+$lang['base_word_hour_short'] = " uur.";
+$lang['base_word_day_month_1'] = "\$day\$ januari";
+$lang['base_word_day_month_2'] = "\$day\$ februari";
+$lang['base_word_day_month_3'] = "\$day\$ maart";
+$lang['base_word_day_month_4'] = "\$day\$ april";
+$lang['base_word_day_month_5'] = "\$day\$ mei";
+$lang['base_word_day_month_6'] = "\$day\$ juni";
+$lang['base_word_day_month_7'] = "\$day\$ juli";
+$lang['base_word_day_month_8'] = "\$day\$ augustus";
+$lang['base_word_day_month_9'] = "\$day\$ september";
+$lang['base_word_day_month_10'] = "\$day\$ oktober";
+$lang['base_word_day_month_11'] = "\$day\$ november";
+$lang['base_word_day_month_12'] = "\$day\$ december";
+
+
+# 5. page status
+$lang['base_status_error400'] = "400 Bad Request";
+$lang['base_status_error401'] = "401 Unauthorized";
+$lang['base_status_error404'] = "404 Not Found";
+$lang['base_status_error500'] = "500 Internal Server Error";
+$lang['base_status_mail_send_ok'] = "Je bericht is verzonden.";
+$lang['base_status_mail_send_wrong'] = "Je bericht is niet verzonden, probeer het opnieuw.";
+$lang['base_status_file_upload_select'] = "Er is (nog) geen file geselecteerd.";
+$lang['base_status_file_upload_extension'] = "De file is niet geupload, want de extensie is niet geldig.";
+$lang['base_status_file_upload_big'] = "De file is niet geupload, want hij was te GROOT.";
+$lang['base_status_file_upload_security'] = "De file is niet geupload, want er was iets mis met de beveiliging (waarschijnlijk was de file te GROOT).";
+$lang['base_status_file_upload_ok'] = "De file is successvol geupload.";
+$lang['base_status_file_download_notfound'] = "De file is niet gevonden.";
+
+# 6. mail
+
+###########
+
+$XCOW_B['language'] = $XCOW_B['language'] + $lang;
+
+?>

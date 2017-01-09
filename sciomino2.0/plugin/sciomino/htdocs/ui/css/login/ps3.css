@@ -1,0 +1,57 @@
+a:focus {
+	outline: #fdc02a ridge medium;
+}
+
+@media screen and (device-width: 1920px) and (device-height: 1080px) {
+	
+	body {
+		zoom: 177%;
+	}
+
+	.puu-snav {
+		position: absolute;
+		bottom: auto;
+	}
+
+	.puu-tes,
+	.puu-plans .puu-sep,
+	.X {
+		background-color: #f6f6f6;
+		background-image: url("/gfx/sciomino/bg_tes_x2.png");
+		-webkit-background-size: 5px 5px;
+	}
+
+	.puu-cnt.puu-home .puu-usp li {
+		background-image: url("/gfx/sciomino/ico_time_x2.png");
+		-webkit-background-size: 66px 67px;
+	}
+
+	.puu-cnt.puu-home li.puu-money {
+		background-image: url("/gfx/sciomino/ico_money_x2.png");
+	}
+
+	.puu-cnt.puu-home li.puu-reuse {
+		background-image: url("/gfx/sciomino/ico_reuse_x2.png");
+	}
+
+	.puu-nav li em,
+	.puu-snav em,
+	.X {
+		background-image: url("/gfx/sciomino/bg_dot_x2.png");
+		-webkit-background-size: 9px 9px;
+	}
+
+	.puu-nav .puu-login a {
+		background-image: url("/gfx/sciomino/bg_login_x2.png");
+		-webkit-background-size: 72px 64px;
+	}
+
+}
+
+@media screen and (device-width: 1280px) and (device-height: 720px) {
+	
+	body {
+		zoom: 118%;
+	}
+
+}

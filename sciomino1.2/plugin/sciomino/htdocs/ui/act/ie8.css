@@ -1,0 +1,16 @@
+.puu-connect .puu-result .puu-content .puu-textual label {
+	float: left;
+	width: 100px;
+}
+.puu-connect .puu-result .puu-content .puu-textual textarea {
+	float: right;
+}
+
+.puu-connect .puu-result .puu-content .puu-textual .puu-char_left {
+	clear: both;
+}
+
+.puu-connect .puu-chzn_1 {
+	position: relative;
+	z-index: 1;
+}

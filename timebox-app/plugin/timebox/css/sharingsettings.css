@@ -1,0 +1,131 @@
+.sharingsettings { 
+	width:90%;
+	margin:0 auto;
+	padding-top:44px;
+}
+.sharingsettingsHeader > h2 {
+	background-color:#e6e3d8;
+	text-transform:uppercase;
+	font-size:18px;
+	display:block;
+	padding:10px 0;
+	border-bottom:1px solid #d1cec4;
+}
+.sharingsettingsHeader > h2 a {
+	position:absolute;
+	left:10px;
+	top:13px;
+}
+#companiessection,
+#personalsection {
+	padding-top:12px;
+	color:#575551;
+}
+/*** COMPANIES SECTION ***/
+#companiessection > p {
+	text-align:left; 
+	font-size:0.85em;
+	padding:0 10px;
+}
+#companiessection > p:last-child,
+#companiessection > p.footer {
+	border:0;
+	/*text-align:center;*/
+	font-size:0.7em;
+	line-height:18px;
+}
+#companiessection > p.footer {
+	margin-bottom: 10px;
+}
+#companiessection > p.footerborder {
+	padding-bottom:9px;
+	border-bottom:1px solid #d1cec4;
+}
+#companiessection > p a {
+	color:#575551;
+	font-weight:normal;
+}
+#companiessection > p a:hover { color:#575551; }
+#personalsection.known > ol,
+#companiessection > ol {
+	list-style:none;
+	margin:10px 0px 10px;
+    background-color: #dbd8cd;
+}
+#personalsection.known > ol li,
+#companiessection > ol li {
+	margin:0;
+	overflow:hidden;
+	border-bottom:1px solid #d1cec4;
+	height:54px;
+	text-align:left;
+	padding-right:10px;
+}
+#personalsection.known > ol li > div,
+#companiessection > ol li > div { 
+	float:left;
+	height:100%;
+	line-height:60px;
+	padding-left:10px;
+	overflow:hidden;
+}
+#personalsection.known > ol li > div img,
+#companiessection > ol li > div img {
+	margin:9px 0px;
+	height:36px;
+	width:36px;
+	float:left;
+}
+#companiessection > ol li > div h3 {
+	margin-left:41px;
+	line-height:54px;
+	font-size:15px;
+}
+#personalsection.known > ol li > fieldset,
+#companiessection > ol li > fieldset { float:right; }
+/*** PERSONAL SECTION ***/
+#personalsection > h3 {
+	text-transform:uppercase;
+	margin-bottom:18px;
+}
+#personalsection > iframe { margin-bottom:18px; }
+#personalsection > p {
+	font-size:0.9em;
+	text-align:center;
+	line-height:20px;
+	margin-bottom:18px;
+}
+#personalsection button {
+	background-color:#ebad3f !important;
+	color:#fff !important;
+	text-transform:uppercase;
+	padding:10px 0;
+}
+#personalsection.known ol { margin-bottom:18px; }
+#personalsection.known > p { text-align:left; }
+#personalsection.known > p.widget { text-align:center; }
+/*** btns ***/
+#personalsection.known > ol .ui-radio label,
+#companiessection > ol .ui-radio label,
+#sharesection .ui-checkbox label,
+#sharesection .ui-radio label {
+	border-color:#d1cec4 !important;
+	background-color:#e6e3d8;
+	text-transform:uppercase;
+	color:#7b7973;
+	font-weight:normal;
+}
+#sharesection .ui-checkbox label,
+#sharesection .ui-radio label { padding:0.6em 1.8em; }
+#sharesection .ui-radio-on,
+#sharesection .ui-checkbox-on,
+#sharesection .ui-btn-active {
+	background-color:#7b7973 !important;
+	color:#fff !important;
+}
+#personalsection.known > ol .ui-radio-on,
+#companiessection > ol .ui-radio-on {
+	background-color:#00a94f !important;
+	color:#fff !important;
+}
+#companiessection > ol li fieldset .ui-radio:last-child .ui-radio-on { background-color:#ed5740 !important; }

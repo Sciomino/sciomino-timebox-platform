@@ -1,0 +1,8 @@
+#!/bin/bash
+
+URL="http://<!--SC_URL-->/import/update?mode=update&source=queue"
+
+OUTFILE="<!--SC_BASE-->/plugin/sciomino/scripts/cron/update-queue.html"
+LOGFILE="<!--SC_BASE-->/plugin/sciomino/scripts/cron/update-queue.log"
+
+/usr/bin/wget --timeout=300 -O $OUTFILE -o $LOGFILE "$URL"

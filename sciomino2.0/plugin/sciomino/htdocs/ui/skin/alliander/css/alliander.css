@@ -1,0 +1,313 @@
+/* BEGIN: herman: 20120227, copied skin elements to this file, BEFORE original elements
+*/
+
+/* from components.css
+*/
+
+.control { 
+	background: url(../gfx/arrows-sprite.png) no-repeat 100% -352px;
+}
+
+.breadcrumbs a {
+	background: url(../gfx/arrows-sprite.png) no-repeat 100% -75px;
+}
+
+/* from containers.css
+*/
+
+#Header {
+	background: #e8e8e8;
+	border-bottom: 1px solid #6d9c00;
+	border-left: solid 1px #c8c8c8;
+	border-right: solid 1px #c8c8c8;
+}
+
+#Content {
+	border-left: solid 1px #c8c8c8;
+	border-right: solid 1px #c8c8c8;
+}
+/* from content.css (&colors.css)
+*/
+
+.you-label,
+.tinybutton {
+	border-color: #e2e4c3;
+	border: 1px solid #efefef;
+}
+
+.metoo {
+	background: url(../gfx/arrows-sprite.png) no-repeat 100% -546px; /* background-color via skin */
+}
+
+/* position after initilization, otherwise it won't show... */
+.metoo-active {
+	background-position: 90% -522px;
+}
+
+.waiting {
+	background-position: 0 0;
+}
+
+/* from forms.css
+*/
+
+.submit {
+	border-color: #b8c1a2 #757b67 #757b67 #b8c1a2;
+}
+
+button.search-start,
+input.search-button {
+	background: url(../gfx/sc-sprite.png) no-repeat 8px 6px;
+}
+
+/* position after initilization, otherwise it won't show... */
+button.search-start {
+    background-position: 0 -40px;
+}
+
+.disabled input.button-saveall {
+    background-position: 0 -40px;
+}
+
+.sendcontrols {
+	background: #fdaf5a;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fdaf5a), to(#f67b2b), color-stop(.25, #fdaf5a));
+	background: -moz-linear-gradient(top, #fdaf5a 25%, #f67b2b);
+	border: 1px solid #e69764;
+}
+
+.sendcontrols button, /*extends button */
+.sendcontrols .button { /* extends a */
+	background: url(../gfx/arrows-sprite.png) no-repeat 100% -274px;
+}
+
+/* position after initilization, otherwise it won't show... */
+.up button/* extends .sendcontrols button*/,
+.up .button { /* extends .sendcontrols a.button*/
+	background-position: 100% -314px;
+}
+
+/* from lists.css
+*/
+
+.single {
+	background: url(../gfx/arrows-sprite.png) no-repeat 97% -490px;
+}
+
+.linklist li a {
+	background: url(../gfx/arrows-sprite.png) no-repeat 0 -75px;
+}
+
+/* position after initilization, otherwise it won't show... */
+.index li a {
+	background-position: 97% -405px;
+}
+
+li .sectionhead a {
+	background: none;
+}
+
+.js .togglelist .sectionhead {
+	background:  url(../gfx/arrows-sprite.png) no-repeat 0 6px;
+}
+
+/* position after initilization, otherwise it won't show... */
+.js .togglelist .open .sectionhead {
+	background-position: 0 -32px;
+}
+
+.filter-detail .active {
+	background: url(../gfx/arrows-sprite.png) no-repeat 0 -408px;
+}
+
+/* from nav.css
+*/
+.sort a {
+	background: url(/..gfx/arrows-sprite.png) no-repeat 85% -112px;
+}
+
+/* END: Herman */
+
+
+/*fonts*/
+body {
+	font-family: arial, helvetica, sans-serif;
+    background: #e7e7e7;
+}
+#Alliander {
+	border-bottom: 1px solid #6d9c00;
+ 	background: #fff;
+	width: 990px;
+	margin: 0 auto;
+	border-left: solid 1px #c8c8c8;
+	border-right: solid 1px #c8c8c8;
+}
+#Alliander li {
+	float: left;
+	border: 0;
+}
+#Alliander ul {
+	margin-top: 10px;
+}
+#Alliander li a {
+	color: #999;
+	font-weight: bold;
+	padding: 4px;
+}
+#Alliander li a.active {
+	font-weight: bold;
+	color: #000;
+}
+
+
+/**
+ kleurgebruik, specifiek voor merk
+ */
+.nav-main a:hover,
+.nav-main a:focus,
+.nav-main a.active,
+.nav-u ul a:hover,
+.nav-u ul a:focus,
+.nav-u ul a.active,
+.pos {
+	background: #6d9c00;
+}
+
+.ui-autocomplete .ui-state-hover,
+.ui-autocomplete .ui-state-focus,
+.dropdown a:hover,
+.dropdown a:focus {
+    background-color: #ebf6ce;
+}
+
+/* alliander groen*/
+.inputset .cancelbox a,
+.inputset .cancelbox a:hover,
+.interact .cancelbox a:focus 
+.legend, /*extends h3 in content.css*/
+h2,
+a,
+.message .add-message,
+.dropdown a.listname,
+.userlink:hover,
+th .verdict,
+.delete{
+	color : #6d9c00;
+}
+
+.text:focus,
+textarea:focus {
+	border-color : #6d9c00;
+}
+
+/*extends h3 in content.css*/
+.legend {
+	color: #6d9c00;
+}
+
+/* different green */
+/* extends a.tag */
+.message .add-message:hover,
+.message .add-message:focus,
+.tag:hover,
+.tag:focus {
+    color: #fff;
+    background-color: #8cb23e;
+}
+
+/* oranje secundaire kleur*/
+a.xl, /* extends a, tagcloud*/
+.exp-item dt a,
+.field, /* extends a*/
+.additional .hasvalue, /*extends .control*/
+a.exp-label, /* extends a*/
+.exp-link,/* extends a*/
+.alphabet .active,/* extends a*/
+.alphabet a:hover
+{ 
+	color: #e65100;
+}
+
+.interactive-set .item .tinybutton,
+.metoo { /* extends a.tinybutton*/
+	background-color: #e2f2b2;
+} 
+
+.linkbutton {
+	background: #f1f6e4;
+}
+
+.submit {
+	background: #9bbe31 url(../gfx/grad_submit-green.png) repeat-x 0 0;
+}
+
+/* alliander lichtgroene block achtergrond */
+.filtered .img-item:hover {
+	background: #ebf6ce;
+}
+
+/* extends fancybox, ui/js/libraries/jquery/fancybox/...css */
+#fancybox-content {
+	border-color: #ebf6ce;
+}
+
+.rgba .filtered .img-item:hover {
+	
+	background: rgba(227, 241, 192, 0.75);
+}
+
+.updating,
+.highlight,/*extends .section*/
+.dropdown .current,
+.index li a:hover,
+.tinybutton  {
+	background-color: #ebf6ce;
+}
+
+/*extends tinybutton */
+.you-label {
+    background: #e8e8e8;
+    padding-right: 5px;
+}
+
+/* extends highlight */
+.fieldset-info {
+    background-color: #f1f5e5;
+}
+
+.delete {
+    background-color: transparent;
+}
+
+.nav-pref li {
+	background-color: #f6fae9; /* for less capable browsers, (ie6 needs it especially here?!) */
+}
+.add-header,
+.nav-pref li {
+	background-color: rgba(163, 205, 43, 0.1);
+}
+
+/*extends fieldset
+	extra green fill over highlight color
+*/
+.emph {
+	background-color:#dbecb2;
+}
+
+/* barometer */
+.neg {
+	background: #b71a00;
+}
+
+/* red */
+#AnyMessage.error,
+.error .message,
+.error label {
+    color: #b90606;
+}
+
+.error .text,
+.error textarea {
+    border-color: #b90606;
+}
+

@@ -1,0 +1,15 @@
+<?php
+echo "[";
+$first = 1;
+foreach ($session['response']['param']['suggestList'] as $suggestKey => $suggestVal) {
+	if ($first) { $first = 0; }
+	else { echo ","; }
+
+	echo "{";
+    	echo "\"label\":";
+    	echo "\"{$suggestVal['name']}\"";
+	echo "}";
+
+}
+echo "]\n";
+?>

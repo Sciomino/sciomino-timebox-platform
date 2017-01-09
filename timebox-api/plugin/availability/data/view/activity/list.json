@@ -1,0 +1,36 @@
+{
+	"header" : {
+		"status" : "<?php echo $session['response']['stats']['status'] ?>",
+		"request" : "<?php echo $session['response']['stats']['request'] ?>",
+		"responseDate" : "<?php echo $session['response']['stats']['date'] ?>",
+		"responseTime" : "<?php echo $session['response']['stats']['time'] ?>"
+	},
+	"content" : {
+		"activity" : [
+			<?php
+				$first = 1;
+				foreach ($session['response']['param']['activityList'] as $key => $activity) {
+					if ($first) { $first = 0; }
+					else { echo ","; }
+					echo "{";
+
+					// activity
+					echo '"id" : "'.$activity['id'].'",';
+					echo '"timestamp" : "'.$activity['timestamp'].'",';
+					echo '"title" : "'.xmlTokens($activity['title']).'",';
+					echo '"description" : "'.xmlTokens($activity['description']).'",';
+					echo '"priority" : "'.xmlTokens($activity['priority']).'",';
+					echo '"url" : "'.xmlTokens($activity['url']).'",';
+					echo '"appId" : "'.$activity['appId'].'"';
+					
+					echo "}";
+
+				}
+			?>
+		],
+		"summary" : {
+			"completeListSize" : "<?php echo $session['response']['param']['listSize'] ?>",
+			"cursor" : "<?php echo $session['response']['param']['listCursor'] ?>"
+		}		
+	}
+}

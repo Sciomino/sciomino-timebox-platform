@@ -1,0 +1,98 @@
+'import' is de plek voor beheer van eigen data.
+
+Met verschillende URL's in 'jouw.sciomino.com/import;  kan data beheerd:
+- /import/update: dit script verwerkt XML updates in de Sciomino API
+- /import/sync: dit script synchroniseert data tussen een lokale mysql tabel en de Sciomino API
+- /import/syncCheckup: met dit script kan de sync gecontroleerd worden
+- /import/list: dit scrypt verwerkt hierarchie in de lokale mysql table tot teamlijsten in de Sciomino API
+
+NOTE: Omdat de scripts draaien vanuit een URL en van een timeout afhankelijk zijn, zijn de belangrijkste scripts ook in 2 stappen opgebouwd. Eerst wordt de data gelezen en in een queue gezet, vervolgens wordt vanuit cron de queue verwerkt.
+
+
+/import/update
+==============
+Een XML file kan met een HTTP POST naar deze URL gestuurd worden.
+
+1. Klant URL's:
+/import/update?file=FILE
+Leest de file en geeft informatie of deze goed is. Gebruik deze voor testen.
+
+/import/update?mode=background&file=FILE
+Upload een file en zet hem in de background.
+
+2. Systeem URL:
+/import/update?mode=update&source=queue
+Verwerkt de geuploade files die in de background staan. Aangeroepen vanuit cron.
+
+NOTE: de klant bepaald de grote van de XML file, Het advies is om niet meer dan 200+ entries tegelijk te doen vanwege timeouts.
+
+
+/import/sync
+============
+Een mysql tabel kan met deze functionaliteit gesynchroniseerd worden.
+
+1. Klant URL's voor volledige sync:
+/import/sync?offset=0&limit=3
+Leest de mysql tabel en geeft informatie van de eeste 3 entries. Gebruik deze voor testen.
+
+/import/sync?mode=all&offset=0&limit=3
+/import/sync?mode=all&offset=3&limit=3
+/import/sync?mode=all&offset=6&limit=3
+/import/sync?mode=all&offset=9&limit=3
+Synchroniseer de eerste 12 entries met 3 tegelijk.
+
+2. Klant URL's voor periodieke sync:
+/import/sync?stamp=[day|week|month]
+Leest de mysql tabel en geeft informatie van de eerste x entries in deze update. Gebruik deze voor testen.
+
+/import/sync?mode=background&stamp=[day|week|month]
+Sync een tabel en zet hem in de background.
+
+NOTE: Met de optie day|week|month kan een mysql tabel dagelijks, wekelijks of maandelijks in sync worden gehouden.
+
+3. Systeem URL voor periodieke sync:
+/import/sync?mode=all&stamp=queue&entries=3.
+Verwerkt de synced tabel entries die in de background staan. Aangeroepen vanuit cron. Het aantal entries geeft aan hoeveel er tegelijk verwerkt worden. 
+
+NOTE: door het kiezen van het aantal entries kan de timeout van de url omzeild worden.
+
+3. Repair URL:
+/import/sync?mode=all&stamp=id&id=[ID].
+Sync 1 specifieke entry uit de table met het aangegeven ID. Te gebruiken nadat met onderstaande syncCheckup een afwijking is geconstateerd.
+
+
+/import/syncCheckup
+===================
+Een individuele entry uit de database tabel kan hiermee geverifieerd worden.
+
+/import/syncCheckup?id=[ID]
+verifieert de data in de mysql tabel met de data in de Sciomino API van een specifiek ID, dit is het $map['Id'] zoals deze in import-map.php is afgesproken.
+
+output:
+OK: geeft aan dat de data gelijk is
+ERROR: geeft aan dat de data afwijkt. Als de data afwijkt, dan wordt ook de vergelijking tussen de velden weergegeven.
+
+/import/syncCheckup?id=[ID]&debug=1
+Met de debug=1 optie erachter wordt de vergelijking van de data altijd gegeven.
+
+output: een tabel als volgt:
+CATEGORY:MAP NAME:LOCAL VALUE:STATUS (0:error|1:ok|2:unknown):REMOTE NAME:REMOTE VALUE
+user:voornaam:Jan:1:firstName:match
+user:achternaam:De Vries:0:lastName:Janssen
+user::xyz:2:CustomerId:unknown
+
+voorbeeld:1, OK: de voornaam (uit de mysql tabel) van de persoon is 'Jan' en die match op het veld firstName
+voorbeeld:0, ERROR: de achternaam (uit de mysql table) van de persoon is 'De Vries' en is fout in het veld lastName, want daar staat 'Janssen'
+voorbeeld:2, UNKNOWN: het CustomerId veld met waarde xyz wordt niet tussen de sql tabel en API gematched, maar blijkbaar wel opgeslagen.
+
+NOTE: als een ID niet blijkt te matchen dan kan met de sync repair URL (hierboven) dit individuele ID geupdate worden.
+
+
+/import/list
+============
+Met deze url wordt de hierarchy van managers & teamleden uit de mysql tabel gehaald en in lijsten in de Sciomino API verwerkt.
+
+1. Klant URL's:
+/import/list?mode=all
+Leest de tabel en vernieuwd teamlijsten.
+

@@ -1,0 +1,34 @@
+{
+	"header" : {
+		"status" : "<?php echo $session['response']['stats']['status'] ?>",
+		"request" : "<?php echo $session['response']['stats']['request'] ?>",
+		"responseDate" : "<?php echo $session['response']['stats']['date'] ?>",
+		"responseTime" : "<?php echo $session['response']['stats']['time'] ?>"
+	},
+	"content" : {
+		"usage" : [
+			<?php
+				$first = 1;
+				foreach ($session['response']['param']['usageList'] as $key => $usage) {
+					if ($first) { $first = 0; }
+					else { echo ","; }
+					echo "{";
+
+					// usage
+					echo '"groupId" : "'.$usage['groupId'].'",';
+					echo '"year" : "'.$usage['year'].'",';
+					echo '"month" : "'.$usage['month'].'",';
+					echo '"day" : "'.$usage['day'].'",';
+					echo '"count" : "'.$usage['count'].'"';
+					
+					echo "}";
+
+				}
+			?>
+		],
+		"summary" : {
+			"completeListSize" : "<?php echo $session['response']['param']['listSize'] ?>",
+			"cursor" : "<?php echo $session['response']['param']['listCursor'] ?>"
+		}		
+	}
+}

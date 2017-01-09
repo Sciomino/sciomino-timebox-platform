@@ -1,0 +1,87 @@
+<?php
+
+global $XCOW_B;
+
+$lang = array();
+
+###########
+# NEDERLANDS
+###########
+
+# 1. page title
+
+# 2. page header
+$lang['session_header_activate'] = "Activeren";
+$lang['session_header_anonymous'] = "Anonieme sessie gestart";
+$lang['session_header_login'] = "Aanmelden";
+$lang['session_header_logout'] = "Afmelden";
+$lang['session_header_register'] = "Registreren";
+$lang['session_header_passnew'] = "Wachtwoord vergeten";
+$lang['session_header_passupdate'] = "Wachtwoord wijzigen";
+ 
+# 3. page text
+$lang['session_text_username'] = "Gebruikersnaam:";
+$lang['session_text_userdescription'] = "(Gebruik geen spaties in je gebruikersnaam.)";
+$lang['session_text_userpass'] = "Wachtwoord:";
+$lang['session_text_usermail'] = "E-mail adres:";
+$lang['session_text_welcome'] = "Welkom ";
+$lang['session_text_newuser'] = "Nieuwe gebruiker? ";
+$lang['session_text_oldpass'] = "Oud wachtwoord:";
+$lang['session_text_newpass'] = "Nieuw wachtwoord:";
+$lang['session_text_verifypass'] = "Controleer nieuw wachtwoord:";
+$lang['session_text_register_terms'] = "Door te klikken op 'Registreren' ga je akkoord met onze voorwaarden en bevestig je dat je deze hebt gelezen en begrijpt.";
+
+# 4. page link / word
+$lang['session_word_forgetpass'] = "Wachtwoord vergeten?";
+$lang['session_word_login'] = "Aanmelden";
+$lang['session_word_logout'] = "Afmelden";
+$lang['session_word_register'] = "Registreren";
+$lang['session_word_pass'] = "Mail nieuw wachtwoord";
+$lang['session_word_passupdate'] = "Wijzigen";
+$lang['session_word_cancel'] = "Annuleren";
+
+# 5. page status
+$lang['session_status_activate_ok'] = "Je registratie is bevestigd.<!--activateCheck-->";
+$lang['session_status_activate_wrongkey'] = "De sleutel is niet geldig voor je registratie.";
+$lang['session_status_activate_nokey'] = "Om je registratie te bevestigen heb je een sleutel nodig.";
+$lang['session_status_login_ok'] = "Je bent aangemeld.";
+$lang['session_status_login_wrong'] = "De inlog combinatie is niet juist.";
+$lang['session_status_login_firsttime'] = "Voor deze actie moet je eerst inloggen.";
+$lang['session_status_logout_ok'] = "Je bent afgemeld.";
+$lang['session_status_logout_wrong'] = "Je moet ingelogd zijn om uit te kunnen loggen.";
+$lang['session_status_register_requiredfield'] = "Je hebt niet alle velden ingevuld.";
+$lang['session_status_register_nameexists'] = "De naam bestaat al, probeer nog eens.";
+$lang['session_status_register_namewrong'] = "De naam is niet goed, je mag alleen letters en cijfers gebruiken, zonder spaties.";
+$lang['session_status_register_passwrong'] = "Het wachtwoord is niet goed, je moet minimaal 2 karakters gebruiken.";
+$lang['session_status_register_emailexists'] = "Het e-mail adres bestaat al, probeer nog eens.";
+$lang['session_status_register_emailwrong'] = "Het e-mail adres is niet geldig.";
+$lang['session_status_register_emailnotallowed'] = "Het e-mail adres is niet geldig.";
+$lang['session_status_register_notshown'] = "Je kunt je registreren via je werkgever. Met je emailadres en wachtwoord kun je dan hierboven inloggen.";
+$lang['session_status_register_toomany'] = "Het maximum aantal geregistreerde personen is bereikt. Neem contact op met je werkgever.";
+$lang['session_status_passnew_emailwrong'] = "Het e-mail adres is niet geldig.";
+$lang['session_status_passupdate_ok'] = "Je wachtwoord is gewijzigd";
+$lang['session_status_passupdate_oldwrong'] = "Je oude wachtwoord is niet correct.";
+$lang['session_status_passupdate_newwrong'] = "Je nieuwe wachtwoord moet minimaal 2 karakters bevatten.";
+$lang['session_status_passupdate_nomatch'] = "De twee nieuwe wachtwoorden zijn niet hetzelfde.";
+$lang['session_status_mobile_register_appnotallowed'] = "Deze app heeft geen toegang.";
+$lang['session_status_mobile_register_emailwrong'] = "Het e-mail adres is niet geldig.";
+$lang['session_status_mobile_register_emailnotallowed'] = "Het e-mail adres heeft geen toegang.";
+$lang['session_status_mobile_register_notactivated'] = "De toegang is niet toegestaan";
+
+# 6. mail
+$lang['session_mail_register_subject'] = "Activeer je account";
+$lang['session_mail_register_body'] = "Beste \$user\$,\n\nWelkom bij \$name\$. Met dit e-mail adres is een registratie aangevraagd. Om de registratie te activeren kun je de volgende url openen: \$url\$.\n\nNa activatie kun je gebruik maken van alle diensten van \$name\$ op \$host\$.\n\nMet vriendelijke groeten,\nHet \$name\$ team.";
+$lang['session_mail_register_status'] = "Je bent geregistreerd. <br/><br/>Er is een e-mail onderweg naar het e-mail adres wat je hebt opgegeven. De e-mail vraagt om een bevestiging van de registratie. Na de bevestiging kun je met je gebruikersnaam en wachtwoord inloggen en van alle functionaliteiten gebruik maken.";
+$lang['session_mail_register2_subject'] = "Je bent geregistreerd";
+$lang['session_mail_register2_body'] = "Beste \$user\$,\n\nWelkom bij \$name\$. Met deze mail bevestigen we je registratie.\n\nJe gebruikersnaam is: \$user\$\n\nMet deze naam kun je je de volgende keer weer aanmelden bij ons op \$host\$.\n\nMet vriendelijke groeten,\nHet \$name\$ team.";
+$lang['session_mail_register2_status'] = "Je bent geregistreerd. <br/><br/>Je kunt nu verder met je bestelling en je adres gegevens invullen.<br/><br/><a title='Verder' href='javascript:Session.Window.close();'>Verder</a>";
+$lang['session_mail_passnew_subject'] = "Je nieuwe wachtwoord";
+$lang['session_mail_passnew_body'] = "Beste \$user\$,\n\nOp dit e-mail adres is een nieuw wachtwoord aangevraagd voor \$name\$. Het wachtwoord behorende bij jouw loginnaam is door ons veranderd in: \$pass\$. Je kunt hiermee weer inloggen op \$host\$.\n\nMet vriendelijke groeten,\nHet \$name\$ team.";
+$lang['session_mail_passnew_status'] = "Je wachtwoord is veranderd. <br/><br/>Er is een e-mail onderweg naar het e-mail adres wat je hebt opgegeven. Hierin staat je nieuwe wachtwoord.";
+$lang['session_mail_mobile_subject'] = "Activeer je toegang tot \$name\$";
+$lang['session_mail_mobile_body'] = "Beste \$user\$,\n\nWelkom! Met dit e-mailadres is een pincode aangevraagd. Om \$name\$ te activeren kun je de volgende pin gebruiken: \$secret\$.\n\nMet vriendelijke groeten,\nHet \$name\$ team.";
+###########
+
+$XCOW_B['language'] = $XCOW_B['language'] + $lang;
+
+?>

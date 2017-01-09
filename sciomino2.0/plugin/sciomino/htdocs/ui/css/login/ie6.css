@@ -1,0 +1,27 @@
+.puu-nav ul,
+.puu-team,
+.puu-home,
+.puu-ftr,
+.puu-tes ul,
+.X {
+	zoom: 1;
+}
+
+.puu-tes li  {
+	width: auto;
+	float: none;
+}
+
+.puu-ftr .puu-sec {
+	width: auto;
+	float: none;
+}
+
+.puu-cnt .puu-vis {
+	position: absolute;
+	margin-left: -184px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+    border: 1px solid #DDD;
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#EEEEEE');
+}

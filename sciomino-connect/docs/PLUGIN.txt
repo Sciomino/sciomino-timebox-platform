@@ -1,0 +1,17 @@
+user api
+--------
+
+prefix: user
+
+ini file:
+/data/control/api/user.ini
+
+code:
+/data/lib/api/user/*
+/data/model/api/user/*
+/data/view/api/user/*
+
+sql:
+/scripts/db/user/*
+
+

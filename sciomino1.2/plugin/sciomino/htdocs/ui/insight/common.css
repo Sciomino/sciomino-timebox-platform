@@ -1,0 +1,729 @@
+.puu-insight img {
+	border: none;
+}
+
+.puu-insight .puu-clr {
+	clear: both;
+	height: 1px;
+}
+
+.puu-insight div,
+.puu-insight p,
+.puu-insight th,
+.puu-insight td,
+.X {
+	color: #666;
+}
+
+.puu-insight .section {
+	font-size: 14px;
+	font-family: Arial, sans-serif;
+	width: 980px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.puu-insight .section * {
+	text-align: left;
+}
+
+.puu-insight h1 {
+	font-size: 1.286em; /* 18/14 */
+	border-bottom: 1px solid #e8e8e8;
+	color: #6e9b1b;
+	padding-bottom: 15px;
+}
+
+.puu-insight h1 a,
+.puu-insight h1 em,
+.puu-insight h2,
+.puu-insight h2 a,
+.X {
+	color: #666;
+	font-style: normal;
+}
+
+.puu-insight h1 a:after {
+	content: "›";
+	padding-left: .333em;
+}
+
+.puu-insight h1 a:hover {
+	text-decoration: none;
+}
+
+.puu-insight h2 {
+	font-size: 1em;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+.puu-insight .puu-geo h2 {
+	text-transform: none;
+}
+
+.puu-insight h2 a:hover {
+	text-decoration: none;
+}
+
+.puu-insight h2 a:hover .puu-wrip {
+	border-bottom: 2px solid #666;
+}
+
+.puu-insight h2 a {
+	padding-left: 0;
+}
+
+.puu-insight h2 a:before {
+	content: "|";
+	padding-right: 1em;
+	padding-left: .6em;
+	text-decoration: none;
+}
+
+.puu-insight h2 a:first-child:before {
+	content: none;
+	padding-right: 0;
+}
+
+.puu-insight .puu-set.puu-geo h2 a {
+	color: #6e9b1b;
+}
+
+.puu-insight .puu-set.puu-geo h2 a:link,
+.puu-insight .puu-set.puu-geo h2 a:before,
+.X {
+	color: #666;
+}
+
+.puu-insight .puu-face {
+	font-size: .928em; /* 13/14 */
+	min-height: 48px;
+}
+
+.puu-insight .puu-face,
+.puu-insight .puu-face .fn,
+.puu-insight .puu-face .role,
+.X {
+	display: block;
+}
+
+.puu-insight .puu-face .fn {
+	color: #6e9b1b;
+	font-weight: 800;
+	width: 240px;
+}
+
+.puu-insight .puu-face .puu-mug,
+.puu-insight .puu-face .puu-cap,
+.X {
+	float: left;
+}
+
+.puu-insight .puu-face .puu-mug {
+	margin-right: 10px;
+}
+
+.puu-insight .puu-face .role {
+	color: #333;
+	width: 240px;
+}
+
+.puu-insight .puu-gauge {
+	background-color: #fff;
+	background-image: url("gauge_fill.gif");
+	background-position: 2px 25px;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	margin-left: .4em;
+}
+
+.puu-insight .puu-score {
+	font-size: 1.714em; /* 24/14 */
+	color: #6e9b1b;
+}
+
+.puu-insight .puu-score.puu-neg {
+	color: #b71a00;
+}
+
+.puu-insight .puu-score.puu-neg .puu-gauge {
+	background-image: url("gauge_fill_neg.gif");
+}
+
+.puu-insight .puu-female .puu-score .puu-gauge {
+	background-image: url("gauge_fill_hi.gif");
+}
+
+.puu-insight .puu-percent {
+	font-size: .583em; /* 14/24 */
+	color: #666;
+	position: relative;
+	top: -.2em;
+}
+
+.puu-insight .puu-set {
+	width: 980px;
+	float: left;
+}
+
+.puu-insight .puu-set.puu-publications {
+	width: 320px;
+}
+
+.puu-insight .puu-set.puu-geo .puu-subset.puu-sum {
+	width: 170px;
+	float: left;
+}
+
+.puu-insight .puu-set.puu-geo .puu-subset.puu-map {
+	width: 760px;
+	padding: 0;
+	float: right;
+}
+
+.puu-insight #map {
+	width: 760px;
+	height: 600px;
+}
+
+.puu-insight .puu-set.puu-geo .puu-subset.puu-sum h4 {
+	font-size: 1.286em; /* 18/14 */
+}
+
+.puu-insight .puu-set.puu-geo .puu-subset.puu-sum h5 {
+	font-weight: 800;
+	margin-top: 20px;
+	border-top: 1px solid #c9c9c9;
+	padding-top: 20px;
+}
+
+.puu-insight .puu-set.puu-geo .puu-subset.puu-sum ul {
+	padding: 0;
+}
+
+.puu-insight .puu-set.puu-geo .puu-subset.puu-sum li {
+	border: none;
+	padding: 0;
+	margin-top: 15px;
+	font-weight: 800;
+}
+
+.puu-insight .puu-set.puu-geo .puu-subset.puu-sum li li {
+	margin-top: 5px;
+	font-weight: normal;
+}
+
+.puu-insight .puu-set.puu-publications td,
+.puu-insight .puu-set.puu-publications th,
+.X {
+	padding: 0;
+	vertical-align: middle;
+}
+
+.puu-insight .puu-set.puu-publications tr {
+	background-color: #f4f4f4;
+	border-bottom: 10px solid #fff;
+}
+
+.puu-insight .puu-set.puu-publications tr a {
+	color: #666;
+	font-weight: 800;
+}
+
+.puu-insight .puu-set.puu-publications tr .puu-score {
+	color: #6e9b1b;
+}
+
+.puu-insight .puu-set.puu-publications tr .puu-score .puu-percent {
+	color: #666;
+}
+
+.puu-insight .puu-set.puu-publications tr a:hover {
+	text-decoration: none;
+}
+
+.puu-insight .puu-set.puu-publications tr:hover {
+	background-color: #ebf6ce;
+}
+
+.puu-insight .puu-set.puu-publications .puu-count {
+	text-align: right;
+}
+
+.puu-insight .puu-set.puu-publications .puu-lgo {
+	background-color: #fff;
+	vertical-align: middle;
+	margin: 1px;
+	margin-right: 1em;
+}
+
+.puu-insight .puu-set.puu-presence {
+	width: 650px;
+	margin-left: 10px;
+}
+
+.puu-insight .puu-set.puu-presence .puu-subset,
+.puu-insight .puu-set.puu-geo .puu-subset,
+.puu-insight .puu-set .puu-subset.puu-sex,
+.X {
+	background-color: #f4f4f4;
+	padding: 20px;
+	margin-bottom: 10px;
+}
+
+.puu-insight .puu-set.puu-geo .puu-subset.puu-map {
+	padding: 0;
+}
+
+.puu-insight .puu-set.puu-presence .puu-subset .puu-sum {
+	width: 290px;
+	margin-right: 15px;
+	float: left;
+}
+
+.puu-insight .puu-set.puu-presence .puu-subset .puu-map {
+	width: 760px;
+	float: right;
+}
+
+.puu-insight .puu-set.puu-presence .puu-subset h3 {
+	font-size: 1em;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #c9c9c9;
+}
+
+.puu-insight .puu-set .puu-subset h3 .puu-scope {
+	font-weight: normal;
+}
+
+.puu-insight .puu-set.puu-presence .puu-subset.puu-loc {
+	background-image: url("bg_map.png");
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+}
+
+.puu-insight .puu-set.puu-presence h4,
+.puu-insight .puu-set.puu-geo h4,
+.X {
+	color: #666;
+	font-weight: 800;
+}
+
+.puu-insight .puu-set.puu-presence .puu-work,
+.puu-insight .puu-set.puu-presence .puu-home,
+.puu-insight .puu-set .puu-male,
+.puu-insight .puu-set .puu-female,
+.puu-insight .puu-set.puu-presence .puu-today,
+.X {
+	background-image: url("bg_work.png");
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	padding-left: 46px;
+	margin-top: 15px;
+	min-height: 26px;
+}
+
+.puu-insight .puu-set.puu-presence .puu-home {
+	background-image: url("bg_home.png");
+}
+
+.puu-insight .puu-set .puu-male {
+	background-image: url("bg_male.png");
+}
+
+.puu-insight .puu-set .puu-female {
+	background-image: url("bg_female.png");
+}
+
+.puu-insight .puu-set.puu-presence .puu-today {
+	background-image: url("bg_anno.png");
+	margin-bottom: 20px;
+}
+
+.puu-insight .puu-set.puu-presence .puu-nee {
+	margin-left: -5px;
+}
+
+.puu-insight .puu-set.puu-presence .puu-nee .puu-nobody {
+	margin-left: 50px;
+}
+
+.puu-insight .puu-set .puu-nee li {
+	padding-left: 0;
+	border: none;
+}
+
+.puu-insight .puu-set .puu-sex h4 {
+	font-size: 1.714em; /* 24/14 */
+	line-height: 50px;
+}
+
+.puu-insight .puu-sex .puu-sum h4 .puu-gauge {
+	float: right;
+	clear: both;
+	margin-bottom: 10px;
+	margin-right: 60px;
+}
+
+.puu-insight .puu-set .puu-male h4 {
+	color: #6e9b1b;
+}
+
+.puu-insight .puu-set .puu-female h4 {
+	color: #ef652f;
+}
+
+.puu-insight .puu-set .puu-months {
+	width: 300px;
+	float: right;
+}
+
+.puu-insight .puu-set .puu-months .puu-bar {
+	display: inline-block;
+	width: 0;
+	height: 22px;
+	color: #fff;
+	background-color: #96b65c;
+	text-align: right;
+	padding-right: 10px;
+}
+
+.puu-insight .puu-set .puu-months .odd .puu-bar {
+	background-color: #6e9b1b;
+}
+
+.puu-insight .puu-set .puu-months th {
+	color: #666;
+	width: 32px;
+}
+
+.puu-insight .puu-set .puu-months .puu-now .puu-bar {
+	background-color: #ef652f;
+}
+
+.puu-insight .puu-channel .puu-sum {
+	padding: 0 20px;
+	background-color: #f4f4f4;
+	margin-bottom: 20px;
+}
+
+.puu-insight .puu-channel .puu-pedia {
+	font-size: .857em; /* 12/14 */
+	margin-top: 8px;
+	padding-top: 3px;
+	display: inline-block;
+	float: right;
+	width: 566px;
+	background-image: url("ico_linkedin.png");
+	background-repeat: no-repeat;
+	background-position: -9px 50%;
+	padding-left: 40px;
+}
+
+.puu-insight .puu-channel .puu-pedia cite {
+	font-style: normal;
+}
+
+.puu-insight .puu-twitter .puu-pedia {
+	background-image: url("ico_twitter.png");
+}
+
+.puu-insight .puu-facebook .puu-pedia {
+	background-image: url("ico_facebook.png");
+}
+
+.puu-insight .puu-rss .puu-pedia {
+	background-image: url("ico_rss.png");
+}
+
+.puu-insight .puu-slideshare .puu-pedia {
+	background-image: url("ico_slideshare.png");
+}
+
+.puu-insight .puu-personal .puu-pedia {
+	background-image: url("ico_personal.png");
+}
+
+.puu-insight .puu-websites .puu-pedia {
+	background-image: url("ico_websites.png");
+}
+
+.puu-insight .puu-articles .puu-pedia {
+	background-image: url("ico_articles.png");
+}
+
+.puu-insight .puu-books .puu-pedia {
+	background-image: url("ico_books.png");
+}
+
+.puu-insight .puu-channel .puu-find {
+	margin-bottom: 20px;
+}
+
+.puu-insight .puu-channel .puu-find .puu-key {
+	font-size: .857em; /* 12/14 */
+	color: #8c8c8c;
+	border: 1px solid #dedede;
+	background-image: url("bg_key.png");
+	background-repeat: no-repeat;
+	background-position: 98% 50%;
+	padding: 5px;
+	padding-right: 30px;
+}
+
+.puu-insight .puu-board {
+	margin-bottom: 20px;
+}
+
+.puu-insight .puu-board tr {
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.puu-insight .puu-board thead tr {
+	border: none;
+}
+
+.puu-insight .puu-board td {
+	vertical-align: middle;
+	padding-left: 0;
+	font-size: .928em; /* 13/14 */
+}
+
+.puu-insight .puu-board .puu-idx {
+	font-size: 1.714em; /* 24/14 */
+	color: #6e9b1b;
+	font-weight: 800;
+}
+
+.puu-insight .puu-board th {
+	font-weight: 800;
+	padding-left: 0;
+}
+
+.puu-insight .puu-board th:first-child {
+	padding-left: 58px;
+}
+
+.puu-insight .puu-board a {
+	color: #6e9b1b;
+}
+
+.puu-insight .puu-twitter .puu-board .puu-con {
+	display: block;
+	color: transparent;
+	width: 61px;
+	height: 20px;
+	background-image: url("bg_follow.png");
+}
+
+.puu-insight .puu-twitter .puu-board .puu-following {
+	background-image: url("bg_following.png");
+}
+
+.puu-insight .puu-deg_1,
+.puu-insight .puu-deg_2,
+.puu-insight .puu-deg_3,
+.X {
+	display: inline-block;
+	width: 30px;
+	height: 14px;
+	background-image: url("bg_deg_3.png");
+	background-repeat: no-repeat;
+	color: transparent;
+}
+
+.puu-insight .puu-deg_1 {
+	background-image: url("bg_deg_1.png");
+}
+
+.puu-insight .puu-deg_2 {
+	background-image: url("bg_deg_2.png");
+}
+
+.puu-insight a.puu-con {
+	font-size: .833em;
+	font-weight: 800;
+	background-image: url("bg_con.png");
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	padding-left: 16px;
+	color: #069;
+}
+
+.puu-insight .puu-events {
+	width: 1000px;
+	padding-right: -20px;
+}
+
+.puu-insight .puu-events .puu-subset {
+	float: left;
+	width: 320px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+}
+
+.puu-insight .puu-events .puu-subset h3 {
+	font-size: 1.286em; /* 18/14 */
+	line-height: 50px;
+	background-color: #f4f4f4;
+	background-image: url("bg_anno_hi.png");
+	background-repeat: no-repeat;
+	background-position: 15px 50%;
+	padding-left: 58px;
+	margin-bottom: 10px;
+}
+
+.puu-insight .puu-events .puu-subset.puu-tomorrow h3 {
+	background-image: url("bg_tomorrow.png");
+}
+
+.puu-insight .puu-events .puu-subset.puu-cal h3 {
+	background-image: url("bg_cal.png");
+}
+
+.puu-insight .puu-events .puu-subset h3 .puu-day,
+.puu-insight .puu-events .puu-subset h3 .puu-change,
+.X {
+	font-size: .777em; /* 14/18 */
+	display: inline-block;
+	float: right;
+	font-weight: normal;
+	margin-right: 15px;
+}
+
+.puu-insight .puu-events .puu-subset h3 .puu-change {
+	font-size: .666em; /* 12/18 */
+	color: #666;
+	text-decoration: underline;
+}
+
+.puu-insight .puu-coworkers .puu-subset .puu-sum {
+	width: 290px;
+	float: left;
+	padding-right: 20px;
+}
+
+.puu-insight .puu-age {
+	height: 160px;
+	display: table;
+	padding-left: 80px;
+	background-image: url("bg_graph.gif");
+	background-position: 0 161px;
+	width: 545px;
+	float: left;
+}
+
+.puu-insight .puu-age > div {
+	display: table-row;
+}
+
+.puu-insight .puu-age > div > div {
+	display: table-cell;
+	width: 110px;
+	vertical-align: bottom;
+}
+
+.puu-insight .puu-age > div > div > div {
+	font-size: 0.786em; /* 18/14 */
+	width: 40px;
+	color: #fff;
+	min-height: 1.2em;
+	background-color: #ef652f;
+	text-align: center;
+}
+
+.puu-insight .puu-age > div > div > div:first-child {
+	background-color: #6e9b1b;
+}
+
+.puu-insight .puu-age > div > div > div.puu-lbl {
+	color: #666;
+	background-color: transparent;
+	font-size: 1em;
+}
+
+.puu-insight .puu-age.puu-compact {
+	padding-left: 18px;
+	width: 275px;
+	height: 174px;
+	float: right;
+	background-position: 0 154px;
+}
+
+.puu-insight .puu-age.puu-compact > div > div > div {
+	width: 34px;
+}
+
+.puu-insight .puu-age.puu-compact > div > div > div.puu-lbl {
+	font-size: .786em;
+}
+
+.puu-insight .puu-caldaypicker {
+	font-size: .7em;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	line-height: 100%;
+	position: absolute;
+	color: #666;
+	width: 626em;
+	padding: 11px;
+	font-weight: 800;
+	background-image: url("bg_picker.png");
+	background-repeat: no-repeat;
+}
+
+.puu-insight .puu-caldaypicker .puu-wrip {
+	width: 640px;
+	min-height: 441px;
+}
+
+.puu-insight .puu-caldaypicker h4 {
+	clear: left;
+	text-align: center;
+	margin-top: 11px;
+	font-weight: 800;
+}
+
+.puu-insight .puu-caldaypicker .puu-month {
+	display: block;
+	float: left;
+	width: 160px;
+	border-top: none;
+	border-left: none;
+}
+
+.puu-insight .puu-caldaypicker .puu-days {
+	width: 133px; /* 19x7 */
+	min-height: 109px;
+	margin: 6px;
+}
+
+.puu-insight .puu-caldaypicker .puu-days:hover {
+	background-color: #ebf6ce;
+}
+
+.puu-insight .puu-caldaypicker .puu-month span {
+	display: block;
+	line-height: 170%;
+	width: 19px;
+	min-height: 19px;
+	float: left;
+	text-align: center;
+}
+
+.puu-insight .puu-caldaypicker .puu-month span:hover {
+	color: #fff;
+	background-color: #6e9b1b;
+}
+
+.puu-insight a.puu-face:hover {
+    text-decoration: none;
+}
+
+.puu-insight a.puu-face:hover span.fn {
+    text-decoration: underline;
+}
+

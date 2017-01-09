@@ -1,0 +1,692 @@
+/**
+ sciomino components
+ */
+
+/* user item*/
+.review-item,
+.img-item {
+	margin: 15px;
+	color: #5c5c5c;
+	line-height: 1.3333;
+}
+
+.img-item h1 {
+	font-size: 1.8333em;
+	padding: 0;
+}
+
+.img-item h1 a {
+	color: #333;
+}
+
+.img-item .img{
+	float: left;
+	margin-right: 15px;
+}
+
+
+.img-item .img img {
+	display: block;
+}
+
+/*extends .img, for img on the right*/
+.img-item .sub {
+	float:right;
+	margin: 0 0 0 15px;
+}
+
+.img-item .group {
+	padding-top: 10px;
+	margin: 0;
+}
+
+/* OOCSS stubbornella trick replaces overflow: hidden solution */
+.img-item .bd {
+    display: table-cell;
+    zoom: 1;
+}
+
+.img-item:after,
+.img-item .bd:after {
+    clear: both;
+    display: block;
+    visibility: hidden;
+    overflow: hidden;
+    height: 0;
+    line-height: 0;
+    font-size: xx-large;
+    content: "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ";
+}
+
+/* extends group*/
+.results .filtered .group {
+	width: 95%; /* ivm stippellijn op achtergrond*/
+}
+
+/*extends img-item*/
+.filtered .img-item {
+	padding: 15px 0 15px 15px;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.img-item .listbutton {
+    visibility: hidden;
+}
+
+.img-item .controls .show,
+.img-item:hover .listbutton {
+    visibility: visible;
+}
+
+/*extends img-item*/
+.featured .img-item {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.filtered li {
+	padding: 0;
+}
+
+/* expert-needed */
+
+/*extends img-item */
+
+.expert-needed .img-item {
+    padding: 5px 0;
+    margin: 0;
+	border-top: 1px solid #ededed;
+}
+ 
+.expert-needed .img-item .img {
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+.expert-needed .bd p {
+    font-size: 0.9167em;
+    margin-top: 5px;
+}
+    
+
+.expert-needed .searcher {
+    float: left;
+}
+
+.searcher img {
+    margin-left: 5px;
+}
+
+/* extends .exp-label */
+.expert-needed .exp-label {
+    width: auto;
+    float: none;
+    display: block;
+}
+
+/* extends metoo && tinybutton */
+.expert-needed .tinybutton {
+    margin-top: 2px;
+}
+
+/* exp-list */
+/*extends .img-item */
+.exp-list .review-item,
+.exp-list .img-item {
+	margin-left: 33px;
+	margin-bottom: 0;
+}
+.exp-list p {
+	padding-left: 38px;
+}
+
+/*dl.exp-item*/
+.exp-item {
+	
+}
+
+.exp-item dt {
+	display: block;
+}
+
+.exp-item dd {
+	display: block;
+	padding-left: 38px;
+}
+
+/* extends a */
+.exp-link{
+	/* color in skin */
+	font-size: 1.25em;
+	text-decoration: underline;
+	padding-left: 20px;
+}
+
+.verdict {
+	padding-left: 38px;
+	background: url(../gfx/icons-sprite.png) no-repeat 0 -348px;
+}
+
+/*extends .verdict*/
+h4.verdict {
+	margin: 5px 0 10px 25px;
+	padding-left: 45px;
+}
+
+/* extends a.exp-link,
+ 	.verdict */
+.happy {
+	background-position:0 -350px;
+}
+
+.happy-xl {
+	background-position:0 -450px;
+}
+
+
+.unhappy {
+	background-position:0 -300px;
+}
+
+.unhappy-xl {
+	background-position:0 -400px;
+}
+
+/* dropdown */
+.dropdown-item:hover, /* careful, needed to make IE7 behave with z-index*/
+.show.dropdown-item{
+	position: relative;
+}
+
+
+/* autocomplete, jquery UI plugin */
+.ui-autocomplete,
+.dropdown {
+	right: 0;
+	position: absolute;
+	border: 1px solid; /* color.css*/
+	background: #fff;
+	z-index: 10;
+}
+
+/* dropdown specific */
+.dropdown {
+	z-index: 10;
+	min-width: 100%;
+	display: none;
+}
+
+.ui-autocomplete {
+	width: 200px;
+}
+.ui-autocomplete li, 
+.dropdown li {
+    float: none;
+    padding: 0;
+}
+
+.ui-autocomplete a,
+.dropdown li a {
+	display: block;
+	padding: 3px 10px;
+}
+
+.ui-autocomplete li {
+	overflow: hidden;
+}
+
+.ui-autocomplete a {
+    overflow: hidden;
+    padding: 2px;
+}
+
+.ui-autocomplete-loading { 
+    background-image: url('../gfx/ajax-loader-circle.gif');
+    background-repeat : no-repeat;
+    background-position: 150px 50%;
+}
+
+.ui-autocomplete img {
+    float: left;
+    margin-right: 5px;
+}
+
+.ui-autocomplete .role {
+    display: block;
+	width: 200px;
+	margin-left: 37px;
+}
+
+.nav-user a:hover,
+.nav-user a:focus {
+	text-decoration: none;
+}
+
+.ui-autocomplete .ui-state-hover,
+.ui-autocomplete .ui-state-focus {
+    background: #eee;
+    text-decoration: none;
+}
+.ui-widget :active {
+    outline: none;
+}
+
+.lists .dropdown ul {
+    width: 200px;
+    padding: 5px 10px;
+}
+
+.no-boxshadow .dropdown {
+	border-width: 1px 3px 3px 1px;
+}
+
+.listbutton .dropdown {
+    font-size: 1.0909em;
+}
+
+.dropdown .all a { /*extends .dropdown li a*/
+	border-bottom: 1px dotted #fff; /* -> color.css*/
+}
+
+/*extends a*/
+.control,
+.tooltip {
+    display: block;
+    text-decoration: none;
+}
+
+.control { /* extends a*/
+	/*color.css*/
+	padding: 3px 20px 3px 0;
+}
+
+/*extends a:hover*/
+.control:hover,
+.control:focus {
+	text-decoration:none;
+}
+
+/*extends .control*/
+.additional .control {
+	background-position:100% -33px;
+}
+
+.show .control {
+    background-position: 100% -371px;
+}
+
+.focusgroup .show .control{
+	background-position: 100% -573px;
+}
+
+
+/*extends .control*/
+.hasvalue {
+	padding-right: 5px;
+	background-image: none;
+}
+
+.control:focus {
+/*	background-color: #fff;*/
+}
+
+.control .value {
+	white-space: nowrap;
+	padding-right: 20px;
+}
+
+.control .edit {
+	color: #3c3c3c;
+	display: none;
+	text-decoration: underline;
+}
+
+.hasvalue .edit {
+	display: inline;
+}
+
+/*extends .control*/
+.additional .control {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	
+}
+
+/*focusbar, extends .section*/
+.focusbar {
+	width: 945px;
+	display: inline-block;
+	padding: 15px;
+	background: #f4f4f4;
+}
+
+.focuscurrent {
+	border-right: 1px solid #fff;
+}
+
+.focusheader{ /* extends hgroup*/
+	float: left;
+	height: 8.333em;
+	padding-right: 30px;
+	background: url(../gfx/arrows/arrow_focusbig.gif) no-repeat 100% 50%;
+}
+
+.focusgroup { /* extends li*/
+	float: left;
+	border-top: 0;
+	padding: 0 10px;
+	border-right: 1px solid #d1d1d1;
+	border-left: 1px solid #fff;
+	height: 8.333em;
+}
+
+/* extends focusgroup */
+.focusgroup:first-child {
+    border-left:0;
+}
+
+.focusgroup dt {
+	display: block;
+	padding-right: 30px; /* give the delete button some space */
+	font-weight: bold;
+}
+
+.focusgroup:hover dt {
+    position: relative; /* for IE7 z-index issues on 2 rows with dropdowns */
+}
+
+/*extends a  in focusbalk */
+.focusgroup .delete {
+    position: absolute;
+    right: -7px;
+    top: 0;
+    background: url(../gfx/icons-sprite.png) no-repeat 0 -1198px;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    text-indent: -999px;
+    outline: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+
+.focusgroup:hover .delete {
+    right: -7px;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* extends a */
+.tooltip {
+    padding-right: 20px;
+ /*   background: url(../gfx/icons-sprite.png) no-repeat 0 100%;*/
+}
+
+/* attached extra styles */
+
+
+/* top gradient on container */
+.softdivide,
+.filtered .img-item { /* extends .img-item */
+	background: url(../gfx/bg/grad_top.png) repeat-x 0 0;
+	padding-top: 15px;
+	margin-top: 0;
+}
+
+.filtered .img-item {
+	margin: 0;
+}
+
+.js .filtered .img-item:hover {
+	cursor: pointer;
+}
+
+/*extends img-item*/
+.filtered .box {
+	background: #f4f4f4;
+	margin: 0;
+	padding: 5px 15px;
+}
+
+/*extends img-item*/
+.filtered .softbox {
+	margin-bottom: 5px;
+	background: #fdfdfd url(../gfx/bg/grad_softbox.png) repeat-x 0 0;
+}
+
+/*extends img-item*/
+.article .img-item {
+	margin-bottom: 0;
+}
+
+/* ervaring table barometer */
+.barometer {
+	max-width: 280px;
+	width: auto;
+	float: right;
+}
+.barometer td,
+.barometer th {
+	padding: 3px 0;
+}
+
+.barometer th {
+	padding-right: 10px;
+}
+.scale {
+	float: left;
+	margin-right: 5px;
+	width: 120px;
+	height: 14px;
+	border: 1px solid #ededed;
+	background: #fff;
+}
+
+.fill { /* resides in .scale*/
+	height: 14px;
+	width: 0;
+}
+
+/* fill width according to perc */
+.fill0 {width: 0;}
+.fill1 {width: 10%;}
+.fill2 {width: 20%;}
+.fill3 {width: 30%;}
+.fill4 {width: 40%;}
+.fill5 {width: 50%;}
+.fill6 {width: 60%;}
+.fill7 {width: 70%;}
+.fill8 {width: 80%;}
+.fill9 {width: 90%;}
+.fill10 {width: 100%;}
+
+.pos { /* extends .fill*/
+	background: #690; /* skin for color*/
+}
+
+.neg {
+	background: #c30; /* skin for color*/
+}
+
+/* breadcrumbs */
+.breadcrumbs {
+	margin: 15px 0 15px 15px;
+}
+.breadcrumbs li {
+	display: inline;
+	padding: 0 3px 0 0;
+	border: 0;
+}
+.breadcrumbs a {
+	text-decoration: underline;
+	padding-right: 8px;
+}
+
+/*extends unit*/
+.hasDrawer {
+	position: relative;
+}
+
+
+/*extends a*/
+.edit-details {
+	float: right;
+	text-decoration: underline;
+}
+
+.details dt {
+    font-weight: bold;
+	float: left;
+	clear: left;
+	width: 100px;
+	margin: 0 10px 0 0;
+}
+
+.details dd {
+	overflow: hidden;
+}
+
+#Drawer-content {
+	width: 350px;
+	height: 100px;
+	margin-left: -425px;
+	padding: 10px 10px 10px 20px;
+	z-index: 100;
+	border: 1px solid;
+	border-width: 1px 5px 5px 0;
+}
+
+/* extends Drawer-content */
+.updating,
+.loading {
+    background: url(../gfx/ajax-loader.gif) no-repeat 50% 10px;
+}
+
+.updating {
+    background-position: 50% 50%;
+}
+
+/* extends .updating */
+.item .updating {
+    text-align: right;
+    padding: 5px 53px 4px 10px;
+    height: 100%;
+}
+
+/* extends .updating */
+fieldset.interactive-set .updating {
+    padding-right: 10px;
+}
+
+
+#Drawer {
+	position: absolute;
+	top: 0;
+	left: 599px;
+	width: 370px;
+	padding: 0 10px 10px 10px;
+	height: auto;
+	overflow: hidden;
+	margin-top: -50px;
+	z-index: 50;
+}
+
+/* extends Drawer, for 2 50% cols */
+.unit1-2 #Drawer {
+    left: 100%;
+}
+
+.rgba #Drawer-content {
+	border-width: 1px 1px 1px 0;
+	/* color.css for box-shadow*/
+}
+
+#Drawer-shadow {
+	position: absolute;
+	top: 0;
+	left: -1px;
+	height: 100%;
+	padding: 3px 0 0 0;
+	margin-top:-10px;
+	width:	7px;
+	background: url(../gfx/bg/bg_drawer-shadow.png) repeat-y 0 0;
+}
+
+/*extends a*/
+.close-drawer {
+	float: right;
+	width: 16px;
+	height: 16px;
+	text-indent: -100px;
+	overflow: hidden;
+	background: url(../gfx/icons-sprite.png) no-repeat 0 -550px;
+}
+
+
+/* ymap */
+.ymap {
+    clear: both;
+    width: 100%;
+    height: 500px;
+    background: #eee;
+}
+
+.pintxt {
+    color: #fff;
+    font-size: 0.9em;
+    text-align: center;
+    width: 26px;
+    padding: 3px 0 0 0;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* smartwindow ymap, is a table, needs some customization*/
+.ymap table {
+    width: auto;
+}
+
+.ymap td,
+.ymap th {
+    padding: 1px;
+}
+
+/* the text div inside SmartWindow */
+#yswid {
+    padding: 0.1em 5px 0 2px;
+}
+
+/* AnyMessage, container for putting any message in */
+#AnyMessage {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 400px;
+    margin: 0 0 0 -200px;
+    text-align: center;
+    padding: 10px;
+    z-index: 100;
+    -webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+    background: #eee;
+    opacity: 0;
+    filter : alpha(opacity=0);
+    border: 1px solid;
+    border-top: 0;
+    font-size: 1.333em;
+}
+
+#AnyMessage.viewport {
+    position: fixed;
+    top: 0;
+}
+
+
+

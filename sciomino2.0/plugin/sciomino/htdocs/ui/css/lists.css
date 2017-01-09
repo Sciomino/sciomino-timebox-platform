@@ -1,0 +1,391 @@
+/**
+ all about lists
+ */
+li {
+	padding: 3px 15px;
+	border-top: 1px solid #ededed;
+}
+
+li li {
+	border: 0;
+	padding: 0;
+}
+
+.sectionhead {
+	display: block;
+	font-weight: bold;
+	margin-left: -15px;
+	padding-left: 15px;
+	font-size: 1.1667em;
+}
+
+/*extends .sectionhead */
+.single {
+	color: #5c5c5c;
+	font-size: 1.1667em;
+	padding: 4px 2px;
+	margin: 0;
+}
+
+/* extends li*/
+.plain li { /* used for lists with no padding/border */
+	padding: 0;
+	border: 0;
+}
+
+/* extends li*/
+.comps li { /* used for lists of components */
+	padding: 10px 0;
+	overflow: hidden; /* IE needs it...*/
+}
+
+/*extends .comps li*/
+.exp-list li {
+	overflow: visible;
+}
+
+/* extends li*/
+.linklist li {
+	border: 0;
+	padding: 0;
+}
+
+/* extends li a*/
+.linklist li a{
+	padding-left: 15px;
+}
+
+/* index list */
+/*extends ul*/
+.index ul {
+	margin: 0 0 15px 0;
+}
+.index li a {
+	display: block;
+	padding:2px;
+}
+
+/*extends .index li a*/
+li .sectionhead a {
+	display: inline;
+	font-size: 0.8571em;
+	font-weight: normal;
+	background: none;
+}
+
+.index li a:hover {
+	background-color: #eee; /* skin for color*/
+	text-decoration: none;
+}
+
+/*extends li*/
+.img-item {
+	border: 0;
+	padding: 0;
+}
+
+/* extends li*/
+.review li {
+	border: 0;
+	clear: left;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+/* extends li*/
+.index li li {
+	border-top: 1px solid #ededed;
+}
+
+
+
+/* togglelist */
+.togglelist { /* extends ul*/
+	margin-bottom: 15px;
+}
+
+.togglelist li {
+	line-height: 1.5;
+}
+
+.js .togglelist .sectionhead {
+	cursor: pointer;
+}
+
+.js .togglelist .open .sectionhead {
+}
+
+.js .togglelist ul {
+	display: none;
+}
+
+.togglelist .open ul {
+	display: block;
+}
+
+
+
+/* tagcloud */
+.tagcloud li {
+	display: inline;
+	border: 0;
+	padding: 0 10px 0 0;
+}
+
+/*extends a
+ used in tag cloud
+ */
+.tagcloud a {
+	font-weight: bold;
+	color: #a9a9a9;
+}
+
+a.m {
+	font-size: 1.16666em;
+}
+
+a.xl {
+	font-size: 2em;
+	/* color via skin*/
+}
+
+a.l {
+	font-size: 1.5em;
+	color: #999;
+}
+
+/* .pager */
+.pager {
+	overflow: hidden;
+	margin: 15px 0;
+	background: #f4f4f4;
+}
+.pager li {
+	display: inline;
+	border: 0;
+	padding: 0;
+}
+
+.pager a,
+.pager .empty {
+	float: left;
+	font-weight: bold;
+	padding: 5px 3px;
+}
+
+.pager .empty { /* span ipv a hier*/
+	color: #ccc;
+}
+
+/* ftw */
+.metoo-content .ftw li,
+.ftw li {
+	padding: 0 0 0 15px;
+	background: url(../gfx/icons-sprite.png) no-repeat 0 -197px;
+}
+
+/* fail */
+.metoo-content .fail li,
+.fail li {
+	padding: 0 0 0 12px;
+	background: url(../gfx/icons-sprite.png) no-repeat 0 -244px;
+}
+
+/*extends .ftw li*/
+.ftw .inputset {
+	background-position: 0 -193px;
+}
+
+/*extends .fail li*/
+.fail .inputset {
+	background-position: 0 -241px;
+}
+
+/*filter-detail*/
+
+/*extends li*/
+.filter-detail li {
+	padding: 0;
+	line-height: 1.85em;
+	border: 0;
+}
+.filter-detail a {
+	padding-left: 10px;
+}
+.filter-detail .active {
+}
+
+/*extends li*/
+.article {
+	padding: 0;
+}
+
+.article:first-child {
+	border: 0;
+}
+
+/* table user-data */
+.user-data th {
+	font-weight: bold;
+	width: 115px;
+	text-align: right;
+}
+
+.user-data thead th {
+	width: auto;
+	padding-left: 15px;
+	color: #5c5c5c;
+	text-align: left;
+}
+
+.user-data td,
+.user-data th {
+	padding: 2px 0;
+}
+
+.user-data td {
+	padding-left: 15px;
+}
+
+/*extends .more*/
+.user-data .more {
+	float: none;
+}
+
+/*extends .user-data table */
+.listed {
+	border-bottom: 1px solid #ededed;
+}
+.listed tbody th {
+	width: 70px;
+}
+.listed tbody td,
+.listed tbody th {
+	border-top: 1px solid #ededed;
+}
+
+
+.showprofile {
+	padding-left: 80px;
+	margin:15px 0 0 0;
+}
+
+/*review table*/
+.review {
+	margin: 0 0 10px 0;
+}
+.review th {
+	padding-top: 0;
+	padding-bottom: 0;
+	font-weight: bold;
+}
+
+.review td {
+	padding-top: 0;
+}
+
+/*extends table.review or table and p*/
+.from-user {
+	margin-left: 65px; /* 70px boxed user - 5px padding td*/
+}
+
+p.from-user {
+    margin: 0 0 15px 70px;
+}
+
+
+
+/*expertise*/
+.expert-needed,
+.expertise {
+	margin: 15px 0;
+	border-bottom: 1px solid #ededed;
+}
+
+.expertise {
+    margin-top: 5px;
+}
+
+.expertise li { /* clearfix via grid.css */
+	width: 100%;
+	min-height: 27px;
+	padding: 0;
+}
+
+.expertise .exp-label,
+.confirmations {
+	padding-top: 4px;
+}
+
+.expertise .exp-level {
+    padding-top: 7px;
+}
+
+/*extends .controls*/
+.expertise .controls {
+	width: 100px;
+}
+
+/*extends .expertise .controls */
+.expert-needed .controls {
+    width: auto;
+    padding-left: 10px;
+}
+
+.exp-label {
+	float: left;
+	width: 285px;
+	font-size: 1.1667em;
+}
+
+a.exp-label {
+	text-decoration: underline;
+}
+
+.exp-level {
+	float: left;
+	width: 150px;
+}
+
+.confirmations {
+	float: left;
+	padding-left: 15px;
+	background: url(../gfx/icons-sprite.png) no-repeat 0 -604px;
+	width: 25px;
+}
+
+.no-conf {
+	background: none;
+}
+
+.conf,
+.conf-button {
+	font-size: 0.8333em;
+	line-height: 1.273em; /*14px*/
+	padding: 0 5px;
+	margin: 4px 10px 0 0;
+	float: left;
+}
+.conf {
+	margin-top: 5px; /*button has border*/
+}
+
+.buttonbox {
+	float: right;
+	padding: 4px 0 4px 10px;
+	border-left: 1px solid #ededed;
+}
+
+
+/*extends a*/
+.tag {
+    text-decoration: underline;
+    padding: 0 2px;
+}
+
+/*extends li*/
+.icon-buttons li {
+    border: 0;
+    display: inline;
+    padding: 0;
+}

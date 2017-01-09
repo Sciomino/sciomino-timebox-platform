@@ -1,0 +1,85 @@
+<?php
+
+global $XCOW_B;
+
+$lang = array();
+
+###########
+# ENGLISH
+###########
+
+# 1. page title
+$lang['base_title_xcow'] = "Xcow home";
+$lang['base_title_example'] = "Xcow example";
+
+# 2. page header
+$lang['base_header_mail_message'] = "Send a message";
+$lang['base_header_file_upload'] = "Upload a file";
+
+# 3. page text
+$lang['base_text_hello_world'] = "Hello world!";
+$lang['base_text_congratulations'] = "Congratulations, you installed Xcow! Thank you!";
+$lang['base_text_example'] = "Example page";
+$lang['base_text_choose_language'] = "Choose a language:";
+$lang['base_text_mail_username'] = "Your name:";
+$lang['base_text_mail_usermail'] = "Your E-mail address:";
+$lang['base_text_mail_subject'] = "Subject:";
+$lang['base_text_mail_message'] = "Message:";
+$lang['base_text_file_file'] = "Select a file:";
+
+# 4. page link / word
+$lang['base_word_xcow'] = "Xcow";
+$lang['base_word_home'] = "Home";
+$lang['base_word_register'] = "Register";
+$lang['base_word_close'] = "Close";
+$lang['base_word_nederlands'] = "Nederlands";
+$lang['base_word_english'] = "English";
+$lang['base_word_mail_send'] = "Send";
+$lang['base_word_file_upload'] = "Upload";
+$lang['base_word_file_download'] = "Download";
+$lang['base_word_second'] = "second";
+$lang['base_word_seconds'] = "seconds";
+$lang['base_word_minute'] = "minute";
+$lang['base_word_minutes'] = "minutes";
+$lang['base_word_hour'] = "hour";
+$lang['base_word_hours'] = "hours";
+$lang['base_word_day'] = "day";
+$lang['base_word_days'] = "days";
+$lang['base_word_second_short'] = "s";
+$lang['base_word_minute_short'] = "m";
+$lang['base_word_hour_short'] = "h";
+$lang['base_word_day_month_1'] = "January \$day\$";
+$lang['base_word_day_month_2'] = "February \$day\$";
+$lang['base_word_day_month_3'] = "March \$day\$";
+$lang['base_word_day_month_4'] = "April \$day\$";
+$lang['base_word_day_month_5'] = "May \$day\$";
+$lang['base_word_day_month_6'] = "June \$day\$";
+$lang['base_word_day_month_7'] = "July \$day\$";
+$lang['base_word_day_month_8'] = "August \$day\$";
+$lang['base_word_day_month_9'] = "September \$day\$";
+$lang['base_word_day_month_10'] = "October \$day\$";
+$lang['base_word_day_month_11'] = "November \$day\$";
+$lang['base_word_day_month_12'] = "December \$day\$";
+
+
+# 5. page status
+$lang['base_status_error400'] = "400 Bad Request";
+$lang['base_status_error401'] = "401 Unauthorized";
+$lang['base_status_error404'] = "404 Not Found";
+$lang['base_status_error500'] = "500 Internal Server Error";
+$lang['base_status_mail_send_ok'] = "Your message is send.";
+$lang['base_status_mail_send_wrong'] = "Your message couldnot be send, try again.";
+$lang['base_status_file_upload_select'] = "No file is selected (yet).";
+$lang['base_status_file_upload_extension'] = "File was NOT uploaded because it has not a valid extension.";
+$lang['base_status_file_upload_big'] = "File was NOT uploaded because it was too BIG.";
+$lang['base_status_file_upload_security'] = "File was NOT uploaded because it did not meet the security requirements (probably too BIG).";
+$lang['base_status_file_upload_ok'] = "File was succesfully uploaded.";
+$lang['base_status_file_download_notfound'] = "File not found.";
+
+# 6. mail
+
+###########
+
+$XCOW_B['language'] = $XCOW_B['language'] + $lang;
+
+?>

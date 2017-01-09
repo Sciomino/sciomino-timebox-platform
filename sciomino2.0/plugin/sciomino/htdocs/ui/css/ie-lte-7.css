@@ -1,0 +1,11 @@
+/* fixes for IE6/7
+ *
+ */
+
+input.search-button { /* careful skin stylesheet is blow this one*/
+	background-position: 0px 8px; 
+}
+
+input.radio {
+    margin-top: -3px;
+}

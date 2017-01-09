@@ -1,0 +1,177 @@
+Installatie document bij de 1.2o versie van Sciomino
+
+Deze versie van Sciomino is in een aantal stappen te installeren.
+
+Stap 1. maak een backup van de oude versie (je hebt 1 file nog nodig!)
+Stap 2. de tarball uitpakken in de daarvoor bestemde directory.
+Stap 3. permissies zetten
+Stap 4: apache wijzigingen doorvoeren
+Stap 5: mysql wijzigingen doorvoeren
+Stap 6: de programmatuur configureren
+stap 7: testen
+Stap 8: debug level instellen
+Stap 9: cron jobs configureren
+Stap 10: last-minute wijzigingen doorvoeren
+
+
+1. een backup maken
+Maak een backup van de vorige versie.
+- bewaar de configuratie file data/etc/xcow_base.ini !!! 
+- bewaar de configuratie file plugin/sciomino/data/etc/sciomino.ini !!! 
+- bewaar de foto's in htdocs/upload !!!
+Deze heb je later nog nodig.
+
+
+2. de tarball uitpakken
+Pak deze file uit in de directory /YOURPATH/YOURDIR (/var/www/sciomino of zoiets).
+De volgende directories komen te voorschijn:
+- data, de data directory met alle programmatuur
+- docs, de document directory met een aantal (verouderde) documenten
+- export, de directory met de build source
+- htdocs, de document root voor apache waar files zichtbaar voor het web staan
+- license, de license directory
+- plugin, de directory met daarin de specifieke sciomino code (met bijbehorende aparte licentie)
+- save, een directory waar apache mag schrijven (hierin staat ook de logfile)
+- scripts, een directory met ondersteunende programma's voor deployment, de database, etc.
+- version, de huidige versie van deze software.
+
+=====
+ALLIANDER SPECIFIEK:
+- de htdocs directory heet bij alliander de 'docroot' directory, hernoem deze directory dus.
+- maak een extra link van htdocs naar docroot: 'ln -s docroot htdocs'
+=====
+
+3. permissies zetten
+Dit maar eerst doen zodat we zeker weten dat apache mag schrijven in de 'save' directory.
+Hiervoor doen we:
+	- cd scripts/deployment
+	- run: ./setPermissions.sh (let op dat dit pas effectief is als de extra link in stap 2 is gemaakt)
+
+
+4. apache wijzigingen.
+In de nieuwe virtualhost voor Sciomino moeten we zeker zijn dat:
+- de document root wijst naar: /var/www/sciomino/htdocs (dit is YOURPATH & YOURDIRECTORY)
+- set de juiste servernaam, bijvoorbeeld sciomino.alliander.com, logfiles etc.
+- de rewrite engine aan is: 
+        RewriteEngine on
+        RewriteRule   ^/control.php/(.*)  /index.php/$1  [L]
+        RewriteRule   ^/upload/(.*)  /upload/$1  [L]
+        RewriteRule   ^/css/(.*)  /css/$1  [L]
+        RewriteRule   ^/js/(.*)  /js/$1  [L]
+        RewriteRule   ^/gfx/(.*)  /gfx/$1  [L]
+        RewriteRule   ^/skin/(.*)  /skin/$1  [L]
+        RewriteRule   ^/ui/(.*)  /ui/$1  [L]
+        RewriteRule   ^/(.*)  /index.php/$1  [L]
+- index.php is de default file die gestart moet worden.
+
+
+5. mysql wijzigingen.
+- Zorg ervoor dat mysql klaar is voor utf8, daarvoor zet je in my.conf:
+	character-set-server=utf8
+	default-collation=utf8_unicode_ci
+
+- Maak een database (DB_NAME) en maak deze toegankelijk voor een gebruiker (DB_USER) met een bepaald wachtwoord.
+	mysql> create database DB_NAME;
+	mysql> grant all on DB_NAME.* to 'DB_USER'@'localhost' identified by 'DB_PASS';
+	mysql> flush privileges;
+
+- importeer database schema:
+	cd scripts/db
+	run> mysql -u DB_USER -p DB_NAME < create.sql
+
+
+6. de programmatuur configureren
+
+- De belangrijkste configuratie zit in data/etc/xcow_base.ini. 
+De file spreekt voor zich, er is een example file: xcow_base.example
+
+- Skin configuratie staat in /plugin/sciomino/data/etc/sciomino.ini.
+Ook hiervoor is een example file: sciomino.example
+
+- Vul de example files in met specifieke gegevens (dit gaat met het deployment script)
+
+=====
+ALLIANDER SPECIFIEK:
+# base
+sc_base = "/var/www/sciomino";
+
+# license
+sc_name = "alliander";
+sc_secret = "***";
+
+# server
+sc_display_name = "Alliander Kenniskompas";
+sc_email = "info@alliander.com";
+sc_url = "sciomino.alliander.com";
+sc_url_path = "telefoonboekplus"; 
+
+# api url
+sc_api_url = "api.sciomino.com";
+sc_answers_api_url = "api.answers.sciomino.com";
+sc_connect_api_url = "api.connect.sciomino.com";
+
+# mysql
+sc_mysql_host = "localhost";
+sc_mysql_user = "DB_USER";
+sc_mysql_pass = "DB_PASS";
+sc_mysql_db = "DB_NAME";
+
+# authentication
+sc_session_name = "sciomino_alliander";
+sc_auth = "remote"; # used in skin file
+sc_remote_auth = "1"; # used in xcow.ini file
+sc_remote_auth_header = "1";
+sc_remote_auth_header_name = "REMOTE_USER";
+sc_domain_active = "0";
+sc_domain_list = "\"alliander.com\"";
+sc_user_max = "0";
+
+# skin
+sc_skin = "alliander";
+sc_skin_name = "";
+sc_skin_register = "no";
+sc_skin_wiki = "0";
+sc_skin_wiki_name = "wikipedia";
+SC_SKIN_PERSONALIA_EXCLUDE_LIST = "industry", "company", "lync", "pager", "myId"
+SC_SKIN_PERSONALIA_FILLED_LIST = "title", "firstname", "lastname", "building", "room", "role", "division", "section", "parttime", "email", "telIntern", "telExtern", "mobile", "fax", "pac", "assistentId", "managerId", "address", "postalcode", "city", "country"
+
+=====
+
+- Let op, zorg ervoor dat de configuratie uit de backup file (stap 1) gekopieerd wordt. 
+	a. Check nog even (met 'diff') of de nieuwe xcow_base.ini file klopt ten opzichte van jouw backup.
+	b. Check nog even (met 'diff') of de nieuwe sciomino.ini file klopt ten opzichte van jouw backup.
+	c. Kopieer htdocs/upload/* weer terug, hier staan de foto's
+
+=====
+ALLIANDER EXTRA:
+- geef aan in de de xcow_base.ini file dat de proxy gebruikt moet worden:
+$XCOW_B['use_proxy']    	= 1;
+$XCOW_B['proxy']     		= "tcp://wppwhs02.rdc.local:8080";
+=====
+
+7. testen
+- browse naar de url, sciomino.alliander.com en kijk of alles werkt
+
+	
+8. debug level instellen
+- De meeste debug opties zijn al uit, waar voor testen was nog 1 optie aan, die moet nu ook uit.
+
+- Het is goed om ook de warnings op het scherm uit te zetten, dat doen we in /htdocs/control.php op de 1e regel, wijzig daar 'true' in 'false':
+	ini_set('display_errors',false);
+
+
+9. cron jobs configureren
+- Er zijn 3 cron jobs
+1: connect-update.sh, daarvan is ook een example file.
+- Deze job kan het beste iedere nacht om 01:00 uur gestart worden. (bij voorkeur ruim voor 06:00 uur)
+- Deze job haalt de laatste gegevens van twitter en linkedin op.
+2: sync-queue.sh, om de dagelijkse update te syncen uit een database
+3: update-queue.sh, om de dagelijke update te importeren uit een xml file
+
+
+10. last minute wijzigingen doorvoeren
+- Er zijn geen wijzigingen.
+
+
+Off We Go!
+----------

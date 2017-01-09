@@ -1,0 +1,32 @@
+{
+	"header" : {
+		"status" : "<?php echo $session['response']['stats']['status'] ?>",
+		"request" : "<?php echo $session['response']['stats']['request'] ?>",
+		"responseDate" : "<?php echo $session['response']['stats']['date'] ?>",
+		"responseTime" : "<?php echo $session['response']['stats']['time'] ?>"
+	},
+	"content" : {
+		"current" : {
+			"status" : "<?php echo $session['response']['param']['availabilityList']['status'] ?>"
+			<?php
+				echo ",";
+				if ($session['response']['param']['availabilityList']['status'] == "available") {
+					echo '"hours" : "'.$session['response']['param']['availabilityList']['hours'].'",';
+					echo '"days" : "'.$session['response']['param']['availabilityList']['days'].'",';
+				}
+				echo '"until" : "'.$session['response']['param']['availabilityList']['until'].'"';
+			?>
+		},
+		"future" : {
+			"status" : "<?php echo $session['response']['param']['availabilityList']['future-status'] ?>"
+			<?php
+				echo ",";
+				if ($session['response']['param']['availabilityList']['future-status'] == "available") {
+					echo '"hours" : "'.$session['response']['param']['availabilityList']['future-hours'].'",';
+					echo '"days" : "'.$session['response']['param']['availabilityList']['future-days'].'",';
+				}
+				echo '"until" : "'.$session['response']['param']['availabilityList']['future-until'].'"';
+			?>
+		}
+	}
+}

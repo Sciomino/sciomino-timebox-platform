@@ -1,0 +1,26 @@
+{
+	"header" : {
+		"status" : "<?php echo $session['response']['stats']['status'] ?>",
+		"request" : "<?php echo $session['response']['stats']['request'] ?>",
+		"responseDate" : "<?php echo $session['response']['stats']['date'] ?>",
+		"responseTime" : "<?php echo $session['response']['stats']['time'] ?>"
+	},
+	"content" : {
+		"networks" : [
+			<?php
+				$first = 1;
+				foreach ($session['response']['param']['networkList'] as $key => $network) {
+					if ($first) { $first = 0; }
+					else { echo ","; }
+					echo "{";
+					echo '"id" : "'.$network['Id'].'",';
+					echo '"name" : "'.$network['Name'].'",';
+					echo '"type" : "'.$network['Type'].'",';
+					echo '"photoStream" : "'.$network['photoStream'].'",';
+					echo '"share" : "'.$network['checked'].'"';
+					echo "}";
+				}
+			?>
+		]
+	}
+}

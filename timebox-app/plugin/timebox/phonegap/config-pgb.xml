@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.sciomino.timebox" version="1.0.4" android-versionCode="141" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+
+	<gap:config-file platform="ios" parent="CFBundleVersion">
+		<string>141</string>
+	</gap:config-file>
+
+    <!-- App Info -->
+    <name>Timebox</name>
+    <description>
+        Keep your availability up to date.
+    </description>
+    <author email="timebox@sciomino.com" href="http://gettimeboxnow.com/">
+        Sciomino
+    </author>
+
+    <!-- external access -->
+    <!-- <access origin="http://sciomino.com" subdomains="true" />
+    <access origin="http://sciomino.nl" subdomains="true" /> -->
+    <access origin="*" subdomains="true" />
+
+    <!-- Which platform do we support? -->
+    <gap:platform name="ios" />
+    <gap:platform name="android" />
+
+    <!-- App preferences -->
+    <!-- version 3.7.0 does not work with url scheme: https://github.com/EddyVerbruggen/Custom-URL-scheme -->
+    <preference name="phonegap-version" value="3.6.3" /> 
+    <preference name="orientation" value="portrait" />
+    <!-- fix ui --> 
+    <preference name="DisallowOverscroll" value="true" /> 
+    <!-- splashscreen options --> 
+    <preference name="AutoHideSplashScreen" value="false" /> 
+    <preference name="ShowSplashScreenSpinner" value="false" /> 
+    <!-- Adroid specific -->
+    <!-- target an android sdk version for hardware acceleration -->
+    <preference name="android-minSdkVersion" value="14"/> //android 4.0
+	<preference name="android-targetSdkVersion" value="19"/> //android 4.4
+	<!-- needed to show splashscreen -->
+	<preference name="SplashScreen" value="splash" />
+	<!-- iOS specific -->
+	<preference name="target-device" value="handset" />
+	<preference name="deployment-target" value="6.0" />
+	<!-- no funky stuff with the statusbar -->
+	<preference name="StatusBarOverlaysWebView" value="false" />
+
+    <!-- App features -->
+    <!-- <feature name="http://api.phonegap.com/1.0/device" /> -->
+    <!-- <feature name="http://api.phonegap.com/1.0/network" /> -->
+    <!-- debug off -->
+    <feature name="debug-server" required="false" />
+
+    <!-- App icons -->
+    <!-- android -->
+    <icon src="gfx/timebox/icons/36.png" gap:platform="android" gap:qualifier="ldpi" />
+    <icon src="gfx/timebox/icons/48.png" gap:platform="android" gap:qualifier="mdpi" />
+    <icon src="gfx/timebox/icons/72.png" gap:platform="android" gap:qualifier="hdpi" />
+    <icon src="gfx/timebox/icons/96.png" gap:platform="android" gap:qualifier="xhdpi" />
+    <icon src="gfx/timebox/icons/144.png" gap:platform="android" gap:qualifier="xxhdpi" />
+    <icon src="gfx/timebox/icons/192.png" gap:platform="android" gap:qualifier="xxxhdpi" />
+    <icon src="gfx/timebox/icons/36.png" gap:platform="android" gap:qualifier="port-ldpi" />
+    <icon src="gfx/timebox/icons/48.png" gap:platform="android" gap:qualifier="port-mdpi" />
+    <icon src="gfx/timebox/icons/72.png" gap:platform="android" gap:qualifier="port-hdpi" />
+    <icon src="gfx/timebox/icons/96.png" gap:platform="android" gap:qualifier="port-xhdpi" />
+    <icon src="gfx/timebox/icons/144.png" gap:platform="android" gap:qualifier="port-xxhdpi" />
+    <icon src="gfx/timebox/icons/192.png" gap:platform="android" gap:qualifier="port-xxxhdpi" />
+  
+    <!-- iPhone 6 / 6+ -->
+    <icon src="gfx/timebox/icons/Icon-60@3x.png" gap:platform="ios" width="180" height="180" />
+    <!-- iPhone / iPod Touch  -->
+    <icon src="gfx/timebox/icons/Icon-60.png" gap:platform="ios" width="60" height="60" />
+    <icon src="gfx/timebox/icons/Icon-60@2x.png" gap:platform="ios" width="120" height="120" />
+    <!-- iPad -->
+    <icon src="gfx/timebox/icons/Icon-76.png" gap:platform="ios" width="76" height="76" />
+    <icon src="gfx/timebox/icons/Icon-76@2x.png" gap:platform="ios" width="152" height="152" />
+    <!-- Settings Icon -->
+    <icon src="gfx/timebox/icons/Icon-Small.png" gap:platform="ios" width="29" height="29" />
+    <icon src="gfx/timebox/icons/Icon-Small@2x.png" gap:platform="ios" width="58" height="58" />
+    <!-- Spotlight Icon -->
+    <icon src="gfx/timebox/icons/Icon-Small-40.png" gap:platform="ios" width="40" height="40" />
+    <icon src="gfx/timebox/icons/Icon-Small-40@2x.png" gap:platform="ios" width="80" height="80" />
+	<!-- < iOS 7.0 -->
+	<icon src="gfx/timebox/icons/Icon.png" gap:platform="ios" width="57" height="57" />
+	<icon src="gfx/timebox/icons/Icon@2x.png" gap:platform="ios" width="114" height="114" />
+	<icon src="gfx/timebox/icons/Icon-72.png" gap:platform="ios" width="72" height="72" />
+	<icon src="gfx/timebox/icons/Icon-72@2x.png" gap:platform="ios" width="144" height="144" />
+	<icon src="gfx/timebox/icons/Icon-Small-50.png" gap:platform="ios" width="50" height="50" />
+	<icon src="gfx/timebox/icons/Icon-Small-50@2x.png" gap:platform="ios" width="100" height="100" />
+
+    <!-- Splash screens -->
+    <!-- android -->
+    <gap:splash src="splash.png" />
+	<gap:splash src="gfx/timebox/splash/ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
+	<gap:splash src="gfx/timebox/splash/mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
+	<gap:splash src="gfx/timebox/splash/hdpi.png" gap:platform="android" gap:qualifier="hdpi" />
+	<gap:splash src="gfx/timebox/splash/xhdpi.png" gap:platform="android" gap:qualifier="xhdpi" />
+	<gap:splash src="gfx/timebox/splash/ldpi.png" gap:platform="android" gap:qualifier="port-ldpi" />
+	<gap:splash src="gfx/timebox/splash/mdpi.png" gap:platform="android" gap:qualifier="port-mdpi" />
+	<gap:splash src="gfx/timebox/splash/hdpi.png" gap:platform="android" gap:qualifier="port-hdpi" />
+	<gap:splash src="gfx/timebox/splash/xhdpi.png" gap:platform="android" gap:qualifier="port-xhdpi" />
+	<!--<gap:splash src="gfx/timebox/splash/xxhdpi.png" gap:platform="android" gap:qualifier="xxhdpi" />
+	<gap:splash src="gfx/timebox/splash/fr-xxhdpi.png" gap:platform="android" gap:qualifier="xxxhdpi" />-->
+   
+	<!-- iPhone and iPod touch -->
+	<gap:splash src="gfx/timebox/splash/splash-iphone.png" gap:platform="ios" width="320" height="480" />
+	<gap:splash src="gfx/timebox/splash/splash-iphone@2x.png" gap:platform="ios" width="640" height="960" />
+	<!-- iPhone 5 / iPod Touch (5th Generation) -->
+	<gap:splash src="gfx/timebox/splash/splash-568h@2x.png" gap:platform="ios" width="640" height="1136" />
+	<!-- iPhone 6 -->
+	<gap:splash src="gfx/timebox/splash/splash-667h@2x.png" gap:platform="ios" width="750" height="1334" />
+	<gap:splash src="gfx/timebox/splash/splash-736h@3x.png" gap:platform="ios" width="1242" height="2208" />
+	<!-- <gap:splash src="gfx/timebox/splash/Default-Landscape-736h@3x.png" gap:platform="ios" width="2208" height="1242" /> -->
+	<!-- iPad -->
+	<!-- <gap:splash src="gfx/timebox/splash/Default-Portrait.png" gap:platform="ios" width="768" height="1024" />
+	<gap:splash src="gfx/timebox/splash/Default-Landscape.png" gap:platform="ios" width="1024" height="768" /> -->
+	<!-- Retina iPad -->
+	<!-- <gap:splash src="gfx/timebox/splash/Default-Portrait@2x.png" gap:platform="ios" width="1536" height="2048" />
+	<gap:splash src="gfx/timebox/splash/Default-Landscape@2x.png" gap:platform="ios" width="2048" height="1536" /> -->
+	
+    <!-- plugins
+    dialog: org.apache.cordova.dialogs
+    splash: org.apache.cordova.splashscreen 
+    browser: org.apache.cordova.inappbrowser
+    device: (NOT YET NEEDED)
+    network: cordova plugin add org.apache.cordova.network-information
+    globalization: (NOT YET NEEDED)
+    camera: cordova plugin add org.apache.cordova.camera
+    statusbar: cordova plugin add org.apache.cordova.statusbar
+    
+    social sharing: nl.x-services.plugins.socialsharing
+    custom url: nl.x-services.plugins.launchmyapp
+    keyboard: cordova plugin add com.ionic.keyboard
+    -->
+   
+	<gap:plugin name="org.apache.cordova.dialogs" version="0.2.10" />
+	<gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4" />
+	<gap:plugin name="org.apache.cordova.inappbrowser" version="0.5.2" />
+	<gap:plugin name="org.apache.cordova.network-information" version="0.2.12" />
+	<gap:plugin name="org.apache.cordova.camera" version="0.3.2" />
+	<gap:plugin name="org.apache.cordova.statusbar" version="0.1.4" />
+	
+    <gap:plugin name="nl.x-services.plugins.socialsharing" source="plugins.cordova.io" version="4.3.18" />
+    <gap:plugin name="nl.x-services.plugins.launchmyapp" version="3.2.0">
+		<param name="URL_SCHEME" value="timebox" />
+	</gap:plugin>
+    <gap:plugin name="nl.x-services.plugins.toast" version="2.0.2" />
+	<gap:plugin name="com.ionic.keyboard" version="1.0.3" />
+
+</widget>

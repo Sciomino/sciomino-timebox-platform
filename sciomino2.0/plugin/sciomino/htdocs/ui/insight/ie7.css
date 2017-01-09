@@ -1,0 +1,65 @@
+.puu-insight h1 a {
+	background-image: url("bg_sep.png");
+	background-position: 100% 60%;
+	background-repeat: no-repeat;
+	padding-right: .666em;
+}
+
+.puu-insight .puu-channel .puu-pedia {
+	position: absolute;
+	margin-left: 40px;
+}
+
+.puu-insight .puu-events .puu-subset h3 .puu-day,
+.puu-insight .puu-events .puu-subset h3 .puu-change,
+.X {
+	position: absolute;
+	margin-top: -15px;
+	margin-left: 40px;
+}
+
+.puu-insight .puu-sex .puu-sum h4 {
+	position: relative;
+}
+
+.puu-insight .puu-sex .puu-sum h4 .puu-gauge {
+	position: absolute;
+	right: 0;
+	top: -10px;
+}
+
+.puu-insight .puu-age,
+.puu-insight .puu-age > div,
+.puu-insight .puu-age > div > div,
+.X {
+	display: block;
+}
+
+.puu-insight .puu-age > div {
+	position: relative;
+	margin-top: 160px;
+}
+
+.puu-insight .puu-age > div > div {
+	display: block;
+	position: absolute;
+	width: 110px;
+	bottom: 0;
+}
+
+.puu-insight .puu-age {
+	margin-top: 20px;
+}
+
+.puu-insight .puu-age.puu-compact {
+	margin-top: 10px;
+	background-position: 0 14px;
+}
+
+.puu-insight .puu-age.puu-compact > div {
+	margin-top: 180px;
+}
+
+.puu-insight .puu-age.puu-compact.puu-small > div {
+	margin-top: 85px;
+}

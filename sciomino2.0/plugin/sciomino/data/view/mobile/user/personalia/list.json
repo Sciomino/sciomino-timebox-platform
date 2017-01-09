@@ -1,0 +1,17 @@
+{
+	"header" : {
+		"status" : "<?php echo $session['response']['stats']['status'] ?>",
+		"request" : "<?php echo $session['response']['stats']['request'] ?>",
+		"responseDate" : "<?php echo $session['response']['stats']['date'] ?>",
+		"responseTime" : "<?php echo $session['response']['stats']['time'] ?>"
+	},
+	"content" : {
+		"firstname" : "<?php echo $session['response']['param']['userList'][$session['response']['param']['user']]['FirstName'] ?>",
+		"lastname" : "<?php echo $session['response']['param']['userList'][$session['response']['param']['user']]['LastName'] ?>",
+		"gender" : "<?php echo $session['response']['param']['userList'][$session['response']['param']['user']]['gender'] ?>",
+		"dateofbirthday" : "<?php echo $session['response']['param']['userList'][$session['response']['param']['user']]['dateofbirthday'] ?>",
+		"dateofbirthmonth" : "<?php echo $session['response']['param']['userList'][$session['response']['param']['user']]['dateofbirthmonth'] ?>",
+		"dateofbirthyear" : "<?php echo $session['response']['param']['userList'][$session['response']['param']['user']]['dateofbirthyear'] ?>",
+		"photoStream" : "<?php echo $session['response']['param']['userList'][$session['response']['param']['user']]['photoStream'] ?>"
+	}
+}

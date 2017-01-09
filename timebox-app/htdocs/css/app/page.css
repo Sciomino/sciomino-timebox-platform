@@ -1,0 +1,107 @@
+/* the html/body of the app consist of
+ * - topbar
+ * - pagescroller
+ * - overlay
+ * 
+ * the page scroller is a container for
+ * - page
+ * - transition
+ * - store
+ * 
+ * a page for an app contains 4 panes
+ * - header
+ * - content
+ * - sidebar
+ * - footer
+ * 
+ * and more elements
+ * - section 
+ * - logo
+ */
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+}
+
+/* body split in topbar and pagecontainer for native scrolling on iOS... */
+#topbar {
+	/* fixed header */
+	display: none;
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	transform: translateZ(0);
+	-webkit-transform: translateZ(0);
+}
+
+#pagescroller {
+	width: 100%;
+	height: 100%;
+	transform: translateZ(0);
+	-webkit-transform: translateZ(0);
+	overflow-x: hidden;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	-webkit-backface-visibility: hidden;
+}
+
+#overlay {
+}
+
+/* the page is the body */
+/* transformations to use for iOS,  but also for HWA */
+#page {
+	transform: translateZ(0);
+	-webkit-transform: translateZ(0);
+}
+#transition {
+	transform: translateZ(0);
+	-webkit-transform: translateZ(0);
+}
+#store {
+	transform: translateZ(0);
+	-webkit-transform: translateZ(0);
+}
+
+/* these are loading containers that transform into a page */
+#page, #transition, #store {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+#transition, #store {
+	display: none;
+}
+	
+/* the header is on top */
+#header {
+}
+
+/* the content is in the center */
+#content {
+}
+
+/* a sidebar to the content*/
+#sidebar {
+}
+
+/* the footer is at the bottom*/
+#footer {
+}
+
+/* sections need some space */
+section {
+}
+	
+/* logo */
+#logo {
+}

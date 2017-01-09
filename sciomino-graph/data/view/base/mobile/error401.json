@@ -1,0 +1,10 @@
+{
+	"header" : {
+		"status" : "401 Unauthorized",
+		"request" : "<?php echo $session['response']['stats']['request'] ?>",
+		"responseDate" : "<?php echo $session['response']['stats']['date'] ?>",
+		"responseTime" : "<?php echo $session['response']['stats']['time'] ?>"
+	},
+	"content" : {
+	}
+}

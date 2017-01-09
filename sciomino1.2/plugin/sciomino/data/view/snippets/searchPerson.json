@@ -1,0 +1,28 @@
+<?php
+echo "[";
+$first = 1;
+foreach ($session['response']['param']['userList'] as $userKey => $userVal) {
+
+	if (! isset($userVal['photo'])) { $userVal['photo'] = "/ui/gfx/photo.jpg"; }
+	else { $userVal['photo'] = str_replace("/upload/","/upload/32x32_",$userVal['photo']); }
+
+	if ($first) { $first = 0; }
+	else { echo ","; }
+
+	$displayOrganization = $userVal['Organization'][get_id_from_multi_array($userVal['Organization'], 'Name', 'Current')]['division'];
+	if ($displayOrganization == "") { $displayOrganization = $userVal['Organization'][get_id_from_multi_array($userVal['Organization'], 'Name', 'Current')]['company']; }
+
+	echo "{";
+    	echo "\"id\" : \"{$userVal['Id']}\",";
+    	echo "\"name\" : \"{$userVal['FirstName']} {$userVal['LastName']}\",";
+    	echo "\"label\" : \"{$userVal['FirstName']} {$userVal['LastName']}\",";
+    	echo "\"role\" : \"{$userVal['Organization'][get_id_from_multi_array($userVal['Organization'], 'Name', 'Current')]['role']} - {$displayOrganization}\",";
+    	echo "\"img\" : \"".$XCOW_B['url']."{$userVal['photo']}\",";
+    	echo "\"userUrl\" : \"".$XCOW_B['url']."/view?user={$userVal['Id']}\"";
+
+	echo "}";
+
+}
+echo "]\n";
+?>
+

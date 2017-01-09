@@ -1,0 +1,79 @@
+<?php
+
+echo "{";
+
+echo "\"hometown\" : { \"locations\":[";
+$first = 1;
+// for now: slice array to 20
+// TODO: should do one request on the connect api, to get multiple locations at once (connect-api is prepared)
+$session['response']['param']['hometownList'] = array_slice($session['response']['param']['hometownList'], 0, 20, true);
+foreach ($session['response']['param']['hometownList'] as $hometownKey => $hometownVal) {
+	// external content - get geoloc van cache
+	list($city, $country) = explode(",", $hometownKey);
+	$response = GetResponse($XCOW_B['connect_api']['host']."geocode/list?name=".urlencode(trim($city))."&cc=".urlencode(trim($country)));
+	$geoCode = json_decode($response,true);
+
+	$lat = "0";
+	$lon = "0";
+	if (is_array($geoCode['geo'][0])) {
+		if ($first) { $first = 0; }
+		else { echo ","; }
+
+		$lat = $geoCode['geo'][0]['lat'];
+		$lon = $geoCode['geo'][0]['lon'];
+	
+		echo "{";
+		echo "\"locationName\":\"".$hometownKey."\", ";
+		echo "\"location\":\"".$hometownKey."\", ";
+		echo "\"nrPeople\":\"".$hometownVal."\", ";
+		echo "\"geoLoc\":{";
+		echo "\"Lat\":\"".$lat."\",";
+		echo "\"Lon\":\"".$lon."\"";
+		echo "}";
+		echo "}";
+	}
+}
+echo "],";
+echo "\"urlStart\":\"/search?INSERT_SEARCH_PARAMETERS_HERE&p[hometown]=\" }";
+
+echo ",";
+
+echo "\"workplace\" : {\"locations\":[";
+$first = 1;
+// for now: slice array to 20
+// TODO: should do one request on the connect api, to get multiple locations at once (connect-api is prepared)
+$session['response']['param']['workplaceList'] = array_slice($session['response']['param']['workplaceList'], 0, 20, true);
+foreach ($session['response']['param']['workplaceList'] as $workplaceKey => $workplaceVal) {
+	// external content - get geoloc van cache
+	list($city, $country) = explode(",", $workplaceKey);
+	$response = GetResponse($XCOW_B['connect_api']['host']."geocode/list?name=".urlencode(trim($city))."&countryName=".urlencode(trim($country)));
+	$geoCode = json_decode($response,true);
+
+	$lat = "0";
+	$lon = "0";
+	if (is_array($geoCode['geo'][0])) {
+		if ($first) { $first = 0; }
+		else { echo ","; }
+
+		$lat = $geoCode['geo'][0]['lat'];
+		$lon = $geoCode['geo'][0]['lon'];
+	
+		echo "{";
+		echo "\"locationName\":\"".$workplaceKey."\", ";
+		echo "\"location\":\"".$workplaceKey."\", ";
+		echo "\"nrPeople\":\"".$workplaceVal."\", ";
+		echo "\"geoLoc\":{";
+		echo "\"Lat\":\"".$lat."\",";
+		echo "\"Lon\":\"".$lon."\"";
+		echo "}";
+		echo "}";
+	}
+}
+echo "],";
+echo "\"urlStart\":\"/search?INSERT_SEARCH_PARAMETERS_HERE&p[workplace]=\" }";
+
+echo "}";
+
+?>
+
+

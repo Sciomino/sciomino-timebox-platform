@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="age.xsl"?>
+<table>
+<tr><th>15-24</th><td>179</td><td>179</td></tr>
+<tr><th>25-34</th><td>879</td><td>879</td></tr>
+<tr><th>35-44</th><td>779</td><td>779</td></tr>
+<tr><th>45-54</th><td>893</td><td>894</td></tr>
+<tr><th>55+</th><td>766</td><td>766</td></tr>
+</table>

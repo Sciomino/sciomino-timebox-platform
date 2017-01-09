@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="nl.dompseler.mcow" version="0.0.1" android-versionCode="1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+
+	<gap:config-file platform="ios" parent="CFBundleVersion">
+		<string>1</string>
+	</gap:config-file>
+
+    <!-- App Info -->
+    <name>MCOW</name>
+    <description>
+        A javascript framework suitable for webapps and hybrid apps
+    </description>
+    <author email="herman@dompseler.nl" href="http://dompseler.nl/">
+        Herman van Dompseler
+    </author>
+
+    <!-- external access -->
+    <!-- <access origin="http://sciomino.com" subdomains="true" />
+    <access origin="http://sciomino.nl" subdomains="true" /> -->
+    <access origin="*" subdomains="true" />
+
+    <!-- Which platform do we support? -->
+    <!--<gap:platform name="ios" />-->
+    <gap:platform name="android" />
+
+    <!-- App preferences -->
+    <!-- version 3.7.0 does not work with url scheme: https://github.com/EddyVerbruggen/Custom-URL-scheme -->
+    <preference name="phonegap-version" value="3.6.3" /> 
+    <preference name="orientation" value="portrait" />
+    <!-- fix ui --> 
+    <preference name="DisallowOverscroll" value="true" /> 
+    <!-- splashscreen options --> 
+    <preference name="AutoHideSplashScreen" value="false" /> 
+    <preference name="ShowSplashScreenSpinner" value="false" /> 
+    <!-- Adroid specific -->
+    <!-- target an android sdk version for hardware acceleration -->
+    <preference name="android-minSdkVersion" value="14"/> //android 4.0
+	<preference name="android-targetSdkVersion" value="19"/> //android 4.4
+	<!-- needed to show splashscreen -->
+	<preference name="SplashScreen" value="splash" />
+
+    <!-- App features -->
+    <!-- <feature name="http://api.phonegap.com/1.0/device" /> -->
+    <!-- <feature name="http://api.phonegap.com/1.0/network" /> -->
+    <!-- debug off -->
+    <feature name="debug-server" required="false" />
+
+    <!-- App icons -->
+    <!-- android -->
+    <icon src="gfx/icons/36.png" gap:platform="android" gap:qualifier="ldpi" />
+    <icon src="gfx/icons/48.png" gap:platform="android" gap:qualifier="mdpi" />
+    <icon src="gfx/icons/72.png" gap:platform="android" gap:qualifier="hdpi" />
+    <icon src="gfx/icons/96.png" gap:platform="android" gap:qualifier="xhdpi" />
+    <icon src="gfx/icons/144.png" gap:platform="android" gap:qualifier="xxhdpi" />
+    <icon src="gfx/icons/192.png" gap:platform="android" gap:qualifier="xxxhdpi" />
+ 
+    <!-- Splash screens -->
+    <!-- android -->
+    <gap:splash src="splash.png" />
+	<gap:splash src="gfx/splash/ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
+	<gap:splash src="gfx/splash/mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
+	<gap:splash src="gfx/splash/hdpi.png" gap:platform="android" gap:qualifier="hdpi" />
+	<gap:splash src="gfx/splash/xhdpi.png" gap:platform="android" gap:qualifier="xhdpi" />
+	<!--<gap:splash src="gfx/timebox/splash/xxhdpi.png" gap:platform="android" gap:qualifier="xxhdpi" />
+	<gap:splash src="gfx/timebox/splash/fr-xxhdpi.png" gap:platform="android" gap:qualifier="xxxhdpi" />-->
+ 	
+    <!-- plugins
+    dialog: org.apache.cordova.dialogs
+    splash: org.apache.cordova.splashscreen 
+    browser: org.apache.cordova.inappbrowser
+    device: (NOT YET NEEDED)
+    network: cordova plugin add org.apache.cordova.network-information
+    globalization: (NOT YET NEEDED)
+    camera: cordova plugin add org.apache.cordova.camera
+    statusbar: cordova plugin add org.apache.cordova.statusbar
+    
+    social sharing: nl.x-services.plugins.socialsharing
+    custom url: nl.x-services.plugins.launchmyapp
+    keyboard: cordova plugin add com.ionic.keyboard
+    -->
+   
+	<gap:plugin name="org.apache.cordova.dialogs" version="0.2.10" />
+	<gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4" />
+	<gap:plugin name="org.apache.cordova.inappbrowser" version="0.5.2" />
+	<gap:plugin name="org.apache.cordova.network-information" version="0.2.12" />
+	<gap:plugin name="org.apache.cordova.camera" version="0.3.2" />
+	<gap:plugin name="org.apache.cordova.statusbar" version="0.1.4" />
+	
+    <gap:plugin name="nl.x-services.plugins.socialsharing" version="4.3.8" />
+    <gap:plugin name="nl.x-services.plugins.launchmyapp" version="3.2.0">
+		<param name="URL_SCHEME" value="timebox" />
+	</gap:plugin>
+	<gap:plugin name="nl.x-services.plugins.toast" version="2.0.2" />
+	<gap:plugin name="com.ionic.keyboard" version="1.0.3" />
+
+</widget>

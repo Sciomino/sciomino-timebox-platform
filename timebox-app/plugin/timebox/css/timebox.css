@@ -1,0 +1,246 @@
+/*** FONT ***/
+@font-face {
+	font-family:"proxima_nova_softregular";
+	src:url("../../fonts/timebox/ProximaNovaSoft-Regular-webfont.eot");
+	src:url("../../fonts/timebox/ProximaNovaSoft-Regular-webfont.eot?#iefix") format("embedded-opentype"),
+		url("../../fonts/timebox/ProximaNovaSoft-Regular-webfont.woff2") format("woff2"),
+		url("../../fonts/timebox/ProximaNovaSoft-Regular-webfont.woff") format("woff"),
+		url("../../fonts/timebox/ProximaNovaSoft-Regular-webfont.ttf") format("truetype"),
+		url("../../fonts/timebox/ProximaNovaSoft-Regular-webfont.svg#proxima_nova_softregular") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+/*** INITIAL ***/
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+/*table{border-collapse:collapse;border-spacing:0}*/
+address,caption,cite,code,dfn,th,var,b{font-style:normal;font-weight:400}
+caption,th{text-align:left}
+q:before,q:after{content:''}
+html{font-size:12px;height:100%;}
+.hidden{display:none !important;}
+label{cursor:pointer;}
+h1,h2,h3,h4,h5,h6{font-weight:400;}
+/*** TIMEBOX ***/
+body {
+	font-family:"proxima_nova_softregular",arial,sans-serif;
+	font-size:18px;
+	color:#575251;
+	background-color:#e6e3d8;
+	text-align:center;
+	line-height:24px;
+	position:relative;
+}
+button,
+input {
+	font-family:"proxima_nova_softregular",arial,sans-serif;
+	font-size:18px;
+	color:#575251;
+}
+fieldset legend { 
+	width:100%;
+	color:#83817b;
+}
+/*** MAIN ITEMS ***/
+/*** TIMEBOX CSS LOGO ***/
+#container h1.logo,
+#container h2.logo {
+	display:block;
+	text-align:center;
+}
+#container h1.logo {
+	margin-top:20px;
+	text-transform:uppercase;
+	font-size:32px;
+}
+#container h1.logo span { color:#00aa4b; }
+#container h2.logo { font-size:18px; }
+/*** LOADER ***/
+#socialshare,
+#photoselection,
+#loader {
+	position:fixed;
+	z-index:4;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+}
+#loader > div {
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+}
+#socialshare > div:first-child,
+#photoselection > div:first-child,
+#loader > div:first-child {
+	z-index:2;
+	background-color:#000;
+	opacity:0.9;
+	height:100%;
+	filter:alpha(opacity=90);
+}
+#loader > div:last-child {
+	z-index:3;
+	text-align:center;
+	margin-top:140px;
+}
+#loader > div:last-child img { margin-bottom:36px; }
+#loader > div:last-child p { color:#fff; }
+/*** WALKTHROUGH PAGES ***/
+div.walkthrough span {
+	background:transparent url(../../images/walkthrough.png) 0 0 no-repeat;
+	width:140px;
+	height:140px;
+	display:inline-block;
+	text-indent:-9999px;
+	margin:20px 0;
+}
+div.walkthrough.slidetwo span { background-position:0 -140px; }
+div.walkthrough.slidethree span { background-position:0 -280px; }
+div.walkthrough div.slideone,
+div.walkthrough div.slidetwo,
+div.walkthrough div.slidethree { display:none; }
+div.walkthrough > div.selected { display:inline; }
+div.walkthrough ol {
+	display:inline-block;
+	list-style:none;
+	margin-top:10px;
+}
+div.walkthrough ol li { 
+	float:left; 
+	margin:0 3px;
+}
+div.walkthrough ol li a {
+	display:block;
+	text-indent:-9999px;
+	width:10px;
+	height:10px;
+	background-color:#cbc8bf;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	border-radius:50%;
+}
+div.walkthrough ol li a.selected { background-color:#575551; }
+div.registerform > div,
+div.register > div,
+div.walkthrough > div { 
+	margin:20px auto 0; 
+	position:relative;
+	width:90%;
+}
+div.registerform > div input,
+div.registerform > div button,
+div.register > div input,
+div.register > div button,
+div.walkthrough > div input,
+div.walkthrough > div button {
+	width:100%;
+	border:0;
+	padding:10px 0;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+}
+div.registerform > div input,
+div.register > div input,
+div.walkthrough > div input { text-align:center; }
+div.registerform > div > label,
+div.register > div label,
+div.walkthrough > div label {
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	padding:10px 0;
+	color:#9e9c94;
+}
+div.registerform > div button,
+div.register > div button,
+div.walkthrough > div button {
+	background-color:#00a94f !important;
+	color:#fff !important;
+	margin-top:6px;
+	cursor:pointer;
+	text-transform:uppercase;
+}
+/**** REGISTER PAGES ****/
+div.registerform > h1,
+div.register > h1 {
+	text-transform:uppercase;
+	margin:60px 0 26px;
+}
+div.registerform > p,
+div.register > p { margin-bottom:36px; }
+div.walkthrough > div > p.error,
+div.registerform > p.error,
+div.register > div > p.error { color:#ed5740; }
+div.register > div > p.error + input { 
+	border:1px solid #ed5740; 
+	margin-left:-1px;
+}
+div.register > span {
+	/*color:#eaad06;*/
+	font-weight: bold;
+	margin-bottom:98px;
+	display:block;
+}
+div.register > div p { margin-bottom:10px; }
+div.register > div label { top:34px; }
+/*** BACK AND FORWARD BUTTONS ***/
+a.backbtn,
+a.forwardbtn {
+	display:block;
+	text-indent:-9999px;
+	background:transparent url(../../images/btns.png) 0 0 no-repeat;
+	width:22px;
+	height:18px;
+}
+a.forwardbtn { background-position:-22px 0; }
+a.backbtn.white { background-position:0 -18px; }
+a.forwardbtn.white { background-position:-22px -18px; }
+/*** REGISTERFORM ***/
+div.registerform > div p {
+	color:#9e9c94;
+	font-weight:normal;
+	font-size:0.9em;
+}
+div.registerform > div > select > option,
+div.registerform > div > div.ui-select > div.ui-btn {
+	font-weight:normal;
+	font-size:0.9em;
+}
+div.registerform > div { margin:0 auto; }
+div.registerform > div fieldset .ui-radio label {
+	border-color:#d1cec4 !important;
+	background-color:#e6e3d8;
+	font-weight:normal;
+	padding:0.6em 3.1em;
+}
+div.registerform > div fieldset .ui-radio label.ui-radio-on {
+	background-color:#00a94f;
+	color:#fff;
+	border-color:#00a94f;
+}
+div.registerform > div fieldset .ui-btn:hover { background-color:#e6e3d8; }
+div.registerform > div fieldset .ui-btn.ui-btn-active:hover { background-color:#00a94f; }
+/*** REGISTER HEADER & FOOTER***/
+.registerHeader > h2 {
+	background-color:#e6e3d8;
+	text-transform:uppercase;
+	font-size:18px;
+	display:block;
+	padding:10px 0;
+}
+.registerHeader > h2 a {
+	position:absolute;
+	left:10px;
+	top:13px;
+}
+.register > p.footer {
+	border:0;
+	/*text-align:center;*/
+	font-size:0.7em;
+	line-height:18px;
+	margin-bottom:25px;
+}

@@ -1,0 +1,141 @@
+.searchbox {
+	float: right;
+	margin-left:10px;
+}
+
+/* mail popup style */
+
+#mailPopup {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top:-150px;
+	margin-left:-225px;
+	width: 400px;
+	height: 300px;
+	
+	padding: 10px;
+	border: 2px solid black;
+        background-color: white;
+	overflow: auto;
+}
+
+#mailPopupMenu {
+        background-color: lightgrey;
+	text-align: right;
+}
+
+#mailPopupData {
+        background-color: white;
+	text-align: right;
+
+}
+
+/* list popup style */
+
+#listPopup {
+	position: absolute;
+	/*
+	top: 50%;
+	left: 50%;
+	margin-top:-150px;
+	margin-left:-225px;
+	*/
+	width: 200px;
+	height: 200px;
+	
+	padding: 10px;
+	border: 2px solid black;
+        background-color: white;
+	overflow: auto;
+}
+
+#listPopupMenu {
+        background-color: lightgrey;
+	text-align: right;
+}
+
+#listPopupData {
+        background-color: white;
+	text-align: right;
+
+}
+
+/* search_person popup style */
+
+#searchPersonPopup {
+	position: absolute;
+	/*
+	top: 50%;
+	left: 50%;
+	margin-top:-150px;
+	margin-left:-225px;
+	*/
+	width: 200px;
+	height: 200px;
+	
+	padding: 10px;
+	border: 2px solid black;
+        background-color: white;
+	overflow: auto;
+}
+
+#searchPersonPopupMenu {
+        background-color: lightgrey;
+	text-align: right;
+}
+
+#searchPersonPopupData {
+        background-color: white;
+	text-align: right;
+
+}
+
+
+/* tabs */
+
+.tabOn {
+	float: left;
+	padding: 5px;
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	background-color: white;
+	font-size:0.8em;
+}
+
+.tabOff {
+	float: left;
+	padding: 5px;
+	background-color: lightgrey;
+	border-bottom: 1px solid black;
+	font-size:0.8em;
+}
+
+.tabOffSelect {
+	float: left;
+	padding: 5px;
+	background-color: lightgrey;
+	border-bottom: 1px solid black;
+	color: white;
+	font-size:0.8em;
+}
+
+/* forms * tables */
+
+.paragraph_form {
+	background-color: #dddddd;
+}
+
+.paragraph_table {
+	border: 1px solid blue;
+}
+
+.paragraph_tablerow {
+	/*background-color: lightblue;*/
+}
+
+.paragraph_tabledata {
+	border-top: 1px dashed blue;
+}
+

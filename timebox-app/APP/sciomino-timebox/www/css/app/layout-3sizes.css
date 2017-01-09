@@ -1,0 +1,205 @@
+/* 
+   a device:
+   - width < 700
+   - portrait
+   - targets a mobile phone
+   - layout is one small column (with sidebar underneath)
+   
+   another device:
+   - width > 700 & < 1000
+   - landscape
+   - targets a tablet
+   - layout is two columns, one big with sidebar
+   
+   yet another device:
+   - width > 1000
+   - landscape
+   - targets a laptop
+/*
+
+/* for normal size devices */
+body {
+  color: #000;
+  background-color: #FFF;
+  font-size: 12px;
+}
+
+/* for high resolution devices, > 240 dpi */
+/* does not compute... */
+/* @media screen and (min-resolution: 200dpi) { */
+@media screen and (-webkit-min-device-pixel-ratio: 1.5) {
+  body {
+  	color: green;
+    background-color: #FFF;
+    font-size: 18px;
+  }
+}
+
+/* 
+   decide what to do with the layout:
+   1. fix to portrait or landscape mode.
+   2. fix to width of the device.
+*/
+
+/* fixed width layout */
+/* not much width */
+@media screen and (max-width: 700px) {
+	#page {
+		width: auto;
+	}
+	
+	#header {
+		width: auto;
+		height: auto;
+		float: none;
+		text-align: left;
+	}
+	
+	#main-nav-top {
+		width: auto;
+	}
+
+	#main-nav-top > ul {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	#main-nav-top > ul > li {
+		display: inline;
+		margin: 2px;
+		padding: 2px;
+		border: solid 1px #78B0CC;
+		background-color: #78B0CC;
+		background: linear-gradient(bottom, #78B0CC, #fff);
+		background: -webkit-gradient(linear, left bottom, left top, from(#78B0CC), to(#fff));
+		background: -moz-linear-gradient(bottom,  #78B0CC,  #fff);
+		background: -o-linear-gradient(bottom,  #78B0CC,  #fff);
+		border-radius:5px 5px 5px 5px;
+		-moz-border-radius:5px 5px 5px 5px;
+	}
+
+/*
+	#main-nav-top {
+		visibility: hidden;
+		height: 0px;
+	}
+
+	#main-nav-bottom {
+		visibility: visible;
+		height: auto;
+		width: auto;
+	}
+
+	#main-nav-bottom > ul {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		padding: 0px;
+	}
+
+	#main-nav-bottom > ul > li{
+		display: inline;
+		margin: 2px;
+		padding: 2px;
+		border: solid 1px #ddd;
+		background-color: #ddd;
+		background: linear-gradient(bottom, #ddd, #fff);
+		background: -webkit-gradient(linear, left bottom, left top, from(#ddd), to(#fff));
+		background: -moz-linear-gradient(bottom,  #ddd,  #fff);
+		background: -o-linear-gradient(bottom,  #ddd,  #fff);
+		border-radius:5px 5px 5px 5px;
+		-moz-border-radius:5px 5px 5px 5px;
+	}
+*/
+	#content {
+		width: auto;
+		float: none;
+		border: none;
+	}
+
+	#sidebar {
+		visibility: hidden;
+		height: 0px;
+		width: auto;
+		float: none;
+	}
+}
+
+/* standard width */
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+	#page {
+		width: 701px;
+	}
+	
+	#header {
+		height: auto;
+		width: auto;
+		float: none;
+		text-align: left;
+	}
+	
+	#logo {
+	}
+	
+	#main-nav-top {
+		width: auto;
+	}
+
+	#main-nav-top > ul {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	#main-nav-top > ul > li {
+		display: inline;
+		margin: 2px;
+		padding: 2px;
+		border: solid 1px #78B0CC;
+		background-color: #78B0CC;
+		background: linear-gradient(bottom, #78B0CC, #fff);
+		background: -webkit-gradient(linear, left bottom, left top, from(#78B0CC), to(#fff));
+		background: -moz-linear-gradient(bottom,  #78B0CC,  #fff);
+		background: -o-linear-gradient(bottom,  #78B0CC,  #fff);
+		border-radius:5px 5px 5px 5px;
+		-moz-border-radius:5px 5px 5px 5px;
+	}
+	
+    #content {
+		clear: both;
+		float: left;
+		width: 460px;
+		border: none;
+		margin-top: 10px;
+	}
+
+	#sidebar {
+		float: left;
+		margin-top: 20px;
+	}
+}
+
+/* for layout with great widths */
+@media screen and (min-width: 1001px) {
+	/*default*/
+}
+
+/* for portrait or landscape layout */
+/*
+@media screen and (orientation: portrait) {
+    #portrait {
+    	visibility: visible;
+    }
+    #landscape {
+    	visibility: hidden;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    #portrait {
+    	visibility: hidden;
+    }
+    #landscape {
+    	visibility: visible;
+    }
+}
+*/
+
